@@ -7,12 +7,27 @@
 //
 
 #import "ViewController.h"
-
+#import <Foundation/Foundation.h>
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+@synthesize bconnection;
+
+@synthesize log;
+@synthesize mdp;
+@synthesize toto;
+
+- (IBAction) bconnection: (UIButton *) sender{
+    NSString *vallog = [log text];
+    toto.text = vallog;
+}
+
+- (void)connection{
+    
+}
 
 - (void)viewDidLoad
 {

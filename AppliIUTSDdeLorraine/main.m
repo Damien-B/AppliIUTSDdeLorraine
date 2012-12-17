@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <Foundation/Foundation.h>
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 int main(int argc, char *argv[])
 {
