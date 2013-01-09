@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface RootViewController : UITableViewController<UITableViewDataSource> {
-    NSArray *tabNews;
+    NSMutableArray *tabNews;
 }
 
-@property (nonatomic, retain) NSArray *tabNews;
+@property (nonatomic, retain) NSMutableArray *tabNews;
 
 @end

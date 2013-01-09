@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 @interface ViewController ()
 
 @end
@@ -22,7 +23,16 @@
 
 - (IBAction) bconnection: (UIButton *) sender{
     NSString *vallog = [log text];
+    NSString *valmdp = [mdp text];
     toto.text = vallog;
+    NSString *url = [NSString stringWithFormat:@"http://www.applorraine.fr/testconnexion.php?log=%@&mdp=%@", vallog, valmdp];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15.0];
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    if(connection){
+        NSLog(@"connected");
+    }else{
+        NSLog(@"not connected");
+    }
 }
 
 - (void)connection{
