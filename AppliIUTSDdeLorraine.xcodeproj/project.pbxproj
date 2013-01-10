@@ -22,7 +22,6 @@
 		22089EB8169DB30400298246 /* iut_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EB7169DB30400298246 /* iut_photo.png */; };
 		22089EBA169DB6D300298246 /* src_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EB9169DB6D300298246 /* src_photo.png */; };
 		22407D4B169DF0D700AB16CE /* info_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D4A169DF0D700AB16CE /* info_photo.png */; };
-		22407D4E169E0EFE00AB16CE /* bann_geii.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D4D169E0EFE00AB16CE /* bann_geii.png */; };
 		22407D50169E109B00AB16CE /* geii_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D4F169E109B00AB16CE /* geii_photo.png */; };
 		22407D53169E168000AB16CE /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22407D52169E168000AB16CE /* WebView.m */; };
 		22407D56169E16A900AB16CE /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22407D55169E16A900AB16CE /* WebViewController.m */; };
@@ -49,8 +48,6 @@
 		6D54727A167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D547279167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m */; };
 		6D547285167B3631003F58A5 /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D547284167B3631003F58A5 /* StartController.m */; };
 		6D547287167B3B3F003F58A5 /* dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D547286167B3B3F003F58A5 /* dictionary.plist */; };
-		6D54728A167B3CAB003F58A5 /* intro1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D547288167B3CAB003F58A5 /* intro1.png */; };
-		6D54728B167B3CAB003F58A5 /* intro2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D547289167B3CAB003F58A5 /* intro2.png */; };
 		6D54728D167B3CFE003F58A5 /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728C167B3CFE003F58A5 /* icone.png */; };
 		6D54728F167B3D45003F58A5 /* retinalol.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728E167B3D45003F58A5 /* retinalol.png */; };
 /* End PBXBuildFile section */
@@ -81,7 +78,6 @@
 		22089EB7169DB30400298246 /* iut_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iut_photo.png; path = source/iut_photo.png; sourceTree = "<group>"; };
 		22089EB9169DB6D300298246 /* src_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = src_photo.png; path = source/src_photo.png; sourceTree = "<group>"; };
 		22407D4A169DF0D700AB16CE /* info_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info_photo.png; path = source/info_photo.png; sourceTree = "<group>"; };
-		22407D4D169E0EFE00AB16CE /* bann_geii.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bann_geii.png; path = "../../../Dropbox/Application de lorraine/xcode/geii/bann_geii.png"; sourceTree = "<group>"; };
 		22407D4F169E109B00AB16CE /* geii_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = geii_photo.png; path = source/geii_photo.png; sourceTree = "<group>"; };
 		22407D51169E168000AB16CE /* WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebView.h; sourceTree = "<group>"; };
 		22407D52169E168000AB16CE /* WebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebView.m; sourceTree = "<group>"; };
@@ -119,8 +115,6 @@
 		6D547283167B3631003F58A5 /* StartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartController.h; sourceTree = "<group>"; };
 		6D547284167B3631003F58A5 /* StartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
 		6D547286167B3B3F003F58A5 /* dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dictionary.plist; sourceTree = "<group>"; };
-		6D547288167B3CAB003F58A5 /* intro1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = intro1.png; path = "../../../Dropbox/Application de lorraine/xcode/source/intro1.png"; sourceTree = "<group>"; };
-		6D547289167B3CAB003F58A5 /* intro2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = intro2.png; path = "../../../Dropbox/Application de lorraine/xcode/source/intro2.png"; sourceTree = "<group>"; };
 		6D54728C167B3CFE003F58A5 /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icone.png; path = ../icone.png; sourceTree = "<group>"; };
 		6D54728E167B3D45003F58A5 /* retinalol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retinalol.png; path = ../retinalol.png; sourceTree = "<group>"; };
 		6D98D2CF167F5C47009A5C84 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -159,7 +153,6 @@
 				22089EB5169DA6CC00298246 /* photo_iut.png */,
 				22407D57169E1E3500AB16CE /* intro.png */,
 				22407D58169E1E3500AB16CE /* sponsor.png */,
-				22407D4D169E0EFE00AB16CE /* bann_geii.png */,
 				22089EB7169DB30400298246 /* iut_photo.png */,
 				22407D4F169E109B00AB16CE /* geii_photo.png */,
 				22089EB9169DB6D300298246 /* src_photo.png */,
@@ -212,8 +205,6 @@
 			children = (
 				6D54728C167B3CFE003F58A5 /* icone.png */,
 				6D54728E167B3D45003F58A5 /* retinalol.png */,
-				6D547288167B3CAB003F58A5 /* intro1.png */,
-				6D547289167B3CAB003F58A5 /* intro2.png */,
 				6D547254167B3506003F58A5 /* AppDelegate.h */,
 				6D547255167B3506003F58A5 /* AppDelegate.m */,
 				6D54725D167B3506003F58A5 /* MainStoryboard_iPhone.storyboard */,
@@ -348,8 +339,6 @@
 				6D54725F167B3506003F58A5 /* MainStoryboard_iPhone.storyboard in Resources */,
 				6D547262167B3506003F58A5 /* MainStoryboard_iPad.storyboard in Resources */,
 				6D547287167B3B3F003F58A5 /* dictionary.plist in Resources */,
-				6D54728A167B3CAB003F58A5 /* intro1.png in Resources */,
-				6D54728B167B3CAB003F58A5 /* intro2.png in Resources */,
 				6D54728D167B3CFE003F58A5 /* icone.png in Resources */,
 				6D54728F167B3D45003F58A5 /* retinalol.png in Resources */,
 				22089EAA169D9F2700298246 /* appli.png in Resources */,
@@ -367,7 +356,6 @@
 				22089EB8169DB30400298246 /* iut_photo.png in Resources */,
 				22089EBA169DB6D300298246 /* src_photo.png in Resources */,
 				22407D4B169DF0D700AB16CE /* info_photo.png in Resources */,
-				22407D4E169E0EFE00AB16CE /* bann_geii.png in Resources */,
 				22407D50169E109B00AB16CE /* geii_photo.png in Resources */,
 				22407D59169E1E3500AB16CE /* intro.png in Resources */,
 				22407D5A169E1E3500AB16CE /* sponsor.png in Resources */,

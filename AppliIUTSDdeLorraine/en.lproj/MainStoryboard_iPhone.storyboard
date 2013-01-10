@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -1512,7 +1512,7 @@ Cgo
         <scene sceneID="ZOT-gC-fcl">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="4oV-R8-Zqe" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="a5B-ds-Be4">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -1583,7 +1583,9 @@ PRÉSENTATION DU DUT INFO</string>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">La formation INFO apporte des compétences dans différents domaines de l’informatique.    On retrouve majoritairement dans cette formation des travaux sur: </string>
+                                        <string key="content">La formation INFO apporte des compétences dans différents domaines de l’informatique. 
+
+   On retrouve majoritairement dans cette formation des travaux sur: </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -1759,7 +1761,9 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">1800 heures d’enseignement encadré, 300 heures de projet, sur 4 semestres• </string>
+                                        <string key="content">1800 heures d’enseignement encadré, 300 heures de projet, sur 4 semestres
+
+• </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -1774,7 +1778,21 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">	- Algorithme et programmation	- Architecture, systèmes et réseaux	- Outils et modèles du génie logiciel• Connaissances et compétences générales (750h):	- Mathématiques	- Économie et gestion des organisations	- Langues, expression-communication• Modules complémentaires (300h. déterminées en fonction du parcours)• Mise en situation professionnelle	- Projet (300h)	- Stage en entreprise (10 semaines aux moins)</string>
+                                        <string key="content">
+	- Algorithme et programmation
+	- Architecture, systèmes et réseaux
+	- Outils et modèles du génie logiciel
+
+• Connaissances et compétences générales (750h):
+	- Mathématiques
+	- Économie et gestion des organisations
+	- Langues, expression-communication
+
+• Modules complémentaires (300h. déterminées en fonction du parcours)
+
+• Mise en situation professionnelle
+	- Projet (300h)
+	- Stage en entreprise (10 semaines aux moins)</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -2208,7 +2226,8 @@ Cg
                                     </fragment>
                                     <fragment>
                                         <string key="content">1800 heures d’enseignement encadré, 330 heures de projet, sur 4 semestres
-• </string>
+
+• </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -2253,7 +2272,8 @@ CQ
 	- Culture-communication
 	- Connaissance de l’entreprise
 	- Anglais
-</string>
+
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -2319,7 +2339,8 @@ CQ
 	- Electrotechnique et electronique de puissance
 	- Electronique
 	- Etudes et réalisations
-</string>
+
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -2386,7 +2407,8 @@ CQ
 	- Automatique
 	- Automatismes industriels et réseau
 	- Etudes et réalisations
-</string>
+
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -2702,33 +2724,6 @@ Cgo
         <image name="top.png" width="320" height="125"/>
         <image name="visite.png" width="170" height="140"/>
     </resources>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="RootViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
-        </class>
-        <class className="StartController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartController.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="bconnection:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="bconnection" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="log" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="mdp" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="toto" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WebViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
