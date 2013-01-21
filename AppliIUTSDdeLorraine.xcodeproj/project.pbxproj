@@ -27,6 +27,10 @@
 		22407D56169E16A900AB16CE /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22407D55169E16A900AB16CE /* WebViewController.m */; };
 		22407D59169E1E3500AB16CE /* intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D57169E1E3500AB16CE /* intro.png */; };
 		22407D5A169E1E3500AB16CE /* sponsor.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D58169E1E3500AB16CE /* sponsor.png */; };
+		22F86DEB16AD91560009886C /* absences.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F86DE716AD91560009886C /* absences.png */; };
+		22F86DEC16AD91560009886C /* edt.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F86DE816AD91560009886C /* edt.png */; };
+		22F86DED16AD91560009886C /* nouveautes.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F86DE916AD91560009886C /* nouveautes.png */; };
+		22F86DEE16AD91560009886C /* prefs.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F86DEA16AD91560009886C /* prefs.png */; };
 		6D2A6381167B617B00BAC6A8 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2A6380167B617B00BAC6A8 /* News.m */; };
 		6D2A6384167B650700BAC6A8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2A6383167B650700BAC6A8 /* RootViewController.m */; };
 		6D547246167B3506003F58A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D547245167B3506003F58A5 /* UIKit.framework */; };
@@ -85,6 +89,10 @@
 		22407D55169E16A900AB16CE /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		22407D57169E1E3500AB16CE /* intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = intro.png; path = source/intro.png; sourceTree = "<group>"; };
 		22407D58169E1E3500AB16CE /* sponsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sponsor.png; path = source/sponsor.png; sourceTree = "<group>"; };
+		22F86DE716AD91560009886C /* absences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = absences.png; path = "../../../Dropbox/Application de lorraine/xcode/logos/absences.png"; sourceTree = "<group>"; };
+		22F86DE816AD91560009886C /* edt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = edt.png; path = "../../../Dropbox/Application de lorraine/xcode/logos/edt.png"; sourceTree = "<group>"; };
+		22F86DE916AD91560009886C /* nouveautes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nouveautes.png; path = "../../../Dropbox/Application de lorraine/xcode/logos/nouveautes.png"; sourceTree = "<group>"; };
+		22F86DEA16AD91560009886C /* prefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = prefs.png; path = "../../../Dropbox/Application de lorraine/xcode/logos/prefs.png"; sourceTree = "<group>"; };
 		6D2A637F167B617B00BAC6A8 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		6D2A6380167B617B00BAC6A8 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		6D2A6382167B650700BAC6A8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -147,6 +155,10 @@
 		22089E9D169D9F0900298246 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				22F86DE716AD91560009886C /* absences.png */,
+				22F86DE816AD91560009886C /* edt.png */,
+				22F86DE916AD91560009886C /* nouveautes.png */,
+				22F86DEA16AD91560009886C /* prefs.png */,
 				22089E9F169D9F2700298246 /* appli.png */,
 				22089EA0169D9F2700298246 /* bg_black.png */,
 				22089EA1169D9F2700298246 /* bg.png */,
@@ -359,6 +371,10 @@
 				22407D50169E109B00AB16CE /* geii_photo.png in Resources */,
 				22407D59169E1E3500AB16CE /* intro.png in Resources */,
 				22407D5A169E1E3500AB16CE /* sponsor.png in Resources */,
+				22F86DEB16AD91560009886C /* absences.png in Resources */,
+				22F86DEC16AD91560009886C /* edt.png in Resources */,
+				22F86DED16AD91560009886C /* nouveautes.png in Resources */,
+				22F86DEE16AD91560009886C /* prefs.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

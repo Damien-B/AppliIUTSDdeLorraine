@@ -55,18 +55,18 @@
     
     
     
-    //if([response isEqualToString:@"1"]){
+    if([response isEqualToString:@"etu"]){
        // NSLog(log.text);
        // toto.text = response;
-    if([log.text isEqualToString:@"iut"]){
-        if([mdp.text isEqualToString:@"stdie"]){
+   // if([log.text isEqualToString:@"iut"]){
+     //   if([mdp.text isEqualToString:@"stdie"]){
         [self performSegueWithIdentifier:@"etudiant" sender:self];
-    }
+    //}
     }
     else if([log.text isEqualToString:@"prof"]){
-        if([mdp.text isEqualToString:@"prof"]){
+     //   if([mdp.text isEqualToString:@"prof"]){
             [self performSegueWithIdentifier:@"professeur" sender:self];
-        }
+       // }
     }
     else{
         toto.text=@"Login faux, veuillez recommencer.";
