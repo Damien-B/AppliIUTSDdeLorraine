@@ -215,6 +215,8 @@
 		6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */ = {
 			isa = PBXGroup;
 			children = (
+				6D04C43216A8460B000A228F /* DetailViewController.h */,
+				6D04C43316A8460B000A228F /* DetailViewController.m */,
 				6D54728C167B3CFE003F58A5 /* icone.png */,
 				6D54728E167B3D45003F58A5 /* retinalol.png */,
 				6D547254167B3506003F58A5 /* AppDelegate.h */,
@@ -223,8 +225,8 @@
 				6D2A6382167B650700BAC6A8 /* RootViewController.h */,
 				6D2A6383167B650700BAC6A8 /* RootViewController.m */,
 				6D547260167B3506003F58A5 /* MainStoryboard_iPad.storyboard */,
-				6D547264167B3506003F58A5 /* ViewController.m */,
 				6D547263167B3506003F58A5 /* ViewController.h */,
+				6D547264167B3506003F58A5 /* ViewController.m */,
 				22407D51169E168000AB16CE /* WebView.h */,
 				22407D52169E168000AB16CE /* WebView.m */,
 				22407D54169E16A900AB16CE /* WebViewController.h */,
@@ -417,6 +419,7 @@
 				6D2A6384167B650700BAC6A8 /* RootViewController.m in Sources */,
 				22407D53169E168000AB16CE /* WebView.m in Sources */,
 				22407D56169E16A900AB16CE /* WebViewController.m in Sources */,
+				6D04C43416A8460B000A228F /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
