@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController {
+@interface DetailViewController : UIViewController{
      UILabel *txtlabel;
+    
 }
+@property (retain, nonatomic) IBOutlet UIButton *dismiss;
+- (IBAction)dismissAction:(id)sender;
 @property (nonatomic, retain) UILabel *txtlabel;
 @end

@@ -48,4 +48,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_dismiss release];
+    [super dealloc];
+}
+- (void)viewDidUnload {
+    [self setDismiss:nil];
+    [super viewDidUnload];
+}
+- (IBAction)dismissAction:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
 @end
