@@ -10,6 +10,7 @@
 #import "News.h"
 #import <UIKit/UIKit.h>
 #import "UIKit/UIKit.h"
+#import "DetailViewController.h"
 
 @interface RootViewController ()
 
@@ -17,6 +18,7 @@
 
 @implementation RootViewController
 @synthesize tabNews;
+@synthesize detailView;
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -44,6 +46,8 @@
         //self.tabNews = [NSMutableArray arrayWithArray:dictionaryToAdd];
         [tabNews addObject:ws];
     }
+    
+    detailView = [[DetailViewController alloc] init];
    // NSArray *arrayFromFile = [dictFromFile objectForKey:@"Root"];
    // NSLog(@"toto");
     //NSMutableArray *dictionaryToAdd = [[NSMutableArray alloc]init];
@@ -145,13 +149,15 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+    
+    //UIViewController *txtlabel = [[UIViewController alloc] initWithNibName:@"okok" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+//     [self.navigationController pushViewController:detailView animated:YES];
+   // [[self.navigationController presentingViewController] presentModalViewController:detailView animated:YES];
+    NSLog(@"toto");
+    // [DetailViewController release];
+    
 }
 
 @end
