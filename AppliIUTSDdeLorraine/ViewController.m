@@ -21,6 +21,9 @@
 @synthesize mdp;
 @synthesize toto;
 @synthesize response;
+@synthesize abo1;
+@synthesize abo2;
+@synthesize abo3;
 
 - (IBAction) bconnection: (UIButton *) sender{
     

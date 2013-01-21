@@ -14,6 +14,9 @@
     IBOutlet UITextField *mdp;
     IBOutlet UILabel *toto;
     NSString *response;
+    IBOutlet UISwitch *abo1;
+    IBOutlet UISwitch *abo2;
+    IBOutlet UISwitch *abo3;
 }
 
 
@@ -23,5 +26,9 @@
 @property (nonatomic, retain) IBOutlet UITextField *mdp;
 @property (nonatomic, retain) IBOutlet UILabel *toto;
 @property (nonatomic, retain) NSString *response;
+@property (nonatomic, retain) IBOutlet UISwitch *abo1;
+@property (nonatomic, retain) IBOutlet UISwitch *abo2;
+@property (nonatomic, retain) IBOutlet UISwitch *abo3;
+- (IBAction) envoiAbo: (UISwitch *) sender;
 - (IBAction) bconnection: (UIButton *) sender;
 @end

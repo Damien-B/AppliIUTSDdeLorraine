@@ -1291,7 +1291,7 @@ Cgo
         <!--View Controller - Autre 2-->
         <scene sceneID="qdJ-Io-bTr">
             <objects>
-                <viewController id="onw-Kx-1jR" sceneMemberID="viewController">
+                <viewController id="onw-Kx-1jR" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bLh-za-xAA">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1305,8 +1305,35 @@ Cgo
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="k9D-il-JZn">
                                 <rect key="frame" x="0.0" y="44" width="320" height="455"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xjp-Zm-jLq">
-                                <rect key="frame" x="131" y="261" width="42" height="21"/>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="fzA-QH-ArL">
+                                <rect key="frame" x="186" y="151" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Lc7-gh-8Qk">
+                                <rect key="frame" x="186" y="199" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="odj-hb-9wL">
+                                <rect key="frame" x="186" y="249" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Abonnement1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rJ8-ik-nJP">
+                                <rect key="frame" x="52" y="151" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Abonnement1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q7e-JP-f8I">
+                                <rect key="frame" x="52" y="199" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Abonnement1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ugZ-Ho-vMK">
+                                <rect key="frame" x="52" y="249" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -1315,6 +1342,11 @@ Cgo
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Autre 2" id="wCi-0j-jnJ"/>
+                    <connections>
+                        <outlet property="abo1" destination="fzA-QH-ArL" id="qjT-WS-zKq"/>
+                        <outlet property="abo2" destination="Lc7-gh-8Qk" id="4vv-gb-S8n"/>
+                        <outlet property="abo3" destination="odj-hb-9wL" id="RUS-Zj-AyY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLI-aK-Hqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2556,6 +2588,10 @@ Cgo
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="bconnection:" candidateClass="UIButton"/>
+                <relationship kind="action" name="envoiAbo:" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="abo1" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="abo2" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="abo3" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="bconnection" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="log" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="mdp" candidateClass="UITextField"/>
