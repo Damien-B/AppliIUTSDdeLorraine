@@ -17,6 +17,7 @@
     IBOutlet UISwitch *abo1;
     IBOutlet UISwitch *abo2;
     IBOutlet UISwitch *abo3;
+    IBOutlet UIButton *envoiAbo;
 }
 
 
@@ -29,6 +30,6 @@
 @property (nonatomic, retain) IBOutlet UISwitch *abo1;
 @property (nonatomic, retain) IBOutlet UISwitch *abo2;
 @property (nonatomic, retain) IBOutlet UISwitch *abo3;
-- (IBAction) envoiAbo: (UISwitch *) sender;
+- (IBAction) envoiAbo: (UIButton *) sender;
 - (IBAction) bconnection: (UIButton *) sender;
 @end

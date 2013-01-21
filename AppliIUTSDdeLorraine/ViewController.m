@@ -25,6 +25,36 @@
 @synthesize abo2;
 @synthesize abo3;
 
+- (IBAction)envoiAbo:(UIButton *)sender{
+    if(((abo1.on == NO)  && (abo2.on == NO) && (abo3.on == NO)) || ((abo1.on == YES) && (abo2.on == YES)) || ((abo1.on == YES) && (abo3.on == YES)) || ((abo2.on == YES) && (abo3.on == YES))){
+        
+        
+    }else{
+        NSString *idiphone = @"adefinir";
+        NSString *abonnements;
+        if(abo1.on){
+            abonnements =@"abo1";
+            NSLog(@"1");
+        }else if(abo2.on){
+            abonnements =@"abo2";
+            NSLog(@"2");
+        }else if(abo3.on){
+            abonnements =@"abo3";
+            NSLog(@"3");
+        }
+        NSString *urlabo = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/abonnementpref.php?UIId=%@&pref=%@",idiphone, abonnements];
+        NSURLRequest *requestabo = [NSURLRequest requestWithURL:[NSURL URLWithString:urlabo] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
+        NSURLConnection *connectionabo = [[NSURLConnection alloc] initWithRequest:requestabo delegate:self];
+        if(connectionabo){
+            NSLog(@"connected");
+        }else{
+            NSLog(@"not connected");
+        }
+
+    }
+    
+}
+
 - (IBAction) bconnection: (UIButton *) sender{
     
     
