@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isf-r3-9Ai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="160" y="1126"/>
+            <point key="canvasLocation" x="-562" y="1016"/>
         </scene>
         <!--View Controller - Item-->
         <scene sceneID="OfJ-UQ-h4U">
@@ -113,6 +113,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="0p4-vL-tTI" kind="modal" id="09y-Nf-jpV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XaE-t6-hGY">
                                 <rect key="frame" x="215" y="310" width="85" height="71"/>
@@ -191,7 +194,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="Smj-Ag-9oG">
-                                <rect key="frame" x="20" y="142" width="280" height="386"/>
+                                <rect key="frame" x="20" y="173" width="280" height="355"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -204,7 +207,7 @@ PRÉSENTATION DE L'IUT</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment content="  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
@@ -226,7 +229,10 @@ PRÉSENTATION DE L'IUT</string>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content"> » de politique d’aménagement du territoire.    
+                                        <string key="content"> » de politique d’aménagement du territoire. 
+
+
+
 </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
@@ -242,16 +248,6 @@ PRÉSENTATION DE L'IUT</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">
-
-  
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
                                     <fragment content="UNE PÉDAGOGIE DE LA RÉUSSITE">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -259,14 +255,15 @@ PRÉSENTATION DE L'IUT</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content"> A travers un grand nombre de TP et TD, les IUT privilégient surtout l'enseignement par petits groupes. Cette pédagogie favorise la réussite car elle permet un suivi très personnalisé.</string>
+                                        <string key="content">
+A travers un grand nombre de TP et TD, les IUT privilégient surtout l'enseignement par petits groupes. Cette pédagogie favorise la réussite car elle permet un suivi très personnalisé.</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -282,7 +279,7 @@ CgoKA
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="LES FORMATIONS  ">
+                                    <fragment content="LES FORMATIONS  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
@@ -301,7 +298,8 @@ CgoKA
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">      - SRC
+                                        <string key="content">
+     - SRC
 	- INFO
 	- GEII
 
@@ -338,7 +336,8 @@ DQ
 	- I2M 
 	- ISN 
 	- TeCAMTV 
-	- CDG 
+	- CDG
+
 
 </string>
                                         <attributes>
@@ -376,7 +375,7 @@ Tél : 03 29 53 60 00
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="iutsd-contact@univ-lorraine.fr ">
+                                    <fragment content="iutsd-contact@univ-lorraine.fr ">
                                         <attributes>
                                             <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
@@ -480,7 +479,8 @@ Cgo
                                     </fragment>
                                     <fragment>
                                         <string key="content">
- Foyer des Jeunes Travailleurs:
+
+Foyer des Jeunes Travailleurs:
 	</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
@@ -523,7 +523,7 @@ Cgo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0nh-Ou-I59" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="470" y="970"/>
+            <point key="canvasLocation" x="-110" y="1016"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vXj-MD-gPt">
@@ -537,7 +537,7 @@ Cgo
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="5eQ-Af-kN8">
-                                <rect key="frame" x="20" y="143" width="280" height="385"/>
+                                <rect key="frame" x="20" y="173" width="280" height="355"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -551,7 +551,7 @@ PRÉSENTATION DU DUT SRC</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment content="  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -687,15 +687,6 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">  
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
                                     <fragment content="DÉBOUCHÉS">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -703,7 +694,7 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -711,7 +702,8 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content"> • Métiers: Développeur de projets multimédia, webdesigner, webdéveloppeur, administrateur réseaux, réalisateur de systèmes d’informations
+                                        <string key="content">
+• Métiers: Développeur de projets multimédia, webdesigner, webdéveloppeur, administrateur réseaux, réalisateur de systèmes d’informations
 
  • Les secteurs: Agence de communication, studios graphiques et multimédia, services de communication d’entreprises et d’administrations ...
 </string>
@@ -731,7 +723,7 @@ CgoKA
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="POURSUITE D'ÉTUDES  ">
+                                    <fragment content="POURSUITE D'ÉTUDES  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
@@ -742,7 +734,8 @@ CgoKA
                                         <string key="content">Licence professionelle ou générale
    Master d’étude 
    École d’ingénieurs 
-   Formation double compétence... 
+   Formation double compétence...
+
 
 </string>
                                         <attributes>
@@ -774,7 +767,8 @@ Cg
                                     <fragment>
                                         <string key="content">1800 heures d’enseignement encadré, 300 heures de projet, sur 4 semestres
 
- • </string>
+
+• </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -860,7 +854,7 @@ IA0
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
@@ -943,7 +937,9 @@ Cgo
                                     </fragment>
                                     <fragment>
                                         <string key="content">
- Service Scolarité </string>
+
+Service Scolarité
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -992,7 +988,7 @@ Cgo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCX-bg-ir3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="970"/>
+            <point key="canvasLocation" x="747" y="1016"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BDF-f5-GDY">
@@ -1131,7 +1127,7 @@ Cgo
             <objects>
                 <tableViewController id="8yS-xX-B36" customClass="RootViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YRL-2n-Je0">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -1155,7 +1151,7 @@ Cgo
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49E-fn-2E4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="-1309"/>
+            <point key="canvasLocation" x="1264" y="-1333"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lgU-3X-i1P">
@@ -1254,7 +1250,7 @@ Cgo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUe-N9-zaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="98"/>
+            <point key="canvasLocation" x="1254" y="90"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GA6-j4-wzX">
@@ -1283,7 +1279,7 @@ Cgo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zf-kn-jyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="-609"/>
+            <point key="canvasLocation" x="1254" y="-609"/>
         </scene>
         <!--View Controller - Autre 2-->
         <scene sceneID="qdJ-Io-bTr">
@@ -1294,13 +1290,13 @@ Cgo
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="vXf-rR-bac">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="455" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Autre 2" id="dcE-FW-Epd"/>
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="k9D-il-JZn">
-                                <rect key="frame" x="0.0" y="44" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="2" width="320" height="546"/>
                             </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="fzA-QH-ArL">
                                 <rect key="frame" x="186" y="151" width="79" height="27"/>
@@ -1363,7 +1359,7 @@ Cgo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLI-aK-Hqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="-2219"/>
+            <point key="canvasLocation" x="773" y="-2213"/>
         </scene>
         <!--View Controller - Autre 1-->
         <scene sceneID="Pjf-L4-5nb">
@@ -1454,6 +1450,70 @@ Cgo
             </objects>
             <point key="canvasLocation" x="-198" y="-2262"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="kMc-ec-qxM">
+            <objects>
+                <viewController id="0p4-vL-tTI" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NPe-3U-aHf">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="45L-hm-n4h">
+                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="gxR-OE-BPB">
+                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Où suis-je ?" id="eaV-PX-9cl">
+                                        <connections>
+                                            <action selector="getlocation" destination="0p4-vL-tTI" id="K99-sp-EGg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eeg-NK-4oy"/>
+                                    <barButtonItem style="plain" id="Jfc-qj-vJh">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="07c-x8-CgB">
+                                            <rect key="frame" x="129" y="8" width="185" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Map"/>
+                                                <segment title="Satellite"/>
+                                                <segment title="Hybrid"/>
+                                            </segments>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="setMap:" destination="0p4-vL-tTI" eventType="valueChanged" id="feo-o8-NNL"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="WYQ-2W-sfF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="VISITE GUIDEE" id="2jd-bB-KlM">
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="47I-VF-N4Z">
+                                            <connections>
+                                                <segue destination="I8q-Z6-YqR" kind="modal" id="rMe-tN-Efs"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapview" destination="45L-hm-n4h" id="zE1-BA-N4r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kld-fx-YNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1065" y="1016"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZOT-gC-fcl">
             <objects>
@@ -1507,7 +1567,7 @@ Cgo
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="OZ0-NA-S8A">
-                                <rect key="frame" x="20" y="143" width="280" height="385"/>
+                                <rect key="frame" x="20" y="171" width="280" height="357"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1521,7 +1581,7 @@ PRÉSENTATION DU DUT INFO</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment content="  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -1610,15 +1670,6 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">  
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
                                     <fragment content="DÉBOUCHÉS">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -1626,14 +1677,14 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" • ">
+                                    <fragment content=" • ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -1666,7 +1717,7 @@ CgoKA
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="POURSUITE D'ÉTUDES  ">
+                                    <fragment content="POURSUITE D'ÉTUDES  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
@@ -1677,7 +1728,8 @@ CgoKA
                                         <string key="content">Licence professionelle ou générale
    Master d’étude 
    École d’ingénieurs 
-   Formation double compétence... 
+   Formation double compétence...
+
 
 </string>
                                         <attributes>
@@ -1745,7 +1797,7 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
@@ -1828,7 +1880,9 @@ Cgo
                                     </fragment>
                                     <fragment>
                                         <string key="content">
- Service Scolarité </string>
+
+Service Scolarité
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -1877,7 +1931,7 @@ Cgo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mct-O1-r48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="644" y="1493"/>
+            <point key="canvasLocation" x="338" y="1016"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qID-BD-KpZ">
@@ -1891,7 +1945,7 @@ Cgo
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="YcY-xb-eAL">
-                                <rect key="frame" x="20" y="143" width="280" height="385"/>
+                                <rect key="frame" x="20" y="173" width="280" height="355"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1905,7 +1959,7 @@ PRÉSENTATION DU DUT GEII</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment content="  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -1991,15 +2045,6 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">  
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
                                     <fragment content="DÉBOUCHÉS">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -2007,14 +2052,14 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -2115,7 +2160,7 @@ CgoKA
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="POURSUITE D'ÉTUDES  ">
+                                    <fragment content="POURSUITE D'ÉTUDES  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
@@ -2126,7 +2171,8 @@ CgoKA
                                         <string key="content">Licence professionelle ou générale
    Master d’étude 
    École d’ingénieurs 
-   Formation double compétence... 
+   Formation double compétence...
+
 
 </string>
                                         <attributes>
@@ -2425,7 +2471,7 @@ CQ
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
@@ -2538,7 +2584,9 @@ Cgo
                                     </fragment>
                                     <fragment>
                                         <string key="content">
- Service Scolarité </string>
+
+Service Scolarité
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -2587,7 +2635,7 @@ Cgo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BiK-Qi-aE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="630" y="2208"/>
+            <point key="canvasLocation" x="1154" y="1016"/>
         </scene>
         <!--Root View Controller - News-->
         <scene sceneID="cYF-8o-0LJ">
@@ -2623,7 +2671,7 @@ Cgo
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="57" height="57"/>
+        <image name="Default.png" width="320" height="480"/>
         <image name="appli.png" width="320" height="480"/>
         <image name="bg.png" width="320" height="480"/>
         <image name="bg_black.png" width="320" height="418"/>
@@ -2644,14 +2692,8 @@ Cgo
         <image name="visite.png" width="170" height="140"/>
     </resources>
     <classes>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-        </class>
         <class className="RootViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="detailView" candidateClass="DetailViewController"/>
-            </relationships>
         </class>
         <class className="StartController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StartController.h"/>
@@ -2661,12 +2703,15 @@ Cgo
             <relationships>
                 <relationship kind="action" name="bconnection:" candidateClass="UIButton"/>
                 <relationship kind="action" name="envoiAbo:" candidateClass="UIButton"/>
+                <relationship kind="action" name="getlocation"/>
+                <relationship kind="action" name="setMap:"/>
                 <relationship kind="outlet" name="abo1" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="abo2" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="abo3" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="bconnection" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="envoiAbo" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="log" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="mapview" candidateClass="MKMapView"/>
                 <relationship kind="outlet" name="mdp" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="toto" candidateClass="UILabel"/>
             </relationships>
@@ -2684,6 +2729,6 @@ Cgo
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="5GY-rK-Yn6"/>
+        <segue reference="9uD-eg-KRa"/>
     </inferredMetricsTieBreakers>
 </document>
