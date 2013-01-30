@@ -75,6 +75,7 @@
     }else{
        // NSString *idiphone = [[UIDevice currentDevice] uniqueIdentifier];
         NSString *idiphone = @"670977";
+       
         NSString *abonnements;
         if(abo1.on){
             abonnements =@"130";

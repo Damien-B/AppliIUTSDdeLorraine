@@ -194,7 +194,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="Smj-Ag-9oG">
-                                <rect key="frame" x="20" y="173" width="280" height="355"/>
+                                <rect key="frame" x="20" y="142" width="280" height="386"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -537,7 +537,7 @@ Foyer des Jeunes Travailleurs:
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="5eQ-Af-kN8">
-                                <rect key="frame" x="20" y="173" width="280" height="355"/>
+                                <rect key="frame" x="20" y="143" width="280" height="385"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1296,7 +1296,7 @@ Service Scolarité
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="k9D-il-JZn">
-                                <rect key="frame" x="0.0" y="2" width="320" height="546"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="546"/>
                             </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="fzA-QH-ArL">
                                 <rect key="frame" x="186" y="151" width="79" height="27"/>
@@ -1567,7 +1567,7 @@ Service Scolarité
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="OZ0-NA-S8A">
-                                <rect key="frame" x="20" y="171" width="280" height="357"/>
+                                <rect key="frame" x="20" y="143" width="280" height="385"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1945,7 +1945,7 @@ Service Scolarité
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="YcY-xb-eAL">
-                                <rect key="frame" x="20" y="173" width="280" height="355"/>
+                                <rect key="frame" x="20" y="143" width="280" height="385"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -2729,6 +2729,6 @@ Service Scolarité
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="9uD-eg-KRa"/>
+        <segue reference="5GY-rK-Yn6"/>
     </inferredMetricsTieBreakers>
 </document>
