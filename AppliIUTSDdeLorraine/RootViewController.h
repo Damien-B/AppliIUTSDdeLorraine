@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+#import "DetailViewController.h"
+
 @interface RootViewController : UITableViewController<UITableViewDataSource> {
-    NSMutableArray *tabNews;
+    NSMutableArray *tabNews;   IBOutlet  DetailViewController *detailView;
+
 }
 
+
 @property (nonatomic, retain) NSMutableArray *tabNews;
+@property (nonatomic, retain) IBOutlet  DetailViewController *detailView;
 
 @end
