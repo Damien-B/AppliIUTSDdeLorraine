@@ -27,7 +27,81 @@
 @synthesize abo3;
 @synthesize prefsend;
 
-//Envoi de la requete après clic sur le bouton pour log de l'utilisateur
+@synthesize mapview;
+
+- (IBAction)getlocation{
+    
+    mapview.showsUserLocation = YES;
+   
+    
+    
+    
+}
+
+- (void)location{
+    
+    MKCoordinateRegion region;
+    region.center.latitude = 48.2842;
+    region.center.longitude = 6.94917;
+    region.span.latitudeDelta = 0.03;
+    region.span.longitudeDelta = 0.03;
+    
+    
+    [self.mapview setRegion:region animated:YES];
+    
+}
+
+
+- (IBAction)setMap:(id)sender{
+    
+    switch (((UISegmentedControl *) sender).selectedSegmentIndex) {
+        case 0:
+            mapview.mapType = MKMapTypeStandard;
+            break;
+        case 1:
+            mapview.mapType = MKMapTypeSatellite;
+            break;
+        case 2:
+            mapview.mapType = MKMapTypeHybrid;
+            break;
+        default:
+            break;
+    }
+    
+}
+
+- (IBAction)envoiAbo:(UIButton *)sender{
+    if(((abo1.on == NO)  && (abo2.on == NO) && (abo3.on == NO)) || ((abo1.on == YES) && (abo2.on == YES)) || ((abo1.on == YES) && (abo3.on == YES)) || ((abo2.on == YES) && (abo3.on == YES))){
+        
+        
+    }else{
+       // NSString *idiphone = [[UIDevice currentDevice] uniqueIdentifier];
+        NSString *idiphone = @"670977";
+       
+        NSString *abonnements;
+        if(abo1.on){
+            abonnements =@"130";
+            NSLog(@"1");
+        }else if(abo2.on){
+            abonnements =@"abo2";
+            NSLog(@"2");
+        }else if(abo3.on){
+            abonnements =@"abo3";
+            NSLog(@"3");
+        }
+        NSString *urlabo = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/abonnementpref.php?UUId=%@&pref=%@",idiphone, abonnements];
+        NSURLRequest *requestabo = [NSURLRequest requestWithURL:[NSURL URLWithString:urlabo] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
+        NSURLConnection *connectionabo = [[NSURLConnection alloc] initWithRequest:requestabo delegate:self];
+        if(connectionabo){
+            NSLog(@"connected");
+        }else{
+            NSLog(@"not connected");
+        }
+
+    }
+    
+}
+
 - (IBAction) bconnection: (UIButton *) sender{
     
     
@@ -101,18 +175,18 @@
     
     
     
-    //if([response isEqualToString:@"1"]){
+    if([response isEqualToString:@"etu"]){
        // NSLog(log.text);
        // toto.text = response;
-    if([log.text isEqualToString:@"iut"]){
-        if([mdp.text isEqualToString:@"stdie"]){
-            [self performSegueWithIdentifier:@"etudiant" sender:self];
-        }
+   // if([log.text isEqualToString:@"iut"]){
+     //   if([mdp.text isEqualToString:@"stdie"]){
+        [self performSegueWithIdentifier:@"etudiant" sender:self];
+    //}
     }
-    else if([log.text isEqualToString:@"prof"]){
-        if([mdp.text isEqualToString:@"prof"]){
+    else if([response isEqualToString:@"prof"]){
+     //   if([mdp.text isEqualToString:@"prof"]){
             [self performSegueWithIdentifier:@"professeur" sender:self];
-        }
+       // }
     }
     else{
         toto.text=@"Login faux, veuillez recommencer.";
@@ -130,14 +204,15 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    //[super viewDidLoad];
+    [self location];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
+//- (void)didReceiveMemoryWarning
+//{
+  //  [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
+//}
 
 @end
