@@ -154,7 +154,9 @@
      // ...
      // Pass the selected object to the new view controller.
 //     [self.navigationController pushViewController:detailView animated:YES];
-   // [[self.navigationController presentingViewController] presentModalViewController:detailView animated:YES];
+//    [self.navigationController presentingViewController:  popToRootViewControllerAnimated:YES];// detailView animated:YES completion:NULL];
+  //  [self.parentViewController  pushViewController:detailView animated:YES];
+     [self performSegueWithIdentifier:@"detailNews" sender:self];
     NSLog(@"toto");
     // [DetailViewController release];
     
