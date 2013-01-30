@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController{
-     UILabel *txtlabel;
+    UILabel *txtlabel;
     
 }
 @property (retain, nonatomic) IBOutlet UIButton *dismiss;
