@@ -10,7 +10,7 @@
 #import "News.h"
 #import <UIKit/UIKit.h>
 #import "UIKit/UIKit.h"
-//#import "DetailViewController.h"
+#import "DetailViewController.h"
 
 @interface RootViewController ()
 
@@ -18,7 +18,7 @@
 
 @implementation RootViewController
 @synthesize tabNews;
-//@synthesize detailView;
+@synthesize detailView;
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -47,7 +47,7 @@
         [tabNews addObject:ws];
     }
     
-    //detailView = [[DetailViewController alloc] init];
+    detailView = [[DetailViewController alloc] init];
    // NSArray *arrayFromFile = [dictFromFile objectForKey:@"Root"];
    // NSLog(@"toto");
     //NSMutableArray *dictionaryToAdd = [[NSMutableArray alloc]init];

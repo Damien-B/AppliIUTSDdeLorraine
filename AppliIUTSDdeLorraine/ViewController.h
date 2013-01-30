@@ -49,5 +49,5 @@
 - (IBAction)getlocation;
 - (IBAction) envoiAbo: (UIButton *) sender;
 - (IBAction) bconnection: (UIButton *) sender;
-
+- (IBAction) prefsend: (UIButton *) sender;
 @end

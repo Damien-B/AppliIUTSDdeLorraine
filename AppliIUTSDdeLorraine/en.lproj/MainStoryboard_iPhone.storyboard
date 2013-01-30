@@ -1298,44 +1298,44 @@ Service Scolarité
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="k9D-il-JZn">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="546"/>
                             </imageView>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="fzA-QH-ArL">
-                                <rect key="frame" x="186" y="151" width="79" height="27"/>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="ryv-Pt-s0C">
+                                <rect key="frame" x="187" y="136" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Lc7-gh-8Qk">
-                                <rect key="frame" x="186" y="199" width="79" height="27"/>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="5YB-eW-rS0">
+                                <rect key="frame" x="187" y="168" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="odj-hb-9wL">
-                                <rect key="frame" x="186" y="249" width="79" height="27"/>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="NdB-4w-RgP">
+                                <rect key="frame" x="187" y="203" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Abonnement1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rJ8-ik-nJP">
-                                <rect key="frame" x="52" y="151" width="106" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="abo1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gvx-W5-Okk">
+                                <rect key="frame" x="57" y="139" width="38" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Abonnement1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q7e-JP-f8I">
-                                <rect key="frame" x="52" y="199" width="106" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="abo2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cWp-yn-lRP">
+                                <rect key="frame" x="57" y="168" width="38" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Abonnement1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ugZ-Ho-vMK">
-                                <rect key="frame" x="52" y="249" width="106" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="abo3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ruc-hg-S3d">
+                                <rect key="frame" x="57" y="203" width="38" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qZG-KA-XT3">
-                                <rect key="frame" x="120" y="330" width="82" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="prefsend" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R9g-SX-6za">
+                                <rect key="frame" x="45" y="250" width="231" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="envoyer">
+                                <state key="normal" title="Enregistrer les modifications">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1343,18 +1343,33 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="envoiAbo:" destination="onw-Kx-1jR" eventType="touchUpInside" id="LRX-sS-FeJ"/>
+                                    <action selector="prefsend:" destination="onw-Kx-1jR" eventType="touchUpInside" id="jf2-2y-cMY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dd3-eW-bgs">
+                                <rect key="frame" x="45" y="301" width="231" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sélectionnez un abonnement" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hfX-Fl-u4O">
+                                <rect key="frame" x="50" y="91" width="221" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Autre 2" id="wCi-0j-jnJ"/>
                     <connections>
-                        <outlet property="abo1" destination="fzA-QH-ArL" id="qjT-WS-zKq"/>
-                        <outlet property="abo2" destination="Lc7-gh-8Qk" id="4vv-gb-S8n"/>
-                        <outlet property="abo3" destination="odj-hb-9wL" id="RUS-Zj-AyY"/>
-                        <outlet property="envoiAbo" destination="qZG-KA-XT3" id="Txf-RI-cKz"/>
+                        <outlet property="abo1" destination="ryv-Pt-s0C" id="aQR-wn-SqU"/>
+                        <outlet property="abo2" destination="5YB-eW-rS0" id="OAJ-Vk-NNT"/>
+                        <outlet property="abo3" destination="NdB-4w-RgP" id="ti8-1N-ljY"/>
+                        <outlet property="prefsend" destination="R9g-SX-6za" id="9Gx-vd-Gdq"/>
+                        <outlet property="toto2" destination="Dd3-eW-bgs" id="haH-g2-QT4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLI-aK-Hqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2709,8 +2724,7 @@ Service Scolarité
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="320" height="480"/>
-        <image name="appli.png" width="320" height="480"/>
+        <image name="Default.png" width="57" height="57"/>
         <image name="bg.png" width="320" height="480"/>
         <image name="bg_black.png" width="320" height="418"/>
         <image name="edt.png" width="170" height="136"/>
@@ -2730,6 +2744,13 @@ Service Scolarité
         <image name="visite.png" width="170" height="140"/>
     </resources>
     <classes>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissAction:"/>
+                <relationship kind="outlet" name="dismiss" candidateClass="UIButton"/>
+            </relationships>
+        </class>
         <class className="RootViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
         </class>
@@ -2740,9 +2761,7 @@ Service Scolarité
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="bconnection:" candidateClass="UIButton"/>
-                <relationship kind="action" name="envoiAbo:" candidateClass="UIButton"/>
-                <relationship kind="action" name="getlocation"/>
-                <relationship kind="action" name="setMap:"/>
+                <relationship kind="action" name="prefsend:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="abo1" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="abo2" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="abo3" candidateClass="UISwitch"/>
@@ -2769,6 +2788,7 @@ Service Scolarité
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="wet-qd-AB5"/>
+        <segue reference="wIV-iz-CPM"/>
+        <segue reference="nEN-0P-duK"/>
     </inferredMetricsTieBreakers>
 </document>

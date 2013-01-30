@@ -25,6 +25,7 @@
 @synthesize abo1;
 @synthesize abo2;
 @synthesize abo3;
+@synthesize prefsend;
 
 @synthesize mapview;
 
@@ -101,7 +102,6 @@
     
 }
 
-//Envoi de la requete après clic sur le bouton pour log de l'utilisateur
 - (IBAction) bconnection: (UIButton *) sender{
     
     
