@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -215,7 +215,7 @@ PRÉSENTATION DE L'IUT</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment content="  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
@@ -237,7 +237,10 @@ PRÉSENTATION DE L'IUT</string>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content"> » de politique d’aménagement du territoire.    
+                                        <string key="content"> » de politique d’aménagement du territoire. 
+
+
+
 </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
@@ -253,16 +256,6 @@ PRÉSENTATION DE L'IUT</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">
-
-  
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
                                     <fragment content="UNE PÉDAGOGIE DE LA RÉUSSITE">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -270,14 +263,15 @@ PRÉSENTATION DE L'IUT</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content"> A travers un grand nombre de TP et TD, les IUT privilégient surtout l'enseignement par petits groupes. Cette pédagogie favorise la réussite car elle permet un suivi très personnalisé.</string>
+                                        <string key="content">
+A travers un grand nombre de TP et TD, les IUT privilégient surtout l'enseignement par petits groupes. Cette pédagogie favorise la réussite car elle permet un suivi très personnalisé.</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -293,7 +287,7 @@ CgoKA
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="LES FORMATIONS  ">
+                                    <fragment content="LES FORMATIONS  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
@@ -312,7 +306,8 @@ CgoKA
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">      - SRC
+                                        <string key="content">
+     - SRC
 	- INFO
 	- GEII
 
@@ -349,7 +344,8 @@ DQ
 	- I2M 
 	- ISN 
 	- TeCAMTV 
-	- CDG 
+	- CDG
+
 
 </string>
                                         <attributes>
@@ -387,7 +383,7 @@ Tél : 03 29 53 60 00
                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="iutsd-contact@univ-lorraine.fr ">
+                                    <fragment content="iutsd-contact@univ-lorraine.fr ">
                                         <attributes>
                                             <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
@@ -491,7 +487,8 @@ Cgo
                                     </fragment>
                                     <fragment>
                                         <string key="content">
- Foyer des Jeunes Travailleurs:
+
+Foyer des Jeunes Travailleurs:
 	</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
@@ -549,7 +546,7 @@ PRÉSENTATION DU DUT SRC</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment content="  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -685,15 +682,6 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">  
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
                                     <fragment content="DÉBOUCHÉS">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -701,7 +689,7 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -709,7 +697,8 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content"> • Métiers: Développeur de projets multimédia, webdesigner, webdéveloppeur, administrateur réseaux, réalisateur de systèmes d’informations
+                                        <string key="content">
+• Métiers: Développeur de projets multimédia, webdesigner, webdéveloppeur, administrateur réseaux, réalisateur de systèmes d’informations
 
  • Les secteurs: Agence de communication, studios graphiques et multimédia, services de communication d’entreprises et d’administrations ...
 </string>
@@ -729,7 +718,7 @@ CgoKA
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="POURSUITE D'ÉTUDES  ">
+                                    <fragment content="POURSUITE D'ÉTUDES  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
@@ -740,7 +729,8 @@ CgoKA
                                         <string key="content">Licence professionelle ou générale
    Master d’étude 
    École d’ingénieurs 
-   Formation double compétence... 
+   Formation double compétence...
+
 
 </string>
                                         <attributes>
@@ -772,7 +762,8 @@ Cg
                                     <fragment>
                                         <string key="content">1800 heures d’enseignement encadré, 300 heures de projet, sur 4 semestres
 
- • </string>
+
+• </string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -858,7 +849,7 @@ IA0
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
@@ -941,7 +932,9 @@ Cgo
                                     </fragment>
                                     <fragment>
                                         <string key="content">
- Service Scolarité </string>
+
+Service Scolarité
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -1483,7 +1476,7 @@ PRÉSENTATION DU DUT INFO</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment content="  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -1572,15 +1565,6 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">  
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
                                     <fragment content="DÉBOUCHÉS">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -1588,14 +1572,14 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" • ">
+                                    <fragment content=" • ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -1628,7 +1612,7 @@ CgoKA
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="POURSUITE D'ÉTUDES  ">
+                                    <fragment content="POURSUITE D'ÉTUDES  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
@@ -1639,7 +1623,8 @@ CgoKA
                                         <string key="content">Licence professionelle ou générale
    Master d’étude 
    École d’ingénieurs 
-   Formation double compétence... 
+   Formation double compétence...
+
 
 </string>
                                         <attributes>
@@ -1707,7 +1692,7 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
@@ -1790,7 +1775,9 @@ Cgo
                                     </fragment>
                                     <fragment>
                                         <string key="content">
- Service Scolarité </string>
+
+Service Scolarité
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -1867,7 +1854,7 @@ PRÉSENTATION DU DUT GEII</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment content="  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -1953,15 +1940,6 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment>
-                                        <string key="content">  
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
                                     <fragment content="DÉBOUCHÉS">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
@@ -1969,14 +1947,14 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -2077,7 +2055,7 @@ CgoKA
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="POURSUITE D'ÉTUDES  ">
+                                    <fragment content="POURSUITE D'ÉTUDES  ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
@@ -2088,7 +2066,8 @@ CgoKA
                                         <string key="content">Licence professionelle ou générale
    Master d’étude 
    École d’ingénieurs 
-   Formation double compétence... 
+   Formation double compétence...
+
 
 </string>
                                         <attributes>
@@ -2387,7 +2366,7 @@ CQ
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" ">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
@@ -2500,7 +2479,9 @@ Cgo
                                     </fragment>
                                     <fragment>
                                         <string key="content">
- Service Scolarité </string>
+
+Service Scolarité
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -2641,11 +2622,18 @@ Cgo
         <image name="visite.png" width="170" height="140"/>
     </resources>
     <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissAction:"/>
+                <relationship kind="outlet" name="dismiss" candidateClass="UIButton"/>
+            </relationships>
         </class>
         <class className="RootViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailView" candidateClass="DetailViewController"/>
+            </relationships>
         </class>
         <class className="StartController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StartController.h"/>
@@ -2654,10 +2642,16 @@ Cgo
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="bconnection:" candidateClass="UIButton"/>
+                <relationship kind="action" name="prefsend:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="abo1" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="abo2" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="abo3" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="bconnection" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="log" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="mdp" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="prefsend" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="toto" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="toto2" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="WebViewController" superclassName="UIViewController">
