@@ -8,12 +8,18 @@
 
 #import "RootViewController.h"
 #import "News.h"
+#import <UIKit/UIKit.h>
+#import "UIKit/UIKit.h"
+#import "DetailViewController.h"
+
 @interface RootViewController ()
 
 @end
 
 @implementation RootViewController
 @synthesize tabNews;
+@synthesize detailView;
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,30 +33,39 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
- 
+    self.tabNews = [[NSMutableArray alloc] init];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"dictionary" ofType:@"plist"];
-    NSDictionary *dictFromFile = [[NSDictionary alloc]initWithContentsOfFile:path];
-    NSArray *arrayFromFile = [dictFromFile objectForKey:@"Root"];
-    NSLog(@"toto");
-    NSMutableArray *dictionaryToAdd = [[NSMutableArray alloc]init];
-    NSEnumerator *enumerator = [arrayFromFile objectEnumerator];
-    NSDictionary *anObject;
-    int k=0;
-    while((anObject=[enumerator nextObject])){
-        NSLog(@"passage:%i", k);
-        k++;
-        News *ws = [[News alloc]initWithDictionaryFromPlist:anObject];
-        [dictionaryToAdd addObject:ws];
-        [ws release];
+    //NSDictionary *dictFromFile = [[NSDictionary alloc]initWithContentsOfFile:path];
+    NSArray *contenuTableauPlist = [[NSArray alloc] initWithContentsOfFile:path];
+    for (NSDictionary *dict in contenuTableauPlist){
+        //NSString *titre = [dict objectForKey:@"titre"];
+        News *ws = [[News alloc]initWithDictionaryFromPlist:dict];
+        //self.tabNews = [NSMutableArray arrayWithArray:dictionaryToAdd];
+        [tabNews addObject:ws];
     }
     
-    self.tabNews = [NSArray arrayWithArray:dictionaryToAdd];
-    
-    [dictionaryToAdd release];
-    [arrayFromFile release];
+    detailView = [[DetailViewController alloc] init];
+   // NSArray *arrayFromFile = [dictFromFile objectForKey:@"Root"];
+   // NSLog(@"toto");
+    //NSMutableArray *dictionaryToAdd = [[NSMutableArray alloc]init];
+    //NSEnumerator *enumerator = [arrayFromFile objectEnumerator];
+    //NSDictionary *anObject;
+    //int k=1;
+//    while((anObject=[enumerator nextObject])){
+//        NSLog(@"passage:%i", k);
+//        k++;
+//        News *ws = [[News alloc]initWithDictionaryFromPlist:anObject];
+//        [dictionaryToAdd addObject:ws];
+//        [ws release];
+//    }
+//    
+
+//    
+    //[dictionaryToAdd release];
+    //[arrayFromFile release];
     
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -71,7 +86,7 @@
 {
     // Return the number of rows in the section.
     NSLog(@"titi");
-    return 4;//[self.tabNews count];
+    return [self.tabNews count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -83,65 +98,68 @@
     if(cell==nil){
         cell = [[[UITableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
-  //  News *ws = [self.tabNews objectAtIndex:indexPath.row];
-  ///  cell.textLabel.text=ws.newsTitre;
-  //  cell.detailTextLabel.text=ws.newsDescription;
+    News *ws = [self.tabNews objectAtIndex:[indexPath row]];
+    cell.textLabel.text=ws.newsTitre;
+    cell.detailTextLabel.text=ws.newsDescription;
     
-     cell.textLabel.text=@"iiii";
     return cell;
 }
 
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+ // Override to support conditional editing of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the specified item to be editable.
+ return YES;
+ }
+ */
 
 /*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+ // Override to support editing the table view.
+ - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ if (editingStyle == UITableViewCellEditingStyleDelete) {
+ // Delete the row from the data source
+ [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+ }
+ else if (editingStyle == UITableViewCellEditingStyleInsert) {
+ // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+ }
+ }
+ */
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+ {
+ }
+ */
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+    
+    //UIViewController *txtlabel = [[UIViewController alloc] initWithNibName:@"okok" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+//     [self.navigationController pushViewController:detailView animated:YES];
+//    [self.navigationController presentingViewController:  popToRootViewControllerAnimated:YES];// detailView animated:YES completion:NULL];
+  //  [self.parentViewController  pushViewController:detailView animated:YES];
+     [self performSegueWithIdentifier:@"detailNews" sender:self];
+    NSLog(@"toto");
+    // [DetailViewController release];
+    
 }
 
 @end

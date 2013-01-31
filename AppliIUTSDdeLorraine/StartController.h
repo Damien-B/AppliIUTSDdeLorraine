@@ -10,5 +10,6 @@
 
 @interface StartController : UIViewController{
     UIImageView *intro2;
+    
 }
 @end

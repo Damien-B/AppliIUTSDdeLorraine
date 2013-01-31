@@ -18,7 +18,7 @@
 {
     
     [super viewDidLoad];
-    intro2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"intro2.png"]];
+    intro2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sponsor.png"]];
     
     
 }
@@ -37,14 +37,14 @@
 
 -(void) viewDidAppear:(BOOL)animated
 {
-    [NSThread sleepForTimeInterval: 1];
+    [NSThread sleepForTimeInterval: 5];
     
     [UIView transitionFromView: self.view
                         toView: intro2
-                      duration: 0.1f
+                      duration: 5.0f
                        options: UIViewAnimationTransitionCurlDown
                     completion: ^(BOOL done){
-                        [NSThread sleepForTimeInterval: 1];
+                        [NSThread sleepForTimeInterval: 5.0];
                         if(done){
                             self.view = intro2;
                             [self performSegueWithIdentifier:@"transition" sender:self];
@@ -53,5 +53,7 @@
                     }];
     
 }
+
+
 
 @end

@@ -19,3 +19,5 @@
 - (id) initWithDictionaryFromPlist: (NSDictionary *) dictionary;
 
 @end
+
+
