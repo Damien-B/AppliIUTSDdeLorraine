@@ -2757,7 +2757,7 @@ Service Scolarité
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="320" height="480"/>
+        <image name="Default.png" width="57" height="57"/>
         <image name="bg.png" width="320" height="480"/>
         <image name="bg_black.png" width="320" height="418"/>
         <image name="edt.png" width="170" height="136"/>
@@ -2827,5 +2827,6 @@ Service Scolarité
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="4Vg-CQ-8XJ"/>
+        <segue reference="nEN-0P-duK"/>
     </inferredMetricsTieBreakers>
 </document>
