@@ -38,13 +38,14 @@
                                 <rect key="frame" x="0.0" y="44" width="320" height="504"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="ZkM-3U-Oji">
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="myW-CX-q7M">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Facebook" id="z29-Dc-azH">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="XGf-yV-839">
+                                    <navigationItem title="FACEBOOK" id="ZMU-CC-ovI">
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="UL7-DX-nyH">
                                             <connections>
-                                                <segue destination="I8q-Z6-YqR" kind="modal" id="jgf-8n-kKJ"/>
+                                                <segue destination="I8q-Z6-YqR" kind="modal" id="62i-gl-Wxo"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -56,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isf-r3-9Ai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="970"/>
+            <point key="canvasLocation" x="18" y="970"/>
         </scene>
         <!--View Controller - Item-->
         <scene sceneID="OfJ-UQ-h4U">
@@ -74,7 +75,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rfd-iu-mr1">
-                                <rect key="frame" x="20" y="133" width="85" height="71"/>
+                                <rect key="frame" x="20" y="184" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="id.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,7 +89,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eRG-sP-4Kz">
-                                <rect key="frame" x="118" y="133" width="85" height="71"/>
+                                <rect key="frame" x="118" y="184" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="iut.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -98,11 +99,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mRO-lJ-ws9" kind="modal" id="8VI-hz-8Vf"/>
+                                    <segue destination="mRO-lJ-ws9" kind="modal" id="gTz-LA-yZE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JIy-RK-grK">
-                                <rect key="frame" x="215" y="133" width="85" height="71"/>
+                                <rect key="frame" x="215" y="184" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="visite.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -111,9 +112,12 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ow5-XK-Qej" kind="modal" id="mLa-xw-MsT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XaE-t6-hGY">
-                                <rect key="frame" x="215" y="335" width="85" height="71"/>
+                                <rect key="frame" x="215" y="307" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="info.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -123,11 +127,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mHc-ES-qO1" kind="modal" id="1Aw-7W-baL"/>
+                                    <segue destination="mHc-ES-qO1" kind="modal" id="hHB-vw-8CP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4hT-uO-f0U">
-                                <rect key="frame" x="118" y="335" width="85" height="71"/>
+                                <rect key="frame" x="118" y="307" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="src.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -137,11 +141,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ino-Qt-29g" kind="modal" id="8z0-xv-TMX"/>
+                                    <segue destination="Ino-Qt-29g" kind="modal" id="MMy-RR-B9i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XU9-yK-HAD">
-                                <rect key="frame" x="20" y="335" width="85" height="71"/>
+                                <rect key="frame" x="20" y="307" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="geii.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -151,7 +155,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fb0-48-LhG" kind="modal" id="7DE-YJ-zDO"/>
+                                    <segue destination="fb0-48-LhG" kind="modal" id="q3f-7g-mML"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zdw-t0-j23">
@@ -175,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUb-eD-omb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-549" y="187"/>
+            <point key="canvasLocation" x="-317" y="59"/>
         </scene>
         <!--View Controller - Title-->
         <scene sceneID="U2P-fh-BJX">
@@ -188,21 +192,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="fqj-19-kCM">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="Vej-KP-33E">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="IUT de Saint-Die" id="KML-ut-Mzh">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" style="plain" id="X4W-wp-Mha">
-                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <segue destination="I8q-Z6-YqR" kind="modal" id="HeH-er-FhA"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="Smj-Ag-9oG">
-                                <rect key="frame" x="20" y="142" width="280" height="288"/>
+                                <rect key="frame" x="20" y="144" width="280" height="384"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -215,7 +206,10 @@ PRÉSENTATION DE L'IUT</string>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+ICAKCgogICA
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
@@ -249,7 +243,9 @@ PRÉSENTATION DE L'IUT</string>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Il est rattaché à l'université de Lorraine qui réunit en un seul  établissement l'Institut national polytechnique de Lorraine, l'Université Henri Poincaré-Nancy 1, l'Université Nancy 2 et l'Université Paul Verlaine-Metz..</string>
+                                        <string key="content">Il est rattaché à l'université de Lorraine qui réunit en un seul  établissement l'Institut national polytechnique de Lorraine, l'Université Henri Poincaré-Nancy 1, l'Université Nancy 2 et l'Université Paul Verlaine-Metz..
+
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -260,18 +256,27 @@ PRÉSENTATION DE L'IUT</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">
-A travers un grand nombre de TP et TD, les IUT privilégient surtout l'enseignement par petits groupes. Cette pédagogie favorise la réussite car elle permet un suivi très personnalisé.</string>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
+                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">A travers un grand nombre de TP et TD, les IUT privilégient surtout l'enseignement par petits groupes. Cette pédagogie favorise la réussite car elle permet un suivi très personnalisé.</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Light"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
@@ -511,6 +516,19 @@ Foyer des Jeunes Travailleurs:
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iut_photo.png" id="hBf-8h-Yf6">
                                 <rect key="frame" x="0.0" y="44" width="320" height="150"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="UcV-uC-ucV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="IUT de SAINT-DIE" id="inq-oh-b8n">
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="oFm-5V-86m">
+                                            <connections>
+                                                <segue destination="I8q-Z6-YqR" kind="modal" id="yEo-ph-KUd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -532,21 +550,23 @@ Foyer des Jeunes Travailleurs:
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="5eQ-Af-kN8">
-                                <rect key="frame" x="20" y="143" width="280" height="288"/>
+                                <rect key="frame" x="20" y="143" width="280" height="385"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">
 
 
-PRÉSENTATION DU DUT SRC</string>
+PRÉSENTATION DU DUT SRC
+
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment content="   ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -964,14 +984,14 @@ Service Scolarité
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="src_photo.png" id="N9k-8s-iXH">
                                 <rect key="frame" x="0.0" y="44" width="320" height="150"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="GFT-GB-XpD">
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="Vdj-wz-0yT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="DUT SRC" id="5cT-0j-6kT">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="f3J-Ai-KIX">
-                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <navigationItem title="DUT SRC" id="k4z-35-Q7Q">
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="yBA-uN-UmT">
                                             <connections>
-                                                <segue destination="I8q-Z6-YqR" kind="modal" id="egf-UJ-uKh"/>
+                                                <segue destination="I8q-Z6-YqR" kind="modal" id="aqW-TE-TQW"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -983,7 +1003,7 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCX-bg-ir3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="970"/>
+            <point key="canvasLocation" x="968" y="970"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="BDF-f5-GDY">
@@ -1090,9 +1110,6 @@ Service Scolarité
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="I8q-Z6-YqR" kind="modal" id="15t-h5-EB3"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l33-R0-sd3">
                                 <rect key="frame" x="198" y="193" width="49" height="44"/>
@@ -1115,7 +1132,7 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9n-Mf-6Qc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1367" y="-2949"/>
+            <point key="canvasLocation" x="2871" y="-2757"/>
         </scene>
         <!--Root View Controller - Item-->
         <scene sceneID="wTS-My-bwu">
@@ -1146,7 +1163,153 @@ Service Scolarité
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49E-fn-2E4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="-1309"/>
+            <point key="canvasLocation" x="2402" y="-1713"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ccE-VN-SeH">
+            <objects>
+                <viewController id="ow5-XK-Qej" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kYh-8R-Aia">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="bKb-Dj-NMd">
+                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="L6W-x1-YKC">
+                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Où suis-je ?" id="bQ0-ij-UCW">
+                                        <connections>
+                                            <action selector="getlocation" destination="ow5-XK-Qej" id="gEK-Df-4ds"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="u7R-09-utv"/>
+                                    <barButtonItem style="plain" id="t8B-e2-0OL">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="CSs-NE-4IR">
+                                            <rect key="frame" x="129" y="8" width="185" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Plan"/>
+                                                <segment title="Satellite"/>
+                                                <segment title="Hybrid"/>
+                                            </segments>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="setMap:" destination="ow5-XK-Qej" eventType="valueChanged" id="EhG-xV-aAx"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="xb5-qW-GWe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="VISITE GUIDEE" id="LQH-iD-7UH">
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="SeH-Wf-MCZ">
+                                            <connections>
+                                                <segue destination="I8q-Z6-YqR" kind="modal" id="6fx-T5-bNC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapview" destination="bKb-Dj-NMd" id="24C-KZ-bQK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eEf-fm-Qc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-409" y="970"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2OV-vW-v4b">
+            <objects>
+                <viewController id="UUx-vp-5Al" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ioT-Qv-Uq5">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ngv-Us-TRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="-1498"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="N9S-4U-Dq0">
+            <objects>
+                <viewController id="eIZ-E1-YTe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ji-Ua-SfG">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="tU3-No-8uI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="top.png" id="DLx-V8-aXQ">
+                                <rect key="frame" x="0.0" y="42" width="320" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AJS-bA-jEp">
+                                <rect key="frame" x="20" y="238" width="85" height="71"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="edt.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fue-Kj-Zze">
+                                <rect key="frame" x="118" y="238" width="85" height="71"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="nouveautes.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SyF-th-mwx" kind="modal" id="wv7-bM-ven"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="arY-yt-6mN">
+                                <rect key="frame" x="215" y="238" width="85" height="71"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="prefs.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="nO0-Bd-ZwO">
+                                <rect key="frame" x="0.0" y="-2" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="ETUDIANT" id="3AO-eQ-50L">
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="glL-Js-zFX"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jid-74-eCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-308" y="-1490"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lgU-3X-i1P">
@@ -1159,18 +1322,6 @@ Service Scolarité
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_black.png" id="92w-gu-Hyr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="tR9-v0-0oI">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Identification" id="W8r-RP-3he">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="bfS-x0-k3v">
-                                            <connections>
-                                                <segue destination="I8q-Z6-YqR" kind="modal" id="wIV-iz-CPM"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="log" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Identifiant" minimumFontSize="17" background="Default.png" id="frF-n8-RvU">
                                 <rect key="frame" x="20" y="76" width="280" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1180,7 +1331,7 @@ Service Scolarité
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="mdp" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" minimumFontSize="17" id="7nx-8w-oav">
-                                <rect key="frame" x="20" y="126" width="280" height="30"/>
+                                <rect key="frame" x="20" y="124" width="280" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1189,45 +1340,53 @@ Service Scolarité
                                     <segue destination="4oV-R8-Zqe" kind="modal" identifier="etudiant" id="nEN-0P-duK"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="bconnection" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="UYS-wf-XkT">
-                                <rect key="frame" x="20" y="183" width="275" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="tintColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Connexion">
-                                            <attributes>
-                                                <color key="NSColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
-                                                <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="bconnection:" destination="Yx9-G0-eta" eventType="touchUpInside" id="9Tv-c7-Itp"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i9z-7K-76Q">
                                 <rect key="frame" x="20" y="47" width="275" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="bconnection" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j9x-oc-FhP">
+                                <rect key="frame" x="20" y="176" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Connexion">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eIZ-E1-YTe" kind="modal" identifier="etudiant" id="GYE-0Z-Chd"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="Cy4-f4-Oni">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="IDENTIFICATION" id="knO-WG-YJa">
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="aVK-fu-7SR">
+                                            <connections>
+                                                <segue destination="I8q-Z6-YqR" kind="modal" id="4Vg-CQ-8XJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="bconnection" destination="UYS-wf-XkT" id="c0X-7W-hb1"/>
+                        <outlet property="bconnection" destination="j9x-oc-FhP" id="o22-YO-OVw"/>
                         <outlet property="log" destination="frF-n8-RvU" id="OqU-kS-FTE"/>
                         <outlet property="mdp" destination="7nx-8w-oav" id="lfA-Dz-qIY"/>
                         <outlet property="toto" destination="i9z-7K-76Q" id="6Zl-X3-Ac3"/>
-                        <segue destination="vfe-DG-Gmm" kind="modal" identifier="professeur" id="TAz-My-m05"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zl9-mm-QB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="-2010"/>
+            <point key="canvasLocation" x="-317" y="-684"/>
         </scene>
         <!--View Controller - Item 2-->
         <scene sceneID="HbV-Ep-uXR">
@@ -1250,7 +1409,7 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUe-N9-zaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="98"/>
+            <point key="canvasLocation" x="2402" y="-306"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GA6-j4-wzX">
@@ -1264,11 +1423,7 @@ Service Scolarité
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Absence" id="Obe-Fc-NgY">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="j8W-qA-NPO">
-                                            <connections>
-                                                <segue destination="I8q-Z6-YqR" kind="modal" id="HZo-cK-LNR"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="j8W-qA-NPO"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1279,24 +1434,24 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zf-kn-jyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="-609"/>
+            <point key="canvasLocation" x="2402" y="-1013"/>
         </scene>
         <!--View Controller - Autre 2-->
         <scene sceneID="qdJ-Io-bTr">
             <objects>
                 <viewController id="onw-Kx-1jR" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bLh-za-xAA">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="vXf-rR-bac">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Autre 2" id="dcE-FW-Epd"/>
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="k9D-il-JZn">
-                                <rect key="frame" x="0.0" y="44" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="ryv-Pt-s0C">
                                 <rect key="frame" x="187" y="136" width="79" height="27"/>
@@ -1374,7 +1529,7 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLI-aK-Hqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="-2219"/>
+            <point key="canvasLocation" x="-308" y="-2282"/>
         </scene>
         <!--View Controller - Autre 1-->
         <scene sceneID="Pjf-L4-5nb">
@@ -1407,7 +1562,7 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdT-Yg-WpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="-2949"/>
+            <point key="canvasLocation" x="2427" y="-2757"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZOT-gC-fcl">
@@ -1421,14 +1576,12 @@ Service Scolarité
                     </tabBar>
                     <connections>
                         <segue destination="jyF-2p-mmd" kind="relationship" relationship="viewControllers" id="plj-hl-kv0"/>
-                        <segue destination="onw-Kx-1jR" kind="relationship" relationship="viewControllers" id="Mih-Pk-Mhh"/>
-                        <segue destination="SyF-th-mwx" kind="relationship" relationship="viewControllers" id="NPb-RD-bhd"/>
                         <segue destination="kjX-Il-Biw" kind="relationship" relationship="viewControllers" id="8Xe-je-oKW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhr-OF-wUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378" y="-2949"/>
+            <point key="canvasLocation" x="1882" y="-2757"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="AmT-Dt-vOK">
@@ -1448,7 +1601,7 @@ Service Scolarité
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lkl-Ny-jxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="-609"/>
+            <point key="canvasLocation" x="1934" y="-1013"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VaU-kH-xE8">
@@ -1462,21 +1615,20 @@ Service Scolarité
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="OZ0-NA-S8A">
-                                <rect key="frame" x="20" y="143" width="280" height="288"/>
+                                <rect key="frame" x="20" y="175" width="280" height="353"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">
-
-
-PRÉSENTATION DU DUT INFO</string>
+                                    <fragment content="PRÉSENTATION DU DUT INFO">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+ICAKCiAgIA
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -1807,14 +1959,14 @@ Service Scolarité
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="info_photo.png" id="OGu-yY-fbc">
                                 <rect key="frame" x="0.0" y="44" width="320" height="150"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="MUM-bo-8cH">
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="Yvm-xh-gOk">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="DUT INFO" id="uJq-6Y-1Bp">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="zbj-uc-4dw">
-                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <navigationItem title="DUT INFO" id="V7R-xT-Z4Y">
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="KFy-ix-rmn">
                                             <connections>
-                                                <segue destination="I8q-Z6-YqR" kind="modal" id="we3-cv-dbC"/>
+                                                <segue destination="I8q-Z6-YqR" kind="modal" id="hUy-Ol-0Vo"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1840,21 +1992,23 @@ Service Scolarité
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="YcY-xb-eAL">
-                                <rect key="frame" x="20" y="143" width="280" height="288"/>
+                                <rect key="frame" x="20" y="143" width="280" height="385"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">
 
 
-PRÉSENTATION DU DUT GEII</string>
+PRÉSENTATION DU DUT GEII
+
+</string>
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica-Bold"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="  ">
+                                    <fragment content="   ">
                                         <attributes>
                                             <font key="NSFont" size="12" name="Helvetica"/>
                                             <font key="NSOriginalFont" size="12" name="Helvetica"/>
@@ -2511,14 +2665,14 @@ Service Scolarité
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="geii_photo.png" id="WJf-Pk-iZn">
                                 <rect key="frame" x="0.0" y="44" width="320" height="150"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="hp7-pi-ONo">
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="BzF-k5-lYy">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="DUT GEII" id="zEA-JH-gL9">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="VEq-Wh-8AD">
-                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <navigationItem title="DUT GEII" id="lkM-qB-HZb">
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="Dfs-oe-Ewd">
                                             <connections>
-                                                <segue destination="I8q-Z6-YqR" kind="modal" id="gvJ-Yf-WMJ"/>
+                                                <segue destination="I8q-Z6-YqR" kind="modal" id="zwp-qq-nB7"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -2537,9 +2691,10 @@ Service Scolarité
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="SyF-th-mwx" customClass="RootViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RCG-Zy-3NW">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="wyv-78-S4q">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
@@ -2560,12 +2715,10 @@ Service Scolarité
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="News" id="ihl-q5-xXe"/>
-                    <navigationItem key="navigationItem" title="News" id="AeU-CU-I6L"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJF-A8-mKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="-3643"/>
+            <point key="canvasLocation" x="89" y="-1398"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="qUe-KP-Zlu">
@@ -2600,13 +2753,14 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQs-SF-Y3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1648" y="-3634"/>
+            <point key="canvasLocation" x="666" y="-2282"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="320" height="480"/>
+        <image name="Default.png" width="57" height="57"/>
         <image name="bg.png" width="320" height="480"/>
         <image name="bg_black.png" width="320" height="418"/>
+        <image name="edt.png" width="170" height="136"/>
         <image name="fb.png" width="135" height="19"/>
         <image name="geii.png" width="170" height="140"/>
         <image name="geii_photo.png" width="640" height="298"/>
@@ -2616,6 +2770,8 @@ Service Scolarité
         <image name="intro.png" width="320" height="461"/>
         <image name="iut.png" width="85" height="70"/>
         <image name="iut_photo.png" width="640" height="298"/>
+        <image name="nouveautes.png" width="170" height="136"/>
+        <image name="prefs.png" width="170" height="136"/>
         <image name="src.png" width="170" height="140"/>
         <image name="src_photo.png" width="640" height="298"/>
         <image name="top.png" width="320" height="125"/>
@@ -2642,12 +2798,15 @@ Service Scolarité
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="bconnection:" candidateClass="UIButton"/>
+                <relationship kind="action" name="getlocation"/>
                 <relationship kind="action" name="prefsend:" candidateClass="UIButton"/>
+                <relationship kind="action" name="setMap:"/>
                 <relationship kind="outlet" name="abo1" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="abo2" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="abo3" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="bconnection" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="log" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="mapview" candidateClass="MKMapView"/>
                 <relationship kind="outlet" name="mdp" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="prefsend" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="toto" candidateClass="UILabel"/>
@@ -2667,7 +2826,7 @@ Service Scolarité
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="wIV-iz-CPM"/>
+        <segue reference="4Vg-CQ-8XJ"/>
         <segue reference="nEN-0P-duK"/>
     </inferredMetricsTieBreakers>
 </document>

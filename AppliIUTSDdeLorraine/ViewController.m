@@ -26,6 +26,49 @@
 @synthesize abo2;
 @synthesize abo3;
 @synthesize prefsend;
+@synthesize mapview;
+
+
+- (IBAction)getlocation{
+    
+    mapview.showsUserLocation = YES;
+    
+    
+    
+    
+}
+
+- (void)location{
+    
+    MKCoordinateRegion region;
+    region.center.latitude = 48.290021;
+    region.center.longitude = 6.942775;
+    region.span.latitudeDelta = 0.01;
+    region.span.longitudeDelta = 0.01;
+    
+    
+    [self.mapview setRegion:region animated:YES];
+    
+}
+
+
+- (IBAction)setMap:(id)sender{
+    
+    switch (((UISegmentedControl *) sender).selectedSegmentIndex) {
+        case 0:
+            mapview.mapType = MKMapTypeStandard;
+            break;
+        case 1:
+            mapview.mapType = MKMapTypeSatellite;
+            break;
+        case 2:
+            mapview.mapType = MKMapTypeHybrid;
+            break;
+        default:
+            break;
+    }
+    
+}
 
 //Envoi de la requete après clic sur le bouton pour log de l'utilisateur
 - (IBAction) bconnection: (UIButton *) sender{
@@ -113,27 +156,27 @@
     
     
     
-    //if([response isEqualToString:@"1"]){
-       // NSLog(log.text);
-       // toto.text = response;
-    if([log.text isEqualToString:@"iut"]){
-        if([mdp.text isEqualToString:@"stdie"]){
-            [self performSegueWithIdentifier:@"etudiant" sender:self];
-        }
+    if([response isEqualToString:@"etu"]){
+        // NSLog(log.text);
+        // toto.text = response;
+        // if([log.text isEqualToString:@"iut"]){
+        //   if([mdp.text isEqualToString:@"stdie"]){
+        [self performSegueWithIdentifier:@"etudiant" sender:self];
+        //}
     }
-    else if([log.text isEqualToString:@"prof"]){
-        if([mdp.text isEqualToString:@"prof"]){
-            [self performSegueWithIdentifier:@"professeur" sender:self];
-        }
+    else if([response isEqualToString:@"prof"]){
+        //   if([mdp.text isEqualToString:@"prof"]){
+        [self performSegueWithIdentifier:@"professeur" sender:self];
+        // }
     }
     else{
         toto.text=@"Login faux, veuillez recommencer.";
     }
     //}
     //else{
-   //     NSLog(@"Loose");
-   //     toto.text = @"Mauvais Login";
-   // }
+    //     NSLog(@"Loose");
+    //     toto.text = @"Mauvais Login";
+    // }
     
     connection = nil;
     
