@@ -78,7 +78,7 @@
 			<key>IsSecure</key>
 			<false/>
 			<key>Key</key>
-			<string>User_Name</string>
+			<string>KeyUserName</string>
 			<key>KeyboardType</key>
 			<string>Alphabet</string>
 			<key>Title</key>
@@ -96,7 +96,7 @@
 			<key>IsSecure</key>
 			<true/>
 			<key>Key</key>
-			<string>User_PASS</string>
+			<string>KeyUserPass</string>
 			<key>KeyboardType</key>
 			<string>Alphabet</string>
 			<key>Title</key>
@@ -108,7 +108,7 @@
 			<key>DefaultValue</key>
 			<true/>
 			<key>Key</key>
-			<string>User_AutoLogin</string>
+			<string>KeyUserAutoLogin</string>
 			<key>Title</key>
 			<string>Enabled auto Login</string>
 			<key>Type</key>

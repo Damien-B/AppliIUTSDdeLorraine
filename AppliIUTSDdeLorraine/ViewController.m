@@ -142,6 +142,19 @@
 
 - (void)viewDidLoad
 {
+    // Loading user pref
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    BOOL isAutoLogin = [ prefs boolForKey:@"KeyUserAutoLogin" ];
+    if(isAutoLogin){
+        [log setText: [prefs stringForKey: @"KeyUserName"]];
+        [mdp setText: [prefs stringForKey: @"KeyUserPass"]];
+        NSLog(@" autolog");
+
+    }else{
+        NSLog(@"non autolog");
+    }
+    // myBadgeMode = [prefs stringForKey: @"keyBadgeInfo"];
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
