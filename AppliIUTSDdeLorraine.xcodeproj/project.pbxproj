@@ -193,7 +193,6 @@
 			children = (
 				CDE472D516BB3C6A0071A51D /* Settings.bundle */,
 				6D98D2CF167F5C47009A5C84 /* Default.png */,
-				22D6B77816BC327500134732 /* MapKit.framework */,
 				6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */,
 				6D547272167B3506003F58A5 /* AppliIUTSDdeLorraineTests */,
 				6D547244167B3506003F58A5 /* Frameworks */,
@@ -213,6 +212,7 @@
 		6D547244167B3506003F58A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22D6B77816BC327500134732 /* MapKit.framework */,
 				6D547245167B3506003F58A5 /* UIKit.framework */,
 				6D547247167B3506003F58A5 /* Foundation.framework */,
 				6D547249167B3506003F58A5 /* CoreGraphics.framework */,
@@ -495,8 +495,8 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bertrand Kerautret (6K5Q4Q8777)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bertrand Kerautret (6K5Q4Q8777)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -511,8 +511,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "82FBDCE5-CF34-478F-AB4D-89F1E32E4BFF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "82FBDCE5-CF34-478F-AB4D-89F1E32E4BFF";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -527,8 +527,8 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bertrand Kerautret (6K5Q4Q8777)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bertrand Kerautret (6K5Q4Q8777)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -536,8 +536,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "82FBDCE5-CF34-478F-AB4D-89F1E32E4BFF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "82FBDCE5-CF34-478F-AB4D-89F1E32E4BFF";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
