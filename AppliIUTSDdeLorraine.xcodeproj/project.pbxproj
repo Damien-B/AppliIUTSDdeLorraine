@@ -56,6 +56,8 @@
 		CD71623016BC66490077FDFD /* edt.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71622F16BC66490077FDFD /* edt.png */; };
 		CD71623216BC665B0077FDFD /* nouveautes.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623116BC665B0077FDFD /* nouveautes.png */; };
 		CD71623416BC66680077FDFD /* prefs.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623316BC66680077FDFD /* prefs.png */; };
+		CD9D730A16BD414300934CBC /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9D730916BD414300934CBC /* Utils.m */; };
+		CD9D730C16BD438500934CBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D730B16BD438500934CBC /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,9 @@
 		CD71622F16BC66490077FDFD /* edt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt.png; sourceTree = "<group>"; };
 		CD71623116BC665B0077FDFD /* nouveautes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nouveautes.png; sourceTree = "<group>"; };
 		CD71623316BC66680077FDFD /* prefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prefs.png; sourceTree = "<group>"; };
+		CD9D730816BD414300934CBC /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		CD9D730916BD414300934CBC /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		CD9D730B16BD438500934CBC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CDE472D516BB3C6A0071A51D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9D730C16BD438500934CBC /* SystemConfiguration.framework in Frameworks */,
 				6D547246167B3506003F58A5 /* UIKit.framework in Frameworks */,
 				6D547248167B3506003F58A5 /* Foundation.framework in Frameworks */,
 				6D54724A167B3506003F58A5 /* CoreGraphics.framework in Frameworks */,
@@ -191,6 +197,7 @@
 		6D547236167B3506003F58A5 = {
 			isa = PBXGroup;
 			children = (
+				CD9D730B16BD438500934CBC /* SystemConfiguration.framework */,
 				CDE472D516BB3C6A0071A51D /* Settings.bundle */,
 				6D98D2CF167F5C47009A5C84 /* Default.png */,
 				6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */,
@@ -224,6 +231,7 @@
 		6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */ = {
 			isa = PBXGroup;
 			children = (
+				CD9D730716BD412300934CBC /* Utils */,
 				6D04C43216A8460B000A228F /* DetailViewController.h */,
 				6D04C43316A8460B000A228F /* DetailViewController.m */,
 				6D54728C167B3CFE003F58A5 /* icone.png */,
@@ -282,6 +290,15 @@
 				6D547275167B3506003F58A5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD9D730716BD412300934CBC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CD9D730816BD414300934CBC /* Utils.h */,
+				CD9D730916BD414300934CBC /* Utils.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,6 +446,7 @@
 				22407D53169E168000AB16CE /* WebView.m in Sources */,
 				22407D56169E16A900AB16CE /* WebViewController.m in Sources */,
 				6D04C43416A8460B000A228F /* DetailViewController.m in Sources */,
+				CD9D730A16BD414300934CBC /* Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Utils.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -24,6 +24,19 @@
                             stringByReplacingOccurrencesOfString:@"<"withString:@""]
                            stringByReplacingOccurrencesOfString:@">" withString:@""]
                           stringByReplacingOccurrencesOfString: @" " withString: @""];
+    
+    if([Utils detectConnectivityFromHostName:@"iutsd.applorraine.fr"]){
+        NSLog(@"connection OK");
+    }else{
+        NSLog(@"connection FAILED");
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Attention ..."
+                                                        message: @"pas de connection internet! "
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+
+    }
     
     NSLog(@"This is device token %@", devToken);
     

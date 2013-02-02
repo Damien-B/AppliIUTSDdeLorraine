@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Utils.h"
+
 @interface ViewController ()
 
 @end
@@ -76,6 +78,7 @@
     
     // NSString *vallog = log.text;
     //NSString *valmdp = [mdp text];
+   
     
     NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/testconnexion.php?log=%@&mdp=%@", log.text, mdp.text];
     
