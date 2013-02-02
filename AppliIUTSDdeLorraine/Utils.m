@@ -11,7 +11,17 @@
 #import <SystemConfiguration/SystemConfiguration.h>
 @implementation Utils
 
-
++ (NSString *) getDeviceID {
+    CFUUIDRef uuid = CFUUIDCreate(NULL);
+    CFStringRef str = CFUUIDCreateString(NULL, uuid);
+    CFRelease(uuid);
+    NSString *string = (NSString *) str;
+    NSMutableString *result = [NSMutableString stringWithString: string];
+    [string autorelease];
+    [result replaceOccurrencesOfString: @"-" withString: @"" options: NSLiteralSearch
+                                 range: NSMakeRange(0, [result length]) ];
+    return result;
+}
 
 
 + (bool) detectConnectivityFromHostName: (NSString *) hostname {
