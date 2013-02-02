@@ -40,7 +40,7 @@
     
 }
 
-- (void)location{
+- (void) location{
     
     MKCoordinateRegion region;
     region.center.latitude = 48.290021;
@@ -199,8 +199,10 @@
     }else{
         NSLog(@"non autolog");
     }
-    // myBadgeMode = [prefs stringForKey: @"keyBadgeInfo"];
+    NSLog(@"Device id (authorized): %@", [Utils getDeviceID]);
+    [self location];
 
+    // myBadgeMode = [prefs stringForKey: @"keyBadgeInfo"];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

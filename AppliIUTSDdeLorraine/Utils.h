@@ -14,6 +14,7 @@
 
 + (bool) detectConnectivityFromHostName: (NSString *) hostname ;
 
++ (NSString *) getDeviceID ;
 
 
 @end
