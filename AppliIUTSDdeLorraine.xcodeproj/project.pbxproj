@@ -27,6 +27,7 @@
 		22407D56169E16A900AB16CE /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22407D55169E16A900AB16CE /* WebViewController.m */; };
 		22407D59169E1E3500AB16CE /* intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D57169E1E3500AB16CE /* intro.png */; };
 		22407D5A169E1E3500AB16CE /* sponsor.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D58169E1E3500AB16CE /* sponsor.png */; };
+		22A2F1E116C1608D00220945 /* EdtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A2F1E016C1608C00220945 /* EdtViewController.m */; };
 		22A6C20C16BC41CF0049D1A8 /* absences.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A6C20716BC41CF0049D1A8 /* absences.png */; };
 		22A6C20D16BC41CF0049D1A8 /* absences.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A6C20716BC41CF0049D1A8 /* absences.png */; };
 		22A6C20E16BC41CF0049D1A8 /* edt.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A6C20816BC41CF0049D1A8 /* edt.png */; };
@@ -95,6 +96,8 @@
 		22407D55169E16A900AB16CE /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		22407D57169E1E3500AB16CE /* intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = intro.png; path = source/intro.png; sourceTree = "<group>"; };
 		22407D58169E1E3500AB16CE /* sponsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sponsor.png; path = source/sponsor.png; sourceTree = "<group>"; };
+		22A2F1DF16C1608C00220945 /* EdtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdtViewController.h; sourceTree = "<group>"; };
+		22A2F1E016C1608C00220945 /* EdtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdtViewController.m; sourceTree = "<group>"; };
 		22A6C20716BC41CF0049D1A8 /* absences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = absences.png; path = "../../../../Dropbox/Application de lorraine/xcode/logos/absences.png"; sourceTree = "<group>"; };
 		22A6C20816BC41CF0049D1A8 /* edt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = edt.png; path = "../../../../Dropbox/Application de lorraine/xcode/logos/edt.png"; sourceTree = "<group>"; };
 		22A6C20A16BC41CF0049D1A8 /* nouveautes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nouveautes.png; path = "../../../../Dropbox/Application de lorraine/xcode/logos/nouveautes.png"; sourceTree = "<group>"; };
@@ -233,6 +236,8 @@
 				6D547254167B3506003F58A5 /* AppDelegate.h */,
 				6D547255167B3506003F58A5 /* AppDelegate.m */,
 				6D54725D167B3506003F58A5 /* MainStoryboard_iPhone.storyboard */,
+				22A2F1DF16C1608C00220945 /* EdtViewController.h */,
+				22A2F1E016C1608C00220945 /* EdtViewController.m */,
 				6D2A6382167B650700BAC6A8 /* RootViewController.h */,
 				6D2A6383167B650700BAC6A8 /* RootViewController.m */,
 				6D547260167B3506003F58A5 /* MainStoryboard_iPad.storyboard */,
@@ -435,6 +440,7 @@
 				22407D53169E168000AB16CE /* WebView.m in Sources */,
 				22407D56169E16A900AB16CE /* WebViewController.m in Sources */,
 				6D04C43416A8460B000A228F /* DetailViewController.m in Sources */,
+				22A2F1E116C1608D00220945 /* EdtViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

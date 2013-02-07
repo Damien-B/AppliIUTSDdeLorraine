@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="6d4-gr-ER0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="intro.png" id="4ad-ax-JsD">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="-19" y="-5" width="358" height="598"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1151" y="187"/>
+            <point key="canvasLocation" x="-1271" y="179"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="X5D-8B-AsI">
@@ -1433,6 +1433,91 @@ Service Scolarité
             </objects>
             <point key="canvasLocation" x="2402" y="-1013"/>
         </scene>
+        <!--Edt View Controller-->
+        <scene sceneID="H9X-lu-MVd">
+            <objects>
+                <viewController id="6d4-gr-ER0" customClass="EdtViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RTj-Ka-CJV">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="DQx-jR-dy0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="gdb-J8-fuA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="EDT" id="A5O-jQ-Iue">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="FyX-qS-MXG">
+                                            <connections>
+                                                <action selector="close:" destination="6d4-gr-ER0" id="ycu-Gp-GwL"/>
+                                                <segue destination="6d4-gr-ER0" kind="modal" id="ixf-bR-5Ye"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="src1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qm6-6u-5di">
+                                <rect key="frame" x="20" y="68" width="280" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="DUT SRC 1" backgroundImage="bg_black.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="src1:" destination="6d4-gr-ER0" eventType="touchUpInside" id="pad-cd-103"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="src2" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZOf-A9-uj9">
+                                <rect key="frame" x="20" y="175" width="280" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="DUT SRC 2" backgroundImage="bg_black.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="src2:" destination="6d4-gr-ER0" eventType="touchUpInside" id="2c4-dw-pIE"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" id="5zR-jH-5vq">
+                                <rect key="frame" x="40" y="306" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="77j-xt-pOU">
+                                <rect key="frame" x="40" y="289" width="264" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="wpA-bZ-0ra">
+                                        <rect key="frame" x="-20" y="-51" width="781" height="219"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgEdt" destination="wpA-bZ-0ra" id="3O8-V5-ero"/>
+                        <outlet property="scroll" destination="77j-xt-pOU" id="IUe-8d-gi6"/>
+                        <outlet property="src1" destination="Qm6-6u-5di" id="aJd-MX-7jV"/>
+                        <outlet property="src2" destination="ZOf-A9-uj9" id="O1F-H2-1cp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdL-Ui-gwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1706" y="-3409"/>
+        </scene>
         <!--View Controller - Autre 2-->
         <scene sceneID="qdJ-Io-bTr">
             <objects>
@@ -2754,7 +2839,7 @@ Service Scolarité
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="320" height="480"/>
+        <image name="Default.png" width="57" height="57"/>
         <image name="bg.png" width="320" height="480"/>
         <image name="bg_black.png" width="320" height="418"/>
         <image name="edt.png" width="170" height="136"/>
@@ -2780,6 +2865,19 @@ Service Scolarité
             <relationships>
                 <relationship kind="action" name="dismissAction:"/>
                 <relationship kind="outlet" name="dismiss" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="EdtViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EdtViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="close:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="src1:" candidateClass="UIButton"/>
+                <relationship kind="action" name="src2:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="close" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="imgEdt" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="scroll" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="src1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="src2" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="RootViewController" superclassName="UITableViewController">
@@ -2823,6 +2921,6 @@ Service Scolarité
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4Vg-CQ-8XJ"/>
+        <segue reference="qdo-LD-5fe"/>
     </inferredMetricsTieBreakers>
 </document>
