@@ -21,6 +21,7 @@
 		22089EB6169DA6CD00298246 /* photo_iut.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EB5169DA6CC00298246 /* photo_iut.png */; };
 		22089EB8169DB30400298246 /* iut_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EB7169DB30400298246 /* iut_photo.png */; };
 		22089EBA169DB6D300298246 /* src_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EB9169DB6D300298246 /* src_photo.png */; };
+		2225DF5B16C56F9B002E75C0 /* SRC1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2225DF5A16C56F9A002E75C0 /* SRC1ViewController.m */; };
 		22407D4B169DF0D700AB16CE /* info_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D4A169DF0D700AB16CE /* info_photo.png */; };
 		22407D50169E109B00AB16CE /* geii_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D4F169E109B00AB16CE /* geii_photo.png */; };
 		22407D53169E168000AB16CE /* WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22407D52169E168000AB16CE /* WebView.m */; };
@@ -88,6 +89,8 @@
 		22089EB5169DA6CC00298246 /* photo_iut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo_iut.png; path = source/photo_iut.png; sourceTree = "<group>"; };
 		22089EB7169DB30400298246 /* iut_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iut_photo.png; path = source/iut_photo.png; sourceTree = "<group>"; };
 		22089EB9169DB6D300298246 /* src_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = src_photo.png; path = source/src_photo.png; sourceTree = "<group>"; };
+		2225DF5916C56F9A002E75C0 /* SRC1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRC1ViewController.h; sourceTree = "<group>"; };
+		2225DF5A16C56F9A002E75C0 /* SRC1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRC1ViewController.m; sourceTree = "<group>"; };
 		22407D4A169DF0D700AB16CE /* info_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info_photo.png; path = source/info_photo.png; sourceTree = "<group>"; };
 		22407D4F169E109B00AB16CE /* geii_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = geii_photo.png; path = source/geii_photo.png; sourceTree = "<group>"; };
 		22407D51169E168000AB16CE /* WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebView.h; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 				6D547254167B3506003F58A5 /* AppDelegate.h */,
 				6D547255167B3506003F58A5 /* AppDelegate.m */,
 				6D54725D167B3506003F58A5 /* MainStoryboard_iPhone.storyboard */,
+				2225DF5916C56F9A002E75C0 /* SRC1ViewController.h */,
+				2225DF5A16C56F9A002E75C0 /* SRC1ViewController.m */,
 				22A2F1DF16C1608C00220945 /* EdtViewController.h */,
 				22A2F1E016C1608C00220945 /* EdtViewController.m */,
 				6D2A6382167B650700BAC6A8 /* RootViewController.h */,
@@ -441,6 +446,7 @@
 				22407D56169E16A900AB16CE /* WebViewController.m in Sources */,
 				6D04C43416A8460B000A228F /* DetailViewController.m in Sources */,
 				22A2F1E116C1608D00220945 /* EdtViewController.m in Sources */,
+				2225DF5B16C56F9B002E75C0 /* SRC1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
