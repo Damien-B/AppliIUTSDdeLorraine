@@ -1,14 +1,14 @@
 //
-//  SRC1ViewController.h
+//  LPTECAMViewController.h
 //  AppliIUTSDdeLorraine
 //
-//  Created by B2IB on 08/02/13.
+//  Created by B2IB on 14/02/13.
 //  Copyright (c) 2013 Damien Bannerot. All rights reserved.
 //
 
 #import "EdtViewController.h"
 
-@interface SRC1ViewController : EdtViewController{
+@interface LPTECAMViewController : EdtViewController{
     IBOutlet UIWebView *webEdt;
     IBOutlet UIBarButtonItem *next;
     IBOutlet UIBarButtonItem *before;

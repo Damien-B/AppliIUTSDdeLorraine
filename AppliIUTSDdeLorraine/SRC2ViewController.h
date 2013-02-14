@@ -1,14 +1,14 @@
 //
-//  SRC1ViewController.h
+//  SRC2ViewController.h
 //  AppliIUTSDdeLorraine
 //
-//  Created by B2IB on 08/02/13.
+//  Created by B2IB on 13/02/13.
 //  Copyright (c) 2013 Damien Bannerot. All rights reserved.
 //
 
 #import "EdtViewController.h"
 
-@interface SRC1ViewController : EdtViewController{
+@interface SRC2ViewController : EdtViewController{
     IBOutlet UIWebView *webEdt;
     IBOutlet UIBarButtonItem *next;
     IBOutlet UIBarButtonItem *before;

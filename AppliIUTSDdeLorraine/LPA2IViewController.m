@@ -1,18 +1,18 @@
 //
-//  SRC1ViewController.m
+//  LPA2IViewController.m
 //  AppliIUTSDdeLorraine
 //
-//  Created by B2IB on 08/02/13.
+//  Created by B2IB on 14/02/13.
 //  Copyright (c) 2013 Damien Bannerot. All rights reserved.
 //
 
-#import "SRC1ViewController.h"
+#import "LPA2IViewController.h"
 
-@interface SRC1ViewController ()
+@interface LPA2IViewController ()
 
 @end
 
-@implementation SRC1ViewController
+@implementation LPA2IViewController
 
 @synthesize webEdt;
 @synthesize next;
@@ -37,7 +37,7 @@
     NSError *error = nil;
     NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
     NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
-
+    
     NSDate *date = [NSDate date];
     NSDateFormatter *df = [NSDateFormatter new];
     [df setDateFormat:@"ww"];
@@ -47,13 +47,13 @@
     
     //NSLog(week);
     
-  //  NSURL *urlweek = [NSURL URLWithString:@"http://iutsd.applorraine.fr/week.php"];
+    //  NSURL *urlweek = [NSURL URLWithString:@"http://iutsd.applorraine.fr/week.php"];
     
-   // NSString *week = [NSString stringWithContentsOfURL:urlweek encoding:NSUTF8StringEncoding error:&error];
+    // NSString *week = [NSString stringWithContentsOfURL:urlweek encoding:NSUTF8StringEncoding error:&error];
     
     NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
     
-    NSString *Tree = @"5971%2C5973%2C5967%2C5968";
+    NSString *Tree = @"5962%2C5963";
     
     
     
@@ -70,8 +70,8 @@
     self.webEdt = [[[UIWebView alloc]
                     initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     
-     NSError *error = nil;
-   
+    NSError *error = nil;
+    
     numWeek = numWeek + 1;
     
     NSString *week = [NSString stringWithFormat:@"%d",numWeek];
@@ -81,7 +81,7 @@
     
     NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
     
-    NSString *Tree = @"5971%2C5973%2C5967%2C5968";
+    NSString *Tree = @"5962%2C5963";
     
     NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=%@&idPianoDay=%@&idTree=%@&width=2000&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126", maj, week, day, Tree];
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
@@ -109,7 +109,7 @@
     
     NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
     
-    NSString *Tree = @"5971%2C5973%2C5967%2C5968";
+    NSString *Tree = @"5962%2C5963";
     
     NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=%@&idPianoDay=%@&idTree=%@&width=2000&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126", maj, week, day, Tree];
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];

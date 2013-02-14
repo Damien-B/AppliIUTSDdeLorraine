@@ -28,6 +28,17 @@
 		22407D56169E16A900AB16CE /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22407D55169E16A900AB16CE /* WebViewController.m */; };
 		22407D59169E1E3500AB16CE /* intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D57169E1E3500AB16CE /* intro.png */; };
 		22407D5A169E1E3500AB16CE /* sponsor.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D58169E1E3500AB16CE /* sponsor.png */; };
+		22516D0E16CC2F5000896F5A /* SRC2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22516D0D16CC2F5000896F5A /* SRC2ViewController.m */; };
+		22516D1216CD797D00896F5A /* LPCDGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22516D1116CD797D00896F5A /* LPCDGViewController.m */; };
+		22516D1516CD7A8F00896F5A /* LPCMPMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22516D1416CD7A8F00896F5A /* LPCMPMViewController.m */; };
+		22516D1816CD7C3700896F5A /* LPTECAMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22516D1716CD7C3700896F5A /* LPTECAMViewController.m */; };
+		22516D1B16CD7CFB00896F5A /* INFO1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22516D1A16CD7CFB00896F5A /* INFO1ViewController.m */; };
+		22516D1E16CD7FA300896F5A /* INFO2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22516D1D16CD7FA200896F5A /* INFO2ViewController.m */; };
+		22516D2116CD80B900896F5A /* LPI2MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22516D2016CD80B900896F5A /* LPI2MViewController.m */; };
+		22516D2416CD817F00896F5A /* LPISNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22516D2316CD817F00896F5A /* LPISNViewController.m */; };
+		22516D2816CD828D00896F5A /* GEII1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22516D2716CD828D00896F5A /* GEII1ViewController.m */; };
+		22516D2B16CD831000896F5A /* GEII2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22516D2A16CD831000896F5A /* GEII2ViewController.m */; };
+		22516D2E16CD836D00896F5A /* LPA2IViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22516D2D16CD836D00896F5A /* LPA2IViewController.m */; };
 		22A2F1E116C1608D00220945 /* EdtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A2F1E016C1608C00220945 /* EdtViewController.m */; };
 		22A6C20C16BC41CF0049D1A8 /* absences.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A6C20716BC41CF0049D1A8 /* absences.png */; };
 		22A6C20D16BC41CF0049D1A8 /* absences.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A6C20716BC41CF0049D1A8 /* absences.png */; };
@@ -99,6 +110,28 @@
 		22407D55169E16A900AB16CE /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		22407D57169E1E3500AB16CE /* intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = intro.png; path = source/intro.png; sourceTree = "<group>"; };
 		22407D58169E1E3500AB16CE /* sponsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sponsor.png; path = source/sponsor.png; sourceTree = "<group>"; };
+		22516D0C16CC2F5000896F5A /* SRC2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRC2ViewController.h; sourceTree = "<group>"; };
+		22516D0D16CC2F5000896F5A /* SRC2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRC2ViewController.m; sourceTree = "<group>"; };
+		22516D1016CD797D00896F5A /* LPCDGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCDGViewController.h; sourceTree = "<group>"; };
+		22516D1116CD797D00896F5A /* LPCDGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCDGViewController.m; sourceTree = "<group>"; };
+		22516D1316CD7A8F00896F5A /* LPCMPMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCMPMViewController.h; sourceTree = "<group>"; };
+		22516D1416CD7A8F00896F5A /* LPCMPMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCMPMViewController.m; sourceTree = "<group>"; };
+		22516D1616CD7C3700896F5A /* LPTECAMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPTECAMViewController.h; sourceTree = "<group>"; };
+		22516D1716CD7C3700896F5A /* LPTECAMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPTECAMViewController.m; sourceTree = "<group>"; };
+		22516D1916CD7CFB00896F5A /* INFO1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFO1ViewController.h; sourceTree = "<group>"; };
+		22516D1A16CD7CFB00896F5A /* INFO1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFO1ViewController.m; sourceTree = "<group>"; };
+		22516D1C16CD7FA200896F5A /* INFO2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFO2ViewController.h; sourceTree = "<group>"; };
+		22516D1D16CD7FA200896F5A /* INFO2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFO2ViewController.m; sourceTree = "<group>"; };
+		22516D1F16CD80B900896F5A /* LPI2MViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPI2MViewController.h; sourceTree = "<group>"; };
+		22516D2016CD80B900896F5A /* LPI2MViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPI2MViewController.m; sourceTree = "<group>"; };
+		22516D2216CD817F00896F5A /* LPISNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPISNViewController.h; sourceTree = "<group>"; };
+		22516D2316CD817F00896F5A /* LPISNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPISNViewController.m; sourceTree = "<group>"; };
+		22516D2616CD828D00896F5A /* GEII1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEII1ViewController.h; sourceTree = "<group>"; };
+		22516D2716CD828D00896F5A /* GEII1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEII1ViewController.m; sourceTree = "<group>"; };
+		22516D2916CD831000896F5A /* GEII2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEII2ViewController.h; sourceTree = "<group>"; };
+		22516D2A16CD831000896F5A /* GEII2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEII2ViewController.m; sourceTree = "<group>"; };
+		22516D2C16CD836D00896F5A /* LPA2IViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPA2IViewController.h; sourceTree = "<group>"; };
+		22516D2D16CD836D00896F5A /* LPA2IViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPA2IViewController.m; sourceTree = "<group>"; };
 		22A2F1DF16C1608C00220945 /* EdtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdtViewController.h; sourceTree = "<group>"; };
 		22A2F1E016C1608C00220945 /* EdtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdtViewController.m; sourceTree = "<group>"; };
 		22A6C20716BC41CF0049D1A8 /* absences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = absences.png; path = "../../../../Dropbox/Application de lorraine/xcode/logos/absences.png"; sourceTree = "<group>"; };
@@ -197,6 +230,39 @@
 			name = source;
 			sourceTree = "<group>";
 		};
+		22516D2516CD819000896F5A /* EDT */ = {
+			isa = PBXGroup;
+			children = (
+				22516D2216CD817F00896F5A /* LPISNViewController.h */,
+				22516D2316CD817F00896F5A /* LPISNViewController.m */,
+				22516D1916CD7CFB00896F5A /* INFO1ViewController.h */,
+				22516D1A16CD7CFB00896F5A /* INFO1ViewController.m */,
+				22516D1316CD7A8F00896F5A /* LPCMPMViewController.h */,
+				22516D1616CD7C3700896F5A /* LPTECAMViewController.h */,
+				22516D1716CD7C3700896F5A /* LPTECAMViewController.m */,
+				22516D1416CD7A8F00896F5A /* LPCMPMViewController.m */,
+				22516D1016CD797D00896F5A /* LPCDGViewController.h */,
+				22516D1116CD797D00896F5A /* LPCDGViewController.m */,
+				2225DF5916C56F9A002E75C0 /* SRC1ViewController.h */,
+				2225DF5A16C56F9A002E75C0 /* SRC1ViewController.m */,
+				22516D1C16CD7FA200896F5A /* INFO2ViewController.h */,
+				22516D1D16CD7FA200896F5A /* INFO2ViewController.m */,
+				22516D1F16CD80B900896F5A /* LPI2MViewController.h */,
+				22516D2016CD80B900896F5A /* LPI2MViewController.m */,
+				22516D0C16CC2F5000896F5A /* SRC2ViewController.h */,
+				22516D0D16CC2F5000896F5A /* SRC2ViewController.m */,
+				22516D2616CD828D00896F5A /* GEII1ViewController.h */,
+				22516D2716CD828D00896F5A /* GEII1ViewController.m */,
+				22516D2916CD831000896F5A /* GEII2ViewController.h */,
+				22516D2A16CD831000896F5A /* GEII2ViewController.m */,
+				22516D2C16CD836D00896F5A /* LPA2IViewController.h */,
+				22516D2D16CD836D00896F5A /* LPA2IViewController.m */,
+				22A2F1DF16C1608C00220945 /* EdtViewController.h */,
+				22A2F1E016C1608C00220945 /* EdtViewController.m */,
+			);
+			name = EDT;
+			sourceTree = "<group>";
+		};
 		6D547236167B3506003F58A5 = {
 			isa = PBXGroup;
 			children = (
@@ -238,11 +304,8 @@
 				6D54728E167B3D45003F58A5 /* retinalol.png */,
 				6D547254167B3506003F58A5 /* AppDelegate.h */,
 				6D547255167B3506003F58A5 /* AppDelegate.m */,
+				22516D2516CD819000896F5A /* EDT */,
 				6D54725D167B3506003F58A5 /* MainStoryboard_iPhone.storyboard */,
-				2225DF5916C56F9A002E75C0 /* SRC1ViewController.h */,
-				2225DF5A16C56F9A002E75C0 /* SRC1ViewController.m */,
-				22A2F1DF16C1608C00220945 /* EdtViewController.h */,
-				22A2F1E016C1608C00220945 /* EdtViewController.m */,
 				6D2A6382167B650700BAC6A8 /* RootViewController.h */,
 				6D2A6383167B650700BAC6A8 /* RootViewController.m */,
 				6D547260167B3506003F58A5 /* MainStoryboard_iPad.storyboard */,
@@ -447,6 +510,17 @@
 				6D04C43416A8460B000A228F /* DetailViewController.m in Sources */,
 				22A2F1E116C1608D00220945 /* EdtViewController.m in Sources */,
 				2225DF5B16C56F9B002E75C0 /* SRC1ViewController.m in Sources */,
+				22516D0E16CC2F5000896F5A /* SRC2ViewController.m in Sources */,
+				22516D1216CD797D00896F5A /* LPCDGViewController.m in Sources */,
+				22516D1516CD7A8F00896F5A /* LPCMPMViewController.m in Sources */,
+				22516D1816CD7C3700896F5A /* LPTECAMViewController.m in Sources */,
+				22516D1B16CD7CFB00896F5A /* INFO1ViewController.m in Sources */,
+				22516D1E16CD7FA300896F5A /* INFO2ViewController.m in Sources */,
+				22516D2116CD80B900896F5A /* LPI2MViewController.m in Sources */,
+				22516D2416CD817F00896F5A /* LPISNViewController.m in Sources */,
+				22516D2816CD828D00896F5A /* GEII1ViewController.m in Sources */,
+				22516D2B16CD831000896F5A /* GEII2ViewController.m in Sources */,
+				22516D2E16CD836D00896F5A /* LPA2IViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
