@@ -64,6 +64,7 @@
 		CD71623416BC66680077FDFD /* prefs.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623316BC66680077FDFD /* prefs.png */; };
 		CD9D730C16BD438500934CBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D730B16BD438500934CBC /* SystemConfiguration.framework */; };
 		CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */; };
+		CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,8 @@
 		CD9D730B16BD438500934CBC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CDDFDE9D16CFB4AF005FD7A0 /* SelectEDTController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectEDTController.h; sourceTree = "<group>"; };
 		CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectEDTController.m; sourceTree = "<group>"; };
+		CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EtudiantController.h; sourceTree = "<group>"; };
+		CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EtudiantController.m; sourceTree = "<group>"; };
 		CDE472D516BB3C6A0071A51D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -263,6 +266,8 @@
 				6D54728E167B3D45003F58A5 /* retinalol.png */,
 				6D547254167B3506003F58A5 /* AppDelegate.h */,
 				6D547255167B3506003F58A5 /* AppDelegate.m */,
+				CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */,
+				CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */,
 				22516D2516CD819000896F5A /* EDT */,
 				6D54725D167B3506003F58A5 /* MainStoryboard_iPhone.storyboard */,
 				6D2A6382167B650700BAC6A8 /* RootViewController.h */,
@@ -479,6 +484,7 @@
 				6D04C43416A8460B000A228F /* DetailViewController.m in Sources */,
 				22A2F1E116C1608D00220945 /* EdtViewController.m in Sources */,
 				CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */,
+				CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
