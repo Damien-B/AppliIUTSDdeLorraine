@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="I8q-Z6-YqR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -1268,6 +1268,9 @@ Service Scolarité
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ToW-jg-h5r" kind="modal" id="wLu-4c-DYV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fue-Kj-Zze">
                                 <rect key="frame" x="118" y="238" width="85" height="71"/>
@@ -1306,6 +1309,7 @@ Service Scolarité
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ExN-8X-06L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jid-74-eCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1452,7 +1456,13 @@ Service Scolarité
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="EDT" id="8Ch-aV-kh5"/>
+                                    <navigationItem title="EDT" id="8Ch-aV-kh5">
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="VN0-qW-MRX">
+                                            <connections>
+                                                <segue destination="eIZ-E1-YTe" kind="modal" id="eLV-GD-a7H"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CKf-kp-aHp">
@@ -3816,7 +3826,9 @@ Service Scolarité
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4Vg-CQ-8XJ"/>
+        <segue reference="eLV-GD-a7H"/>
+        <segue reference="swr-vX-Ovv"/>
         <segue reference="nEN-0P-duK"/>
+        <segue reference="4Vg-CQ-8XJ"/>
     </inferredMetricsTieBreakers>
 </document>
