@@ -45,4 +45,10 @@
 }
 
 
+
+- (IBAction)back:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+
 @end

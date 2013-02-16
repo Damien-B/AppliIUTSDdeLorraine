@@ -29,6 +29,8 @@
 @synthesize abo3;
 @synthesize prefsend;
 @synthesize mapview;
+@synthesize authPanel;
+@synthesize menuPanel;
 
 
 - (IBAction)getlocation{
@@ -211,6 +213,29 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction) presentAuthPanel: (UIButton *) sender{
+    NSLog(@"in animation");
+    
+    [UIView transitionFromView: menuPanel
+                        toView: authPanel
+                      duration: 1.0f
+                       options:  UIViewAnimationOptionTransitionFlipFromRight
+                    completion: ^(BOOL done){
+                    }];
+}
+
+- (IBAction) returnMenuPanel: (UIButton *) sender{
+    NSLog(@"in animation");
+    
+    [UIView transitionFromView:authPanel
+                        toView: menuPanel
+                      duration: 1.0f
+                       options:  UIViewAnimationOptionTransitionFlipFromLeft
+                    completion: ^(BOOL done){
+                    }];
+}
+
 
 
 
