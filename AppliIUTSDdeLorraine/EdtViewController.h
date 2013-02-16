@@ -8,8 +8,29 @@
 
 #import "ViewController.h"
 
+
 @interface EdtViewController : UIViewController{
+    IBOutlet UIWebView *webEdt;
+    IBOutlet UIBarButtonItem *next;
+    IBOutlet UIBarButtonItem *before;
+    IBOutlet UINavigationItem *navBar;
+    int numWeek;
+    NSString *edtName;
+    NSString *edtID;
+
 }
+
+
+@property (nonatomic, retain) UIWebView *webEdt;
+@property (nonatomic, retain) UIBarButtonItem *next;
+@property (nonatomic, retain) UIBarButtonItem *before;
+@property (nonatomic, retain) UINavigationItem *navBar;
+
+- (IBAction) next: (UIBarButtonItem *) sender;
+- (IBAction) before: (UIBarButtonItem *) sender;
+
+- (IBAction)back:(id)sender;
+
 
 
 @end

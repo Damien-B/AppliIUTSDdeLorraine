@@ -7,13 +7,20 @@
 //
 
 #import "EdtViewController.h"
+#import "SelectEDTController.h"
 
 @interface EdtViewController ()
 
 @end
 
 
+
 @implementation EdtViewController
+
+
+@synthesize webEdt;
+@synthesize next;
+@synthesize before, navBar;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -25,6 +32,101 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+  	// Do any additional setup after loading the view.
+    self.webEdt = [[[UIWebView alloc]
+                    initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
+    SelectEDTController * prev =(SelectEDTController *) [self presentingViewController];
+    [navBar setTitle:  prev.myEDTName];
+    edtID = prev.myEDTCode;
+    NSError *error = nil;
+    NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
+    NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
+    
+    NSDate *date = [NSDate date];
+    NSDateFormatter *df = [NSDateFormatter new];
+    [df setDateFormat:@"ww"];
+    NSString *weeka = [df stringFromDate:date];
+    numWeek = [weeka integerValue] + 17 % 51;
+    NSString *week = [NSString stringWithFormat:@"%d",numWeek];
+    
+    //NSLog(week);
+    
+    //  NSURL *urlweek = [NSURL URLWithString:@"http://iutsd.applorraine.fr/week.php"];
+    
+    // NSString *week = [NSString stringWithContentsOfURL:urlweek encoding:NSUTF8StringEncoding error:&error];
+    
+    NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
+    
+  //  NSString *Tree = @"5962%2C5963";
+    
+    
+    
+    NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=%@&idPianoDay=%@&idTree=%@&width=2000&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126", maj, week, day, edtID];
+    NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+    [self.webEdt loadRequest:requestObj];
+    
+    [self.view addSubview:self.webEdt];
+}
+
+- (IBAction) next: (UIBarButtonItem *) sender{
+    self.webEdt = [[[UIWebView alloc]
+                    initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
+    
+    NSError *error = nil;
+    
+    numWeek = numWeek + 1;
+    
+    NSString *week = [NSString stringWithFormat:@"%d",numWeek];
+    
+    NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
+    NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
+    
+    NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
+    
+    NSString *Tree = @"5962%2C5963";
+    
+    NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=%@&idPianoDay=%@&idTree=%@&width=2000&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126", maj, week, day, Tree];
+    NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+    [self.webEdt loadRequest:requestObj];
+    
+    [self.view addSubview:self.webEdt];
+    
+}
+
+-(IBAction)before :(UIBarButtonItem *) sender{
+    
+    self.webEdt = [[[UIWebView alloc]
+                    initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
+    
+    NSError *error = nil;
+    
+    numWeek = numWeek - 1;
+    
+    NSString *week = [NSString stringWithFormat:@"%d",numWeek];
+    
+    NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
+    NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
+    
+    NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
+    
+    NSString *Tree = @"5962%2C5963";
+    
+    NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=%@&idPianoDay=%@&idTree=%@&width=2000&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126", maj, week, day, Tree];
+    NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+    [self.webEdt loadRequest:requestObj];
+    
+    [self.view addSubview:self.webEdt];
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -34,46 +136,17 @@
 
 
 
-//- (IBAction) src2 : (UIButton *) sender{
-//   // self.imgEdt = [[[UIImageView alloc]
-//     //               initWithFrame:CGRectMake(0, 40, 640, 420)] autorelease];
-//    
-//   // self.scroll = [[[UIScrollView alloc] initWithFrame:CGRectMake(0, 40, 320, 420)] autorelease];
-//    
-//    NSError *error = nil;
-//   
-//    
-//    NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
-//    NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
-//    
-//    NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
-//    
-//    NSString *Tree = @"5928%2C5930%2C5925%2C5926";
-//    
-//    NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=23&idPianoDay=%@&idTree=%@&width=800&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126", maj, day, Tree];
-//    NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
-//    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-//    NSHTTPURLResponse *response=nil;
-//    NSData *data = [NSURLConnection sendSynchronousRequest:requestObj returningResponse:&response error: &error];
-//    //NSLog(@"errr=%@",[error debugDescription description]);
-//
-//    [self.imgEdt setImage:  [UIImage imageWithData: data]];
-//    
-//    //[self.scroll addSubview: imgEdt];
-//    //[self.view addSubview: scroll];
-//
-//}
 
-
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
+- (IBAction)back:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 
 
 
-
-
 @end
+
+
+
+
+
