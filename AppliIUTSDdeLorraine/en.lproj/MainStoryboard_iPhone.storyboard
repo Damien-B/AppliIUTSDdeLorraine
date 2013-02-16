@@ -1242,10 +1242,10 @@ Service Scolarité
             </objects>
             <point key="canvasLocation" x="948" y="-1498"/>
         </scene>
-        <!--View Controller-->
+        <!--Etudiant Controller-->
         <scene sceneID="N9S-4U-Dq0">
             <objects>
-                <viewController id="eIZ-E1-YTe" sceneMemberID="viewController">
+                <viewController id="eIZ-E1-YTe" customClass="EtudiantController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ji-Ua-SfG">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1302,7 +1302,11 @@ Service Scolarité
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="ETUDIANT" id="3AO-eQ-50L">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="glL-Js-zFX"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="glL-Js-zFX">
+                                            <connections>
+                                                <action selector="back:" destination="eIZ-E1-YTe" id="QKf-wp-XtF"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1313,7 +1317,7 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jid-74-eCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-308" y="-1490"/>
+            <point key="canvasLocation" x="-1001" y="-2458"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lgU-3X-i1P">
@@ -1440,11 +1444,11 @@ Service Scolarité
             </objects>
             <point key="canvasLocation" x="2402" y="-1013"/>
         </scene>
-        <!--View Controller-->
+        <!--SelectEDT Controller-->
         <scene sceneID="LzY-TV-uwR">
             <objects>
-                <viewController id="ToW-jg-h5r" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xea-vZ-WCm">
+                <viewController id="ToW-jg-h5r" customClass="SelectEDTController" sceneMemberID="viewController">
+                    <view key="view" tag="11" contentMode="scaleToFill" id="Xea-vZ-WCm">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -1459,7 +1463,7 @@ Service Scolarité
                                     <navigationItem title="EDT" id="8Ch-aV-kh5">
                                         <barButtonItem key="leftBarButtonItem" title="Retour" id="VN0-qW-MRX">
                                             <connections>
-                                                <segue destination="eIZ-E1-YTe" kind="modal" id="eLV-GD-a7H"/>
+                                                <action selector="back:" destination="ToW-jg-h5r" id="0XA-fH-I2j"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1476,10 +1480,10 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="SKR-4U-ade" kind="modal" id="DAb-3A-PXQ"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="T9C-my-nD6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="peC-Gh-kCM">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="peC-Gh-kCM">
                                 <rect key="frame" x="118" y="102" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="src.png">
@@ -1490,10 +1494,10 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FwA-da-QFH" kind="modal" id="ACr-EN-eX0"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="khT-L9-deG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qCV-qW-oBP">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qCV-qW-oBP">
                                 <rect key="frame" x="215" y="102" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="src.png">
@@ -1504,10 +1508,10 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nGu-WU-RMc" kind="modal" id="HrI-Eo-aaw"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="pfC-Bb-xHY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b36-7w-P8R">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="b36-7w-P8R">
                                 <rect key="frame" x="20" y="208" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="src.png">
@@ -1518,10 +1522,10 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GKh-dc-6bp" kind="modal" id="jOX-t2-PxE"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="Wbj-FZ-gTi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qWy-WC-25t">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qWy-WC-25t">
                                 <rect key="frame" x="118" y="208" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="src.png">
@@ -1532,10 +1536,10 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WkE-JL-WHa" kind="modal" id="vgI-Au-UGP"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="EFU-Fu-VkH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ydq-q7-vPk">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ydq-q7-vPk">
                                 <rect key="frame" x="211" y="208" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="info.png">
@@ -1546,10 +1550,10 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="n0H-h0-raU" kind="modal" id="OGX-z3-61z"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="ikJ-gv-oyB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bns-5z-krX">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bns-5z-krX">
                                 <rect key="frame" x="20" y="318" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="info.png">
@@ -1560,10 +1564,10 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="b2i-zx-ZKr" kind="modal" id="WIl-b2-SeD"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="bf8-LM-5dl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AW1-Nj-uRn">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AW1-Nj-uRn">
                                 <rect key="frame" x="118" y="318" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="info.png">
@@ -1574,10 +1578,10 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6KN-nu-x5f" kind="modal" id="yQ6-qG-7c0"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="PIg-UV-BUy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r3J-bi-xCh">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r3J-bi-xCh">
                                 <rect key="frame" x="215" y="318" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="info.png">
@@ -1588,10 +1592,10 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Hmp-LO-4wd" kind="modal" id="75p-vb-nAL"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="uFa-zV-kvu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m4V-np-09S">
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m4V-np-09S">
                                 <rect key="frame" x="16" y="426" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="geii.png">
@@ -1602,10 +1606,10 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="v4w-Uv-Jrw" kind="modal" id="a0m-qo-elU"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="XoU-8C-s16"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8cj-4Y-Y9n">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8cj-4Y-Y9n">
                                 <rect key="frame" x="118" y="426" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="geii.png">
@@ -1616,10 +1620,10 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wWV-xh-qs8" kind="modal" id="owo-Da-lAd"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="VdB-xH-DRB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3YK-zU-2gf">
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3YK-zU-2gf">
                                 <rect key="frame" x="215" y="426" width="85" height="71"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="geii.png">
@@ -1630,21 +1634,26 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="igK-r3-yaJ" kind="modal" id="alV-hF-f97"/>
+                                    <action selector="selectEDT:" destination="ToW-jg-h5r" eventType="touchUpInside" id="gnc-md-khX"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lDd-Bd-GxK"/>
+                    <connections>
+                        <segue destination="SKR-4U-ade" kind="modal" identifier="visuedt" id="vEG-OA-0Lo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMe-k6-feo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1265" y="-4528"/>
+            <point key="canvasLocation" x="-953" y="-4780"/>
         </scene>
-        <!--View Controller-->
+        <!--Edt View Controller-->
         <scene sceneID="aji-0x-uO6">
             <objects>
-                <viewController id="SKR-4U-ade" customClass="SRC1ViewController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gf1-ND-4g2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="SKR-4U-ade" customClass="EdtViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8xi-0f-EOx">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1675,10 +1684,10 @@ Service Scolarité
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="SRC1" id="F5D-aE-ClI">
+                                    <navigationItem title="EDT" id="F5D-aE-ClI">
                                         <barButtonItem key="leftBarButtonItem" title="Retour" id="13t-Zz-rpu">
                                             <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="Mh8-Y9-6JH"/>
+                                                <action selector="back:" destination="SKR-4U-ade" id="J3t-Cb-6AC"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1689,69 +1698,13 @@ Service Scolarité
                     </view>
                     <connections>
                         <outlet property="before" destination="f1b-Sf-VKX" id="Yw8-5T-evq"/>
+                        <outlet property="navBar" destination="F5D-aE-ClI" id="gfW-dt-unT"/>
                         <outlet property="next" destination="r7D-sO-32z" id="pKo-yK-52Q"/>
                         <outlet property="webEdt" destination="3G2-nG-6Nq" id="ums-Wu-nGu"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gf1-ND-4g2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-722" y="-4528"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="e89-F1-rYS">
-            <objects>
-                <viewController id="FwA-da-QFH" customClass="SRC2ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xAQ-9Y-mYG">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="hb6-cF-LwF">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="SRC2" id="kMu-jr-Nds">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="g2y-Vm-MhA">
-                                            <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="930-Ai-bX9"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="TC4-jf-mS4">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Semaine Précédente" id="88M-WR-ME7">
-                                        <connections>
-                                            <action selector="before:" destination="FwA-da-QFH" id="eTx-xw-bon"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LHe-jm-WZO"/>
-                                    <barButtonItem title="Semaine Suivante" id="ptY-dD-SFB">
-                                        <connections>
-                                            <action selector="next:" destination="FwA-da-QFH" id="ZRa-4N-xbl"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <webView contentMode="scaleToFill" id="yfk-lF-XoS">
-                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="before" destination="88M-WR-ME7" id="AlN-8o-AcO"/>
-                        <outlet property="next" destination="ptY-dD-SFB" id="Rxm-pB-50c"/>
-                        <outlet property="webEdt" destination="yfk-lF-XoS" id="aTW-ze-WCd"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sSo-pM-bXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-722" y="-3833"/>
+            <point key="canvasLocation" x="-342" y="-4792"/>
         </scene>
         <!--View Controller - Autre 2-->
         <scene sceneID="qdJ-Io-bTr">
@@ -3073,118 +3026,6 @@ Service Scolarité
             <point key="canvasLocation" x="666" y="-2282"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="YOJ-7P-ECq">
-            <objects>
-                <viewController id="nGu-WU-RMc" customClass="LPCDGViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XzW-Pe-GDn">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" id="jTb-Yr-82C">
-                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="Pog-Ad-3yy">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Semaine Précédente" id="ovG-gB-GL2">
-                                        <connections>
-                                            <action selector="before:" destination="nGu-WU-RMc" id="GJb-0i-cWS"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wfd-Aa-kwM"/>
-                                    <barButtonItem title="Semaine Suivante" id="Gs9-YN-YXE">
-                                        <connections>
-                                            <action selector="next:" destination="nGu-WU-RMc" id="Zhg-sd-Kd8"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="OzQ-fD-6tR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="LP CDG" id="Na0-Pq-jFc">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="NPf-mH-TUc">
-                                            <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="b1g-yy-D0N"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="before" destination="ovG-gB-GL2" id="MRZ-rs-GSg"/>
-                        <outlet property="next" destination="Gs9-YN-YXE" id="ktd-29-7Uj"/>
-                        <outlet property="webEdt" destination="jTb-Yr-82C" id="WBr-BQ-X4e"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Jb-8f-OCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-300" y="-4528"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="P1b-h2-Cwb">
-            <objects>
-                <viewController id="GKh-dc-6bp" customClass="LPCMPMViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GkG-cR-4uW">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="EfD-Lw-sET">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="LP CMPM" id="XqW-Vj-cfc">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="4Cv-oQ-OBo">
-                                            <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="Ld4-7q-DUj"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="Zys-DZ-9M7">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Semaine Précédente" id="YHK-pH-Ad1">
-                                        <connections>
-                                            <action selector="before:" destination="GKh-dc-6bp" id="V3Z-Wn-1mW"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="B6Z-oC-QFJ"/>
-                                    <barButtonItem title="Semaine Suivante" id="OSe-HT-oZq">
-                                        <connections>
-                                            <action selector="next:" destination="GKh-dc-6bp" id="byV-n6-1qa"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <webView contentMode="scaleToFill" id="hQG-Wu-7tA">
-                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="before" destination="YHK-pH-Ad1" id="Lu2-rx-acw"/>
-                        <outlet property="next" destination="OSe-HT-oZq" id="Vgd-eR-bGq"/>
-                        <outlet property="webEdt" destination="hQG-Wu-7tA" id="rQ2-zx-8gq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9aC-Mf-Xnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-300" y="-3833"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="hb2-qu-tNJ">
             <objects>
                 <viewController id="WkE-JL-WHa" customClass="LPTECAMViewController" sceneMemberID="viewController">
@@ -3219,11 +3060,7 @@ Service Scolarité
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="LP TECAM" id="36u-Ew-Yy3">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="rht-YM-v7X">
-                                            <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="7Va-z3-YFO"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="rht-YM-v7X"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -3239,342 +3076,6 @@ Service Scolarité
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMm-Kr-uMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-300" y="-3111"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="GgO-0a-mgw">
-            <objects>
-                <viewController id="n0H-h0-raU" customClass="INFO1ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Val-c4-b2E">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="Ycl-z0-LeQ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="INFO 1" id="CWB-az-udN">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="FD4-w6-f4n">
-                                            <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="BKy-Ta-ehO"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="L6O-ec-QM1">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Semaine Précédente" id="QJ8-Py-evx">
-                                        <connections>
-                                            <action selector="before:" destination="n0H-h0-raU" id="RcZ-oZ-jl0"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8Hb-qG-PIQ"/>
-                                    <barButtonItem title="Semaine Suivante" id="yWg-OQ-agg">
-                                        <connections>
-                                            <action selector="next:" destination="n0H-h0-raU" id="JdT-hu-mIT"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <webView contentMode="scaleToFill" id="C9I-EB-zo1">
-                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="before" destination="QJ8-Py-evx" id="VRM-qY-Vdi"/>
-                        <outlet property="next" destination="yWg-OQ-agg" id="Xlf-ij-cwR"/>
-                        <outlet property="webEdt" destination="C9I-EB-zo1" id="NI9-l2-QqJ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="POE-6f-3Of" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="126" y="-4528"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Qya-bL-Qc7">
-            <objects>
-                <viewController id="b2i-zx-ZKr" customClass="INFO2ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ooB-Qy-SIn">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="8Tz-it-p3m">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="INFO 2" id="BQm-vT-VUV">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="CxY-Z9-Lad">
-                                            <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="swr-vX-Ovv"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="l5w-Wg-KGy">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Semaine Précédente" id="hws-LR-ckN">
-                                        <connections>
-                                            <action selector="before:" destination="b2i-zx-ZKr" id="Qjq-iU-DWh"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YB1-k2-qUR"/>
-                                    <barButtonItem title="Semaine Suivante" id="Mu7-tW-yKo">
-                                        <connections>
-                                            <action selector="next:" destination="b2i-zx-ZKr" id="CLF-vL-ZxI"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <webView contentMode="scaleToFill" id="F0R-yx-lFD">
-                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="before" destination="hws-LR-ckN" id="aqZ-AO-78Y"/>
-                        <outlet property="next" destination="Mu7-tW-yKo" id="SdW-am-krp"/>
-                        <outlet property="webEdt" destination="F0R-yx-lFD" id="2JZ-4y-AWG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ii-PE-dal" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="126" y="-3833"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="zZI-so-hXE">
-            <objects>
-                <viewController id="6KN-nu-x5f" customClass="LPI2MViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vjl-f0-Sw5">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" id="INh-qL-n3S">
-                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="KY9-gq-N2S">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Semaine Précédente" id="cFb-Yj-4Z5">
-                                        <connections>
-                                            <action selector="before:" destination="6KN-nu-x5f" id="Toj-Lw-h2S"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OTO-8j-F2C"/>
-                                    <barButtonItem title="Semaine Suivante" id="UEA-NH-eXa">
-                                        <connections>
-                                            <action selector="next:" destination="6KN-nu-x5f" id="W0R-mV-IeE"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="wfH-fG-RQX">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="LP I2M" id="L2O-80-4av">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="Eay-Mk-51x">
-                                            <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="GaN-s4-QlM"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="before" destination="cFb-Yj-4Z5" id="EFa-fb-jqn"/>
-                        <outlet property="next" destination="UEA-NH-eXa" id="4r5-ac-H4m"/>
-                        <outlet property="webEdt" destination="INh-qL-n3S" id="hj3-WU-gTc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ps9-ec-V9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="556" y="-4519"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="RE9-tw-TLm">
-            <objects>
-                <viewController id="Hmp-LO-4wd" customClass="LPISNViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="K6W-Yi-SBi">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" id="Cud-Tg-ssU">
-                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="ljn-EX-BJu">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Semaine Précédente" id="iqD-NQ-NYY">
-                                        <connections>
-                                            <action selector="before:" destination="Hmp-LO-4wd" id="QLy-Tr-Wqy"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dgs-5V-iOQ"/>
-                                    <barButtonItem title="Semaine Suivante" id="cha-fe-JCo">
-                                        <connections>
-                                            <action selector="next:" destination="Hmp-LO-4wd" id="6nL-Ak-6Zc"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="h0M-x3-eMf">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="LP ISN" id="SO4-08-9xg">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="Ty0-7j-nxc">
-                                            <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="t3L-UJ-QGd"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="before" destination="iqD-NQ-NYY" id="STf-Ed-92X"/>
-                        <outlet property="next" destination="cha-fe-JCo" id="UvZ-1b-5UY"/>
-                        <outlet property="webEdt" destination="Cud-Tg-ssU" id="Bq7-6S-CoR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gZ6-Wj-16N" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="556" y="-3833"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="1OU-on-1Oz">
-            <objects>
-                <viewController id="v4w-Uv-Jrw" customClass="GEII1ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vi1-vQ-n50">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" id="fEd-d3-HaG">
-                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="XWg-tj-8FI">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Semaine Précédente" id="hHM-hf-P6U">
-                                        <connections>
-                                            <action selector="before:" destination="v4w-Uv-Jrw" id="45Z-Bg-1UH"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aLa-dS-ME2"/>
-                                    <barButtonItem title="Semaine Suivante" id="3FO-XV-Isj">
-                                        <connections>
-                                            <action selector="next:" destination="v4w-Uv-Jrw" id="XHd-am-St5"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="0Wf-NP-HoD">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="GEII 1" id="i8m-ma-HGl">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="S7L-Z2-BD0">
-                                            <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="1Ob-dj-508"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="before" destination="hHM-hf-P6U" id="Eav-JO-ZIe"/>
-                        <outlet property="next" destination="3FO-XV-Isj" id="Wul-p7-oqE"/>
-                        <outlet property="webEdt" destination="fEd-d3-HaG" id="qTf-UW-zk1"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xka-gZ-KAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1028" y="-4501"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="TD3-Ho-1ia">
-            <objects>
-                <viewController id="wWV-xh-qs8" customClass="GEII2ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="N9d-4I-plN">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" id="eNj-DD-p9W">
-                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="roj-vi-XtV">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Semaine Précédente" id="HhQ-SF-kPz">
-                                        <connections>
-                                            <action selector="before:" destination="wWV-xh-qs8" id="d8S-rp-6pj"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ayb-gO-Wov"/>
-                                    <barButtonItem title="Semaine Suivante" id="wUK-bF-NJt">
-                                        <connections>
-                                            <action selector="next:" destination="wWV-xh-qs8" id="vy9-0i-TkV"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="Dtg-VP-Y7s">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="GEII 2" id="l4e-ne-tbl">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="ZPy-Mb-skQ">
-                                            <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="iW3-u1-Kq0"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="before" destination="HhQ-SF-kPz" id="L6m-uq-UBn"/>
-                        <outlet property="next" destination="wUK-bF-NJt" id="TpU-O6-UQd"/>
-                        <outlet property="webEdt" destination="eNj-DD-p9W" id="ilk-Zn-NMb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bCJ-2l-yN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1028" y="-3815"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="S7c-ll-Wfi">
@@ -3611,11 +3112,7 @@ Service Scolarité
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="LP A2I" id="jag-lU-4qg">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="v4m-SB-PSn">
-                                            <connections>
-                                                <segue destination="ToW-jg-h5r" kind="modal" id="3Fl-KA-TS7"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="v4m-SB-PSn"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -3634,7 +3131,7 @@ Service Scolarité
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="320" height="480"/>
+        <image name="Default.png" width="57" height="57"/>
         <image name="bg.png" width="320" height="480"/>
         <image name="bg_black.png" width="320" height="418"/>
         <image name="edt.png" width="170" height="136"/>
@@ -3664,105 +3161,20 @@ Service Scolarité
         </class>
         <class className="EdtViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EdtViewController.h"/>
-        </class>
-        <class className="GEII1ViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GEII1ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
                 <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
             </relationships>
         </class>
-        <class className="GEII2ViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GEII2ViewController.h"/>
+        <class className="EtudiantController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EtudiantController.h"/>
             <relationships>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="INFO1ViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/INFO1ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="INFO2ViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/INFO2ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="LPA2IViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPA2IViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="LPCDGViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPCDGViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="LPCMPMViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPCMPMViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="LPI2MViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPI2MViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="LPISNViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPISNViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="LPTECAMViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LPTECAMViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
+                <relationship kind="action" name="back:"/>
             </relationships>
         </class>
         <class className="RootViewController" superclassName="UITableViewController">
@@ -3771,24 +3183,11 @@ Service Scolarité
                 <relationship kind="outlet" name="detailView" candidateClass="DetailViewController"/>
             </relationships>
         </class>
-        <class className="SRC1ViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SRC1ViewController.h"/>
+        <class className="SelectEDTController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectEDTController.h"/>
             <relationships>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="SRC2ViewController" superclassName="EdtViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SRC2ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="selectEDT:"/>
             </relationships>
         </class>
         <class className="StartController" superclassName="UIViewController">
@@ -3826,9 +3225,7 @@ Service Scolarité
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="eLV-GD-a7H"/>
-        <segue reference="swr-vX-Ovv"/>
+        <segue reference="qdo-LD-5fe"/>
         <segue reference="nEN-0P-duK"/>
-        <segue reference="4Vg-CQ-8XJ"/>
     </inferredMetricsTieBreakers>
 </document>
