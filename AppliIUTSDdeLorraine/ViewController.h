@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import <MapKit/MapKit.h>
 
 @interface ViewController : UIViewController {
     IBOutlet UIButton *bconnection;
@@ -21,7 +20,6 @@
     IBOutlet UISwitch *abo3;
     IBOutlet UIButton *prefsend;
     NSString *response;
-    MKMapView *mapview;
     IBOutlet UIView *authPanel;
     IBOutlet UIView *menuPanel;
 }
@@ -37,12 +35,9 @@
 @property (nonatomic, retain) IBOutlet UISwitch *abo3;
 @property (nonatomic, retain) IBOutlet UIButton *prefsend;
 @property (nonatomic, retain) NSString *response;
-@property (nonatomic, retain) IBOutlet MKMapView *mapview;
 @property (nonatomic, retain) IBOutlet UIView *authPanel;
 @property (nonatomic, retain) IBOutlet UIView *menuPanel;
 
-- (IBAction)setMap:(id)sender;
-- (IBAction)getlocation;
 - (IBAction) bconnection: (UIButton *) sender;
 - (IBAction) prefsend: (UIButton *) sender;
 - (IBAction) presentAuthPanel: (UIButton *) sender;

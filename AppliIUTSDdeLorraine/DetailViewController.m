@@ -57,6 +57,6 @@
     [super viewDidUnload];
 }
 - (IBAction)dismissAction:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:^(void) {}];
 }
 @end

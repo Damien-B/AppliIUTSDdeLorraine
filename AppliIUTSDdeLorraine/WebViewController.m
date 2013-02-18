@@ -13,6 +13,7 @@
 @end
 
 @implementation WebViewController
+@synthesize webView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

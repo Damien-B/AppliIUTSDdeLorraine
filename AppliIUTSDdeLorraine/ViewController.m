@@ -28,51 +28,11 @@
 @synthesize abo2;
 @synthesize abo3;
 @synthesize prefsend;
-@synthesize mapview;
 @synthesize authPanel;
 @synthesize menuPanel;
 
 
-- (IBAction)getlocation{
-    
-    mapview.showsUserLocation = YES;
-    
-    
-    
-    
-}
 
-- (void) location{
-    
-    MKCoordinateRegion region;
-    region.center.latitude = 48.290021;
-    region.center.longitude = 6.942775;
-    region.span.latitudeDelta = 0.01;
-    region.span.longitudeDelta = 0.01;
-    
-    
-    [self.mapview setRegion:region animated:YES];
-    
-}
-
-
-- (IBAction)setMap:(id)sender{
-    
-    switch (((UISegmentedControl *) sender).selectedSegmentIndex) {
-        case 0:
-            mapview.mapType = MKMapTypeStandard;
-            break;
-        case 1:
-            mapview.mapType = MKMapTypeSatellite;
-            break;
-        case 2:
-            mapview.mapType = MKMapTypeHybrid;
-            break;
-        default:
-            break;
-    }
-    
-}
 
 //Envoi de la requete après clic sur le bouton pour log de l'utilisateur
 - (IBAction) bconnection: (UIButton *) sender{
@@ -201,7 +161,6 @@
         NSLog(@"non autolog");
     }
     NSLog(@"Device id (authorized): %@", [Utils getDeviceID]);
-    [self location];
 
     // myBadgeMode = [prefs stringForKey: @"keyBadgeInfo"];
     [super viewDidLoad];

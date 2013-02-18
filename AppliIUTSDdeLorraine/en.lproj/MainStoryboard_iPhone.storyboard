@@ -120,7 +120,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="ow5-XK-Qej" kind="modal" id="mLa-xw-MsT"/>
+                                                    <segue destination="ow5-XK-Qej" kind="custom" customClass="SpecialAnimation" id="mLa-xw-MsT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XaE-t6-hGY">
@@ -177,7 +177,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="dWW-KZ-ixe" kind="modal" id="FSz-o2-fhu"/>
+                                                    <segue destination="dWW-KZ-ixe" kind="custom" customClass="SpecialAnimation" id="FSz-o2-fhu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -207,7 +207,7 @@
                             <rect key="frame" x="0.0" y="-42" width="320" height="125"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                         </imageView>
-                        <view contentMode="scaleToFill" id="lkJ-bH-2Xg">
+                        <view contentMode="scaleToFill" id="lkJ-bH-2Xg" userLabel="View2">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -244,7 +244,7 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
-                                        <segue destination="eIZ-E1-YTe" kind="modal" identifier="etudiant" id="GYE-0Z-Chd"/>
+                                        <segue destination="eIZ-E1-YTe" kind="custom" identifier="etudiant" customClass="SpecialAnimation" id="GYE-0Z-Chd"/>
                                     </connections>
                                 </button>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i9z-7K-76Q">
@@ -1101,84 +1101,6 @@ Service Scolarité
             </objects>
             <point key="canvasLocation" x="968" y="970"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="BDF-f5-GDY">
-            <objects>
-                <viewController storyboardIdentifier="" id="Us5-bJ-iCU" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3hK-AX-Ydq">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HQa-bJ-y9f">
-                                <rect key="frame" x="14" y="19" width="73" height="44"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="News">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yQc-Ko-rZY">
-                                <rect key="frame" x="124" y="171" width="73" height="44"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="bconnection:" destination="Us5-bJ-iCU" eventType="touchUpInside" id="bKt-Bw-3xe"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="log" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="trfds" borderStyle="roundedRect" minimumFontSize="17" id="ouU-fV-skM">
-                                <rect key="frame" x="71" y="83" width="178" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="hI2-kO-nbL">
-                                <rect key="frame" x="71" y="121" width="178" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GtP-Wc-Spi">
-                                <rect key="frame" x="20" y="83" width="36" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="mdp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OEK-HU-K7l">
-                                <rect key="frame" x="20" y="121" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oQQ-A6-vzW">
-                                <rect key="frame" x="139" y="29" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tabBar contentMode="scaleToFill" id="BfZ-G5-IYm">
-                                <rect key="frame" x="0.0" y="499" width="320" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="zaY-sm-L6m"/>
-                                    <tabBarItem systemItem="more" id="8v1-BT-JBR"/>
-                                </items>
-                            </tabBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ccz-J9-nRl"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hqi-JE-EET" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3206" y="-1754"/>
-        </scene>
         <!--View Controller - Deconnexion-->
         <scene sceneID="Ghg-HW-lPQ">
             <objects>
@@ -1230,41 +1152,10 @@ Service Scolarité
             </objects>
             <point key="canvasLocation" x="2871" y="-2757"/>
         </scene>
-        <!--Root View Controller - Item-->
-        <scene sceneID="wTS-My-bwu">
-            <objects>
-                <tableViewController id="8yS-xX-B36" customClass="RootViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YRL-2n-Je0">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Iq2-qt-Npa">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="8yS-xX-B36" id="QE5-2Z-aog"/>
-                            <outlet property="delegate" destination="8yS-xX-B36" id="Cni-K8-0Kl"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="tbL-1h-ice"/>
-                    <navigationItem key="navigationItem" id="6dT-HN-ldy"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="49E-fn-2E4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2402" y="-1713"/>
-        </scene>
-        <!--View Controller-->
+        <!--Map Controller-->
         <scene sceneID="ccE-VN-SeH">
             <objects>
-                <viewController id="ow5-XK-Qej" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="ow5-XK-Qej" customClass="MapController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kYh-8R-Aia">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1307,7 +1198,7 @@ Service Scolarité
                                     <navigationItem title="VISITE GUIDEE" id="LQH-iD-7UH">
                                         <barButtonItem key="leftBarButtonItem" title="Retour" id="SeH-Wf-MCZ">
                                             <connections>
-                                                <segue destination="I8q-Z6-YqR" kind="modal" id="6fx-T5-bNC"/>
+                                                <action selector="back:" destination="ow5-XK-Qej" id="Lm0-bI-MQH"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1322,21 +1213,7 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEf-fm-Qc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-409" y="970"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="2OV-vW-v4b">
-            <objects>
-                <viewController id="UUx-vp-5Al" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ioT-Qv-Uq5">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ngv-Us-TRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="948" y="-1498"/>
+            <point key="canvasLocation" x="-437" y="963"/>
         </scene>
         <!--Etudiant Controller-->
         <scene sceneID="N9S-4U-Dq0">
@@ -1365,7 +1242,7 @@ Service Scolarité
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ToW-jg-h5r" kind="modal" customClass="RotatingSegue" id="wLu-4c-DYV"/>
+                                    <segue destination="ToW-jg-h5r" kind="custom" customClass="SpecialAnimation" id="wLu-4c-DYV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fue-Kj-Zze">
@@ -1392,6 +1269,9 @@ Service Scolarité
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="onw-Kx-1jR" kind="modal" id="dQ8-qE-mHI"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="nO0-Bd-ZwO">
                                 <rect key="frame" x="0.0" y="-2" width="320" height="44"/>
@@ -1414,69 +1294,6 @@ Service Scolarité
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jid-74-eCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1001" y="-2458"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="lgU-3X-i1P">
-            <objects>
-                <viewController id="Yx9-G0-eta" customClass="ViewController" sceneMemberID="viewController">
-                    <connections>
-                        <outlet property="bconnection" destination="j9x-oc-FhP" id="o22-YO-OVw"/>
-                        <outlet property="log" destination="frF-n8-RvU" id="OqU-kS-FTE"/>
-                        <outlet property="mdp" destination="7nx-8w-oav" id="lfA-Dz-qIY"/>
-                        <outlet property="toto" destination="i9z-7K-76Q" id="6Zl-X3-Ac3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zl9-mm-QB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-317" y="-684"/>
-        </scene>
-        <!--View Controller - Item 2-->
-        <scene sceneID="HbV-Ep-uXR">
-            <objects>
-                <viewController id="9bu-gj-2Os" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8JJ-gZ-fGb">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="lOb-XV-ddx">
-                                <rect key="frame" x="0.0" y="455" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="7rX-U4-vvZ"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ZaX-M2-4A6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OUe-N9-zaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2402" y="-306"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="GA6-j4-wzX">
-            <objects>
-                <viewController id="XDb-4f-EmU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ggS-Bd-sTu">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="g76-0f-COX">
-                                <rect key="frame" x="0.0" y="455" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Absence" id="Obe-Fc-NgY">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="j8W-qA-NPO"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" id="TFN-fW-ffw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3zf-kn-jyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2402" y="-1013"/>
         </scene>
         <!--SelectEDT Controller-->
         <scene sceneID="LzY-TV-uwR">
@@ -1676,12 +1493,12 @@ Service Scolarité
                     </view>
                     <navigationItem key="navigationItem" id="lDd-Bd-GxK"/>
                     <connections>
-                        <segue destination="SKR-4U-ade" kind="modal" identifier="visuedt" id="vEG-OA-0Lo"/>
+                        <segue destination="SKR-4U-ade" kind="custom" identifier="visuedt" customClass="SpecialAnimation" id="vEG-OA-0Lo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMe-k6-feo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-953" y="-4780"/>
+            <point key="canvasLocation" x="23" y="-3660"/>
         </scene>
         <!--Edt View Controller-->
         <scene sceneID="aji-0x-uO6">
@@ -1738,7 +1555,7 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gf1-ND-4g2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-342" y="-4792"/>
+            <point key="canvasLocation" x="1930" y="-3848"/>
         </scene>
         <!--View Controller - Autre 2-->
         <scene sceneID="qdJ-Io-bTr">
@@ -1833,7 +1650,7 @@ Service Scolarité
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLI-aK-Hqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-308" y="-2282"/>
+            <point key="canvasLocation" x="84" y="-2298"/>
         </scene>
         <!--View Controller - Autre 1-->
         <scene sceneID="Pjf-L4-5nb">
@@ -1886,26 +1703,6 @@ Service Scolarité
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhr-OF-wUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1882" y="-2757"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="AmT-Dt-vOK">
-            <objects>
-                <tabBarController definesPresentationContext="YES" id="vfe-DG-Gmm" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="rfO-5q-0bI">
-                        <rect key="frame" x="129" y="330" width="163" height="49"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="XDb-4f-EmU" kind="relationship" relationship="viewControllers" id="0Qc-mo-m1C"/>
-                        <segue destination="9bu-gj-2Os" kind="relationship" relationship="viewControllers" id="TR8-tN-KrE"/>
-                        <segue destination="8yS-xX-B36" kind="relationship" relationship="viewControllers" id="JQa-h1-YKJ"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lkl-Ny-jxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1934" y="-1013"/>
         </scene>
         <!--Info Dept Controller-->
         <scene sceneID="VaU-kH-xE8">
@@ -3059,113 +2856,9 @@ Service Scolarité
             </objects>
             <point key="canvasLocation" x="666" y="-2282"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hb2-qu-tNJ">
-            <objects>
-                <viewController id="WkE-JL-WHa" customClass="LPTECAMViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="q5y-kN-6ZN">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" id="9ua-DF-ZwJ">
-                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="fT8-Qe-qmM">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Semaine Précédente" id="mIi-2h-ysf">
-                                        <connections>
-                                            <action selector="before:" destination="WkE-JL-WHa" id="RBl-qS-MjI"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lZU-3H-NnR"/>
-                                    <barButtonItem title="Semaine Suivante" id="cgt-0l-ar5">
-                                        <connections>
-                                            <action selector="next:" destination="WkE-JL-WHa" id="YmN-xr-h0L"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="kl8-6S-Jyq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="LP TECAM" id="36u-Ew-Yy3">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="rht-YM-v7X"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="before" destination="mIi-2h-ysf" id="K9W-fR-Fqh"/>
-                        <outlet property="next" destination="cgt-0l-ar5" id="Ujv-vj-C5L"/>
-                        <outlet property="webEdt" destination="9ua-DF-ZwJ" id="0kV-Md-J3P"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yMm-Kr-uMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-300" y="-3111"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="S7c-ll-Wfi">
-            <objects>
-                <viewController id="igK-r3-yaJ" customClass="LPA2IViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="y6R-wR-o1N">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" id="ma7-g1-ROx">
-                                <rect key="frame" x="0.0" y="44" width="320" height="460"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="9xr-4P-AlK">
-                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Semaine Précédente" id="6cT-gm-2OJ">
-                                        <connections>
-                                            <action selector="before:" destination="igK-r3-yaJ" id="tAI-Ga-ziQ"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Jjw-DV-9eK"/>
-                                    <barButtonItem title="Semaine Suivante" id="140-jn-jaj">
-                                        <connections>
-                                            <action selector="next:" destination="igK-r3-yaJ" id="NVe-XU-oiB"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="Sp2-ut-UbG">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="LP A2I" id="jag-lU-4qg">
-                                        <barButtonItem key="leftBarButtonItem" title="Retour" id="v4m-SB-PSn"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="before" destination="6cT-gm-2OJ" id="0wr-rH-yai"/>
-                        <outlet property="next" destination="140-jn-jaj" id="FuB-NG-BD2"/>
-                        <outlet property="webEdt" destination="ma7-g1-ROx" id="H3q-s3-69h"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1gW-Y7-zCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1028" y="-3111"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="57" height="57"/>
+        <image name="Default.png" width="320" height="480"/>
         <image name="bg.png" width="320" height="480"/>
         <image name="bg_black.png" width="320" height="418"/>
         <image name="edt.png" width="170" height="136"/>
@@ -3217,6 +2910,15 @@ Service Scolarité
                 <relationship kind="action" name="back:"/>
             </relationships>
         </class>
+        <class className="MapController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="getlocation"/>
+                <relationship kind="action" name="setMap:"/>
+                <relationship kind="outlet" name="mapview" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
         <class className="RootViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
             <relationships>
@@ -3237,18 +2939,15 @@ Service Scolarité
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="bconnection:" candidateClass="UIButton"/>
-                <relationship kind="action" name="getlocation"/>
                 <relationship kind="action" name="prefsend:" candidateClass="UIButton"/>
                 <relationship kind="action" name="presentAuthPanel:" candidateClass="UIButton"/>
                 <relationship kind="action" name="returnMenuPanel:" candidateClass="UIButton"/>
-                <relationship kind="action" name="setMap:"/>
                 <relationship kind="outlet" name="abo1" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="abo2" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="abo3" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="authPanel" candidateClass="UIView"/>
                 <relationship kind="outlet" name="bconnection" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="log" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="mapview" candidateClass="MKMapView"/>
                 <relationship kind="outlet" name="mdp" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="menuPanel" candidateClass="UIView"/>
                 <relationship kind="outlet" name="prefsend" candidateClass="UIButton"/>
@@ -3270,7 +2969,6 @@ Service Scolarité
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="qdo-LD-5fe"/>
         <segue reference="nEN-0P-duK"/>
     </inferredMetricsTieBreakers>
 </document>
