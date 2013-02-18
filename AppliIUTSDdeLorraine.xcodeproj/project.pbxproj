@@ -58,10 +58,13 @@
 		6D54728D167B3CFE003F58A5 /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728C167B3CFE003F58A5 /* icone.png */; };
 		6D54728F167B3D45003F58A5 /* retinalol.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728E167B3D45003F58A5 /* retinalol.png */; };
 		CD21423C16CF81CF0048D002 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9D730916BD414300934CBC /* Utils.m */; };
+		CD24320C16D2629500D8C039 /* SpecialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24320B16D2629500D8C039 /* SpecialAnimation.m */; };
+		CD24320F16D2684200D8C039 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24320E16D2684100D8C039 /* MapController.m */; };
 		CD71622E16BC663D0077FDFD /* absences.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71622D16BC663D0077FDFD /* absences.png */; };
 		CD71623016BC66490077FDFD /* edt.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71622F16BC66490077FDFD /* edt.png */; };
 		CD71623216BC665B0077FDFD /* nouveautes.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623116BC665B0077FDFD /* nouveautes.png */; };
 		CD71623416BC66680077FDFD /* prefs.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623316BC66680077FDFD /* prefs.png */; };
+		CD7BE62016D03FC0006D09D1 /* InfoDeptController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7BE61F16D03FC0006D09D1 /* InfoDeptController.m */; };
 		CD9D730C16BD438500934CBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D730B16BD438500934CBC /* SystemConfiguration.framework */; };
 		CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */; };
 		CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */; };
@@ -142,10 +145,17 @@
 		6D54728C167B3CFE003F58A5 /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icone.png; path = ../icone.png; sourceTree = "<group>"; };
 		6D54728E167B3D45003F58A5 /* retinalol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retinalol.png; path = ../retinalol.png; sourceTree = "<group>"; };
 		6D98D2CF167F5C47009A5C84 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CD24320A16D2629500D8C039 /* SpecialAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialAnimation.h; sourceTree = "<group>"; };
+		CD24320B16D2629500D8C039 /* SpecialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialAnimation.m; sourceTree = "<group>"; };
+		CD24320D16D2684100D8C039 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		CD24320E16D2684100D8C039 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
 		CD71622D16BC663D0077FDFD /* absences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = absences.png; sourceTree = "<group>"; };
 		CD71622F16BC66490077FDFD /* edt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt.png; sourceTree = "<group>"; };
 		CD71623116BC665B0077FDFD /* nouveautes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nouveautes.png; sourceTree = "<group>"; };
 		CD71623316BC66680077FDFD /* prefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prefs.png; sourceTree = "<group>"; };
+		CD7BE61C16D03BC4006D09D1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CD7BE61E16D03FC0006D09D1 /* InfoDeptController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoDeptController.h; sourceTree = "<group>"; };
+		CD7BE61F16D03FC0006D09D1 /* InfoDeptController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoDeptController.m; sourceTree = "<group>"; };
 		CD9D730816BD414300934CBC /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		CD9D730916BD414300934CBC /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		CD9D730B16BD438500934CBC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -225,7 +235,6 @@
 		6D547236167B3506003F58A5 = {
 			isa = PBXGroup;
 			children = (
-				CD9D730B16BD438500934CBC /* SystemConfiguration.framework */,
 				CDE472D516BB3C6A0071A51D /* Settings.bundle */,
 				6D98D2CF167F5C47009A5C84 /* Default.png */,
 				6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */,
@@ -247,6 +256,8 @@
 		6D547244167B3506003F58A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD9D730B16BD438500934CBC /* SystemConfiguration.framework */,
+				CD7BE61C16D03BC4006D09D1 /* QuartzCore.framework */,
 				22D6B77816BC327500134732 /* MapKit.framework */,
 				6D547245167B3506003F58A5 /* UIKit.framework */,
 				6D547247167B3506003F58A5 /* Foundation.framework */,
@@ -259,6 +270,7 @@
 		6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */ = {
 			isa = PBXGroup;
 			children = (
+				CD24320916D2626100D8C039 /* Animations */,
 				CD9D730716BD412300934CBC /* Utils */,
 				6D04C43216A8460B000A228F /* DetailViewController.h */,
 				6D04C43316A8460B000A228F /* DetailViewController.m */,
@@ -275,6 +287,8 @@
 				6D547260167B3506003F58A5 /* MainStoryboard_iPad.storyboard */,
 				6D547264167B3506003F58A5 /* ViewController.m */,
 				6D547263167B3506003F58A5 /* ViewController.h */,
+				CD24320D16D2684100D8C039 /* MapController.h */,
+				CD24320E16D2684100D8C039 /* MapController.m */,
 				22407D51169E168000AB16CE /* WebView.h */,
 				22407D52169E168000AB16CE /* WebView.m */,
 				22407D54169E16A900AB16CE /* WebViewController.h */,
@@ -286,6 +300,8 @@
 				6D547286167B3B3F003F58A5 /* dictionary.plist */,
 				6D2A637F167B617B00BAC6A8 /* News.h */,
 				6D2A6380167B617B00BAC6A8 /* News.m */,
+				CD7BE61E16D03FC0006D09D1 /* InfoDeptController.h */,
+				CD7BE61F16D03FC0006D09D1 /* InfoDeptController.m */,
 			);
 			path = AppliIUTSDdeLorraine;
 			sourceTree = "<group>";
@@ -321,6 +337,15 @@
 				6D547275167B3506003F58A5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD24320916D2626100D8C039 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				CD24320A16D2629500D8C039 /* SpecialAnimation.h */,
+				CD24320B16D2629500D8C039 /* SpecialAnimation.m */,
+			);
+			name = Animations;
 			sourceTree = "<group>";
 		};
 		CD9D730716BD412300934CBC /* Utils */ = {
@@ -485,6 +510,9 @@
 				22A2F1E116C1608D00220945 /* EdtViewController.m in Sources */,
 				CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */,
 				CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */,
+				CD7BE62016D03FC0006D09D1 /* InfoDeptController.m in Sources */,
+				CD24320C16D2629500D8C039 /* SpecialAnimation.m in Sources */,
+				CD24320F16D2684200D8C039 /* MapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 @end
 
 @implementation WebViewController
+@synthesize webView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,6 +43,12 @@
     [self.webView loadRequest:requestObj];
     
     [self.view addSubview:self.webView];
+}
+
+
+
+- (IBAction)back:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 
