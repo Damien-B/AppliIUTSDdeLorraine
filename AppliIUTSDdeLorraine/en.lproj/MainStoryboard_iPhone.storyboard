@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="intro.png" id="4ad-ax-JsD">
-                                <rect key="frame" x="-19" y="-5" width="358" height="598"/>
+                                <rect key="frame" x="-19" y="0.0" width="358" height="598"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1439,7 +1439,7 @@ Service Scolarité
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="lOb-XV-ddx">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="455" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="7rX-U4-vvZ"/>
                                 </items>
@@ -1462,7 +1462,7 @@ Service Scolarité
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="g76-0f-COX">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="455" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Absence" id="Obe-Fc-NgY">
                                         <barButtonItem key="leftBarButtonItem" title="Retour" id="j8W-qA-NPO"/>
@@ -1847,7 +1847,7 @@ Service Scolarité
                                 <rect key="frame" x="0.0" y="44" width="320" height="455"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="0ed-sU-R3E">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="455" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Autre 1" id="uHr-1d-kaa"/>
                                 </items>
@@ -3165,7 +3165,7 @@ Service Scolarité
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="320" height="480"/>
+        <image name="Default.png" width="57" height="57"/>
         <image name="bg.png" width="320" height="480"/>
         <image name="bg_black.png" width="320" height="418"/>
         <image name="edt.png" width="170" height="136"/>
@@ -3185,6 +3185,85 @@ Service Scolarité
         <image name="top.png" width="320" height="125"/>
         <image name="visite.png" width="170" height="140"/>
     </resources>
+    <classes>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissAction:"/>
+                <relationship kind="outlet" name="dismiss" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="EdtViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EdtViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="EtudiantController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EtudiantController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
+        <class className="InfoDeptController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoDeptController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
+        <class className="RootViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailView" candidateClass="DetailViewController"/>
+            </relationships>
+        </class>
+        <class className="SelectEDTController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectEDTController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="selectEDT:"/>
+            </relationships>
+        </class>
+        <class className="StartController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartController.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="bconnection:" candidateClass="UIButton"/>
+                <relationship kind="action" name="getlocation"/>
+                <relationship kind="action" name="prefsend:" candidateClass="UIButton"/>
+                <relationship kind="action" name="presentAuthPanel:" candidateClass="UIButton"/>
+                <relationship kind="action" name="returnMenuPanel:" candidateClass="UIButton"/>
+                <relationship kind="action" name="setMap:"/>
+                <relationship kind="outlet" name="abo1" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="abo2" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="abo3" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="authPanel" candidateClass="UIView"/>
+                <relationship kind="outlet" name="bconnection" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="log" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="mapview" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="mdp" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="menuPanel" candidateClass="UIView"/>
+                <relationship kind="outlet" name="prefsend" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="toto" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="toto2" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
