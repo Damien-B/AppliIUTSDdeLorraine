@@ -14,11 +14,6 @@
     IBOutlet UITextField *log;
     IBOutlet UITextField *mdp;
     IBOutlet UILabel *toto;
-    IBOutlet UILabel *toto2;
-    IBOutlet UISwitch *abo1;
-    IBOutlet UISwitch *abo2;
-    IBOutlet UISwitch *abo3;
-    IBOutlet UIButton *prefsend;
     NSString *response;
     IBOutlet UIView *authPanel;
     IBOutlet UIView *menuPanel;
@@ -29,17 +24,11 @@
 @property (nonatomic, retain) IBOutlet UITextField *log;
 @property (nonatomic, retain) IBOutlet UITextField *mdp;
 @property (nonatomic, retain) IBOutlet UILabel *toto;
-@property (nonatomic, retain) IBOutlet UILabel *toto2;
-@property (nonatomic, retain) IBOutlet UISwitch *abo1;
-@property (nonatomic, retain) IBOutlet UISwitch *abo2;
-@property (nonatomic, retain) IBOutlet UISwitch *abo3;
-@property (nonatomic, retain) IBOutlet UIButton *prefsend;
 @property (nonatomic, retain) NSString *response;
 @property (nonatomic, retain) IBOutlet UIView *authPanel;
 @property (nonatomic, retain) IBOutlet UIView *menuPanel;
 
 - (IBAction) bconnection: (UIButton *) sender;
-- (IBAction) prefsend: (UIButton *) sender;
 - (IBAction) presentAuthPanel: (UIButton *) sender;
 - (IBAction) returnMenuPanel: (UIButton *) sender;
 @end

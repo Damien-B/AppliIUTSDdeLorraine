@@ -12,12 +12,12 @@
 @interface News : NSObject{
     NSString *newsTitre;
     NSString *newsDescription;
+    NSString *newsContenu;
 }
 @property (nonatomic, retain) NSString *newsTitre;
 @property (nonatomic, retain) NSString *newsDescription;
+@property (nonatomic, retain) NSString *newsContenu;
 
 - (id) initWithDictionaryFromPlist: (NSDictionary *) dictionary;
 
 @end
-
-

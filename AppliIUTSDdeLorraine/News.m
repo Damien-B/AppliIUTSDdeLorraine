@@ -10,20 +10,22 @@
 
 @implementation News
 
-@synthesize newsTitre;
-@synthesize newsDescription;
+@synthesize newsTitre, newsDescription,newsContenu;
 
 - (id) initWithDictionaryFromPlist: (NSDictionary *) dictionary {
     [self init];
     
     self.newsTitre=[dictionary objectForKey:@"titre"];
     self.newsDescription=[dictionary objectForKey:@"description"];
+    self.newsContenu=[dictionary objectForKey:@"contenu"];
+    NSLog(@"contenu : %@", newsContenu);
     return self;
 }
 
 - (void)dealloc {
     [newsTitre release];
     [newsDescription release];
+    [newsContenu release];
     [super dealloc];
 }
 
