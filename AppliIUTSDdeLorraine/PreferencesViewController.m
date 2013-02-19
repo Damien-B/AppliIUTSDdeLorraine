@@ -15,7 +15,7 @@
 
 @implementation PreferencesViewController
 
-@synthesize edt;
+@synthesize edt, retour;
 @synthesize pedagogie;
 @synthesize general;
 @synthesize divertissement;
@@ -243,6 +243,8 @@
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     if(connection){
     }
+    [self dismissModalViewControllerAnimated:YES];
+
 }
 
 //Envoi de la requete après clic sur le bouton envoi des preferences abonnements

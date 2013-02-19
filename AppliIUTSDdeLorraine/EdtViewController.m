@@ -87,9 +87,7 @@
     NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
     
     NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
-    
-    NSString *Tree = @"5962%2C5963";
-    
+        
     NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=%@&idPianoDay=%@&idTree=%@&width=2000&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126", maj, week, day, edtID];
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
@@ -116,7 +114,6 @@
     
     NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
     
-    NSString *Tree = @"5962%2C5963";
     
     NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=%@&idPianoDay=%@&idTree=%@&width=2000&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126", maj, week, day, edtID];
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
