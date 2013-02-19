@@ -36,8 +36,8 @@
 {
     [super viewDidLoad];
   	// Do any additional setup after loading the view.
-    self.webEdt = [[[UIWebView alloc]
-                    initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
+   // self.webEdt = [[[UIWebView alloc]
+    //                initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     SelectEDTController * prev =(SelectEDTController *) [self presentingViewController];
     [navBar setTitle:  prev.myEDTName];
     edtID = prev.myEDTCode;
@@ -70,12 +70,12 @@
     
     [self.webEdt loadRequest:requestObj];
     
-    [self.view addSubview:self.webEdt];
+   //[self.view addSubview:self.webEdt];
 }
 
 - (IBAction) next: (UIBarButtonItem *) sender{
-    self.webEdt = [[[UIWebView alloc]
-                    initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
+ //   self.webEdt = [[[UIWebView alloc]
+  //                  initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     
     NSError *error = nil;
     
@@ -87,23 +87,21 @@
     NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
     
     NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
-    
-    NSString *Tree = @"5962%2C5963";
-    
+        
     NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=%@&idPianoDay=%@&idTree=%@&width=2000&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126", maj, week, day, edtID];
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     
     [self.webEdt loadRequest:requestObj];
     
-    [self.view addSubview:self.webEdt];
+    //[self.view addSubview:self.webEdt];
     
 }
 
 -(IBAction)before :(UIBarButtonItem *) sender{
     
-    self.webEdt = [[[UIWebView alloc]
-                    initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
+  //  self.webEdt = [[[UIWebView alloc]
+   //                 initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     
     NSError *error = nil;
     
@@ -116,7 +114,6 @@
     
     NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
     
-    NSString *Tree = @"5962%2C5963";
     
     NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=%@&idPianoDay=%@&idTree=%@&width=2000&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126", maj, week, day, edtID];
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
@@ -124,7 +121,7 @@
     
     [self.webEdt loadRequest:requestObj];
     
-    [self.view addSubview:self.webEdt];
+  //  [self.view addSubview:self.webEdt];
     
 }
 
