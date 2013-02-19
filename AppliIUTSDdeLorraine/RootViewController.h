@@ -11,12 +11,17 @@
 #import "DetailViewController.h"
 
 @interface RootViewController : UITableViewController<UITableViewDataSource> {
-    NSMutableArray *tabNews;   IBOutlet  DetailViewController *detailView;
-
+    NSMutableArray *tabNews;
+    UILabel *titre;
+    DetailViewController *detailViewCtr;
+    NSString *newsCurrentTitle;
+    NSString *newsCurrentContent;
 }
 
-
+-(NSString *)getCurrentNewsTitle;
+-(NSString *)getCurrentNewsContent;
 @property (nonatomic, retain) NSMutableArray *tabNews;
-@property (nonatomic, retain) IBOutlet  DetailViewController *detailView;
+@property (nonatomic, retain) UILabel *titre;
+@property (nonatomic, retain) DetailViewController *detailViewCtr;
 
 @end

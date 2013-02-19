@@ -22,12 +22,7 @@
 @synthesize log;
 @synthesize mdp;
 @synthesize toto;
-@synthesize toto2;
 @synthesize response;
-@synthesize abo1;
-@synthesize abo2;
-@synthesize abo3;
-@synthesize prefsend;
 @synthesize authPanel;
 @synthesize menuPanel;
 
@@ -57,55 +52,6 @@
 }
 
 //Envoi de la requete après clic sur le bouton envoi des preferences abonnements
-- (IBAction) prefsend: (UIButton *) sender{
-    
-    NSString *uuid = [[NSUUID UUID] UUIDString];
-    NSString *prefabo1;
-    NSString *prefabo2;
-    NSString *prefabo3;
-//    
-//    if(([abo1 isOn] == NO)&&([abo2 isOn] == NO)&&([abo3 isOn] == NO)){
-//        NSLog(@"pas d'abo selectionné");
-//        toto2.text = @"Erreur, pas d'abonnement sélectionné.";
-//    }else if((([abo1 isOn] == YES)&&([abo2 isOn] == YES))||(([abo2 isOn] == YES)&&([abo3 isOn] == YES))||(([abo1 isOn] == YES)&&([abo3 isOn] == YES))){
-//        NSLog(@"un abonnement max");
-//        toto2.text = @"Erreur, un abonnement maximum";
-//    }else{
-//        NSLog(@"OK");
-//        toto2.text = @"";
-//    }
-    if(([abo1 isOn] == YES)){
-        prefabo1=@"yes";
-    }else{
-        prefabo1=@"no";
-    }
-    if(([abo2 isOn] == YES)){
-        prefabo2=@"yes";
-    }else{
-        prefabo2=@"no";
-    }
-    if(([abo3 isOn] == YES)){
-        prefabo3=@"yes";
-    }else{
-        prefabo3=@"no";
-    }
-    
-    
-    NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/abonnementpref.php?UUId=%@&pref1=%@&pref2=%@&pref3=%@", uuid, prefabo1, prefabo2, prefabo3];
-    
-    
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
-    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    if(connection){
-        NSLog(@"connected");
-        //toto.text = @"Connexion en cours";
-    }else{
-        NSLog(@"not connected");
-        //toto.text = @"Connexion nul";
-    }
-}
-
-
 
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {

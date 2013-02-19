@@ -7,7 +7,7 @@
 //
 
 #import "StartController.h"
-
+#import  "Utils.h"
 @interface StartController()
 
 @end
@@ -20,7 +20,18 @@
     [super viewDidLoad];
     intro2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sponsor.png"]];
     
+    //envoi vers script pour test si présence dans la bdd
+    NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/ajoutbdd.php?uuid=%@", [Utils getDeviceID]];
     
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    if(connection){
+        NSLog(@"connected, url=%@", url);
+    }else{
+        NSLog(@"not connected");
+    }
+
 }
 
 

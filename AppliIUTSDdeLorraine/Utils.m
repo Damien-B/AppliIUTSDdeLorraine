@@ -12,15 +12,33 @@
 @implementation Utils
 
 + (NSString *) getDeviceID {
-    CFUUIDRef uuid = CFUUIDCreate(NULL);
-    CFStringRef str = CFUUIDCreateString(NULL, uuid);
-    CFRelease(uuid);
-    NSString *string = (NSString *) str;
-    NSMutableString *result = [NSMutableString stringWithString: string];
-    [string autorelease];
-    [result replaceOccurrencesOfString: @"-" withString: @"" options: NSLiteralSearch
-                                 range: NSMakeRange(0, [result length]) ];
-    return result;
+    NSString *userAppID = [[NSUserDefaults standardUserDefaults] objectForKey:@"UIDAppKey"];
+    
+    
+    
+    if (!userAppID) {
+        
+        
+        
+        // Create universally unique identifier (object)
+        
+        CFUUIDRef uuidObject = CFUUIDCreate(NULL);
+        
+        
+        
+        // Get the string representation of CFUUID object.
+        
+        NSString *uuidStr = (NSString *)CFUUIDCreateString(NULL, uuidObject);
+        CFRelease(uuidObject);
+        userAppID = [NSString stringWithString:(NSString *) uuidStr];
+        
+        CFRelease(uuidStr);
+        
+        [[NSUserDefaults standardUserDefaults] setObject:userAppID forKey:@"UIDAppKey"];
+        
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    return userAppID;
 }
 
 
