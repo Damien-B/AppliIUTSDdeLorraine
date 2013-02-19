@@ -17,12 +17,12 @@
 @end
 
 @implementation RootViewController
-@synthesize tabNews;
+@synthesize tabNews, tabView, titre, detailViewCtr;
 
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithStyle:style];
+    self = [super init];// initWithStyle:style];
     if (self) {
         // Custom initialization
     }
@@ -178,6 +178,10 @@
 }
 -(NSString *)getCurrentNewsContent{
     return newsCurrentContent;
+}
+
+- (IBAction)dismissAction:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end
