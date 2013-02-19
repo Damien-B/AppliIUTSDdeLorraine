@@ -65,7 +65,9 @@
     region.span.latitudeDelta = 0.01;
     region.span.longitudeDelta = 0.01;
     
-    
+    IUTLocation *annotationIUT =[[IUTLocation alloc] initWithCoordinate];
+    [mapview addAnnotation:annotationIUT];
+
     [self.mapview setRegion:region animated:YES];
     
 }
