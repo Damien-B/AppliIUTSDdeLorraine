@@ -7,16 +7,19 @@
 //
 
 #import "DetailViewController.h"
-
+#import "RootViewController.h"
+#import "Utils.h"
 @interface DetailViewController ()
 
 @end
 
 @implementation DetailViewController
-@synthesize txtlabel;
+@synthesize titre;
+@synthesize contenu;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
+       NSLog(@"in init detail");
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -28,18 +31,24 @@
 {
     self = [super init];
     if (self) {
-        NSLog(@"in init");
+        NSLog(@"in init detail");
         // Custom initialization
+        
     }
     return self;
 }
 
 - (void)viewDidLoad
-{
+{   NSLog(@"in init detail");
     
-    NSLog(@"jlkjkl");
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
+    NSString* titrerow=[(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
+    NSString* contenurow=[(RootViewController *) [self presentingViewController] getCurrentNewsContent];
+    NSLog(@"contenurzgzrzfzrf:%@", contenurow);
+    titre.text=titrerow;
+    contenu.text=contenurow;
 }
 
 - (void)didReceiveMemoryWarning

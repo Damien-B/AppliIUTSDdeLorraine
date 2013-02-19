@@ -9,8 +9,8 @@
 #import "RootViewController.h"
 #import "News.h"
 #import <UIKit/UIKit.h>
-#import "UIKit/UIKit.h"
 #import "DetailViewController.h"
+#import "Utils.h"
 
 @interface RootViewController ()
 
@@ -18,7 +18,6 @@
 
 @implementation RootViewController
 @synthesize tabNews;
-@synthesize detailView;
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -37,9 +36,9 @@
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     self.tabNews = [[NSMutableArray alloc] init];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"dictionary" ofType:@"plist"];
     //NSDictionary *dictFromFile = [[NSDictionary alloc]initWithContentsOfFile:path];
-    NSArray *contenuTableauPlist = [[NSArray alloc] initWithContentsOfFile:path];
+    NSString *urlxml=[NSString stringWithFormat:@"http://iutsd.applorraine.fr/%@.plist", [Utils getDeviceID]];
+    NSArray *contenuTableauPlist = [[NSArray alloc] initWithContentsOfURL:[NSURL URLWithString:urlxml]];
     for (NSDictionary *dict in contenuTableauPlist){
         //NSString *titre = [dict objectForKey:@"titre"];
         News *ws = [[News alloc]initWithDictionaryFromPlist:dict];
@@ -47,7 +46,6 @@
         [tabNews addObject:ws];
     }
     
-    detailView = [[DetailViewController alloc] init];
    // NSArray *arrayFromFile = [dictFromFile objectForKey:@"Root"];
    // NSLog(@"toto");
     //NSMutableArray *dictionaryToAdd = [[NSMutableArray alloc]init];
@@ -85,12 +83,12 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    NSLog(@"titi");
     return [self.tabNews count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier /*forIndexPath:indexPath*/];
     
@@ -99,8 +97,9 @@
         cell = [[[UITableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
     News *ws = [self.tabNews objectAtIndex:[indexPath row]];
-    cell.textLabel.text=ws.newsTitre;
-    cell.detailTextLabel.text=ws.newsDescription;
+    
+        cell.textLabel.text=ws.newsTitre;
+        cell.detailTextLabel.text=ws.newsDescription;
     
     return cell;
 }
@@ -156,10 +155,29 @@
 //     [self.navigationController pushViewController:detailView animated:YES];
 //    [self.navigationController presentingViewController:  popToRootViewControllerAnimated:YES];// detailView animated:YES completion:NULL];
   //  [self.parentViewController  pushViewController:detailView animated:YES];
-     [self performSegueWithIdentifier:@"detailNews" sender:self];
-    NSLog(@"toto");
+  
+//    UIStoryboard *iphone= [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone" bundle:nil];
+//    DetailViewController *controller= [iphone instantiateViewControllerWithIdentifier:@"test"];
+//    [[controller titre]setText:@"toto"];
+    News *ws = [self.tabNews objectAtIndex:[indexPath row]];
+    
+    
+ 
+    newsCurrentTitle=ws.newsTitre;
+    newsCurrentContent=ws.newsContenu;
+    [self performSegueWithIdentifier:@"detailNews" sender:self];
+   
+    
+    //[detailView
     // [DetailViewController release];
     
+}
+
+-(NSString *)getCurrentNewsTitle{
+    return newsCurrentTitle;
+}
+-(NSString *)getCurrentNewsContent{
+    return newsCurrentContent;
 }
 
 @end
