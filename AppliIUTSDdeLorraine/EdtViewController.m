@@ -36,8 +36,8 @@
 {
     [super viewDidLoad];
   	// Do any additional setup after loading the view.
-    self.webEdt = [[[UIWebView alloc]
-                    initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
+   // self.webEdt = [[[UIWebView alloc]
+    //                initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     SelectEDTController * prev =(SelectEDTController *) [self presentingViewController];
     [navBar setTitle:  prev.myEDTName];
     edtID = prev.myEDTCode;
@@ -70,12 +70,12 @@
     
     [self.webEdt loadRequest:requestObj];
     
-    [self.view addSubview:self.webEdt];
+   //[self.view addSubview:self.webEdt];
 }
 
 - (IBAction) next: (UIBarButtonItem *) sender{
-    self.webEdt = [[[UIWebView alloc]
-                    initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
+ //   self.webEdt = [[[UIWebView alloc]
+  //                  initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     
     NSError *error = nil;
     
@@ -94,14 +94,14 @@
     
     [self.webEdt loadRequest:requestObj];
     
-    [self.view addSubview:self.webEdt];
+    //[self.view addSubview:self.webEdt];
     
 }
 
 -(IBAction)before :(UIBarButtonItem *) sender{
     
-    self.webEdt = [[[UIWebView alloc]
-                    initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
+  //  self.webEdt = [[[UIWebView alloc]
+   //                 initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     
     NSError *error = nil;
     
@@ -121,7 +121,7 @@
     
     [self.webEdt loadRequest:requestObj];
     
-    [self.view addSubview:self.webEdt];
+  //  [self.view addSubview:self.webEdt];
     
 }
 
