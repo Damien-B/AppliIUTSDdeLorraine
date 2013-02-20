@@ -18,7 +18,7 @@
 {
     
     [super viewDidLoad];
-    intro2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sponsor.png"]];
+    intro2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sponsors_3_1.png"]];
     
     //envoi vers script pour test si présence dans la bdd
     NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/ajoutbdd.php?uuid=%@", [Utils getDeviceID]];

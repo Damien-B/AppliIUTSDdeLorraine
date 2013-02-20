@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -12,8 +12,12 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="intro.png" id="4ad-ax-JsD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="4ad-ax-JsD">
                                 <rect key="frame" x="-19" y="0.0" width="358" height="598"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="lancement_2.png" id="FeJ-cl-fB9">
+                                <rect key="frame" x="0.0" y="141" width="320" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -82,7 +86,7 @@
                                                 <rect key="frame" x="0.0" y="-60" width="320" height="548"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rfd-iu-mr1">
-                                                <rect key="frame" x="26" y="102" width="85" height="71"/>
+                                                <rect key="frame" x="15" y="84" width="85" height="71"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" image="id.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -96,7 +100,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eRG-sP-4Kz">
-                                                <rect key="frame" x="118" y="103" width="85" height="71"/>
+                                                <rect key="frame" x="118" y="84" width="85" height="71"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" image="iut.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,7 +114,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JIy-RK-grK">
-                                                <rect key="frame" x="219" y="103" width="85" height="71"/>
+                                                <rect key="frame" x="220" y="84" width="85" height="71"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" image="visite.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -124,9 +128,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XaE-t6-hGY">
-                                                <rect key="frame" x="225" y="202" width="85" height="71"/>
+                                                <rect key="frame" x="220" y="177" width="85" height="78"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" image="info.png">
+                                                <state key="normal" image="info_1.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -138,9 +142,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4hT-uO-f0U">
-                                                <rect key="frame" x="132" y="202" width="85" height="71"/>
+                                                <rect key="frame" x="118" y="177" width="85" height="78"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" image="src.png">
+                                                <state key="normal" image="src_1.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -152,9 +156,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XU9-yK-HAD">
-                                                <rect key="frame" x="39" y="202" width="85" height="71"/>
+                                                <rect key="frame" x="15" y="177" width="85" height="78"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" image="geii.png">
+                                                <state key="normal" image="geii_1.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -288,327 +292,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="fqj-19-kCM">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="Smj-Ag-9oG">
-                                <rect key="frame" x="20" y="66" width="280" height="384"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">
-
-
-PRÉSENTATION DE L'IUT</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-ICAKCgogICA
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="L’IUT de Saint-Dié-des-Vosges est né en 1993 dans le cadre du schéma « ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Université 2000">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> » de politique d’aménagement du territoire. 
-
-
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Il est rattaché à l'université de Lorraine qui réunit en un seul  établissement l'Institut national polytechnique de Lorraine, l'Université Henri Poincaré-Nancy 1, l'Université Nancy 2 et l'Université Paul Verlaine-Metz..
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="UNE PÉDAGOGIE DE LA RÉUSSITE">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">A travers un grand nombre de TP et TD, les IUT privilégient surtout l'enseignement par petits groupes. Cette pédagogie favorise la réussite car elle permet un suivi très personnalisé.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-CgoKA
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="LES FORMATIONS  ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="• ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="DUT :">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-     - SRC
-	- INFO
-	- GEII
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="• ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Licence pro:">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-DQ
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">	- A2I 
-	- I2M 
-	- ISN 
-	- TeCAMTV 
-	- CDG
-
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">CONTACT
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">IUT de Saint-Dié-des-Vosges
-11, rue de l’Université
-88100 Saint-Dié-des-Vosges
-
-Tél : 03 29 53 60 00
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="iutsd-contact@univ-lorraine.fr ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="SE RESTAURER">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">• fast-food: 
-	</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">- McDonalds (2 Avenue de l’Égalité)
-	- KJC (5 rue Gambetta)
-	- O’Malo (50 rue Thiers)
-	- Andiamo Pizza (11 rue d'Alsace)</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
- 
-• sandwicherie:</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-	- CROC'VOSGIEN (20 rue Concorde)
-	- CassisFramboise (35 rue Stanislas)</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="SE LOGER">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-
-Foyer des Jeunes Travailleurs:
-	</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">- Chambres
-	- Studios
-	- T2
-	- Foyers soleils</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="iut_photo.png" id="hBf-8h-Yf6">
                                 <rect key="frame" x="0.0" y="34" width="320" height="150"/>
                             </imageView>
@@ -625,6 +308,11 @@ Foyer des Jeunes Travailleurs:
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <webView contentMode="scaleToFill" id="ZDk-Ao-78D">
+                                <rect key="frame" x="40" y="246" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -645,438 +333,6 @@ Foyer des Jeunes Travailleurs:
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="vSX-JU-y4Y">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="5eQ-Af-kN8">
-                                <rect key="frame" x="20" y="65" width="280" height="385"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">
-
-
-PRÉSENTATION DU DUT SRC
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="   ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">La formation SRC forme des utilisateurs de TIC (Technologies de l’information et de la Communication) qui seront capables de travailler aussi bien avec des spécialistes de l’</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="informatique">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" qu’avec ceux de l’">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="infographie">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=", du ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="multimédia">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" et de la ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="communication">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">.
-
-   Le DUT SRC apporte des compétences dans le domaine de la communication, des services du réseaux et du multimédia en vue soit d’une </string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="insertion">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="professionnelle">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" directe, soit d’une">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" poursuite d’études">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">.
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="DÉBOUCHÉS">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-• Métiers: Développeur de projets multimédia, webdesigner, webdéveloppeur, administrateur réseaux, réalisateur de systèmes d’informations
-
- • Les secteurs: Agence de communication, studios graphiques et multimédia, services de communication d’entreprises et d’administrations ...
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-CgoKA
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="POURSUITE D'ÉTUDES  ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Licence professionelle ou générale
-   Master d’étude 
-   École d’ingénieurs 
-   Formation double compétence...
-
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">PROGRAMME
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">1800 heures d’enseignement encadré, 300 heures de projet, sur 4 semestres
-
-
-• </string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Communication, culture et connaissance de l’environnement socio-économique(990h):">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-IA0
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">	- Langues et communication interculturelle
-	- Théories de l’information et de la communication
-	- Esthétique, écritures, langages et communication
-	- Conduite de projet
-	- Connaissance des organisations
-	- Projet personnel et professionnel
-
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="• ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Culture technologique et développement multimédia (810h): ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-	- Culture scientifique et traitement de l’information
-	- Réseaux et services du réseaux
-	- Outils et méthodes informatiques pour le multimédia
-	- Création et intégration des médias 
-
-
-•</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" Mise en situation professionelle:">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-	- Projet (300h)
-	- Stages en entreprise (10 semaines)</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="ADMISSION">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Tous type de bac ou équivalence (DAEU)
-Admission sur dossier</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="RENSEIGNEMENTS SUPPLÉMENTAIRES">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-
-Service Scolarité
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">tél. 03 29 53 60 60 - fax. 03 29 53 60 14
-   </string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="iutsd-scolarite-contact@univ-lorraine.fr">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="src_photo.png" id="N9k-8s-iXH">
                                 <rect key="frame" x="0.0" y="34" width="320" height="150"/>
                             </imageView>
@@ -1093,6 +349,11 @@ Service Scolarité
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <webView contentMode="scaleToFill" id="wNZ-mw-1zC">
+                                <rect key="frame" x="40" y="242" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1199,10 +460,10 @@ Service Scolarité
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UwN-fM-bas">
-                                <rect key="frame" x="10" y="9" width="63" height="28"/>
+                                <rect key="frame" x="10" y="10" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="retour" backgroundImage="Default.png">
+                                <state key="normal" title="retour" backgroundImage="retour_2.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1284,10 +545,10 @@ Service Scolarité
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9bT-yq-71I">
-                                <rect key="frame" x="8" y="20" width="63" height="28"/>
+                                <rect key="frame" x="10" y="10" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="retour" backgroundImage="Default.png">
+                                <state key="normal" title="retour" backgroundImage="retour_2.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1324,10 +585,10 @@ Service Scolarité
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="m7J-Ra-aXB">
-                                <rect key="frame" x="15" y="20" width="63" height="28"/>
+                                <rect key="frame" x="10" y="10" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="retour" backgroundImage="Default.png">
+                                <state key="normal" title="retour" backgroundImage="retour_2.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1553,10 +814,10 @@ Service Scolarité
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sSx-8k-kGo">
-                                <rect key="frame" x="15" y="8" width="63" height="28"/>
+                                <rect key="frame" x="10" y="10" width="63" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="retour" backgroundImage="Default.png">
+                                <state key="normal" title="retour" backgroundImage="retour_2.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1602,10 +863,10 @@ Service Scolarité
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7tY-d2-PaJ">
-                                <rect key="frame" x="25" y="25" width="63" height="28"/>
+                                <rect key="frame" x="10" y="10" width="60" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="retour" backgroundImage="Default.png">
+                                <state key="normal" title="retour" backgroundImage="retour_2.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1773,348 +1034,6 @@ Service Scolarité
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="9Y8-7W-iNX">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="OZ0-NA-S8A">
-                                <rect key="frame" x="20" y="96" width="280" height="353"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="PRÉSENTATION DU DUT INFO">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-ICAKCiAgIA
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">La formation INFO apporte des compétences dans différents domaines de l’informatique. 
-
-   On retrouve majoritairement dans cette formation des travaux sur: </string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="bases de données">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=", technologies web et nomade, systèmes d’information, analyse et synthèse d’image, ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="systèmes et réseaux">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=", en vue soit d’une ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="insertion professionnelle">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" directe, soit d’une ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="poursuite d’études">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">.
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="DÉBOUCHÉS">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" • ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Métiers:">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> Développeur, responsable réseaux, gestionnaire de parc informatique, analyste d’exploitation, administrateur de bases de données, architecte de systèmes d’informations, concepteur de sites web, développeur d’applications mobiles, webmestre, ...
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-CgoKA
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="POURSUITE D'ÉTUDES  ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Licence professionelle ou générale
-   Master d’étude 
-   École d’ingénieurs 
-   Formation double compétence...
-
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">PROGRAMME
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">1800 heures d’enseignement encadré, 300 heures de projet, sur 4 semestres
-
-• </string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Informatique (750h):">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-	- Algorithme et programmation
-	- Architecture, systèmes et réseaux
-	- Outils et modèles du génie logiciel
-
-• Connaissances et compétences générales (750h):
-	- Mathématiques
-	- Économie et gestion des organisations
-	- Langues, expression-communication
-
-• Modules complémentaires (300h. déterminées en fonction du parcours)
-
-• Mise en situation professionnelle
-	- Projet (300h)
-	- Stage en entreprise (10 semaines aux moins)</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="ADMISSION">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Tous type de bac ou équivalence (DAEU)
-Admission sur dossier</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="RENSEIGNEMENTS SUPPLÉMENTAIRES">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-
-Service Scolarité
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">tél. 03 29 53 60 60 - fax. 03 29 53 60 14
-   </string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="iutsd-scolarite-contact@univ-lorraine.fr">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="info_photo.png" id="OGu-yY-fbc">
                                 <rect key="frame" x="0.0" y="34" width="320" height="150"/>
                             </imageView>
@@ -2131,6 +1050,11 @@ Service Scolarité
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <webView contentMode="scaleToFill" id="BVX-rZ-Rqo">
+                                <rect key="frame" x="40" y="238" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2150,677 +1074,6 @@ Service Scolarité
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="ibb-bK-6xz">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="4" editable="NO" usesAttributedText="YES" id="YcY-xb-eAL">
-                                <rect key="frame" x="20" y="65" width="280" height="385"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">
-
-
-PRÉSENTATION DU DUT GEII
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="   ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">La formation GEII apporte des compétences dans les techniques modernes des automatismes, de l’électronique, de l’électrotechnique, de l’informatique industrielle et des réseaux, en vue soit d’une insertion professionnelle directe, soit d’une poursuite d’études.
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Elle offre également une orientation originale en traitement du signal et de l’imae pour des emplois liés aux nouvelles technologies utilisés en télécommunication, vision, traitement d’images et multimédia.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="DÉBOUCHÉS">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="• Métiers:  ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Chargé d’essais et de contrôle, développeur, automaticien de régulation, responsable d’équipes de maintenance, informaticien industriel...
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="• Les secteurs: ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> les industries manufacturières, les transports, l’automobile, l’aéronautique, la médecine (scanner, IRM,...), l’agro-alimentaire, les sociétés de services informatiques
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-CgoKA
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="POURSUITE D'ÉTUDES  ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Licence professionelle ou générale
-   Master d’étude 
-   École d’ingénieurs 
-   Formation double compétence...
-
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">PROGRAMME
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">1800 heures d’enseignement encadré, 330 heures de projet, sur 4 semestres
-
-• </string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Formation scientifique et humaine (510h):
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-CQ
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">- Mathématiques
-	- Physique
-	- Culture-communication
-	- Connaissance de l’entreprise
-	- Anglais
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="• ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Genie électrique (480h):
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-CQ
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">- Fondement du génie électrique
-	- Electrotechnique et electronique de puissance
-	- Electronique
-	- Etudes et réalisations
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="•">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> Informatique des systèmes industriels (480h):
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-CQ
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">- Informatique industrielle
-	- Electronique numérique, synthèse logique
-	- Automatique
-	- Automatismes industriels et réseau
-	- Etudes et réalisations
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="• ">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content"> Mise en situation professionnelle (330h)
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-CQ
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">- Projet personnel et professionnel 
-	- Projet tuteuré
-	- Stage en entreprise (10 semaines)</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28.299999237060547"/>
-                                                    <textTab alignment="left" location="56.650001525878906"/>
-                                                    <textTab alignment="left" location="85"/>
-                                                    <textTab alignment="left" location="113.34999847412109"/>
-                                                    <textTab alignment="left" location="141.69999694824219"/>
-                                                    <textTab alignment="left" location="170.05000305175781"/>
-                                                    <textTab alignment="left" location="198.39999389648438"/>
-                                                    <textTab alignment="left" location="226.75"/>
-                                                    <textTab alignment="left" location="255.10000610351562"/>
-                                                    <textTab alignment="left" location="283.45001220703125"/>
-                                                    <textTab alignment="left" location="311.79998779296875"/>
-                                                    <textTab alignment="left" location="340.14999389648438"/>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="ADMISSION">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Tous type de bac ou équivalence (DAEU)
-Admission sur dossier</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="10" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="RENSEIGNEMENTS SUPPLÉMENTAIRES">
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-
-Service Scolarité
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">tél. 03 29 53 60 60 - fax. 03 29 53 60 14
-   </string>
-                                        <attributes>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="iutsd-scolarite-contact@univ-lorraine.fr">
-                                        <attributes>
-                                            <color key="NSColor" red="0.97254908084869385" green="0.7882353663444519" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
-                                            <font key="NSFont" size="12" name="Helvetica-Light"/>
-                                            <font key="NSOriginalFont" size="12" name="Helvetica-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" headIndent="10"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="geii_photo.png" id="WJf-Pk-iZn">
                                 <rect key="frame" x="0.0" y="34" width="320" height="150"/>
                             </imageView>
@@ -2837,6 +1090,11 @@ Service Scolarité
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <webView contentMode="scaleToFill" id="i4J-4J-bj5">
+                                <rect key="frame" x="40" y="247" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2858,10 +1116,10 @@ Service Scolarité
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WZH-vY-qA7">
-                                <rect key="frame" x="13" y="9" width="63" height="28"/>
+                                <rect key="frame" x="10" y="10" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="retour" backgroundImage="Default.png">
+                                <state key="normal" title="retour" backgroundImage="retour_2.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -2924,10 +1182,10 @@ Service Scolarité
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="b1M-1y-OzB">
-                                <rect key="frame" x="25" y="10" width="63" height="28"/>
+                                <rect key="frame" x="10" y="10" width="63" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="retour" backgroundImage="Default.png">
+                                <state key="normal" title="retour" backgroundImage="retour_2.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -2988,16 +1246,20 @@ Service Scolarité
         <image name="edt.png" width="170" height="136"/>
         <image name="fb.png" width="135" height="19"/>
         <image name="geii.png" width="170" height="140"/>
+        <image name="geii_1.png" width="175" height="160"/>
         <image name="geii_photo.png" width="640" height="298"/>
         <image name="id.png" width="85" height="70"/>
         <image name="info.png" width="170" height="140"/>
+        <image name="info_1.png" width="175" height="160"/>
         <image name="info_photo.png" width="640" height="298"/>
-        <image name="intro.png" width="320" height="461"/>
         <image name="iut.png" width="85" height="70"/>
         <image name="iut_photo.png" width="640" height="298"/>
+        <image name="lancement_2.png" width="609" height="391"/>
         <image name="nouveautes.png" width="170" height="136"/>
         <image name="prefs.png" width="170" height="136"/>
+        <image name="retour_2.png" width="120" height="59"/>
         <image name="src.png" width="170" height="140"/>
+        <image name="src_1.png" width="175" height="160"/>
         <image name="src_photo.png" width="640" height="298"/>
         <image name="top.png" width="320" height="125"/>
         <image name="visite.png" width="170" height="140"/>
