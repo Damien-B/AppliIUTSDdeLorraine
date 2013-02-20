@@ -25,7 +25,7 @@
 }
 
 - (NSString *)subtitle{
-    return @"Sous-titre du lieu";
+    return @"11 rue de l'université ";
 }
 
 @end

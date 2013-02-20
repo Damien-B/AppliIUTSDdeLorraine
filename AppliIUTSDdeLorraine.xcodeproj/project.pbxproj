@@ -68,6 +68,7 @@
 		CD7BE62016D03FC0006D09D1 /* InfoDeptController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7BE61F16D03FC0006D09D1 /* InfoDeptController.m */; };
 		CD9D730C16BD438500934CBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D730B16BD438500934CBC /* SystemConfiguration.framework */; };
 		CDA5245C16D4431A004A7C42 /* IUTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA5245B16D4431A004A7C42 /* IUTLocation.m */; };
+		CDA5245E16D44E4E004A7C42 /* logoIUT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */; };
 		CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */; };
 		CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */; };
 /* End PBXBuildFile section */
@@ -165,6 +166,7 @@
 		CD9D730B16BD438500934CBC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CDA5245A16D4431A004A7C42 /* IUTLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUTLocation.h; sourceTree = "<group>"; };
 		CDA5245B16D4431A004A7C42 /* IUTLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUTLocation.m; sourceTree = "<group>"; };
+		CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logoIUT.jpeg; sourceTree = "<group>"; };
 		CDDFDE9D16CFB4AF005FD7A0 /* SelectEDTController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectEDTController.h; sourceTree = "<group>"; };
 		CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectEDTController.m; sourceTree = "<group>"; };
 		CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EtudiantController.h; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 		22089E9D169D9F0900298246 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */,
 				22089E9F169D9F2700298246 /* appli.png */,
 				22089EA0169D9F2700298246 /* bg_black.png */,
 				22089EA1169D9F2700298246 /* bg.png */,
@@ -477,6 +480,7 @@
 				CD71623016BC66490077FDFD /* edt.png in Resources */,
 				CD71623216BC665B0077FDFD /* nouveautes.png in Resources */,
 				CD71623416BC66680077FDFD /* prefs.png in Resources */,
+				CDA5245E16D44E4E004A7C42 /* logoIUT.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
