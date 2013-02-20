@@ -1106,20 +1106,20 @@ Service Scolarité
             <objects>
                 <viewController id="kjX-Il-Biw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iiV-of-MRv">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_black.png" id="EbC-PF-lwN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Voulez-vous vraiment vous déconnecter ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jTc-u5-m5M">
-                                <rect key="frame" x="20" y="120" width="280" height="21"/>
+                                <rect key="frame" x="20" y="98" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UKT-AV-YGd">
-                                <rect key="frame" x="73" y="193" width="49" height="44"/>
+                                <rect key="frame" x="73" y="155" width="49" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="Oui">
                                     <color key="titleColor" red="0.97254908080000002" green="0.78823536630000002" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -1130,7 +1130,7 @@ Service Scolarité
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l33-R0-sd3">
-                                <rect key="frame" x="198" y="193" width="49" height="44"/>
+                                <rect key="frame" x="198" y="155" width="49" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="Non">
                                     <color key="titleColor" red="0.97254908080000002" green="0.78823536630000002" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -1163,6 +1163,9 @@ Service Scolarité
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="bKb-Dj-NMd">
                                 <rect key="frame" x="0.0" y="44" width="320" height="372"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ow5-XK-Qej" id="DjW-Eq-Ulg"/>
+                                </connections>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="L6W-x1-YKC">
                                 <rect key="frame" x="0.0" y="416" width="320" height="44"/>
@@ -1712,20 +1715,20 @@ Service Scolarité
             <objects>
                 <viewController id="jyF-2p-mmd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ce-iz-yub">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="dXQ-6e-eRy">
-                                <rect key="frame" x="0.0" y="44" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="0ed-sU-R3E">
-                                <rect key="frame" x="0.0" y="455" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="367" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Autre 1" id="uHr-1d-kaa"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Blabla de Autre 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QQC-v7-lbi">
-                                <rect key="frame" x="20" y="201" width="280" height="21"/>
+                                <rect key="frame" x="20" y="164" width="280" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>

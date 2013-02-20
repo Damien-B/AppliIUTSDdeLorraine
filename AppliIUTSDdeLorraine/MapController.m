@@ -7,7 +7,7 @@
 //
 
 #import "MapController.h"
-
+#import "Utils.h"
 @interface MapController ()
 
 @end
@@ -64,12 +64,35 @@
     region.center.longitude = 6.942775;
     region.span.latitudeDelta = 0.01;
     region.span.longitudeDelta = 0.01;
-    
-    
     [self.mapview setRegion:region animated:YES];
     
+    IUTLocation *annotationIUT =[[IUTLocation alloc] initWithCoordinate];
+    [mapview addAnnotation:annotationIUT];
+   
+    
 }
+- (void)mapView:(MKMapView *)mv didAddAnnotationViews:(NSArray *)views
+{
+    MKAnnotationView *annotationView = [views objectAtIndex:0];
+    id <MKAnnotation> mp = [annotationView annotation];
+    if (![mp isKindOfClass:[MKUserLocation class]])
+    {
+        [mv selectAnnotation:mp animated:YES];
+    }
+}
+- (MKAnnotationView *) mapView:(MKMapView *) mapView viewForAnnotation:(id ) annotation {
+	if ([annotation isKindOfClass:[IUTLocation class]]){
+    
+    MKPinAnnotationView *customAnnotationView=[[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:nil] autorelease];
+//    customAnnotationView.pinColor = MKPinAnnotationColorPurple;
 
+    UIImageView *leftIconView = [[UIImageView alloc] initWithImage:[Utils imageWithImage:[UIImage imageNamed:@"logoIUT.jpeg"] scaledToSize:CGSizeMake(30.0f,30.0f)]];
+    customAnnotationView.leftCalloutAccessoryView =  leftIconView;
+    customAnnotationView.canShowCallout = YES;
+    return customAnnotationView;
+    }
+    return  nil;
+}
 
 - (IBAction)getlocation{
     

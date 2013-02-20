@@ -67,6 +67,8 @@
 		CD71623416BC66680077FDFD /* prefs.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623316BC66680077FDFD /* prefs.png */; };
 		CD7BE62016D03FC0006D09D1 /* InfoDeptController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7BE61F16D03FC0006D09D1 /* InfoDeptController.m */; };
 		CD9D730C16BD438500934CBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D730B16BD438500934CBC /* SystemConfiguration.framework */; };
+		CDA5245C16D4431A004A7C42 /* IUTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA5245B16D4431A004A7C42 /* IUTLocation.m */; };
+		CDA5245E16D44E4E004A7C42 /* logoIUT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */; };
 		CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */; };
 		CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */; };
 /* End PBXBuildFile section */
@@ -162,6 +164,9 @@
 		CD9D730816BD414300934CBC /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		CD9D730916BD414300934CBC /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		CD9D730B16BD438500934CBC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CDA5245A16D4431A004A7C42 /* IUTLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUTLocation.h; sourceTree = "<group>"; };
+		CDA5245B16D4431A004A7C42 /* IUTLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUTLocation.m; sourceTree = "<group>"; };
+		CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logoIUT.jpeg; sourceTree = "<group>"; };
 		CDDFDE9D16CFB4AF005FD7A0 /* SelectEDTController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectEDTController.h; sourceTree = "<group>"; };
 		CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectEDTController.m; sourceTree = "<group>"; };
 		CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EtudiantController.h; sourceTree = "<group>"; };
@@ -198,6 +203,7 @@
 		22089E9D169D9F0900298246 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */,
 				22089E9F169D9F2700298246 /* appli.png */,
 				22089EA0169D9F2700298246 /* bg_black.png */,
 				22089EA1169D9F2700298246 /* bg.png */,
@@ -275,15 +281,16 @@
 			children = (
 				CD24320916D2626100D8C039 /* Animations */,
 				CD9D730716BD412300934CBC /* Utils */,
-				6D04C43216A8460B000A228F /* DetailViewController.h */,
+				CDA5245916D4427B004A7C42 /* Map */,
+				22516D2516CD819000896F5A /* EDT */,
 				6D04C43316A8460B000A228F /* DetailViewController.m */,
+				6D04C43216A8460B000A228F /* DetailViewController.h */,
 				6D54728C167B3CFE003F58A5 /* icone.png */,
 				6D54728E167B3D45003F58A5 /* retinalol.png */,
 				6D547254167B3506003F58A5 /* AppDelegate.h */,
 				6D547255167B3506003F58A5 /* AppDelegate.m */,
 				CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */,
 				CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */,
-				22516D2516CD819000896F5A /* EDT */,
 				6D54725D167B3506003F58A5 /* MainStoryboard_iPhone.storyboard */,
 				6D9D098416D3D24D003F4DD8 /* PreferencesViewController.h */,
 				6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */,
@@ -292,8 +299,6 @@
 				6D547260167B3506003F58A5 /* MainStoryboard_iPad.storyboard */,
 				6D547264167B3506003F58A5 /* ViewController.m */,
 				6D547263167B3506003F58A5 /* ViewController.h */,
-				CD24320D16D2684100D8C039 /* MapController.h */,
-				CD24320E16D2684100D8C039 /* MapController.m */,
 				22407D51169E168000AB16CE /* WebView.h */,
 				22407D52169E168000AB16CE /* WebView.m */,
 				22407D54169E16A900AB16CE /* WebViewController.h */,
@@ -360,6 +365,17 @@
 				CD9D730916BD414300934CBC /* Utils.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		CDA5245916D4427B004A7C42 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				CD24320D16D2684100D8C039 /* MapController.h */,
+				CD24320E16D2684100D8C039 /* MapController.m */,
+				CDA5245A16D4431A004A7C42 /* IUTLocation.h */,
+				CDA5245B16D4431A004A7C42 /* IUTLocation.m */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,6 +480,7 @@
 				CD71623016BC66490077FDFD /* edt.png in Resources */,
 				CD71623216BC665B0077FDFD /* nouveautes.png in Resources */,
 				CD71623416BC66680077FDFD /* prefs.png in Resources */,
+				CDA5245E16D44E4E004A7C42 /* logoIUT.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +536,7 @@
 				CD24320C16D2629500D8C039 /* SpecialAnimation.m in Sources */,
 				CD24320F16D2684200D8C039 /* MapController.m in Sources */,
 				6D9D098616D3D24D003F4DD8 /* PreferencesViewController.m in Sources */,
+				CDA5245C16D4431A004A7C42 /* IUTLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
