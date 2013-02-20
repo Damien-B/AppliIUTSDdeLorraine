@@ -64,12 +64,21 @@
     region.center.longitude = 6.942775;
     region.span.latitudeDelta = 0.01;
     region.span.longitudeDelta = 0.01;
+    [self.mapview setRegion:region animated:YES];
     
     IUTLocation *annotationIUT =[[IUTLocation alloc] initWithCoordinate];
     [mapview addAnnotation:annotationIUT];
-
-    [self.mapview setRegion:region animated:YES];
+  
     
+}
+- (void)mapView:(MKMapView *)mv didAddAnnotationViews:(NSArray *)views
+{
+    MKAnnotationView *annotationView = [views objectAtIndex:0];
+    id <MKAnnotation> mp = [annotationView annotation];
+    if (![mp isKindOfClass:[MKUserLocation class]])
+    {
+        [mv selectAnnotation:mp animated:YES];
+    }
 }
 
 
