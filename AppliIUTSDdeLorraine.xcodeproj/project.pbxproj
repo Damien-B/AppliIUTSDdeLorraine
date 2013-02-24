@@ -60,23 +60,6 @@
 		6D9D098616D3D24D003F4DD8 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */; };
 		755754A516D4FFF40057492C /* icon_app-iutsd_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 755754A416D4FFF40057492C /* icon_app-iutsd_57.png */; };
 		755754A716D4FFFD0057492C /* icon_app-iutsd_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 755754A616D4FFFD0057492C /* icon_app-iutsd_114.png */; };
-		755754A916D500660057492C /* lancement_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 755754A816D500660057492C /* lancement_2.png */; };
-		755754AB16D5010D0057492C /* sponsors_3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 755754AA16D5010D0057492C /* sponsors_3_1.png */; };
-		757CBD8A16D5030E006EFEE6 /* GEII_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757CBD7E16D5030E006EFEE6 /* GEII_ViewController.m */; };
-		757CBD8B16D5030E006EFEE6 /* INFO_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757CBD8016D5030E006EFEE6 /* INFO_ViewController.m */; };
-		757CBD8C16D5030E006EFEE6 /* SRC_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757CBD8216D5030E006EFEE6 /* SRC_ViewController.m */; };
-		757CBD8D16D5030E006EFEE6 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 757CBD8316D5030E006EFEE6 /* style.css */; };
-		757CBD8E16D5030E006EFEE6 /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = 757CBD8416D5030E006EFEE6 /* info.html */; };
-		757CBD8F16D5030E006EFEE6 /* geii.html in Resources */ = {isa = PBXBuildFile; fileRef = 757CBD8516D5030E006EFEE6 /* geii.html */; };
-		757CBD9016D5030E006EFEE6 /* src.html in Resources */ = {isa = PBXBuildFile; fileRef = 757CBD8616D5030E006EFEE6 /* src.html */; };
-		757CBD9116D5030E006EFEE6 /* iut.html in Resources */ = {isa = PBXBuildFile; fileRef = 757CBD8716D5030E006EFEE6 /* iut.html */; };
-		757CBD9216D5030E006EFEE6 /* IUT_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757CBD8916D5030E006EFEE6 /* IUT_ViewController.m */; };
-		75A1B9EF16D5583F00CD28E5 /* retour_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A1B9EE16D5583F00CD28E5 /* retour_2.png */; };
-		75A1B9F316D55A7500CD28E5 /* geii_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A1B9F016D55A7400CD28E5 /* geii_1.png */; };
-		75A1B9F416D55A7500CD28E5 /* src_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A1B9F116D55A7400CD28E5 /* src_1.png */; };
-		75A1B9F516D55A7500CD28E5 /* info_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A1B9F216D55A7500CD28E5 /* info_1.png */; };
-		75A1B9F816D55B1B00CD28E5 /* logoIut.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A1B9F616D55B1B00CD28E5 /* logoIut.png */; };
-		75A1B9F916D55B1B00CD28E5 /* Université_de_Lorraine_-_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A1B9F716D55B1B00CD28E5 /* Université_de_Lorraine_-_logo.png */; };
 		CD21423C16CF81CF0048D002 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9D730916BD414300934CBC /* Utils.m */; };
 		CD24320C16D2629500D8C039 /* SpecialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24320B16D2629500D8C039 /* SpecialAnimation.m */; };
 		CD24320F16D2684200D8C039 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24320E16D2684100D8C039 /* MapController.m */; };
@@ -90,6 +73,25 @@
 		CDA5245E16D44E4E004A7C42 /* logoIUT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */; };
 		CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */; };
 		CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */; };
+		CDFBB3E216DA5239005A68CD /* geii.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D316DA5239005A68CD /* geii.html */; };
+		CDFBB3E316DA5239005A68CD /* IUT_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3D516DA5239005A68CD /* IUT_ViewController.m */; };
+		CDFBB3E416DA5239005A68CD /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D616DA5239005A68CD /* info.html */; };
+		CDFBB3E516DA5239005A68CD /* src.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D716DA5239005A68CD /* src.html */; };
+		CDFBB3E616DA5239005A68CD /* iut.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D816DA5239005A68CD /* iut.html */; };
+		CDFBB3E716DA5239005A68CD /* geii2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D916DA5239005A68CD /* geii2.png */; };
+		CDFBB3E816DA5239005A68CD /* geii1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3DA16DA5239005A68CD /* geii1.png */; };
+		CDFBB3E916DA5239005A68CD /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3DB16DA5239005A68CD /* style.css */; };
+		CDFBB3EA16DA5239005A68CD /* GEII_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3DD16DA5239005A68CD /* GEII_ViewController.m */; };
+		CDFBB3EB16DA5239005A68CD /* INFO_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3DE16DA5239005A68CD /* INFO_ViewController.m */; };
+		CDFBB3EC16DA5239005A68CD /* SRC_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3E016DA5239005A68CD /* SRC_ViewController.m */; };
+		CDFBB3EE16DA524B005A68CD /* sponsors_3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3ED16DA524B005A68CD /* sponsors_3_1.png */; };
+		CDFBB3F016DA525F005A68CD /* logoIut.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3EF16DA525F005A68CD /* logoIut.png */; };
+		CDFBB3F216DA5268005A68CD /* Universite_de_Lorraine_-_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F116DA5268005A68CD /* Universite_de_Lorraine_-_logo.png */; };
+		CDFBB3F416DA527A005A68CD /* lancement_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F316DA527A005A68CD /* lancement_2.png */; };
+		CDFBB3F616DA528A005A68CD /* retour_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F516DA528A005A68CD /* retour_2.png */; };
+		CDFBB3FA16DA52A6005A68CD /* geii_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F716DA52A6005A68CD /* geii_1.png */; };
+		CDFBB3FB16DA52A6005A68CD /* src_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F816DA52A6005A68CD /* src_1.png */; };
+		CDFBB3FC16DA52A6005A68CD /* info_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F916DA52A6005A68CD /* info_1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,27 +173,6 @@
 		6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
 		755754A416D4FFF40057492C /* icon_app-iutsd_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_app-iutsd_57.png"; sourceTree = "<group>"; };
 		755754A616D4FFFD0057492C /* icon_app-iutsd_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_app-iutsd_114.png"; sourceTree = "<group>"; };
-		755754A816D500660057492C /* lancement_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lancement_2.png; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/lancement_2.png"; sourceTree = "<group>"; };
-		755754AA16D5010D0057492C /* sponsors_3_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sponsors_3_1.png; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/sponsors_3_1.png"; sourceTree = "<group>"; };
-		757CBD7D16D5030E006EFEE6 /* GEII_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEII_ViewController.h; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/GEII_ViewController.h"; sourceTree = "<group>"; };
-		757CBD7E16D5030E006EFEE6 /* GEII_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEII_ViewController.m; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/GEII_ViewController.m"; sourceTree = "<group>"; };
-		757CBD7F16D5030E006EFEE6 /* INFO_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INFO_ViewController.h; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/INFO_ViewController.h"; sourceTree = "<group>"; };
-		757CBD8016D5030E006EFEE6 /* INFO_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = INFO_ViewController.m; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/INFO_ViewController.m"; sourceTree = "<group>"; };
-		757CBD8116D5030E006EFEE6 /* SRC_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SRC_ViewController.h; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/SRC_ViewController.h"; sourceTree = "<group>"; };
-		757CBD8216D5030E006EFEE6 /* SRC_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SRC_ViewController.m; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/SRC_ViewController.m"; sourceTree = "<group>"; };
-		757CBD8316D5030E006EFEE6 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/style.css"; sourceTree = "<group>"; };
-		757CBD8416D5030E006EFEE6 /* info.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = info.html; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/info.html"; sourceTree = "<group>"; };
-		757CBD8516D5030E006EFEE6 /* geii.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = geii.html; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/geii.html"; sourceTree = "<group>"; };
-		757CBD8616D5030E006EFEE6 /* src.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = src.html; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/src.html"; sourceTree = "<group>"; };
-		757CBD8716D5030E006EFEE6 /* iut.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = iut.html; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/iut.html"; sourceTree = "<group>"; };
-		757CBD8816D5030E006EFEE6 /* IUT_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IUT_ViewController.h; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/IUT_ViewController.h"; sourceTree = "<group>"; };
-		757CBD8916D5030E006EFEE6 /* IUT_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IUT_ViewController.m; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/IUT_ViewController.m"; sourceTree = "<group>"; };
-		75A1B9EE16D5583F00CD28E5 /* retour_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retour_2.png; path = "../../../iphone app/icons/retour_2.png"; sourceTree = "<group>"; };
-		75A1B9F016D55A7400CD28E5 /* geii_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = geii_1.png; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/geii_1.png"; sourceTree = "<group>"; };
-		75A1B9F116D55A7400CD28E5 /* src_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = src_1.png; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/src_1.png"; sourceTree = "<group>"; };
-		75A1B9F216D55A7500CD28E5 /* info_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info_1.png; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/info_1.png"; sourceTree = "<group>"; };
-		75A1B9F616D55B1B00CD28E5 /* logoIut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoIut.png; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/logos univ iut/logoIut.png"; sourceTree = "<group>"; };
-		75A1B9F716D55B1B00CD28E5 /* Université_de_Lorraine_-_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Université_de_Lorraine_-_logo.png"; path = "../../../../Downloads/AppliIUTSDdeLorraine-master 2/AppliIUTSDdeLorraine/logos univ iut/Université_de_Lorraine_-_logo.png"; sourceTree = "<group>"; };
 		CD24320A16D2629500D8C039 /* SpecialAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialAnimation.h; sourceTree = "<group>"; };
 		CD24320B16D2629500D8C039 /* SpecialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialAnimation.m; sourceTree = "<group>"; };
 		CD24320D16D2684100D8C039 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
@@ -214,6 +195,29 @@
 		CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EtudiantController.h; sourceTree = "<group>"; };
 		CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EtudiantController.m; sourceTree = "<group>"; };
 		CDE472D516BB3C6A0071A51D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		CDFBB3D316DA5239005A68CD /* geii.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = geii.html; sourceTree = "<group>"; };
+		CDFBB3D416DA5239005A68CD /* IUT_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUT_ViewController.h; sourceTree = "<group>"; };
+		CDFBB3D516DA5239005A68CD /* IUT_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUT_ViewController.m; sourceTree = "<group>"; };
+		CDFBB3D616DA5239005A68CD /* info.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = info.html; sourceTree = "<group>"; };
+		CDFBB3D716DA5239005A68CD /* src.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = src.html; sourceTree = "<group>"; };
+		CDFBB3D816DA5239005A68CD /* iut.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = iut.html; sourceTree = "<group>"; };
+		CDFBB3D916DA5239005A68CD /* geii2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geii2.png; sourceTree = "<group>"; };
+		CDFBB3DA16DA5239005A68CD /* geii1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geii1.png; sourceTree = "<group>"; };
+		CDFBB3DB16DA5239005A68CD /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		CDFBB3DC16DA5239005A68CD /* GEII_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEII_ViewController.h; sourceTree = "<group>"; };
+		CDFBB3DD16DA5239005A68CD /* GEII_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEII_ViewController.m; sourceTree = "<group>"; };
+		CDFBB3DE16DA5239005A68CD /* INFO_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INFO_ViewController.m; sourceTree = "<group>"; };
+		CDFBB3DF16DA5239005A68CD /* INFO_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INFO_ViewController.h; sourceTree = "<group>"; };
+		CDFBB3E016DA5239005A68CD /* SRC_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRC_ViewController.m; sourceTree = "<group>"; };
+		CDFBB3E116DA5239005A68CD /* SRC_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRC_ViewController.h; sourceTree = "<group>"; };
+		CDFBB3ED16DA524B005A68CD /* sponsors_3_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sponsors_3_1.png; sourceTree = "<group>"; };
+		CDFBB3EF16DA525F005A68CD /* logoIut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoIut.png; sourceTree = "<group>"; };
+		CDFBB3F116DA5268005A68CD /* Universite_de_Lorraine_-_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Universite_de_Lorraine_-_logo.png"; sourceTree = "<group>"; };
+		CDFBB3F316DA527A005A68CD /* lancement_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lancement_2.png; sourceTree = "<group>"; };
+		CDFBB3F516DA528A005A68CD /* retour_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retour_2.png; sourceTree = "<group>"; };
+		CDFBB3F716DA52A6005A68CD /* geii_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geii_1.png; sourceTree = "<group>"; };
+		CDFBB3F816DA52A6005A68CD /* src_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = src_1.png; sourceTree = "<group>"; };
+		CDFBB3F916DA52A6005A68CD /* info_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,11 +250,11 @@
 			isa = PBXGroup;
 			children = (
 				75A1B9FA16D55B1E00CD28E5 /* IUT */,
-				755754AA16D5010D0057492C /* sponsors_3_1.png */,
+				CDFBB3ED16DA524B005A68CD /* sponsors_3_1.png */,
 				22407D58169E1E3500AB16CE /* sponsor.png */,
 				CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */,
 				22089E9F169D9F2700298246 /* appli.png */,
-				755754A816D500660057492C /* lancement_2.png */,
+				CDFBB3F316DA527A005A68CD /* lancement_2.png */,
 				22089EA0169D9F2700298246 /* bg_black.png */,
 				22089EA1169D9F2700298246 /* bg.png */,
 				22089EB5169DA6CC00298246 /* photo_iut.png */,
@@ -258,7 +262,7 @@
 				22407D4A169DF0D700AB16CE /* info_photo.png */,
 				22089EB9169DB6D300298246 /* src_photo.png */,
 				22089EA2169D9F2700298246 /* fb.png */,
-				75A1B9EE16D5583F00CD28E5 /* retour_2.png */,
+				CDFBB3F516DA528A005A68CD /* retour_2.png */,
 				22407D57169E1E3500AB16CE /* intro.png */,
 				22089EB7169DB30400298246 /* iut_photo.png */,
 				22089EA8169D9F2700298246 /* top.png */,
@@ -392,19 +396,21 @@
 		757CBD7C16D502EE006EFEE6 /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
-				757CBD8816D5030E006EFEE6 /* IUT_ViewController.h */,
-				757CBD8916D5030E006EFEE6 /* IUT_ViewController.m */,
-				757CBD7D16D5030E006EFEE6 /* GEII_ViewController.h */,
-				757CBD7E16D5030E006EFEE6 /* GEII_ViewController.m */,
-				757CBD7F16D5030E006EFEE6 /* INFO_ViewController.h */,
-				757CBD8016D5030E006EFEE6 /* INFO_ViewController.m */,
-				757CBD8116D5030E006EFEE6 /* SRC_ViewController.h */,
-				757CBD8216D5030E006EFEE6 /* SRC_ViewController.m */,
-				757CBD8316D5030E006EFEE6 /* style.css */,
-				757CBD8416D5030E006EFEE6 /* info.html */,
-				757CBD8516D5030E006EFEE6 /* geii.html */,
-				757CBD8616D5030E006EFEE6 /* src.html */,
-				757CBD8716D5030E006EFEE6 /* iut.html */,
+				CDFBB3D316DA5239005A68CD /* geii.html */,
+				CDFBB3D416DA5239005A68CD /* IUT_ViewController.h */,
+				CDFBB3D516DA5239005A68CD /* IUT_ViewController.m */,
+				CDFBB3D616DA5239005A68CD /* info.html */,
+				CDFBB3D716DA5239005A68CD /* src.html */,
+				CDFBB3D816DA5239005A68CD /* iut.html */,
+				CDFBB3D916DA5239005A68CD /* geii2.png */,
+				CDFBB3DA16DA5239005A68CD /* geii1.png */,
+				CDFBB3DB16DA5239005A68CD /* style.css */,
+				CDFBB3DC16DA5239005A68CD /* GEII_ViewController.h */,
+				CDFBB3DD16DA5239005A68CD /* GEII_ViewController.m */,
+				CDFBB3DE16DA5239005A68CD /* INFO_ViewController.m */,
+				CDFBB3DF16DA5239005A68CD /* INFO_ViewController.h */,
+				CDFBB3E016DA5239005A68CD /* SRC_ViewController.m */,
+				CDFBB3E116DA5239005A68CD /* SRC_ViewController.h */,
 			);
 			name = Presentations;
 			sourceTree = "<group>";
@@ -413,9 +419,9 @@
 			isa = PBXGroup;
 			children = (
 				CD71622D16BC663D0077FDFD /* absences.png */,
-				75A1B9F016D55A7400CD28E5 /* geii_1.png */,
-				75A1B9F116D55A7400CD28E5 /* src_1.png */,
-				75A1B9F216D55A7500CD28E5 /* info_1.png */,
+				CDFBB3F716DA52A6005A68CD /* geii_1.png */,
+				CDFBB3F816DA52A6005A68CD /* src_1.png */,
+				CDFBB3F916DA52A6005A68CD /* info_1.png */,
 				CD71622F16BC66490077FDFD /* edt.png */,
 				CD71623316BC66680077FDFD /* prefs.png */,
 				22089EA3169D9F2700298246 /* geii.png */,
@@ -432,8 +438,8 @@
 		75A1B9FA16D55B1E00CD28E5 /* IUT */ = {
 			isa = PBXGroup;
 			children = (
-				75A1B9F616D55B1B00CD28E5 /* logoIut.png */,
-				75A1B9F716D55B1B00CD28E5 /* Université_de_Lorraine_-_logo.png */,
+				CDFBB3EF16DA525F005A68CD /* logoIut.png */,
+				CDFBB3F116DA5268005A68CD /* Universite_de_Lorraine_-_logo.png */,
 			);
 			name = IUT;
 			sourceTree = "<group>";
@@ -572,14 +578,14 @@
 				CDA5245E16D44E4E004A7C42 /* logoIUT.jpeg in Resources */,
 				755754A516D4FFF40057492C /* icon_app-iutsd_57.png in Resources */,
 				755754A716D4FFFD0057492C /* icon_app-iutsd_114.png in Resources */,
-				755754A916D500660057492C /* lancement_2.png in Resources */,
-				755754AB16D5010D0057492C /* sponsors_3_1.png in Resources */,
-				75A1B9EF16D5583F00CD28E5 /* retour_2.png in Resources */,
-				75A1B9F316D55A7500CD28E5 /* geii_1.png in Resources */,
-				75A1B9F416D55A7500CD28E5 /* src_1.png in Resources */,
-				75A1B9F516D55A7500CD28E5 /* info_1.png in Resources */,
-				75A1B9F816D55B1B00CD28E5 /* logoIut.png in Resources */,
-				75A1B9F916D55B1B00CD28E5 /* Université_de_Lorraine_-_logo.png in Resources */,
+				CDFBB3EE16DA524B005A68CD /* sponsors_3_1.png in Resources */,
+				CDFBB3F016DA525F005A68CD /* logoIut.png in Resources */,
+				CDFBB3F216DA5268005A68CD /* Universite_de_Lorraine_-_logo.png in Resources */,
+				CDFBB3F416DA527A005A68CD /* lancement_2.png in Resources */,
+				CDFBB3F616DA528A005A68CD /* retour_2.png in Resources */,
+				CDFBB3FA16DA52A6005A68CD /* geii_1.png in Resources */,
+				CDFBB3FB16DA52A6005A68CD /* src_1.png in Resources */,
+				CDFBB3FC16DA52A6005A68CD /* info_1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,11 +598,13 @@
 				22A6C20F16BC41CF0049D1A8 /* edt.png in Resources */,
 				22A6C21316BC41CF0049D1A8 /* nouveautes.png in Resources */,
 				22A6C21516BC41CF0049D1A8 /* prefs.png in Resources */,
-				757CBD8D16D5030E006EFEE6 /* style.css in Resources */,
-				757CBD8E16D5030E006EFEE6 /* info.html in Resources */,
-				757CBD8F16D5030E006EFEE6 /* geii.html in Resources */,
-				757CBD9016D5030E006EFEE6 /* src.html in Resources */,
-				757CBD9116D5030E006EFEE6 /* iut.html in Resources */,
+				CDFBB3E216DA5239005A68CD /* geii.html in Resources */,
+				CDFBB3E416DA5239005A68CD /* info.html in Resources */,
+				CDFBB3E516DA5239005A68CD /* src.html in Resources */,
+				CDFBB3E616DA5239005A68CD /* iut.html in Resources */,
+				CDFBB3E716DA5239005A68CD /* geii2.png in Resources */,
+				CDFBB3E816DA5239005A68CD /* geii1.png in Resources */,
+				CDFBB3E916DA5239005A68CD /* style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,10 +657,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D54727A167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m in Sources */,
-				757CBD8A16D5030E006EFEE6 /* GEII_ViewController.m in Sources */,
-				757CBD8B16D5030E006EFEE6 /* INFO_ViewController.m in Sources */,
-				757CBD8C16D5030E006EFEE6 /* SRC_ViewController.m in Sources */,
-				757CBD9216D5030E006EFEE6 /* IUT_ViewController.m in Sources */,
+				CDFBB3E316DA5239005A68CD /* IUT_ViewController.m in Sources */,
+				CDFBB3EA16DA5239005A68CD /* GEII_ViewController.m in Sources */,
+				CDFBB3EB16DA5239005A68CD /* INFO_ViewController.m in Sources */,
+				CDFBB3EC16DA5239005A68CD /* SRC_ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

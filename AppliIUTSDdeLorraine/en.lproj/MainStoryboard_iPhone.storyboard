@@ -184,6 +184,14 @@
                                                     <segue destination="dWW-KZ-ixe" kind="custom" customClass="SpecialAnimation" id="FSz-o2-fhu"/>
                                                 </connections>
                                             </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logoIut.png" id="8Nl-lM-W4e">
+                                                <rect key="frame" x="113" y="296" width="35" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Université_de_Lorraine_-_logo.png" id="yiA-Vl-I4j">
+                                                <rect key="frame" x="172" y="295" width="79" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
@@ -1241,6 +1249,7 @@
     </scenes>
     <resources>
         <image name="Default.png" width="57" height="57"/>
+        <image name="Université_de_Lorraine_-_logo.png" width="669" height="296"/>
         <image name="bg.png" width="320" height="480"/>
         <image name="bg_black.png" width="320" height="418"/>
         <image name="edt.png" width="170" height="136"/>
@@ -1255,6 +1264,7 @@
         <image name="iut.png" width="85" height="70"/>
         <image name="iut_photo.png" width="640" height="298"/>
         <image name="lancement_2.png" width="609" height="391"/>
+        <image name="logoIut.png" width="200" height="175"/>
         <image name="nouveautes.png" width="170" height="136"/>
         <image name="prefs.png" width="170" height="136"/>
         <image name="retour_2.png" width="120" height="59"/>
