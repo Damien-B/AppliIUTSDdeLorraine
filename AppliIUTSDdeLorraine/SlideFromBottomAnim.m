@@ -8,6 +8,8 @@
 
 #import "SlideFromBottomAnim.h"
 #import "EtudiantController.h"
+#import "SlidableView.h"
+
 @implementation SlideFromBottomAnim
 
 
@@ -27,10 +29,7 @@
                           delay:0.0
                         options:UIViewAnimationOptionTransitionFlipFromTop
                      animations:^{
-                         [dest.viewAnimates setTransform:CGAffineTransformMakeScale(1, 1)];
-
                          [dest.viewAnimates setTransform:CGAffineTransformMakeTranslation(0, 0)];
-    
                      }
                      completion:^(BOOL finished){
                          [dest.viewAnimates removeFromSuperview];

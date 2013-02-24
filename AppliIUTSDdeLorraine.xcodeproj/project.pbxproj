@@ -152,6 +152,7 @@
 		CD588D8316DABE4500363C78 /* ODRefreshControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
 		CD588D8616DACF3400363C78 /* SlideFromBottomAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideFromBottomAnim.h; sourceTree = "<group>"; };
 		CD588D8716DACF3400363C78 /* SlideFromBottomAnim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideFromBottomAnim.m; sourceTree = "<group>"; };
+		CD588D8916DACFB200363C78 /* SlidableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidableView.h; sourceTree = "<group>"; };
 		CD71622D16BC663D0077FDFD /* absences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = absences.png; sourceTree = "<group>"; };
 		CD71622F16BC66490077FDFD /* edt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt.png; sourceTree = "<group>"; };
 		CD71623116BC665B0077FDFD /* nouveautes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nouveautes.png; sourceTree = "<group>"; };
@@ -376,6 +377,7 @@
 		CD24320916D2626100D8C039 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				CD588D8916DACFB200363C78 /* SlidableView.h */,
 				CD588D8616DACF3400363C78 /* SlideFromBottomAnim.h */,
 				CD588D8716DACF3400363C78 /* SlideFromBottomAnim.m */,
 				CD24320A16D2629500D8C039 /* SpecialAnimation.h */,
