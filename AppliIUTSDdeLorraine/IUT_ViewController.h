@@ -16,7 +16,10 @@
 @property (nonatomic, retain) IBOutlet UIWebView *myDocView;
 
 
+- (IBAction)done:(id)sender;
+
 @end
+
 
 
 

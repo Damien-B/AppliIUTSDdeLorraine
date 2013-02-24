@@ -20,6 +20,12 @@
 
 
 
+- (IBAction)done:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+
+
 
 
 - (void)viewDidLoad
