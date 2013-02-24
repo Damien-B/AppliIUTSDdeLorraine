@@ -53,6 +53,8 @@
 		CD21423C16CF81CF0048D002 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9D730916BD414300934CBC /* Utils.m */; };
 		CD24320C16D2629500D8C039 /* SpecialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24320B16D2629500D8C039 /* SpecialAnimation.m */; };
 		CD24320F16D2684200D8C039 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24320E16D2684100D8C039 /* MapController.m */; };
+		CD588D8416DAC05100363C78 /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CD588D8316DABE4500363C78 /* ODRefreshControl.m */; };
+		CD588D8516DAC07600363C78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7BE61C16D03BC4006D09D1 /* QuartzCore.framework */; };
 		CD71622E16BC663D0077FDFD /* absences.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71622D16BC663D0077FDFD /* absences.png */; };
 		CD71623016BC66490077FDFD /* edt.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71622F16BC66490077FDFD /* edt.png */; };
 		CD71623216BC665B0077FDFD /* nouveautes.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623116BC665B0077FDFD /* nouveautes.png */; };
@@ -193,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD588D8516DAC07600363C78 /* QuartzCore.framework in Frameworks */,
 				CD9D730C16BD438500934CBC /* SystemConfiguration.framework in Frameworks */,
 				6D547246167B3506003F58A5 /* UIKit.framework in Frameworks */,
 				6D547248167B3506003F58A5 /* Foundation.framework in Frameworks */,
@@ -533,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD588D8416DAC05100363C78 /* ODRefreshControl.m in Sources */,
 				CDFBB3FD16DA58A8005A68CD /* IUT_ViewController.m in Sources */,
 				CDFBB3FE16DA58A8005A68CD /* GEII_ViewController.m in Sources */,
 				CDFBB3FF16DA58A8005A68CD /* INFO_ViewController.m in Sources */,

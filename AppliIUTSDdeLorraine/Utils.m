@@ -14,16 +14,11 @@
 + (NSString *) getDeviceID {
     NSString *userAppID = [[NSUserDefaults standardUserDefaults] objectForKey:@"UIDAppKey"];
     
-    
-    
     if (!userAppID) {
-        
-        
         
         // Create universally unique identifier (object)
         
         CFUUIDRef uuidObject = CFUUIDCreate(NULL);
-        
         
         
         // Get the string representation of CFUUID object.

@@ -109,6 +109,7 @@ static inline CGFloat lerp(CGFloat a, CGFloat b, CGFloat p)
     [self.scrollView removeObserver:self forKeyPath:@"contentOffset"];
     [self.scrollView removeObserver:self forKeyPath:@"contentInset"];
     self.scrollView = nil;
+    [super dealloc];
 }
 
 - (void)setEnabled:(BOOL)enabled
@@ -354,13 +355,13 @@ static inline CGFloat lerp(CGFloat a, CGFloat b, CGFloat p)
         CGPathAddArc(toPath, NULL, topOrigin.x, topOrigin.y, radius, M_PI, 0, YES);
         CGPathAddCurveToPoint(toPath, NULL, topOrigin.x + radius, topOrigin.y, topOrigin.x + radius, topOrigin.y, topOrigin.x + radius, topOrigin.y);
         CGPathCloseSubpath(toPath);
-        pathMorph.toValue = (__bridge id)toPath;
+        pathMorph.toValue = (id)toPath;
         [_shapeLayer addAnimation:pathMorph forKey:nil];
         CABasicAnimation *shadowPathMorph = [CABasicAnimation animationWithKeyPath:@"shadowPath"];
         shadowPathMorph.duration = 0.15;
         shadowPathMorph.fillMode = kCAFillModeForwards;
         shadowPathMorph.removedOnCompletion = NO;
-        shadowPathMorph.toValue = (__bridge id)toPath;
+        shadowPathMorph.toValue = (id) toPath;
         [_shapeLayer addAnimation:shadowPathMorph forKey:nil];
         CGPathRelease(toPath);
         CABasicAnimation *shapeAlphaAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];

@@ -36,13 +36,10 @@
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     self.tabNews = [[NSMutableArray alloc] init];
-    //NSDictionary *dictFromFile = [[NSDictionary alloc]initWithContentsOfFile:path];
     NSString *urlxml=[NSString stringWithFormat:@"http://iutsd.applorraine.fr/%@.plist", [Utils getDeviceID]];
     NSArray *contenuTableauPlist = [[NSArray alloc] initWithContentsOfURL:[NSURL URLWithString:urlxml]];
     for (NSDictionary *dict in contenuTableauPlist){
-        //NSString *titre = [dict objectForKey:@"titre"];
         News *ws = [[News alloc]initWithDictionaryFromPlist:dict];
-        //self.tabNews = [NSMutableArray arrayWithArray:dictionaryToAdd];
         [tabNews addObject:ws];
     }
     
@@ -65,7 +62,9 @@
     //[dictionaryToAdd release];
     //[arrayFromFile release];
     
-    
+    refreshControl = [[ODRefreshControl alloc] initInScrollView:self.tabView];
+    [refreshControl addTarget:self action:@selector(updateNews) forControlEvents:UIControlEventValueChanged];
+
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -183,5 +182,20 @@
 - (IBAction)dismissAction:(id)sender {
     [self dismissModalViewControllerAnimated:YES];
 }
+
+
+
+- (void) updateNews{
+    NSString *urlxml=[NSString stringWithFormat:@"http://iutsd.applorraine.fr/%@.plist", [Utils getDeviceID]];
+    NSArray *contenuTableauPlist = [[NSArray alloc] initWithContentsOfURL:[NSURL URLWithString:urlxml]];
+    [tabNews removeAllObjects];
+    for (NSDictionary *dict in contenuTableauPlist){
+        News *ws = [[News alloc]initWithDictionaryFromPlist:dict];
+        [tabNews addObject:ws];
+    }
+    [refreshControl endRefreshing];
+  
+}
+
 
 @end

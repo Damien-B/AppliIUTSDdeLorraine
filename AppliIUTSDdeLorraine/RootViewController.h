@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "DetailViewController.h"
+#import "ODRefreshControl.h"
 
 @interface RootViewController : UIViewController {
     NSMutableArray *tabNews;
@@ -17,12 +17,14 @@
     NSString *newsCurrentTitle;
     NSString *newsCurrentContent;
     UITableView *tabView;
-
+    ODRefreshControl *refreshControl;
 }
 
 -(NSString *)getCurrentNewsTitle;
 -(NSString *)getCurrentNewsContent;
 - (IBAction)dismissAction:(id)sender;
+- (void) updateNews;
+
 
 @property (nonatomic, retain) NSMutableArray *tabNews;
 @property (nonatomic, retain) UILabel *titre;
