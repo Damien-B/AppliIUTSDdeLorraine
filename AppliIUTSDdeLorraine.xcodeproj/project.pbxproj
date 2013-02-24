@@ -145,6 +145,8 @@
 		CD24320B16D2629500D8C039 /* SpecialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialAnimation.m; sourceTree = "<group>"; };
 		CD24320D16D2684100D8C039 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
 		CD24320E16D2684100D8C039 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		CD588D8216DABE4500363C78 /* ODRefreshControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
+		CD588D8316DABE4500363C78 /* ODRefreshControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
 		CD71622D16BC663D0077FDFD /* absences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = absences.png; sourceTree = "<group>"; };
 		CD71622F16BC66490077FDFD /* edt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt.png; sourceTree = "<group>"; };
 		CD71623116BC665B0077FDFD /* nouveautes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nouveautes.png; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 		6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */ = {
 			isa = PBXGroup;
 			children = (
+				CD588D8116DABE3300363C78 /* ExternLibs */,
 				CD588D8016DA8F7C00363C78 /* Controller */,
 				757CBD7C16D502EE006EFEE6 /* Presentations */,
 				CD24320916D2626100D8C039 /* Animations */,
@@ -390,6 +393,15 @@
 				6D04C43216A8460B000A228F /* DetailViewController.h */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		CD588D8116DABE3300363C78 /* ExternLibs */ = {
+			isa = PBXGroup;
+			children = (
+				CD588D8216DABE4500363C78 /* ODRefreshControl.h */,
+				CD588D8316DABE4500363C78 /* ODRefreshControl.m */,
+			);
+			name = ExternLibs;
 			sourceTree = "<group>";
 		};
 		CD9D730716BD412300934CBC /* Utils */ = {
