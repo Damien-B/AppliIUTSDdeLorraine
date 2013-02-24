@@ -31,5 +31,5 @@
 @property (nonatomic, retain) NSString *strResult;
 - (IBAction) prefsend: (UIButton *) sender;
 - (IBAction) retour: (UIButton *) sender;
-
+- (BOOL )shouldAutorotate;
 @end

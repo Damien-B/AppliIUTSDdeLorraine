@@ -378,8 +378,8 @@
 			children = (
 				6D547283167B3631003F58A5 /* StartController.h */,
 				6D547284167B3631003F58A5 /* StartController.m */,
-				6D547264167B3506003F58A5 /* ViewController.m */,
 				6D547263167B3506003F58A5 /* ViewController.h */,
+				6D547264167B3506003F58A5 /* ViewController.m */,
 				6D2A6382167B650700BAC6A8 /* RootViewController.h */,
 				6D2A6383167B650700BAC6A8 /* RootViewController.m */,
 				6D9D098416D3D24D003F4DD8 /* PreferencesViewController.h */,

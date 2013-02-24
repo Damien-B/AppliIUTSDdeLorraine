@@ -17,6 +17,7 @@
     NSString *response;
     IBOutlet UIView *authPanel;
     IBOutlet UIView *menuPanel;
+    IBOutlet UIButton *myCancelAuthButton;
 }
 
 

@@ -121,7 +121,7 @@
 
 - (IBAction) presentAuthPanel: (UIButton *) sender{
     NSLog(@"in animation");
-    
+    [myCancelAuthButton setHidden:NO];
     [UIView transitionFromView: menuPanel
                         toView: authPanel
                       duration: 1.0f
@@ -132,6 +132,7 @@
 
 - (IBAction) returnMenuPanel: (UIButton *) sender{
     NSLog(@"in animation");
+    [myCancelAuthButton setHidden:YES];
     
     [UIView transitionFromView:authPanel
                         toView: menuPanel
