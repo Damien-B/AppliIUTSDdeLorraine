@@ -92,6 +92,17 @@
 		CDFBB3FA16DA52A6005A68CD /* geii_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F716DA52A6005A68CD /* geii_1.png */; };
 		CDFBB3FB16DA52A6005A68CD /* src_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F816DA52A6005A68CD /* src_1.png */; };
 		CDFBB3FC16DA52A6005A68CD /* info_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F916DA52A6005A68CD /* info_1.png */; };
+		CDFBB3FD16DA58A8005A68CD /* IUT_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3D516DA5239005A68CD /* IUT_ViewController.m */; };
+		CDFBB3FE16DA58A8005A68CD /* GEII_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3DD16DA5239005A68CD /* GEII_ViewController.m */; };
+		CDFBB3FF16DA58A8005A68CD /* INFO_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3DE16DA5239005A68CD /* INFO_ViewController.m */; };
+		CDFBB40016DA58A8005A68CD /* SRC_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3E016DA5239005A68CD /* SRC_ViewController.m */; };
+		CDFBB40116DA5945005A68CD /* geii.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D316DA5239005A68CD /* geii.html */; };
+		CDFBB40216DA5945005A68CD /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D616DA5239005A68CD /* info.html */; };
+		CDFBB40316DA5945005A68CD /* src.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D716DA5239005A68CD /* src.html */; };
+		CDFBB40416DA5945005A68CD /* iut.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D816DA5239005A68CD /* iut.html */; };
+		CDFBB40516DA596E005A68CD /* geii2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D916DA5239005A68CD /* geii2.png */; };
+		CDFBB40616DA596E005A68CD /* geii1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3DA16DA5239005A68CD /* geii1.png */; };
+		CDFBB40716DA596E005A68CD /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3DB16DA5239005A68CD /* style.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -407,10 +418,10 @@
 				CDFBB3DB16DA5239005A68CD /* style.css */,
 				CDFBB3DC16DA5239005A68CD /* GEII_ViewController.h */,
 				CDFBB3DD16DA5239005A68CD /* GEII_ViewController.m */,
-				CDFBB3DE16DA5239005A68CD /* INFO_ViewController.m */,
 				CDFBB3DF16DA5239005A68CD /* INFO_ViewController.h */,
-				CDFBB3E016DA5239005A68CD /* SRC_ViewController.m */,
+				CDFBB3DE16DA5239005A68CD /* INFO_ViewController.m */,
 				CDFBB3E116DA5239005A68CD /* SRC_ViewController.h */,
+				CDFBB3E016DA5239005A68CD /* SRC_ViewController.m */,
 			);
 			name = Presentations;
 			sourceTree = "<group>";
@@ -544,6 +555,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFBB40516DA596E005A68CD /* geii2.png in Resources */,
+				CDFBB40616DA596E005A68CD /* geii1.png in Resources */,
+				CDFBB40716DA596E005A68CD /* style.css in Resources */,
+				CDFBB40116DA5945005A68CD /* geii.html in Resources */,
+				CDFBB40216DA5945005A68CD /* info.html in Resources */,
+				CDFBB40316DA5945005A68CD /* src.html in Resources */,
+				CDFBB40416DA5945005A68CD /* iut.html in Resources */,
 				6D547250167B3506003F58A5 /* InfoPlist.strings in Resources */,
 				6D547258167B3506003F58A5 /* Default.png in Resources */,
 				6D54725A167B3506003F58A5 /* Default@2x.png in Resources */,
@@ -631,6 +649,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFBB3FD16DA58A8005A68CD /* IUT_ViewController.m in Sources */,
+				CDFBB3FE16DA58A8005A68CD /* GEII_ViewController.m in Sources */,
+				CDFBB3FF16DA58A8005A68CD /* INFO_ViewController.m in Sources */,
+				CDFBB40016DA58A8005A68CD /* SRC_ViewController.m in Sources */,
 				CD21423C16CF81CF0048D002 /* Utils.m in Sources */,
 				6D547252167B3506003F58A5 /* main.m in Sources */,
 				6D547256167B3506003F58A5 /* AppDelegate.m in Sources */,

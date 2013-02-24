@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="I8q-Z6-YqR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -127,7 +127,7 @@
                                                     <segue destination="ow5-XK-Qej" kind="custom" customClass="SpecialAnimation" id="mLa-xw-MsT"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XaE-t6-hGY">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XaE-t6-hGY">
                                                 <rect key="frame" x="220" y="177" width="85" height="78"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" image="info_1.png">
@@ -141,7 +141,7 @@
                                                     <segue destination="mHc-ES-qO1" kind="modal" modalTransitionStyle="partialCurl" id="hHB-vw-8CP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4hT-uO-f0U">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4hT-uO-f0U">
                                                 <rect key="frame" x="118" y="177" width="85" height="78"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" image="src_1.png">
@@ -155,7 +155,7 @@
                                                     <segue destination="Ino-Qt-29g" kind="modal" modalTransitionStyle="partialCurl" id="MMy-RR-B9i"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XU9-yK-HAD">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XU9-yK-HAD">
                                                 <rect key="frame" x="15" y="177" width="85" height="78"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" image="geii_1.png">
@@ -289,10 +289,10 @@
             </objects>
             <point key="canvasLocation" x="-384" y="15"/>
         </scene>
-        <!--Info Dept Controller - Title-->
+        <!--View Controller - IUT-->
         <scene sceneID="U2P-fh-BJX">
             <objects>
-                <viewController id="mRO-lJ-ws9" customClass="InfoDeptController" sceneMemberID="viewController">
+                <viewController title="IUT" id="mRO-lJ-ws9" customClass="IUT_ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8QE-uB-K0h">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -310,30 +310,36 @@
                                     <navigationItem title="IUT de SAINT-DIE" id="inq-oh-b8n">
                                         <barButtonItem key="leftBarButtonItem" title="Retour" id="oFm-5V-86m">
                                             <connections>
-                                                <action selector="back:" destination="mRO-lJ-ws9" id="cBE-fm-ACT"/>
+                                                <action selector="done:" destination="mRO-lJ-ws9" id="HQb-w7-NTg"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <webView contentMode="scaleToFill" id="ZDk-Ao-78D">
-                                <rect key="frame" x="40" y="246" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="162" width="320" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mRO-lJ-ws9" id="TEz-1Y-nTa"/>
+                                </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="XsR-DP-sSC"/>
+                    <connections>
+                        <outlet property="myDocView" destination="ZDk-Ao-78D" id="6rs-8l-U77"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0nh-Ou-I59" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="470" y="970"/>
         </scene>
-        <!--Info Dept Controller-->
+        <!--View Controller-->
         <scene sceneID="vXj-MD-gPt">
             <objects>
-                <viewController id="Ino-Qt-29g" customClass="InfoDeptController" sceneMemberID="viewController">
+                <viewController id="Ino-Qt-29g" customClass="SRC_ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TnS-eN-nBR">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -351,20 +357,26 @@
                                     <navigationItem title="DUT SRC" id="k4z-35-Q7Q">
                                         <barButtonItem key="leftBarButtonItem" title="Retour" id="yBA-uN-UmT">
                                             <connections>
-                                                <action selector="back:" destination="Ino-Qt-29g" id="N4W-sQ-0LA"/>
+                                                <action selector="done:" destination="Ino-Qt-29g" id="RIX-KK-Oy2"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <webView contentMode="scaleToFill" id="wNZ-mw-1zC">
-                                <rect key="frame" x="40" y="242" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="163" width="320" height="297"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ino-Qt-29g" id="wyc-11-CQ4"/>
+                                </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myDocView" destination="wNZ-mw-1zC" id="rWP-G8-xoB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCX-bg-ir3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -492,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEf-fm-Qc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-455" y="701"/>
+            <point key="canvasLocation" x="-551" y="933"/>
         </scene>
         <!--Etudiant Controller-->
         <scene sceneID="N9S-4U-Dq0">
@@ -1031,10 +1043,10 @@
             </objects>
             <point key="canvasLocation" x="1882" y="-2757"/>
         </scene>
-        <!--Info Dept Controller-->
+        <!--View Controller-->
         <scene sceneID="VaU-kH-xE8">
             <objects>
-                <viewController id="mHc-ES-qO1" customClass="InfoDeptController" sceneMemberID="viewController">
+                <viewController id="mHc-ES-qO1" customClass="INFO_ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eCa-2T-0YF">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1052,29 +1064,35 @@
                                     <navigationItem title="DUT INFO" id="V7R-xT-Z4Y">
                                         <barButtonItem key="leftBarButtonItem" title="Retour" id="KFy-ix-rmn">
                                             <connections>
-                                                <action selector="back:" destination="mHc-ES-qO1" id="6rD-rG-H2K"/>
+                                                <action selector="done:" destination="mHc-ES-qO1" id="f46-VX-YXJ"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <webView contentMode="scaleToFill" id="BVX-rZ-Rqo">
-                                <rect key="frame" x="40" y="238" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="163" width="320" height="297"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mHc-ES-qO1" id="WyW-dm-yoj"/>
+                                </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myDocView" destination="BVX-rZ-Rqo" id="FrZ-g1-Wxe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mct-O1-r48" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1359" y="970"/>
         </scene>
-        <!--Info Dept Controller-->
+        <!--View Controller-->
         <scene sceneID="qID-BD-KpZ">
             <objects>
-                <viewController id="fb0-48-LhG" customClass="InfoDeptController" sceneMemberID="viewController">
+                <viewController id="fb0-48-LhG" customClass="GEII_ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iJ5-E1-Ryh">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1092,20 +1110,26 @@
                                     <navigationItem title="DUT GEII" id="lkM-qB-HZb">
                                         <barButtonItem key="leftBarButtonItem" title="Retour" id="Dfs-oe-Ewd">
                                             <connections>
-                                                <action selector="back:" destination="fb0-48-LhG" id="bqr-cu-isC"/>
+                                                <action selector="done:" destination="fb0-48-LhG" id="rMm-eP-mEN"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <webView contentMode="scaleToFill" id="i4J-4J-bj5">
-                                <rect key="frame" x="40" y="247" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="161" width="320" height="299"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fb0-48-LhG" id="iIG-nk-f8B"/>
+                                </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myDocView" destination="i4J-4J-bj5" id="SA7-bP-s1p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BiK-Qi-aE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1248,7 +1272,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Default.png" width="320" height="480"/>
+        <image name="Default.png" width="57" height="57"/>
         <image name="Universite_de_Lorraine_-_logo.png" width="669" height="296"/>
         <image name="bg.png" width="320" height="480"/>
         <image name="bg_black.png" width="320" height="418"/>
@@ -1302,10 +1326,25 @@
                 <relationship kind="action" name="back:"/>
             </relationships>
         </class>
-        <class className="InfoDeptController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InfoDeptController.h"/>
+        <class className="GEII_ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GEII_ViewController.h"/>
             <relationships>
-                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="INFO_ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/INFO_ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="IUT_ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IUT_ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
             </relationships>
         </class>
         <class className="MapController" superclassName="UIViewController">
@@ -1336,6 +1375,13 @@
             <relationships>
                 <relationship kind="action" name="dismissAction:"/>
                 <relationship kind="outlet" name="tabView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="SRC_ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SRC_ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
             </relationships>
         </class>
         <class className="SelectEDTController" superclassName="UIViewController">
