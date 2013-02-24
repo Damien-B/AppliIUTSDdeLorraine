@@ -28,10 +28,6 @@
 		22407D59169E1E3500AB16CE /* intro.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D57169E1E3500AB16CE /* intro.png */; };
 		22407D5A169E1E3500AB16CE /* sponsor.png in Resources */ = {isa = PBXBuildFile; fileRef = 22407D58169E1E3500AB16CE /* sponsor.png */; };
 		22A2F1E116C1608D00220945 /* EdtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A2F1E016C1608C00220945 /* EdtViewController.m */; };
-		22A6C20D16BC41CF0049D1A8 /* absences.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A6C20716BC41CF0049D1A8 /* absences.png */; };
-		22A6C20F16BC41CF0049D1A8 /* edt.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A6C20816BC41CF0049D1A8 /* edt.png */; };
-		22A6C21316BC41CF0049D1A8 /* nouveautes.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A6C20A16BC41CF0049D1A8 /* nouveautes.png */; };
-		22A6C21516BC41CF0049D1A8 /* prefs.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A6C20B16BC41CF0049D1A8 /* prefs.png */; };
 		22D6B77916BC327500134732 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D6B77816BC327500134732 /* MapKit.framework */; };
 		6D04C43416A8460B000A228F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D04C43316A8460B000A228F /* DetailViewController.m */; };
 		6D2A6381167B617B00BAC6A8 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2A6380167B617B00BAC6A8 /* News.m */; };
@@ -48,11 +44,6 @@
 		6D54725F167B3506003F58A5 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D54725D167B3506003F58A5 /* MainStoryboard_iPhone.storyboard */; };
 		6D547262167B3506003F58A5 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D547260167B3506003F58A5 /* MainStoryboard_iPad.storyboard */; };
 		6D547265167B3506003F58A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D547264167B3506003F58A5 /* ViewController.m */; };
-		6D54726D167B3506003F58A5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D54726C167B3506003F58A5 /* SenTestingKit.framework */; };
-		6D54726E167B3506003F58A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D547245167B3506003F58A5 /* UIKit.framework */; };
-		6D54726F167B3506003F58A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D547247167B3506003F58A5 /* Foundation.framework */; };
-		6D547277167B3506003F58A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D547275167B3506003F58A5 /* InfoPlist.strings */; };
-		6D54727A167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D547279167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m */; };
 		6D547285167B3631003F58A5 /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D547284167B3631003F58A5 /* StartController.m */; };
 		6D54728D167B3CFE003F58A5 /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728C167B3CFE003F58A5 /* icone.png */; };
 		6D54728F167B3D45003F58A5 /* retinalol.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728E167B3D45003F58A5 /* retinalol.png */; };
@@ -71,17 +62,6 @@
 		CDA5245E16D44E4E004A7C42 /* logoIUT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */; };
 		CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */; };
 		CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */; };
-		CDFBB3E216DA5239005A68CD /* geii.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D316DA5239005A68CD /* geii.html */; };
-		CDFBB3E316DA5239005A68CD /* IUT_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3D516DA5239005A68CD /* IUT_ViewController.m */; };
-		CDFBB3E416DA5239005A68CD /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D616DA5239005A68CD /* info.html */; };
-		CDFBB3E516DA5239005A68CD /* src.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D716DA5239005A68CD /* src.html */; };
-		CDFBB3E616DA5239005A68CD /* iut.html in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D816DA5239005A68CD /* iut.html */; };
-		CDFBB3E716DA5239005A68CD /* geii2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3D916DA5239005A68CD /* geii2.png */; };
-		CDFBB3E816DA5239005A68CD /* geii1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3DA16DA5239005A68CD /* geii1.png */; };
-		CDFBB3E916DA5239005A68CD /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3DB16DA5239005A68CD /* style.css */; };
-		CDFBB3EA16DA5239005A68CD /* GEII_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3DD16DA5239005A68CD /* GEII_ViewController.m */; };
-		CDFBB3EB16DA5239005A68CD /* INFO_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3DE16DA5239005A68CD /* INFO_ViewController.m */; };
-		CDFBB3EC16DA5239005A68CD /* SRC_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFBB3E016DA5239005A68CD /* SRC_ViewController.m */; };
 		CDFBB3EE16DA524B005A68CD /* sponsors_3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3ED16DA524B005A68CD /* sponsors_3_1.png */; };
 		CDFBB3F016DA525F005A68CD /* logoIut.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3EF16DA525F005A68CD /* logoIut.png */; };
 		CDFBB3F216DA5268005A68CD /* Universite_de_Lorraine_-_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F116DA5268005A68CD /* Universite_de_Lorraine_-_logo.png */; };
@@ -102,16 +82,6 @@
 		CDFBB40616DA596E005A68CD /* geii1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3DA16DA5239005A68CD /* geii1.png */; };
 		CDFBB40716DA596E005A68CD /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3DB16DA5239005A68CD /* style.css */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6D547270167B3506003F58A5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6D547238167B3506003F58A5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6D547240167B3506003F58A5;
-			remoteInfo = AppliIUTSDdeLorraine;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		22089E9F169D9F2700298246 /* appli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = appli.png; path = source/appli.png; sourceTree = "<group>"; };
@@ -138,10 +108,6 @@
 		22407D58169E1E3500AB16CE /* sponsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sponsor.png; path = source/sponsor.png; sourceTree = "<group>"; };
 		22A2F1DF16C1608C00220945 /* EdtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdtViewController.h; sourceTree = "<group>"; };
 		22A2F1E016C1608C00220945 /* EdtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdtViewController.m; sourceTree = "<group>"; };
-		22A6C20716BC41CF0049D1A8 /* absences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = absences.png; path = "../../../../Dropbox/Application de lorraine/xcode/logos/absences.png"; sourceTree = "<group>"; };
-		22A6C20816BC41CF0049D1A8 /* edt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = edt.png; path = "../../../../Dropbox/Application de lorraine/xcode/logos/edt.png"; sourceTree = "<group>"; };
-		22A6C20A16BC41CF0049D1A8 /* nouveautes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nouveautes.png; path = "../../../../Dropbox/Application de lorraine/xcode/logos/nouveautes.png"; sourceTree = "<group>"; };
-		22A6C20B16BC41CF0049D1A8 /* prefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = prefs.png; path = "../../../../Dropbox/Application de lorraine/xcode/logos/prefs.png"; sourceTree = "<group>"; };
 		22D6B77816BC327500134732 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6D04C43216A8460B000A228F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		6D04C43316A8460B000A228F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
@@ -166,12 +132,7 @@
 		6D547261167B3506003F58A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		6D547263167B3506003F58A5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6D547264167B3506003F58A5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6D54726B167B3506003F58A5 /* AppliIUTSDdeLorraineTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppliIUTSDdeLorraineTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D54726C167B3506003F58A5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		6D547274167B3506003F58A5 /* AppliIUTSDdeLorraineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppliIUTSDdeLorraineTests-Info.plist"; sourceTree = "<group>"; };
-		6D547276167B3506003F58A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6D547278167B3506003F58A5 /* AppliIUTSDdeLorraineTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppliIUTSDdeLorraineTests.h; sourceTree = "<group>"; };
-		6D547279167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppliIUTSDdeLorraineTests.m; sourceTree = "<group>"; };
 		6D547283167B3631003F58A5 /* StartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartController.h; sourceTree = "<group>"; };
 		6D547284167B3631003F58A5 /* StartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
 		6D54728C167B3CFE003F58A5 /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icone.png; path = ../icone.png; sourceTree = "<group>"; };
@@ -238,16 +199,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D547267167B3506003F58A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D54726D167B3506003F58A5 /* SenTestingKit.framework in Frameworks */,
-				6D54726E167B3506003F58A5 /* UIKit.framework in Frameworks */,
-				6D54726F167B3506003F58A5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -294,7 +245,6 @@
 			children = (
 				CDE472D516BB3C6A0071A51D /* Settings.bundle */,
 				6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */,
-				6D547272167B3506003F58A5 /* AppliIUTSDdeLorraineTests */,
 				6D547244167B3506003F58A5 /* Frameworks */,
 				6D547242167B3506003F58A5 /* Products */,
 			);
@@ -304,7 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				6D547241167B3506003F58A5 /* AppliIUTSDdeLorraine.app */,
-				6D54726B167B3506003F58A5 /* AppliIUTSDdeLorraineTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -360,25 +309,6 @@
 				6D547257167B3506003F58A5 /* Default.png */,
 				6D547259167B3506003F58A5 /* Default@2x.png */,
 				6D54725B167B3506003F58A5 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6D547272167B3506003F58A5 /* AppliIUTSDdeLorraineTests */ = {
-			isa = PBXGroup;
-			children = (
-				6D547278167B3506003F58A5 /* AppliIUTSDdeLorraineTests.h */,
-				6D547279167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m */,
-				6D547273167B3506003F58A5 /* Supporting Files */,
-			);
-			path = AppliIUTSDdeLorraineTests;
-			sourceTree = "<group>";
-		};
-		6D547273167B3506003F58A5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6D547274167B3506003F58A5 /* AppliIUTSDdeLorraineTests-Info.plist */,
-				6D547275167B3506003F58A5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -502,25 +432,6 @@
 			productReference = 6D547241167B3506003F58A5 /* AppliIUTSDdeLorraine.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6D54726A167B3506003F58A5 /* AppliIUTSDdeLorraineTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6D547280167B3506003F58A5 /* Build configuration list for PBXNativeTarget "AppliIUTSDdeLorraineTests" */;
-			buildPhases = (
-				6D547266167B3506003F58A5 /* Sources */,
-				6D547267167B3506003F58A5 /* Frameworks */,
-				6D547268167B3506003F58A5 /* Resources */,
-				6D547269167B3506003F58A5 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6D547271167B3506003F58A5 /* PBXTargetDependency */,
-			);
-			name = AppliIUTSDdeLorraineTests;
-			productName = AppliIUTSDdeLorraineTests;
-			productReference = 6D54726B167B3506003F58A5 /* AppliIUTSDdeLorraineTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -543,7 +454,6 @@
 			projectRoot = "";
 			targets = (
 				6D547240167B3506003F58A5 /* AppliIUTSDdeLorraine */,
-				6D54726A167B3506003F58A5 /* AppliIUTSDdeLorraineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -604,42 +514,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D547268167B3506003F58A5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D547277167B3506003F58A5 /* InfoPlist.strings in Resources */,
-				22A6C20D16BC41CF0049D1A8 /* absences.png in Resources */,
-				22A6C20F16BC41CF0049D1A8 /* edt.png in Resources */,
-				22A6C21316BC41CF0049D1A8 /* nouveautes.png in Resources */,
-				22A6C21516BC41CF0049D1A8 /* prefs.png in Resources */,
-				CDFBB3E216DA5239005A68CD /* geii.html in Resources */,
-				CDFBB3E416DA5239005A68CD /* info.html in Resources */,
-				CDFBB3E516DA5239005A68CD /* src.html in Resources */,
-				CDFBB3E616DA5239005A68CD /* iut.html in Resources */,
-				CDFBB3E716DA5239005A68CD /* geii2.png in Resources */,
-				CDFBB3E816DA5239005A68CD /* geii1.png in Resources */,
-				CDFBB3E916DA5239005A68CD /* style.css in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6D547269167B3506003F58A5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D54723D167B3506003F58A5 /* Sources */ = {
@@ -670,27 +545,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D547266167B3506003F58A5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6D54727A167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m in Sources */,
-				CDFBB3E316DA5239005A68CD /* IUT_ViewController.m in Sources */,
-				CDFBB3EA16DA5239005A68CD /* GEII_ViewController.m in Sources */,
-				CDFBB3EB16DA5239005A68CD /* INFO_ViewController.m in Sources */,
-				CDFBB3EC16DA5239005A68CD /* SRC_ViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6D547271167B3506003F58A5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6D547240167B3506003F58A5 /* AppliIUTSDdeLorraine */;
-			targetProxy = 6D547270167B3506003F58A5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6D54724E167B3506003F58A5 /* InfoPlist.strings */ = {
@@ -715,14 +570,6 @@
 				6D547261167B3506003F58A5 /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		6D547275167B3506003F58A5 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D547276167B3506003F58A5 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -810,40 +657,6 @@
 			};
 			name = Release;
 		};
-		6D547281167B3506003F58A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AppliIUTSDdeLorraine.app/AppliIUTSDdeLorraine";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppliIUTSDdeLorraine/AppliIUTSDdeLorraine-Prefix.pch";
-				INFOPLIST_FILE = "AppliIUTSDdeLorraineTests/AppliIUTSDdeLorraineTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		6D547282167B3506003F58A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AppliIUTSDdeLorraine.app/AppliIUTSDdeLorraine";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppliIUTSDdeLorraine/AppliIUTSDdeLorraine-Prefix.pch";
-				INFOPLIST_FILE = "AppliIUTSDdeLorraineTests/AppliIUTSDdeLorraineTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -861,15 +674,6 @@
 			buildConfigurations = (
 				6D54727E167B3506003F58A5 /* Debug */,
 				6D54727F167B3506003F58A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6D547280167B3506003F58A5 /* Build configuration list for PBXNativeTarget "AppliIUTSDdeLorraineTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6D547281167B3506003F58A5 /* Debug */,
-				6D547282167B3506003F58A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
