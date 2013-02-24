@@ -55,6 +55,7 @@
 		CD24320F16D2684200D8C039 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24320E16D2684100D8C039 /* MapController.m */; };
 		CD588D8416DAC05100363C78 /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CD588D8316DABE4500363C78 /* ODRefreshControl.m */; };
 		CD588D8516DAC07600363C78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7BE61C16D03BC4006D09D1 /* QuartzCore.framework */; };
+		CD588D8816DACF3400363C78 /* SlideFromBottomAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = CD588D8716DACF3400363C78 /* SlideFromBottomAnim.m */; };
 		CD71622E16BC663D0077FDFD /* absences.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71622D16BC663D0077FDFD /* absences.png */; };
 		CD71623016BC66490077FDFD /* edt.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71622F16BC66490077FDFD /* edt.png */; };
 		CD71623216BC665B0077FDFD /* nouveautes.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623116BC665B0077FDFD /* nouveautes.png */; };
@@ -149,6 +150,8 @@
 		CD24320E16D2684100D8C039 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
 		CD588D8216DABE4500363C78 /* ODRefreshControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
 		CD588D8316DABE4500363C78 /* ODRefreshControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
+		CD588D8616DACF3400363C78 /* SlideFromBottomAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideFromBottomAnim.h; sourceTree = "<group>"; };
+		CD588D8716DACF3400363C78 /* SlideFromBottomAnim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideFromBottomAnim.m; sourceTree = "<group>"; };
 		CD71622D16BC663D0077FDFD /* absences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = absences.png; sourceTree = "<group>"; };
 		CD71622F16BC66490077FDFD /* edt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt.png; sourceTree = "<group>"; };
 		CD71623116BC665B0077FDFD /* nouveautes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nouveautes.png; sourceTree = "<group>"; };
@@ -373,6 +376,8 @@
 		CD24320916D2626100D8C039 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				CD588D8616DACF3400363C78 /* SlideFromBottomAnim.h */,
+				CD588D8716DACF3400363C78 /* SlideFromBottomAnim.m */,
 				CD24320A16D2629500D8C039 /* SpecialAnimation.h */,
 				CD24320B16D2629500D8C039 /* SpecialAnimation.m */,
 			);
@@ -558,6 +563,7 @@
 				CD24320F16D2684200D8C039 /* MapController.m in Sources */,
 				6D9D098616D3D24D003F4DD8 /* PreferencesViewController.m in Sources */,
 				CDA5245C16D4431A004A7C42 /* IUTLocation.m in Sources */,
+				CD588D8816DACF3400363C78 /* SlideFromBottomAnim.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
