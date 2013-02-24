@@ -54,7 +54,6 @@
 		6D547277167B3506003F58A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D547275167B3506003F58A5 /* InfoPlist.strings */; };
 		6D54727A167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D547279167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m */; };
 		6D547285167B3631003F58A5 /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D547284167B3631003F58A5 /* StartController.m */; };
-		6D547287167B3B3F003F58A5 /* dictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D547286167B3B3F003F58A5 /* dictionary.plist */; };
 		6D54728D167B3CFE003F58A5 /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728C167B3CFE003F58A5 /* icone.png */; };
 		6D54728F167B3D45003F58A5 /* retinalol.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728E167B3D45003F58A5 /* retinalol.png */; };
 		6D9D098616D3D24D003F4DD8 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */; };
@@ -67,7 +66,6 @@
 		CD71623016BC66490077FDFD /* edt.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71622F16BC66490077FDFD /* edt.png */; };
 		CD71623216BC665B0077FDFD /* nouveautes.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623116BC665B0077FDFD /* nouveautes.png */; };
 		CD71623416BC66680077FDFD /* prefs.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623316BC66680077FDFD /* prefs.png */; };
-		CD7BE62016D03FC0006D09D1 /* InfoDeptController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7BE61F16D03FC0006D09D1 /* InfoDeptController.m */; };
 		CD9D730C16BD438500934CBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D730B16BD438500934CBC /* SystemConfiguration.framework */; };
 		CDA5245C16D4431A004A7C42 /* IUTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA5245B16D4431A004A7C42 /* IUTLocation.m */; };
 		CDA5245E16D44E4E004A7C42 /* logoIUT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */; };
@@ -176,14 +174,12 @@
 		6D547279167B3506003F58A5 /* AppliIUTSDdeLorraineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppliIUTSDdeLorraineTests.m; sourceTree = "<group>"; };
 		6D547283167B3631003F58A5 /* StartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartController.h; sourceTree = "<group>"; };
 		6D547284167B3631003F58A5 /* StartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
-		6D547286167B3B3F003F58A5 /* dictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dictionary.plist; sourceTree = "<group>"; };
 		6D54728C167B3CFE003F58A5 /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icone.png; path = ../icone.png; sourceTree = "<group>"; };
 		6D54728E167B3D45003F58A5 /* retinalol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retinalol.png; path = ../retinalol.png; sourceTree = "<group>"; };
-		6D98D2CF167F5C47009A5C84 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6D9D098416D3D24D003F4DD8 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
 		6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
-		755754A416D4FFF40057492C /* icon_app-iutsd_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_app-iutsd_57.png"; sourceTree = "<group>"; };
-		755754A616D4FFFD0057492C /* icon_app-iutsd_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_app-iutsd_114.png"; sourceTree = "<group>"; };
+		755754A416D4FFF40057492C /* icon_app-iutsd_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_app-iutsd_57.png"; path = "../icon_app-iutsd_57.png"; sourceTree = "<group>"; };
+		755754A616D4FFFD0057492C /* icon_app-iutsd_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_app-iutsd_114.png"; path = "../icon_app-iutsd_114.png"; sourceTree = "<group>"; };
 		CD24320A16D2629500D8C039 /* SpecialAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialAnimation.h; sourceTree = "<group>"; };
 		CD24320B16D2629500D8C039 /* SpecialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialAnimation.m; sourceTree = "<group>"; };
 		CD24320D16D2684100D8C039 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
@@ -193,8 +189,6 @@
 		CD71623116BC665B0077FDFD /* nouveautes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nouveautes.png; sourceTree = "<group>"; };
 		CD71623316BC66680077FDFD /* prefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prefs.png; sourceTree = "<group>"; };
 		CD7BE61C16D03BC4006D09D1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		CD7BE61E16D03FC0006D09D1 /* InfoDeptController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoDeptController.h; sourceTree = "<group>"; };
-		CD7BE61F16D03FC0006D09D1 /* InfoDeptController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoDeptController.m; sourceTree = "<group>"; };
 		CD9D730816BD414300934CBC /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		CD9D730916BD414300934CBC /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		CD9D730B16BD438500934CBC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -260,6 +254,8 @@
 		22089E9D169D9F0900298246 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				755754A616D4FFFD0057492C /* icon_app-iutsd_114.png */,
+				755754A416D4FFF40057492C /* icon_app-iutsd_57.png */,
 				75A1B9FA16D55B1E00CD28E5 /* IUT */,
 				CDFBB3ED16DA524B005A68CD /* sponsors_3_1.png */,
 				22407D58169E1E3500AB16CE /* sponsor.png */,
@@ -296,10 +292,7 @@
 		6D547236167B3506003F58A5 = {
 			isa = PBXGroup;
 			children = (
-				755754A616D4FFFD0057492C /* icon_app-iutsd_114.png */,
-				755754A416D4FFF40057492C /* icon_app-iutsd_57.png */,
 				CDE472D516BB3C6A0071A51D /* Settings.bundle */,
-				6D98D2CF167F5C47009A5C84 /* Default.png */,
 				6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */,
 				6D547272167B3506003F58A5 /* AppliIUTSDdeLorraineTests */,
 				6D547244167B3506003F58A5 /* Frameworks */,
@@ -333,40 +326,24 @@
 		6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */ = {
 			isa = PBXGroup;
 			children = (
+				CD588D8016DA8F7C00363C78 /* Controller */,
 				757CBD7C16D502EE006EFEE6 /* Presentations */,
 				CD24320916D2626100D8C039 /* Animations */,
 				CD9D730716BD412300934CBC /* Utils */,
 				CDA5245916D4427B004A7C42 /* Map */,
 				22516D2516CD819000896F5A /* EDT */,
-				6D04C43316A8460B000A228F /* DetailViewController.m */,
-				6D04C43216A8460B000A228F /* DetailViewController.h */,
-				6D54728C167B3CFE003F58A5 /* icone.png */,
-				6D54728E167B3D45003F58A5 /* retinalol.png */,
 				6D547254167B3506003F58A5 /* AppDelegate.h */,
 				6D547255167B3506003F58A5 /* AppDelegate.m */,
-				CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */,
-				CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */,
 				6D54725D167B3506003F58A5 /* MainStoryboard_iPhone.storyboard */,
-				6D9D098416D3D24D003F4DD8 /* PreferencesViewController.h */,
-				6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */,
-				6D2A6382167B650700BAC6A8 /* RootViewController.h */,
-				6D2A6383167B650700BAC6A8 /* RootViewController.m */,
 				6D547260167B3506003F58A5 /* MainStoryboard_iPad.storyboard */,
-				6D547264167B3506003F58A5 /* ViewController.m */,
-				6D547263167B3506003F58A5 /* ViewController.h */,
 				22407D51169E168000AB16CE /* WebView.h */,
 				22407D52169E168000AB16CE /* WebView.m */,
 				22407D54169E16A900AB16CE /* WebViewController.h */,
 				22407D55169E16A900AB16CE /* WebViewController.m */,
 				22089E9D169D9F0900298246 /* source */,
-				6D547283167B3631003F58A5 /* StartController.h */,
-				6D547284167B3631003F58A5 /* StartController.m */,
 				6D54724C167B3506003F58A5 /* Supporting Files */,
-				6D547286167B3B3F003F58A5 /* dictionary.plist */,
 				6D2A637F167B617B00BAC6A8 /* News.h */,
 				6D2A6380167B617B00BAC6A8 /* News.m */,
-				CD7BE61E16D03FC0006D09D1 /* InfoDeptController.h */,
-				CD7BE61F16D03FC0006D09D1 /* InfoDeptController.m */,
 			);
 			path = AppliIUTSDdeLorraine;
 			sourceTree = "<group>";
@@ -374,6 +351,8 @@
 		6D54724C167B3506003F58A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6D54728C167B3CFE003F58A5 /* icone.png */,
+				6D54728E167B3D45003F58A5 /* retinalol.png */,
 				6D54724D167B3506003F58A5 /* AppliIUTSDdeLorraine-Info.plist */,
 				6D54724E167B3506003F58A5 /* InfoPlist.strings */,
 				6D547251167B3506003F58A5 /* main.m */,
@@ -462,6 +441,25 @@
 				CD24320B16D2629500D8C039 /* SpecialAnimation.m */,
 			);
 			name = Animations;
+			sourceTree = "<group>";
+		};
+		CD588D8016DA8F7C00363C78 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D547283167B3631003F58A5 /* StartController.h */,
+				6D547284167B3631003F58A5 /* StartController.m */,
+				6D547264167B3506003F58A5 /* ViewController.m */,
+				6D547263167B3506003F58A5 /* ViewController.h */,
+				6D2A6382167B650700BAC6A8 /* RootViewController.h */,
+				6D2A6383167B650700BAC6A8 /* RootViewController.m */,
+				6D9D098416D3D24D003F4DD8 /* PreferencesViewController.h */,
+				6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */,
+				CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */,
+				CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */,
+				6D04C43316A8460B000A228F /* DetailViewController.m */,
+				6D04C43216A8460B000A228F /* DetailViewController.h */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		CD9D730716BD412300934CBC /* Utils */ = {
@@ -568,7 +566,6 @@
 				6D54725C167B3506003F58A5 /* Default-568h@2x.png in Resources */,
 				6D54725F167B3506003F58A5 /* MainStoryboard_iPhone.storyboard in Resources */,
 				6D547262167B3506003F58A5 /* MainStoryboard_iPad.storyboard in Resources */,
-				6D547287167B3B3F003F58A5 /* dictionary.plist in Resources */,
 				6D54728D167B3CFE003F58A5 /* icone.png in Resources */,
 				6D54728F167B3D45003F58A5 /* retinalol.png in Resources */,
 				22089EAA169D9F2700298246 /* appli.png in Resources */,
@@ -666,7 +663,6 @@
 				22A2F1E116C1608D00220945 /* EdtViewController.m in Sources */,
 				CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */,
 				CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */,
-				CD7BE62016D03FC0006D09D1 /* InfoDeptController.m in Sources */,
 				CD24320C16D2629500D8C039 /* SpecialAnimation.m in Sources */,
 				CD24320F16D2684200D8C039 /* MapController.m in Sources */,
 				6D9D098616D3D24D003F4DD8 /* PreferencesViewController.m in Sources */,
