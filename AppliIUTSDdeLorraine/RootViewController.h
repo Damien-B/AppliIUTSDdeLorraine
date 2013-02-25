@@ -14,7 +14,6 @@
 @interface RootViewController : UIViewController<SlidableView> {
     NSMutableArray *tabNews;
     UILabel *titre;
-    DetailViewController *detailViewCtr;
     NSString *newsCurrentTitle;
     NSString *newsCurrentContent;
     IBOutlet UITableView *tabView;
@@ -35,7 +34,6 @@
 
 @property (nonatomic, retain) NSMutableArray *tabNews;
 @property (nonatomic, retain) UILabel *titre;
-@property (nonatomic, retain) DetailViewController *detailViewCtr;
 @property (retain, nonatomic) IBOutlet UITableView *tabView;
 
 @end

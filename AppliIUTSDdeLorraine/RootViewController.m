@@ -20,7 +20,7 @@
 
 
 
-@synthesize tabNews, tabView, titre, detailViewCtr, viewAnimates, topImage;
+@synthesize tabNews, tabView, titre, viewAnimates, topImage;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

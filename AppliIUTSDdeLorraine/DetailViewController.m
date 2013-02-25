@@ -41,24 +41,24 @@
 
 
 - (void) initData: (NSString *) aTitre : (NSString *) aContenu{
-    self.titre.text= aTitre;
-    self.contenu.text= aContenu;
+    titre.text= aTitre ;
+    contenu.text= aContenu;
     NSLog(@"init data tit: %@",aTitre);
 }
 
 //
-//
-//- (void)viewDidLoad
-//{   
-//    
-//    [super viewDidLoad];
-//	// Do any additional setup after loading the view.
-//    //[(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
-//   // NSString* titrerow=[(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
-//    //NSString* contenurow=[(RootViewController *) [self presentingViewController] getCurrentNewsContent];
-////    titre.text=titrerow;
-// //   contenu.text=contenurow;
-//}
+
+- (void)viewDidLoad
+{   
+    
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+    [(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
+    NSString* titrerow=[(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
+    NSString* contenurow=[(RootViewController *) [self presentingViewController] getCurrentNewsContent];
+    titre.text=titrerow;
+    contenu.text=contenurow;
+}
 
 - (void)didReceiveMemoryWarning
 {
