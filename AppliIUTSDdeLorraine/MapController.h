@@ -9,15 +9,20 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "IUTLocation.h"
+#import "SlidableView.h"
 
 
-@interface MapController : UIViewController{
+@interface MapController : UIViewController<SlidableView>{
     MKMapView *mapview;
-
+    IBOutlet UIImageView *topImage;
+    IBOutlet UIView *viewAnimates;
 }
 
 
 @property (nonatomic, retain) IBOutlet MKMapView *mapview;
+
+@property (nonatomic, retain) IBOutlet UIView *viewAnimates;
+@property (nonatomic, retain) IBOutlet UIImageView *topImage;
 
 - (IBAction)setMap:(id)sender;
 - (IBAction)getlocation;

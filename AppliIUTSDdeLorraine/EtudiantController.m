@@ -8,6 +8,7 @@
 
 #import "EtudiantController.h"
 #import "RootViewController.h"
+#import "ViewController.h"
 
 @interface EtudiantController ()
 
@@ -41,8 +42,23 @@
 
 - (IBAction)back:(id)sender {
     [myButtonBack setEnabled:NO];
-    [self dismissModalViewControllerAnimated:YES];
+    UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+    [UIView animateWithDuration:0.4
+                          delay:0.0
+                        options:UIViewAnimationOptionTransitionFlipFromTop
+                     animations:^{
+                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [[(ViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+                         [self dismissModalViewControllerAnimated:NO];
+                         
+                     }];
+    
 }
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"prepare seguee....!:%@",segue.identifier);
     if ([segue.identifier isEqualToString:@"tabView"]) {

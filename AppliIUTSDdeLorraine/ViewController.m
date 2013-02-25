@@ -24,7 +24,7 @@
 @synthesize toto;
 @synthesize response;
 @synthesize authPanel;
-@synthesize menuPanel;
+@synthesize menuPanel, viewAnimates, topImage, myButtonBack, viewSRC;
 
 
 
@@ -93,8 +93,14 @@
 }
 
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [myButtonBack setHidden:YES];
+
+}
 - (void)viewDidLoad
 {
+    [myButtonBack setHidden:YES];
     // Loading user pref
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     BOOL isAutoLogin = [ prefs boolForKey:@"KeyUserAutoLogin" ];
@@ -127,6 +133,8 @@
                       duration: 1.0f
                        options:  UIViewAnimationOptionTransitionFlipFromRight
                     completion: ^(BOOL done){
+                        [myButtonBack setHidden:NO];
+
                     }];
 }
 
@@ -134,11 +142,13 @@
     NSLog(@"in animation");
     [myCancelAuthButton setHidden:YES];
     
-    [UIView transitionFromView:authPanel
+    [UIView transitionFromView: authPanel
                         toView: menuPanel
                       duration: 1.0f
                        options:  UIViewAnimationOptionTransitionFlipFromLeft
                     completion: ^(BOOL done){
+                        [myButtonBack setHidden:YES];
+
                     }];
 }
 

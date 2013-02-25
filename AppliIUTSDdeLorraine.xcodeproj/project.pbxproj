@@ -65,6 +65,7 @@
 		CDA5245E16D44E4E004A7C42 /* logoIUT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */; };
 		CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */; };
 		CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */; };
+		CDF31D5416DBD5B1003E3328 /* AuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF31D5316DBD5B1003E3328 /* AuthController.m */; };
 		CDFBB3EE16DA524B005A68CD /* sponsors_3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3ED16DA524B005A68CD /* sponsors_3_1.png */; };
 		CDFBB3F016DA525F005A68CD /* logoIut.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3EF16DA525F005A68CD /* logoIut.png */; };
 		CDFBB3F216DA5268005A68CD /* Universite_de_Lorraine_-_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F116DA5268005A68CD /* Universite_de_Lorraine_-_logo.png */; };
@@ -169,6 +170,8 @@
 		CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EtudiantController.h; sourceTree = "<group>"; };
 		CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EtudiantController.m; sourceTree = "<group>"; };
 		CDE472D516BB3C6A0071A51D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		CDF31D5216DBD5B1003E3328 /* AuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthController.h; sourceTree = "<group>"; };
+		CDF31D5316DBD5B1003E3328 /* AuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthController.m; sourceTree = "<group>"; };
 		CDFBB3D316DA5239005A68CD /* geii.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = geii.html; sourceTree = "<group>"; };
 		CDFBB3D416DA5239005A68CD /* IUT_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUT_ViewController.h; sourceTree = "<group>"; };
 		CDFBB3D516DA5239005A68CD /* IUT_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUT_ViewController.m; sourceTree = "<group>"; };
@@ -393,6 +396,8 @@
 				6D547284167B3631003F58A5 /* StartController.m */,
 				6D547263167B3506003F58A5 /* ViewController.h */,
 				6D547264167B3506003F58A5 /* ViewController.m */,
+				CDF31D5216DBD5B1003E3328 /* AuthController.h */,
+				CDF31D5316DBD5B1003E3328 /* AuthController.m */,
 				6D2A6382167B650700BAC6A8 /* RootViewController.h */,
 				6D2A6383167B650700BAC6A8 /* RootViewController.m */,
 				6D9D098416D3D24D003F4DD8 /* PreferencesViewController.h */,
@@ -566,6 +571,7 @@
 				6D9D098616D3D24D003F4DD8 /* PreferencesViewController.m in Sources */,
 				CDA5245C16D4431A004A7C42 /* IUTLocation.m in Sources */,
 				CD588D8816DACF3400363C78 /* SlideFromBottomAnim.m in Sources */,
+				CDF31D5416DBD5B1003E3328 /* AuthController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
