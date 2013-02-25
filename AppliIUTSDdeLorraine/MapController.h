@@ -13,9 +13,12 @@
 
 
 @interface MapController : UIViewController<SlidableView>{
-    MKMapView *mapview;
+    IBOutlet MKMapView *mapview;
     IBOutlet UIImageView *topImage;
     IBOutlet UIView *viewAnimates;
+    IUTLocation *annotationIUT;
+    UIImageView *leftIconView;
+    MKPinAnnotationView *customAnnotationView;
 }
 
 
@@ -27,5 +30,6 @@
 - (IBAction)setMap:(id)sender;
 - (IBAction)getlocation;
 - (IBAction)back:(id)sender;
+- (void) location;
 
 @end

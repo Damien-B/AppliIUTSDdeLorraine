@@ -23,7 +23,7 @@ static Boolean isInUse=NO;
     isInUse = YES;
     UIViewController<SlidableView> *src =  self.sourceViewController;
     UIViewController<SlidableView> *dest =  self.destinationViewController;
-    [dest loadView];
+    // [dest loadView];
 
     [dest.viewAnimates setTransform:CGAffineTransformMakeTranslation(dest.viewAnimates.frame.size.width, 0) ];
     [src.view setAlpha:1.0];
@@ -36,7 +36,6 @@ static Boolean isInUse=NO;
                          [dest.viewAnimates setTransform:CGAffineTransformMakeTranslation(0, 0)];
                      }
                      completion:^(BOOL finished){
-                         [dest loadView];
                          [dest.view  insertSubview:dest.viewAnimates belowSubview:dest.topImage];
                          [self.sourceViewController presentModalViewController:[self destinationViewController] animated:NO];;
                          [dest viewDidLoad];

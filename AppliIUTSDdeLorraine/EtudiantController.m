@@ -9,6 +9,8 @@
 #import "EtudiantController.h"
 #import "RootViewController.h"
 #import "ViewController.h"
+#import "AuthController.h"
+#import "EdtViewController.h"
 
 @interface EtudiantController ()
 
@@ -54,7 +56,7 @@
                      completion:^(BOOL finished){
                          [[(ViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
                          [self dismissModalViewControllerAnimated:NO];
-                         
+                         //[(AuthController<SlidableView> *)[self presentingViewController] back: self];
                      }];
     
 }
@@ -64,6 +66,12 @@
     if ([segue.identifier isEqualToString:@"tabView"]) {
          RootViewController *destViewController = segue.destinationViewController;
         [destViewController initData];
+        [destViewController loadView];
+        
+    }if ([segue.identifier isEqualToString:@"edt"]) {
+        EdtViewController *destViewController = segue.destinationViewController;
+        [destViewController loadView];
+        
     }
     //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     //        RecipeDetailViewController *destViewController = segue.destinationViewController;

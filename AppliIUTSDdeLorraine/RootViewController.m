@@ -36,11 +36,11 @@
 -(void) initData{
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-    self.tabNews = [[NSMutableArray alloc] init];
+    self.tabNews = [[[NSMutableArray alloc] init] autorelease];
     NSString *urlxml=[NSString stringWithFormat:@"http://iutsd.applorraine.fr/%@.plist", [Utils getDeviceID]];
-    NSArray *contenuTableauPlist = [[NSArray alloc] initWithContentsOfURL:[NSURL URLWithString:urlxml]];
+    NSArray *contenuTableauPlist = [[[NSArray alloc] initWithContentsOfURL:[NSURL URLWithString:urlxml]] autorelease];
     for (NSDictionary *dict in contenuTableauPlist){
-        News *ws = [[News alloc]initWithDictionaryFromPlist:dict];
+        News *ws = [[[News alloc]initWithDictionaryFromPlist:dict] autorelease];
         [tabNews addObject:ws];
     }
     
@@ -200,10 +200,10 @@
 
 - (void) updateNews{
     NSString *urlxml=[NSString stringWithFormat:@"http://iutsd.applorraine.fr/%@.plist", [Utils getDeviceID]];
-    NSArray *contenuTableauPlist = [[NSArray alloc] initWithContentsOfURL:[NSURL URLWithString:urlxml]];
+    NSArray *contenuTableauPlist = [[[NSArray alloc] initWithContentsOfURL:[NSURL URLWithString:urlxml]] autorelease];
     [tabNews removeAllObjects];
     for (NSDictionary *dict in contenuTableauPlist){
-        News *ws = [[News alloc]initWithDictionaryFromPlist:dict];
+        News *ws = [[[News alloc]initWithDictionaryFromPlist:dict] autorelease];
         [tabNews addObject:ws];
     }
     [refreshControl endRefreshing];

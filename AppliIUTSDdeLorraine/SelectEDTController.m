@@ -9,6 +9,7 @@
 #import "SelectEDTController.h"
 #import "EtudiantController.h"
 #import "SlidableView.h"
+#import "EdtViewController.h"
 
 @interface SelectEDTController ()
 
@@ -127,6 +128,15 @@
                          
                      }];
 
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"prepare seguee EDT....!:%@",segue.identifier);
+    if ([segue.identifier isEqualToString:@"visuedt"]) {
+        EdtViewController *destViewController = segue.destinationViewController;
+        [destViewController loadView];
+        
+    }
 }
 
 
