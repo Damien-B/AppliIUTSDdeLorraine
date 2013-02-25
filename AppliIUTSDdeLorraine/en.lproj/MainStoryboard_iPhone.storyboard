@@ -1114,12 +1114,12 @@
                                 <rect key="frame" x="0.0" y="70" width="320" height="478"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="info_photo.png" id="OGu-yY-fbc">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="info_photo2.png" id="OGu-yY-fbc">
+                                        <rect key="frame" x="0.0" y="-17" width="320" height="184"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                     </imageView>
                                     <webView contentMode="scaleToFill" id="BVX-rZ-Rqo">
-                                        <rect key="frame" x="0.0" y="100" width="320" height="378"/>
+                                        <rect key="frame" x="0.0" y="124" width="320" height="354"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -1380,7 +1380,7 @@
         <image name="geii_photo.png" width="640" height="298"/>
         <image name="id.png" width="85" height="70"/>
         <image name="info_1.png" width="175" height="160"/>
-        <image name="info_photo.png" width="640" height="298"/>
+        <image name="info_photo2.png" width="640" height="327"/>
         <image name="iut.png" width="85" height="70"/>
         <image name="iut_photo.png" width="640" height="298"/>
         <image name="lancement_2.png" width="609" height="391"/>
@@ -1493,6 +1493,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="dismissAction:"/>
                 <relationship kind="outlet" name="tabView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>

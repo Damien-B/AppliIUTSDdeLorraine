@@ -78,6 +78,7 @@
 		CDF31D6E16DC2A42003E3328 /* edt_licences.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF31D6316DC2A42003E3328 /* edt_licences.png */; };
 		CDF31D6F16DC2A42003E3328 /* edt_src.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF31D6416DC2A42003E3328 /* edt_src.png */; };
 		CDF31D7016DC2A42003E3328 /* edt_tecamtv.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF31D6516DC2A42003E3328 /* edt_tecamtv.png */; };
+		CDF31D7216DC2E43003E3328 /* info_photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF31D7116DC2E43003E3328 /* info_photo2.png */; };
 		CDFBB3EE16DA524B005A68CD /* sponsors_3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3ED16DA524B005A68CD /* sponsors_3_1.png */; };
 		CDFBB3F016DA525F005A68CD /* logoIut.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3EF16DA525F005A68CD /* logoIut.png */; };
 		CDFBB3F216DA5268005A68CD /* Universite_de_Lorraine_-_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F116DA5268005A68CD /* Universite_de_Lorraine_-_logo.png */; };
@@ -197,6 +198,7 @@
 		CDF31D6316DC2A42003E3328 /* edt_licences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt_licences.png; sourceTree = "<group>"; };
 		CDF31D6416DC2A42003E3328 /* edt_src.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt_src.png; sourceTree = "<group>"; };
 		CDF31D6516DC2A42003E3328 /* edt_tecamtv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt_tecamtv.png; sourceTree = "<group>"; };
+		CDF31D7116DC2E43003E3328 /* info_photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_photo2.png; sourceTree = "<group>"; };
 		CDFBB3D316DA5239005A68CD /* geii.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = geii.html; sourceTree = "<group>"; };
 		CDFBB3D416DA5239005A68CD /* IUT_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUT_ViewController.h; sourceTree = "<group>"; };
 		CDFBB3D516DA5239005A68CD /* IUT_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUT_ViewController.m; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				22089EB5169DA6CC00298246 /* photo_iut.png */,
 				22407D4F169E109B00AB16CE /* geii_photo.png */,
 				22407D4A169DF0D700AB16CE /* info_photo.png */,
+				CDF31D7116DC2E43003E3328 /* info_photo2.png */,
 				22089EB9169DB6D300298246 /* src_photo.png */,
 				22089EA2169D9F2700298246 /* fb.png */,
 				CDFBB3F516DA528A005A68CD /* retour_2.png */,
@@ -595,6 +598,7 @@
 				CDF31D6E16DC2A42003E3328 /* edt_licences.png in Resources */,
 				CDF31D6F16DC2A42003E3328 /* edt_src.png in Resources */,
 				CDF31D7016DC2A42003E3328 /* edt_tecamtv.png in Resources */,
+				CDF31D7216DC2E43003E3328 /* info_photo2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
