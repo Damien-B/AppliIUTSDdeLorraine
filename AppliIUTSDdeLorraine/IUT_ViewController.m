@@ -14,7 +14,7 @@
 
 @implementation IUT_ViewController
 
-@synthesize myDocView;
+@synthesize myDocView, viewAnimates, topImage;
 
 
 

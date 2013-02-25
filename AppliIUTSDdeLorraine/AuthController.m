@@ -8,6 +8,7 @@
 
 #import "AuthController.h"
 #import "Utils.h"
+#import "EtudiantController.h"
 
 @interface AuthController ()
 
@@ -144,5 +145,15 @@
                      }];
     
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"etudiant"]) {
+        EtudiantController *destViewController = segue.destinationViewController;
+        [destViewController loadView];
+        
+    }
+}
+
 
 @end

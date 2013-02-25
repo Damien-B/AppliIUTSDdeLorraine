@@ -131,7 +131,6 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"prepare seguee EDT....!:%@",segue.identifier);
     if ([segue.identifier isEqualToString:@"visuedt"]) {
         EdtViewController *destViewController = segue.destinationViewController;
         [destViewController loadView];

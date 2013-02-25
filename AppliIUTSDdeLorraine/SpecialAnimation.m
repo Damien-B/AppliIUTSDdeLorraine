@@ -14,7 +14,7 @@
     
     UIViewController *src = (UIViewController *) self.sourceViewController;
     [UIView transitionWithView:src.view duration:0.2
-                       options:UIViewAnimationOptionTransitionFlipFromTop
+                       options:UIViewAnimationOptionTransitionCurlUp
                     animations:^{
                         [src presentModalViewController:[self destinationViewController] animated:NO];;
                     }

@@ -48,12 +48,12 @@
 
 -(void) viewDidAppear:(BOOL)animated
 {
-    [NSThread sleepForTimeInterval: 5];
+    [NSThread sleepForTimeInterval: 1];
     
     [UIView transitionFromView: self.view
                         toView: intro2
-                      duration: 5.0f
-                       options: UIViewAnimationTransitionCurlDown
+                      duration: 1.0f
+                       options: UIViewAnimationOptionTransitionFlipFromRight
                     completion: ^(BOOL done){
                         [NSThread sleepForTimeInterval: 5.0];
                         if(done){
