@@ -17,35 +17,45 @@
 @end
 
 @implementation RootViewController
-@synthesize tabNews, tabView, titre, detailViewCtr;
 
 
-- (id)initWithStyle:(UITableViewStyle)style
+
+@synthesize tabNews, tabView, titre, viewAnimates, topImage;
+
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super init];// initWithStyle:style];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
     return self;
+
+}
+
+-(void) initData{
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    self.tabNews = [[[NSMutableArray alloc] init] autorelease];
+    NSString *urlxml=[NSString stringWithFormat:@"http://iutsd.applorraine.fr/%@.plist", [Utils getDeviceID]];
+    NSArray *contenuTableauPlist = [[[NSArray alloc] initWithContentsOfURL:[NSURL URLWithString:urlxml]] autorelease];
+    for (NSDictionary *dict in contenuTableauPlist){
+        News *ws = [[[News alloc]initWithDictionaryFromPlist:dict] autorelease];
+        [tabNews addObject:ws];
+    }
+    
+}
+
+- (void) viewWillAppear:(BOOL)animated{
+    
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    self.tabNews = [[NSMutableArray alloc] init];
-    //NSDictionary *dictFromFile = [[NSDictionary alloc]initWithContentsOfFile:path];
-    NSString *urlxml=[NSString stringWithFormat:@"http://iutsd.applorraine.fr/%@.plist", [Utils getDeviceID]];
-    NSArray *contenuTableauPlist = [[NSArray alloc] initWithContentsOfURL:[NSURL URLWithString:urlxml]];
-    for (NSDictionary *dict in contenuTableauPlist){
-        //NSString *titre = [dict objectForKey:@"titre"];
-        News *ws = [[News alloc]initWithDictionaryFromPlist:dict];
-        //self.tabNews = [NSMutableArray arrayWithArray:dictionaryToAdd];
-        [tabNews addObject:ws];
-    }
-    
+        
     // NSArray *arrayFromFile = [dictFromFile objectForKey:@"Root"];
     // NSLog(@"toto");
     //NSMutableArray *dictionaryToAdd = [[NSMutableArray alloc]init];
@@ -65,7 +75,9 @@
     //[dictionaryToAdd release];
     //[arrayFromFile release];
     
-    
+    refreshControl = [[ODRefreshControl alloc] initInScrollView:self.tabView];
+    [refreshControl addTarget:self action:@selector(updateNews) forControlEvents:UIControlEventValueChanged];
+
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -183,5 +195,59 @@
 - (IBAction)dismissAction:(id)sender {
     [self dismissModalViewControllerAnimated:YES];
 }
+
+
+
+- (void) updateNews{
+    NSString *urlxml=[NSString stringWithFormat:@"http://iutsd.applorraine.fr/%@.plist", [Utils getDeviceID]];
+    NSArray *contenuTableauPlist = [[[NSArray alloc] initWithContentsOfURL:[NSURL URLWithString:urlxml]] autorelease];
+    [tabNews removeAllObjects];
+    for (NSDictionary *dict in contenuTableauPlist){
+        News *ws = [[[News alloc]initWithDictionaryFromPlist:dict] autorelease];
+        [tabNews addObject:ws];
+    }
+    [refreshControl endRefreshing];
+  
+}
+
+
+- (IBAction)back:(id)sender {
+      UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+    [UIView animateWithDuration:0.4
+                          delay:0.0
+                        options:UIViewAnimationOptionTransitionFlipFromTop
+                     animations:^{
+                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+                         [self dismissModalViewControllerAnimated:NO];
+                         
+                     }];
+    
+}
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"ini prepare... ifff");
+
+    if ([segue.identifier isEqualToString:@"detailNews"]) {
+        NSLog(@"ini prepare...");
+        DetailViewController *detailController = segue.destinationViewController;
+        [detailController initData:newsCurrentTitle: newsCurrentContent];
+        [detailController loadView];
+    }
+    //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    //        RecipeDetailViewController *destViewController = segue.destinationViewController;
+    //        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+    //    }
+}
+
+
+
+
 
 @end

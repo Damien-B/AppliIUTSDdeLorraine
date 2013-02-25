@@ -7,6 +7,9 @@
 //
 
 #import "SelectEDTController.h"
+#import "EtudiantController.h"
+#import "SlidableView.h"
+#import "EdtViewController.h"
 
 @interface SelectEDTController ()
 
@@ -14,7 +17,7 @@
 
 @implementation SelectEDTController
 
-@synthesize myEDTName, myEDTCode;
+@synthesize myEDTName, myEDTCode, topImage, viewAnimates;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,7 +46,7 @@
 
 
 - (IBAction) selectEDT: (UIButton *) sender{
-    NSLog(@"edt select");
+    //[myButtonBack setEnabled:NO];
     int codeEDT = sender.tag;
     // SRC1 SRC2 LP
     if(codeEDT ==0){
@@ -109,7 +112,30 @@
 
 
 - (IBAction)back:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+   
+    UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+    [UIView animateWithDuration:0.4
+                          delay:0.0
+                        options:UIViewAnimationOptionTransitionFlipFromTop
+                     animations:^{
+                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+                         [self dismissModalViewControllerAnimated:NO];
+                         
+                     }];
+
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"visuedt"]) {
+        EdtViewController *destViewController = segue.destinationViewController;
+        [destViewController loadView];
+        
+    }
 }
 
 

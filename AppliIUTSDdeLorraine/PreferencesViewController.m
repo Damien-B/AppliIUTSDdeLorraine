@@ -15,13 +15,13 @@
 
 @implementation PreferencesViewController
 
-@synthesize edt, retour;
+@synthesize edt;
 @synthesize pedagogie;
 @synthesize general;
 @synthesize divertissement;
 @synthesize covoiturage;
 @synthesize prefsend;
-@synthesize strResult;
+@synthesize strResult, viewAnimates, topImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -237,15 +237,45 @@
     }
     
 }
--(IBAction) retour: (UIButton *) sender{
+
+
+
+- (IBAction)back:(id)sender {
     NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/Untitled.php?uuid=%@", [Utils getDeviceID]];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     if(connection){
     }
-    [self dismissModalViewControllerAnimated:YES];
-
+ 
+    UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+    [UIView animateWithDuration:0.4
+                          delay:0.0
+                        options:UIViewAnimationOptionTransitionFlipFromTop
+                     animations:^{
+                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+                         [self dismissModalViewControllerAnimated:NO];
+                         
+                     }];
+    
 }
+
+//
+//
+//
+//-(IBAction) retour: (UIButton *) sender{
+//    NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/Untitled.php?uuid=%@", [Utils getDeviceID]];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
+//    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+//    if(connection){
+//    }
+//    [self dismissModalViewControllerAnimated:YES];
+//
+//}
 
 //Envoi de la requete après clic sur le bouton envoi des preferences abonnements
 - (IBAction) prefsend: (UIButton *) sender{
@@ -301,5 +331,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (BOOL )shouldAutorotate{
+    return NO;
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"prepare seguee....!:%@",segue.identifier);
+    if ([segue.identifier isEqualToString:@"tabView"]) {
+        NSLog(@"for tabView!!!....!");
+    }
+    //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    //        RecipeDetailViewController *destViewController = segue.destinationViewController;
+    //        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+    //    }
+}
+
 
 @end

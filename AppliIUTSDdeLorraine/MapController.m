@@ -13,7 +13,7 @@
 @end
 
 @implementation MapController
-@synthesize mapview;
+@synthesize mapview, viewAnimates, topImage;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -27,9 +27,8 @@
 
 - (void)viewDidLoad
 {
-    [self location];
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+   // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,11 +65,13 @@
     region.span.longitudeDelta = 0.01;
     [self.mapview setRegion:region animated:YES];
     
-    IUTLocation *annotationIUT =[[IUTLocation alloc] initWithCoordinate];
+    annotationIUT =[[[IUTLocation alloc] initWithCoordinate] autorelease];
     [mapview addAnnotation:annotationIUT];
-   
+    
     
 }
+
+
 - (void)mapView:(MKMapView *)mv didAddAnnotationViews:(NSArray *)views
 {
     MKAnnotationView *annotationView = [views objectAtIndex:0];
@@ -80,16 +81,23 @@
         [mv selectAnnotation:mp animated:YES];
     }
 }
+
+- (void)mapViewWillStartLoadingMap:(MKMapView *)mapView{
+    NSLog(@"startLoading");
+}
+
+
 - (MKAnnotationView *) mapView:(MKMapView *) mapView viewForAnnotation:(id ) annotation {
 	if ([annotation isKindOfClass:[IUTLocation class]]){
     
-    MKPinAnnotationView *customAnnotationView=[[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:nil] autorelease];
+    customAnnotationView= [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:nil] autorelease];
 //    customAnnotationView.pinColor = MKPinAnnotationColorPurple;
 
-    UIImageView *leftIconView = [[UIImageView alloc] initWithImage:[Utils imageWithImage:[UIImage imageNamed:@"logoIUT.jpeg"] scaledToSize:CGSizeMake(30.0f,30.0f)]];
+    leftIconView = [[[UIImageView alloc] initWithImage:[Utils imageWithImage:[UIImage imageNamed:@"logoIUT.jpeg"] scaledToSize:CGSizeMake(30.0f,30.0f)]]autorelease];
     customAnnotationView.leftCalloutAccessoryView =  leftIconView;
     customAnnotationView.canShowCallout = YES;
-    return customAnnotationView;
+
+        return customAnnotationView;
     }
     return  nil;
 }
@@ -103,11 +111,33 @@
     
 }
 
-
-- (IBAction)back:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+- (void) dealloc{
+    [super dealloc];
 }
 
+- (void)mapViewDidFinishLoadingMap:(MKMapView *)mapView{
+    NSLog(@"all finished!!");
+}
+
+
+
+- (IBAction)back:(id)sender {
+   
+    UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+    [UIView animateWithDuration:0.4
+                          delay:0.0
+                        options:UIViewAnimationOptionTransitionFlipFromTop
+                     animations:^{
+                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+                         [self dismissModalViewControllerAnimated:NO];
+                     }];
+    
+}
 
 
 

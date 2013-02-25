@@ -7,26 +7,33 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "DetailViewController.h"
+#import "ODRefreshControl.h"
+#import "SlidableView.h"
 
-@interface RootViewController : UIViewController {
+@interface RootViewController : UIViewController<SlidableView> {
     NSMutableArray *tabNews;
     UILabel *titre;
-    DetailViewController *detailViewCtr;
     NSString *newsCurrentTitle;
     NSString *newsCurrentContent;
-    UITableView *tabView;
+    IBOutlet UITableView *tabView;
+    ODRefreshControl *refreshControl;
+    IBOutlet UIImageView *topImage;
+    IBOutlet UIView *viewAnimates;
 
 }
 
 -(NSString *)getCurrentNewsTitle;
 -(NSString *)getCurrentNewsContent;
-- (IBAction)dismissAction:(id)sender;
+- (IBAction)back:(id)sender;
+- (void) updateNews;
+- (void) initData;
+
+@property (nonatomic, retain) IBOutlet UIView *viewAnimates;
+@property (nonatomic, retain) IBOutlet UIImageView *topImage;
 
 @property (nonatomic, retain) NSMutableArray *tabNews;
 @property (nonatomic, retain) UILabel *titre;
-@property (nonatomic, retain) DetailViewController *detailViewCtr;
 @property (retain, nonatomic) IBOutlet UITableView *tabView;
 
 @end

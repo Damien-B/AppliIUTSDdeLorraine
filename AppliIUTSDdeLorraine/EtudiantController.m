@@ -7,12 +7,17 @@
 //
 
 #import "EtudiantController.h"
+#import "RootViewController.h"
+#import "ViewController.h"
+#import "AuthController.h"
+#import "EdtViewController.h"
 
 @interface EtudiantController ()
 
 @end
 
 @implementation EtudiantController
+@synthesize topImage, viewAnimates, myButtonBack;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,9 +43,41 @@
 
 
 - (IBAction)back:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    [myButtonBack setEnabled:NO];
+    UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+    [UIView animateWithDuration:0.4
+                          delay:0.0
+                        options:UIViewAnimationOptionTransitionFlipFromTop
+                     animations:^{
+                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [[(ViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+                         [self dismissModalViewControllerAnimated:NO];
+                         //[(AuthController<SlidableView> *)[self presentingViewController] back: self];
+                     }];
+    
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"prepare seguee....!:%@",segue.identifier);
+    if ([segue.identifier isEqualToString:@"tabView"]) {
+         RootViewController *destViewController = segue.destinationViewController;
+        [destViewController initData];
+        [destViewController loadView];
+        
+    }if ([segue.identifier isEqualToString:@"edt"]) {
+        EdtViewController *destViewController = segue.destinationViewController;
+        [destViewController loadView];
+        
+    }
+    //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    //        RecipeDetailViewController *destViewController = segue.destinationViewController;
+    //        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+    //    }
+}
 
 
 @end

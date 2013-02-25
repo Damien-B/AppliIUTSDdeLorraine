@@ -7,14 +7,22 @@
 //test
 
 #import <UIKit/UIKit.h>
-
-@interface DetailViewController : UIViewController{
+#import "SlidableView.h"
+@interface DetailViewController : UIViewController<SlidableView>{
     IBOutlet UILabel *titre;
     IBOutlet UILabel *contenu;
+    IBOutlet UIView *viewAnimates;
+    IBOutlet UIImageView *topImage;
+
+    
     
 }
-@property (retain, nonatomic) IBOutlet UIButton *dismiss;
-- (IBAction)dismissAction:(id)sender;
+@property (nonatomic, retain) IBOutlet UIView *viewAnimates;
+@property (nonatomic, retain) IBOutlet UIImageView *topImage;
 @property (nonatomic, retain) IBOutlet UILabel *titre;
 @property (nonatomic, retain) IBOutlet UILabel *contenu;
+
+- (IBAction)back:(id)sender;
+- (void) initData: (NSString *) aTitre : (NSString *) aContenu;
+
 @end
