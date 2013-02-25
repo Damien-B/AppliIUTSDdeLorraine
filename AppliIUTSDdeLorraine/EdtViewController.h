@@ -18,7 +18,13 @@
     NSString *edtName;
     NSString *edtID;
 
+    IBOutlet UIView *viewAnimates;
+    IBOutlet UIImageView *topImage;
+    UIButton *myButtonBack;
 }
+
+@property (nonatomic, retain) IBOutlet UIView *viewAnimates;
+@property (nonatomic, retain) IBOutlet UIImageView *topImage;
 
 
 @property (nonatomic, retain) UIWebView *webEdt;

@@ -8,6 +8,8 @@
 
 #import "EdtViewController.h"
 #import "SelectEDTController.h"
+#import "SlidableView.h"
+
 
 @interface EdtViewController ()
 
@@ -21,10 +23,15 @@
 @synthesize webEdt;
 @synthesize next;
 @synthesize before, navBar;
+@synthesize viewAnimates, topImage;
 
-
+- (id) init{
+    NSLog(@"init EDDDTT i,");
+    return  self;
+}
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
+    NSLog(@"init EDDDTT");
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -35,7 +42,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-  	// Do any additional setup after loading the view.
+    [myButtonBack setEnabled:FALSE];
+
+    // Do any additional setup after loading the view.
    // self.webEdt = [[[UIWebView alloc]
     //                initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     SelectEDTController * prev =(SelectEDTController *) [self presentingViewController];
@@ -65,11 +74,13 @@
     
     
     NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=%@&idPianoDay=%@&idTree=%@&width=2000&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=126", maj, week, day, edtID];
+    NSLog(@"in load %@", urlAddress);
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     
     [self.webEdt loadRequest:requestObj];
-    
+    [myButtonBack setEnabled:YES];
+    [df dealloc];
    //[self.view addSubview:self.webEdt];
 }
 
@@ -135,11 +146,23 @@
 
 
 - (IBAction)back:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    [myButtonBack setEnabled:FALSE];
+    UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+    [UIView animateWithDuration:0.4
+                          delay:0.0
+                        options:UIViewAnimationOptionTransitionFlipFromTop
+                     animations:^{
+                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+                         [self dismissModalViewControllerAnimated:NO];
+                         [webEdt dealloc];
+                     }];
+
 }
-
-
-
 
 @end
 

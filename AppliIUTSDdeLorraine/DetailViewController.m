@@ -15,7 +15,7 @@
 
 @implementation DetailViewController
 @synthesize titre;
-@synthesize contenu;
+@synthesize contenu, viewAnimates, topImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,26 +29,36 @@
 
 - (id)init
 {
+    NSLog(@"in inittt");
+
     self = [super init];
     if (self) {
-        NSLog(@"in init detail");
         // Custom initialization
         
     }
     return self;
 }
 
-- (void)viewDidLoad
-{   NSLog(@"in init detail");
-    
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    [(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
-    NSString* titrerow=[(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
-    NSString* contenurow=[(RootViewController *) [self presentingViewController] getCurrentNewsContent];
-    titre.text=titrerow;
-    contenu.text=contenurow;
+
+- (void) initData: (NSString *) aTitre : (NSString *) aContenu{
+    self.titre.text= aTitre;
+    self.contenu.text= aContenu;
+    NSLog(@"init data tit: %@",aTitre);
 }
+
+//
+//
+//- (void)viewDidLoad
+//{   
+//    
+//    [super viewDidLoad];
+//	// Do any additional setup after loading the view.
+//    //[(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
+//   // NSString* titrerow=[(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
+//    //NSString* contenurow=[(RootViewController *) [self presentingViewController] getCurrentNewsContent];
+////    titre.text=titrerow;
+// //   contenu.text=contenurow;
+//}
 
 - (void)didReceiveMemoryWarning
 {
@@ -57,14 +67,36 @@
 }
 
 - (void)dealloc {
-    [_dismiss release];
     [super dealloc];
 }
 - (void)viewDidUnload {
-    [self setDismiss:nil];
     [super viewDidUnload];
 }
-- (IBAction)dismissAction:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+
+
+
+
+- (IBAction)back:(id)sender {
+    UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+    [UIView animateWithDuration:0.4
+                          delay:0.0
+                        options:UIViewAnimationOptionTransitionFlipFromTop
+                     animations:^{
+                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+                         [self dismissModalViewControllerAnimated:NO];
+                         
+                     }];
+    
 }
+
+
+
+
+
+
 @end

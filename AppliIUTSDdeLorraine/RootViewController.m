@@ -17,22 +17,23 @@
 @end
 
 @implementation RootViewController
-@synthesize tabNews, tabView, titre, detailViewCtr;
 
 
-- (id)initWithStyle:(UITableViewStyle)style
+
+@synthesize tabNews, tabView, titre, detailViewCtr, viewAnimates, topImage;
+
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super init];// initWithStyle:style];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
     return self;
+
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
+-(void) initData{
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     self.tabNews = [[NSMutableArray alloc] init];
@@ -43,6 +44,18 @@
         [tabNews addObject:ws];
     }
     
+}
+
+- (void) viewWillAppear:(BOOL)animated{
+    
+
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+        
     // NSArray *arrayFromFile = [dictFromFile objectForKey:@"Root"];
     // NSLog(@"toto");
     //NSMutableArray *dictionaryToAdd = [[NSMutableArray alloc]init];
@@ -196,6 +209,45 @@
     [refreshControl endRefreshing];
   
 }
+
+
+- (IBAction)back:(id)sender {
+      UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+    [UIView animateWithDuration:0.4
+                          delay:0.0
+                        options:UIViewAnimationOptionTransitionFlipFromTop
+                     animations:^{
+                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+                         [self dismissModalViewControllerAnimated:NO];
+                         
+                     }];
+    
+}
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"ini prepare... ifff");
+
+    if ([segue.identifier isEqualToString:@"detailNews"]) {
+        NSLog(@"ini prepare...");
+        DetailViewController *detailController = segue.destinationViewController;
+        [detailController initData:newsCurrentTitle: newsCurrentContent];
+        [detailController loadView];
+    }
+    //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    //        RecipeDetailViewController *destViewController = segue.destinationViewController;
+    //        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+    //    }
+}
+
+
+
 
 
 @end

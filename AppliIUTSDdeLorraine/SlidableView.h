@@ -10,6 +10,7 @@
 
 @protocol SlidableView <NSObject>
 
+
 - (UIView *) viewAnimates;
 - (UIImageView *) topImage;
 

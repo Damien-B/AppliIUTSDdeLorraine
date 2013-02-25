@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "RootViewController.h"
 
 @interface ViewController : UIViewController {
     IBOutlet UIButton *bconnection;

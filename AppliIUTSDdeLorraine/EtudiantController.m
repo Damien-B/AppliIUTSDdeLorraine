@@ -7,12 +7,14 @@
 //
 
 #import "EtudiantController.h"
+#import "RootViewController.h"
 
 @interface EtudiantController ()
 
 @end
 
 @implementation EtudiantController
+@synthesize topImage, viewAnimates, myButtonBack;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,9 +40,20 @@
 
 
 - (IBAction)back:(id)sender {
+    [myButtonBack setEnabled:NO];
     [self dismissModalViewControllerAnimated:YES];
 }
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"prepare seguee....!:%@",segue.identifier);
+    if ([segue.identifier isEqualToString:@"tabView"]) {
+         RootViewController *destViewController = segue.destinationViewController;
+        [destViewController initData];
+    }
+    //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    //        RecipeDetailViewController *destViewController = segue.destinationViewController;
+    //        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+    //    }
+}
 
 
 @end

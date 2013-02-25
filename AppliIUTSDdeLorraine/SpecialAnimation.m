@@ -13,7 +13,7 @@
 - (void) perform {
     
     UIViewController *src = (UIViewController *) self.sourceViewController;
-    [UIView transitionWithView:src.view duration:0.5
+    [UIView transitionWithView:src.view duration:0.2
                        options:UIViewAnimationOptionTransitionFlipFromTop
                     animations:^{
                         [src presentModalViewController:[self destinationViewController] animated:NO];;

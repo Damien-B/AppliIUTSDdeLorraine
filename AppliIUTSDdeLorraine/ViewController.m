@@ -142,6 +142,16 @@
                     }];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"prepare seguee....!:%@",segue.identifier);
+    if ([segue.identifier isEqualToString:@"tabView"]) {
+        NSLog(@"for tabView!!!....!");
+    }
+    //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    //        RecipeDetailViewController *destViewController = segue.destinationViewController;
+    //        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+    //    }
+}
 
 
 

@@ -399,8 +399,8 @@
 				6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */,
 				CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */,
 				CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */,
-				6D04C43316A8460B000A228F /* DetailViewController.m */,
 				6D04C43216A8460B000A228F /* DetailViewController.h */,
+				6D04C43316A8460B000A228F /* DetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

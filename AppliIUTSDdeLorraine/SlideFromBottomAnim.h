@@ -10,7 +10,7 @@
 #import "SelectEDTController.h"
 
 @interface SlideFromBottomAnim : UIStoryboardSegue{
-    
+
 }
 
 

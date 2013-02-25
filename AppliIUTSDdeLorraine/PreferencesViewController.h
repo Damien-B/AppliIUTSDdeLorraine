@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface PreferencesViewController : UIViewController{
+#import "SlidableView.h"
+ 
+@interface PreferencesViewController : UIViewController<SlidableView>{
     
     IBOutlet UISwitch *edt;
     IBOutlet UISwitch *pedagogie;
@@ -17,8 +18,13 @@
     IBOutlet UISwitch *covoiturage;
     IBOutlet UIButton *prefsend;
     NSString *strResult;
-    IBOutlet UIButton *retour;
+    IBOutlet UIImageView *topImage;
+    IBOutlet UIView *viewAnimates;
 }
+
+
+@property (nonatomic, retain) IBOutlet UIView *viewAnimates;
+@property (nonatomic, retain) IBOutlet UIImageView *topImage;
 
 
 @property (nonatomic, retain) IBOutlet UISwitch *edt;
@@ -27,9 +33,8 @@
 @property (nonatomic, retain) IBOutlet UISwitch *divertissement;
 @property (nonatomic, retain) IBOutlet UISwitch *covoiturage;
 @property (nonatomic, retain) IBOutlet UIButton *prefsend;
-@property (nonatomic, retain) IBOutlet UIButton *retour;
 @property (nonatomic, retain) NSString *strResult;
 - (IBAction) prefsend: (UIButton *) sender;
-- (IBAction) retour: (UIButton *) sender;
 - (BOOL )shouldAutorotate;
+- (IBAction)back:(id)sender ;
 @end
