@@ -232,18 +232,11 @@
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"ini prepare... ifff");
-
     if ([segue.identifier isEqualToString:@"detailNews"]) {
-        NSLog(@"ini prepare...");
         DetailViewController *detailController = segue.destinationViewController;
         [detailController initData:newsCurrentTitle: newsCurrentContent];
         [detailController loadView];
     }
-    //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    //        RecipeDetailViewController *destViewController = segue.destinationViewController;
-    //        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
-    //    }
 }
 
 
