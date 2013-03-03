@@ -51,187 +51,187 @@
     if([strResult isEqual:@"1"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:NO animated:YES];
+    //    [general setOn:NO animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"2"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:NO animated:YES];
+     //   [general setOn:NO animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"3"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:YES animated:YES];
+    //    [general setOn:YES animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"4"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:NO animated:YES];
+  //      [general setOn:NO animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"5"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:NO animated:YES];
+  //      [general setOn:NO animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"12"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:NO animated:YES];
+    //    [general setOn:NO animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"13"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:YES animated:YES];
+     //   [general setOn:YES animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"14"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:NO animated:YES];
+   //     [general setOn:NO animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"15"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:NO animated:YES];
+      //  [general setOn:NO animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"23"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:YES animated:YES];
+   //     [general setOn:YES animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"24"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:NO animated:YES];
+  //      [general setOn:NO animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"25"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:NO animated:YES];
+  //      [general setOn:NO animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"34"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:YES animated:YES];
+    //    [general setOn:YES animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"35"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:YES animated:YES];
+    //    [general setOn:YES animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"45"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:NO animated:YES];
+   //     [general setOn:NO animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"123"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:YES animated:YES];
+ //       [general setOn:YES animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"124"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:NO animated:YES];
+  //      [general setOn:NO animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"125"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:NO animated:YES];
+   //     [general setOn:NO animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"134"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:YES animated:YES];
+  //      [general setOn:YES animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"135"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:YES animated:YES];
+  //      [general setOn:YES animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"145"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:NO animated:YES];
+     //   [general setOn:NO animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"234"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:YES animated:YES];
+ //       [general setOn:YES animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"245"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:NO animated:YES];
+ //       [general setOn:NO animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"345"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:YES animated:YES];
+  //      [general setOn:YES animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"1234"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:YES animated:YES];
+   //     [general setOn:YES animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:NO animated:YES];
     }else if([strResult isEqual:@"1235"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:YES animated:YES];
+//        [general setOn:YES animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"1245"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:YES animated:YES];
+ //       [general setOn:YES animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"1345"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:YES animated:YES];
+   //     [general setOn:YES animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"2345"]){
         [edt setOn:NO animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:YES animated:YES];
+ //       [general setOn:YES animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else if([strResult isEqual:@"12345"]){
         [edt setOn:YES animated:YES];
         [pedagogie setOn:YES animated:YES];
-        [general setOn:YES animated:YES];
+    //    [general setOn:YES animated:YES];
         [divertissement setOn:YES animated:YES];
         [covoiturage setOn:YES animated:YES];
     }else{
         [edt setOn:NO animated:YES];
         [pedagogie setOn:NO animated:YES];
-        [general setOn:NO animated:YES];
+     //   [general setOn:NO animated:YES];
         [divertissement setOn:NO animated:YES];
         [covoiturage setOn:NO animated:YES];
     }
@@ -245,8 +245,9 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     if(connection){
+        NSLog(@"update abo ok");
     }
- 
+
     UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
     [[self view] insertSubview: previousView belowSubview: viewAnimates ];
     [UIView animateWithDuration:0.4
@@ -285,7 +286,8 @@
     NSString *prefgeneral;
     NSString *prefdivertissement;
     NSString *prefcovoiturage;
-    
+    prefgeneral=@"yes";
+
     
     if(([edt isOn] == YES)){
         prefedt=@"yes";
@@ -297,11 +299,11 @@
     }else{
         prefpedagogie=@"no";
     }
-    if(([general isOn] == YES)){
-        prefgeneral=@"yes";
-    }else{
-        prefgeneral=@"no";
-    }
+//    if(([general isOn] == YES)){
+//        prefgeneral=@"yes";
+//    }else{
+//        prefgeneral=@"no";
+//    }
     if(([divertissement isOn] == YES)){
         prefdivertissement=@"yes";
     }else{
@@ -336,17 +338,17 @@
     return NO;
     
 }
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSLog(@"prepare seguee....!:%@",segue.identifier);
-    if ([segue.identifier isEqualToString:@"tabView"]) {
-        NSLog(@"for tabView!!!....!");
-    }
-    //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    //        RecipeDetailViewController *destViewController = segue.destinationViewController;
-    //        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
-    //    }
-}
+//
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    NSLog(@"prepare seguee....!:%@",segue.identifier);
+//    if ([segue.identifier isEqualToString:@"tabView"]) {
+//        NSLog(@"for tabView!!!....!");
+//    }
+//    //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//    //        RecipeDetailViewController *destViewController = segue.destinationViewController;
+//    //        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
+//    //    }
+//}
 
 
 @end

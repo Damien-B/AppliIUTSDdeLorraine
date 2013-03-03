@@ -8,15 +8,15 @@
         <scene sceneID="5">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="2" customClass="StartController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
+                    <view key="view" contentMode="scaleToFill" id="I9T-G8-GGW" userLabel="ViewRecto">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="4ad-ax-JsD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="wGT-Na-VnH">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="lancement_2.png" id="FeJ-cl-fB9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="lancement_2.png" id="h6L-5T-xVT">
                                 <rect key="frame" x="0.0" y="141" width="320" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -24,10 +24,48 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="intro2" destination="XQb-RR-2LV" id="9rj-CX-VOJ"/>
                         <segue destination="I8q-Z6-YqR" kind="modal" identifier="transition" modalTransitionStyle="flipHorizontal" id="qdo-LD-5fe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="zmm-zC-GU6">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="XQb-RR-2LV" userLabel="ViewVerso">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="Kzl-vK-bsf">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="652"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mgel_emevia.png" id="PPu-L2-Oz0">
+                                    <rect key="frame" x="37" y="198" width="246" height="149"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logoIut.png" id="zCZ-nf-Ofg">
+                                    <rect key="frame" x="-28" y="372" width="238" height="89"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Universite_de_Lorraine_-_logo.png" id="GFP-AI-Sz9">
+                                    <rect key="frame" x="161" y="370" width="147" height="118"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="En partenariat avec:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ua8-ZE-snj">
+                                    <rect key="frame" x="55" y="150" width="168" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="-1761" y="147"/>
         </scene>
@@ -66,14 +104,16 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="aLA-Ia-WOv" eventType="touchUpInside" id="20F-Oh-xyZ"/>
-                                    <action selector="done:" destination="mRO-lJ-ws9" eventType="touchUpInside" id="h3t-qv-DOM"/>
+                                    <action selector="back:" destination="dWW-KZ-ixe" eventType="touchUpInside" id="BU1-zq-i7a"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="Q6Z-k2-md3" id="SDe-Fh-dYm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isf-r3-9Ai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,7 +226,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zdw-t0-j23">
-                                                <rect key="frame" x="100" y="437" width="132" height="44"/>
+                                                <rect key="frame" x="86" y="438" width="132" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" image="fb.png">
@@ -201,7 +241,7 @@
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logoIut.png" id="8Nl-lM-W4e">
-                                                <rect key="frame" x="15" y="414" width="64" height="53"/>
+                                                <rect key="frame" x="18" y="427" width="49" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Universite_de_Lorraine_-_logo.png" id="yiA-Vl-I4j">
@@ -259,7 +299,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-793" y="147"/>
+            <point key="canvasLocation" x="-924" y="139"/>
         </scene>
         <!--Auth Controller-->
         <scene sceneID="sTW-Sk-ae7">
@@ -314,7 +354,8 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i9z-7K-76Q">
-                                        <rect key="frame" x="22" y="113" width="275" height="21"/>
+                                        <rect key="frame" x="22" y="98" width="275" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -416,6 +457,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="done:" destination="mRO-lJ-ws9" eventType="touchUpInside" id="Iec-4H-Hr5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -476,6 +520,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="done:" destination="Ino-Qt-29g" eventType="touchUpInside" id="R7C-dr-Cw2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -649,8 +696,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="tU3-No-8uI">
-                                        <rect key="frame" x="0.0" y="4" width="320" height="499"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <rect key="frame" x="0.0" y="20" width="320" height="483"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AJS-bA-jEp" userLabel="ButtonEDT">
                                         <rect key="frame" x="20" y="211" width="85" height="71"/>
@@ -1294,6 +1341,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="done:" destination="mHc-ES-qO1" eventType="touchUpInside" id="Vm5-dY-NZ9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1352,6 +1402,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="done:" destination="fb0-48-LhG" eventType="touchUpInside" id="cCk-o6-IvC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1374,17 +1427,19 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="t6n-po-YwG">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="72" width="320" height="476"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="3A8-vv-jPr" userLabel="ViewAnimates">
-                                <rect key="frame" x="0.0" y="49" width="320" height="497"/>
+                                <rect key="frame" x="0.0" y="72" width="320" height="474"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="WDs-YM-zwL">
-                                        <rect key="frame" x="0.0" y="43" width="320" height="410"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="474"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RCG-Zy-3NW">
-                                        <rect key="frame" x="-1" y="99" width="322" height="398"/>
+                                        <rect key="frame" x="-1" y="29" width="322" height="445"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="separatorColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1529,7 +1584,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="720" y="-1774"/>
+            <point key="canvasLocation" x="872" y="-1486"/>
         </scene>
     </scenes>
     <resources>
@@ -1560,6 +1615,7 @@
         <image name="iut_photo.png" width="640" height="298"/>
         <image name="lancement_2.png" width="609" height="391"/>
         <image name="logoIut.png" width="200" height="175"/>
+        <image name="mgel_emevia.png" width="1300" height="826"/>
         <image name="nouveautes.png" width="170" height="136"/>
         <image name="prefs.png" width="170" height="136"/>
         <image name="retour_2.png" width="120" height="59"/>
@@ -1568,155 +1624,6 @@
         <image name="top.png" width="320" height="125"/>
         <image name="visite.png" width="170" height="140"/>
     </resources>
-    <classes>
-        <class className="About_ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/About_ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="AuthController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AuthController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="bconnection:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="bconnection" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="log" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="mdp" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="toto" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="outlet" name="contenu" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="titre" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="EdtViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EdtViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UIToolbar"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="EtudiantController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EtudiantController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="outlet" name="myButtonBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="GEII_ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GEII_ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="INFO_ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/INFO_ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="IUT_ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IUT_ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="MapController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="getlocation"/>
-                <relationship kind="action" name="setMap:"/>
-                <relationship kind="outlet" name="mapview" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="PreferencesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PreferencesViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="prefsend:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="covoiturage" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="divertissement" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="edt" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="general" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="pedagogie" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="prefsend" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="RootViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="outlet" name="tabView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="SRC_ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SRC_ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="SelectEDTController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectEDTController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="selectEDT:"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="StartController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartController.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-                <relationship kind="outlet" name="viewSRC" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="WebViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

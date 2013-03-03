@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "AuthController.h"
 #import "EdtViewController.h"
+#import "Utils.h"
 
 @interface EtudiantController ()
 
@@ -39,8 +40,29 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)viewWillAppear:(BOOL)animated{
 
+    NSString *isFirstApp = [[NSUserDefaults standardUserDefaults] objectForKey:@"isFirstLanch"];
+    if(!isFirstApp){
+        NSString *uuid = [Utils getDeviceID];
 
+        NSString *url2 = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/abonnementpref.php?UUId=%@&pref1=no&pref2=no&pref3=yes&pref4=no&pref5=no", uuid];
+        NSURLRequest *request2 = [NSURLRequest requestWithURL:[NSURL URLWithString:url2] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
+        NSURLConnection *connection2 = [[NSURLConnection alloc] initWithRequest:request2 delegate:self];
+        if(connection2){
+            [[NSUserDefaults standardUserDefaults] setObject:@"notFirst" forKey:@"isFirstLanch"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
+        
+    }
+    NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/Untitled.php?uuid=%@", [Utils getDeviceID]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    if(connection){
+        NSLog(@"update abo ok");
+    }
+
+}
 
 - (IBAction)back:(id)sender {
     [myButtonBack setEnabled:NO];
