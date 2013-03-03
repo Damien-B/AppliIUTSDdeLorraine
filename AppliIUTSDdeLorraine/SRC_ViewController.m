@@ -44,21 +44,21 @@
 }
 
 
-
-
-- (BOOL)webView:(UIWebView *)webView
-shouldStartLoadWithRequest:(NSURLRequest *)request
- navigationType:(UIWebViewNavigationType)navigationType {
-    //if (navigationType == UIWebViewNavigationTypeFormSubmitted) {
-    if (navigationType == UIWebViewNavigationTypeLinkClicked) {
-        NSURL *url = [request URL];
-        if (![[url scheme] hasPrefix:@"file"]) {
-            [[UIApplication sharedApplication] openURL:url];
-            return NO;
-        }
-    }
-    return YES;
-}
+//
+//
+//- (BOOL)webView:(UIWebView *)webView
+//shouldStartLoadWithRequest:(NSURLRequest *)request
+// navigationType:(UIWebViewNavigationType)navigationType {
+//    //if (navigationType == UIWebViewNavigationTypeFormSubmitted) {
+//    if (navigationType == UIWebViewNavigationTypeLinkClicked) {
+//        NSURL *url = [request URL];
+//        if (![[url scheme] hasPrefix:@"file"]) {
+//            [[UIApplication sharedApplication] openURL:url];
+//            return NO;
+//        }
+//    }
+//    return YES;
+//}
 //
 //
 //- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
