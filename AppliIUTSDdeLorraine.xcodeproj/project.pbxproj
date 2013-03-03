@@ -57,6 +57,8 @@
 		CD46AAF416E388120049D815 /* edt_src.png in Resources */ = {isa = PBXBuildFile; fileRef = CD46AAF316E388120049D815 /* edt_src.png */; };
 		CD46AAF616E388860049D815 /* edt_geii.png in Resources */ = {isa = PBXBuildFile; fileRef = CD46AAF516E388860049D815 /* edt_geii.png */; };
 		CD46AAF816E389C80049D815 /* edt_cmpm.png in Resources */ = {isa = PBXBuildFile; fileRef = CD46AAF716E389C80049D815 /* edt_cmpm.png */; };
+		CD46AAFA16E38F330049D815 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = CD46AAF916E38F330049D815 /* about.html */; };
+		CD46AAFD16E395630049D815 /* About_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD46AAFC16E38F850049D815 /* About_ViewController.m */; };
 		CD588D8416DAC05100363C78 /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CD588D8316DABE4500363C78 /* ODRefreshControl.m */; };
 		CD588D8516DAC07600363C78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7BE61C16D03BC4006D09D1 /* QuartzCore.framework */; };
 		CD588D8816DACF3400363C78 /* SlideFromBottomAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = CD588D8716DACF3400363C78 /* SlideFromBottomAnim.m */; };
@@ -165,6 +167,9 @@
 		CD46AAF316E388120049D815 /* edt_src.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt_src.png; sourceTree = "<group>"; };
 		CD46AAF516E388860049D815 /* edt_geii.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt_geii.png; sourceTree = "<group>"; };
 		CD46AAF716E389C80049D815 /* edt_cmpm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt_cmpm.png; sourceTree = "<group>"; };
+		CD46AAF916E38F330049D815 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		CD46AAFB16E38F850049D815 /* About_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = About_ViewController.h; sourceTree = "<group>"; };
+		CD46AAFC16E38F850049D815 /* About_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = About_ViewController.m; sourceTree = "<group>"; };
 		CD588D8216DABE4500363C78 /* ODRefreshControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ODRefreshControl.h; sourceTree = "<group>"; };
 		CD588D8316DABE4500363C78 /* ODRefreshControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ODRefreshControl.m; sourceTree = "<group>"; };
 		CD588D8616DACF3400363C78 /* SlideFromBottomAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideFromBottomAnim.h; sourceTree = "<group>"; };
@@ -358,6 +363,9 @@
 		757CBD7C16D502EE006EFEE6 /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
+				CD46AAFB16E38F850049D815 /* About_ViewController.h */,
+				CD46AAFC16E38F850049D815 /* About_ViewController.m */,
+				CD46AAF916E38F330049D815 /* about.html */,
 				CDFBB3D316DA5239005A68CD /* geii.html */,
 				CDFBB3D416DA5239005A68CD /* IUT_ViewController.h */,
 				CDFBB3D516DA5239005A68CD /* IUT_ViewController.m */,
@@ -600,6 +608,7 @@
 				CD46AAF416E388120049D815 /* edt_src.png in Resources */,
 				CD46AAF616E388860049D815 /* edt_geii.png in Resources */,
 				CD46AAF816E389C80049D815 /* edt_cmpm.png in Resources */,
+				CD46AAFA16E38F330049D815 /* about.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +619,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD46AAFD16E395630049D815 /* About_ViewController.m in Sources */,
 				CD588D8416DAC05100363C78 /* ODRefreshControl.m in Sources */,
 				CDFBB3FD16DA58A8005A68CD /* IUT_ViewController.m in Sources */,
 				CDFBB3FE16DA58A8005A68CD /* GEII_ViewController.m in Sources */,
