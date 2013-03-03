@@ -25,18 +25,8 @@
                            stringByReplacingOccurrencesOfString:@">" withString:@""]
                           stringByReplacingOccurrencesOfString: @" " withString: @""];
     
-    if([Utils detectConnectivityFromHostName:@"iutsd.applorraine.fr"]){
-        NSLog(@"connection OK");
-    }else{
-        NSLog(@"connection FAILED");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Attention ..."
-                                                        message: @"pas de connection internet! "
-                                                       delegate:self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
-
-    }
+    [[NSUserDefaults standardUserDefaults] setObject:devToken forKey:@"AppToken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
     NSLog(@"This is device token %@", devToken);
     

@@ -60,17 +60,23 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     return YES;
 }
 
+//
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+//{
+//    if ([[UIDevice currentDevice] userInterfaceIdiom] ==
+//        UIUserInterfaceIdiomPhone) {
+//        return (interfaceOrientation !=
+//                UIInterfaceOrientationPortraitUpsideDown);
+//    } else {
+//        return YES;
+//    }
+//}
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] ==
-        UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation !=
-                UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
+
+
+- (BOOL )shouldAutorotate{
+    return NO;
+    
 }
-
 
 @end

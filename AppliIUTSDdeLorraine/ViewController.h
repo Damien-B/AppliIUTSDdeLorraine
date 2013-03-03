@@ -16,15 +16,19 @@
     NSString *response;
     IBOutlet UIView *viewAnimates;
     IBOutlet UIView *viewSRC;
-
     IBOutlet UIImageView *topImage;
 
+    
 }
+
 
 @property (nonatomic, retain) IBOutlet UIView *viewAnimates;
 @property (nonatomic, retain) IBOutlet UIView *viewSRC;
 
 @property (nonatomic, retain) IBOutlet UIImageView *topImage;
+
+//
+//- (void) setDisableAllButtons: (bool) disable;
 
 
 @end

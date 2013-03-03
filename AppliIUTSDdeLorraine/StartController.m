@@ -20,18 +20,7 @@
     [super viewDidLoad];
     intro2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sponsors_3_1.png"]];
     
-    //envoi vers script pour test si présence dans la bdd
-    NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/ajoutbdd.php?uuid=%@", [Utils getDeviceID]];
-    
-    
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
-    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    if(connection){
-        NSLog(@"connected, url=%@", url);
-    }else{
-        NSLog(@"not connected");
-    }
-
+  
 }
 
 
@@ -55,7 +44,7 @@
                       duration: 1.0f
                        options: UIViewAnimationOptionTransitionFlipFromRight
                     completion: ^(BOOL done){
-                        [NSThread sleepForTimeInterval: 5.0];
+                        [NSThread sleepForTimeInterval: 2.0];
                         if(done){
                             self.view = intro2;
                             [self performSegueWithIdentifier:@"transition" sender:self];
