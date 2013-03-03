@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface StartController : UIViewController{
-    UIImageView *intro2;
+    IBOutlet UIView *intro2;
     
 }
 @end
