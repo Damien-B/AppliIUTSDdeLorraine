@@ -54,9 +54,15 @@
     
     // myBadgeMode = [prefs stringForKey: @"keyBadgeInfo"];
 
+}
+
+
+-(void)viewWillAppear:(BOOL)animated{
+    [[(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates] setUserInteractionEnabled:NO];
 
 }
 
+    
 
 //Envoi de la requete après clic sur le bouton pour log de l'utilisateur
 - (IBAction) bconnection: (UIButton *) sender{
@@ -141,7 +147,10 @@
                      }
                      completion:^(BOOL finished){
                          [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+                         [[(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates] setUserInteractionEnabled:YES];
+
                          [self dismissModalViewControllerAnimated:NO];
+                         
                      }];
     
 }

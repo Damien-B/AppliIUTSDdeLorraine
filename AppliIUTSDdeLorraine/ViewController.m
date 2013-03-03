@@ -87,5 +87,16 @@
     return NO;
     
 }
+//
+//
+//- (void) setDisableAllButtons: (bool) disable{
+//    
+//    
+//    
+//}
+
+
+
+
 
 @end
