@@ -28,6 +28,8 @@
     return self;
 }
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -136,6 +138,11 @@
         [destViewController loadView];
         
     }
+}
+
+- (BOOL )shouldAutorotate{
+    return NO;
+    
 }
 
 

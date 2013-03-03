@@ -53,12 +53,16 @@
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
+   }
+
+
+-(void)viewWillAppear:(BOOL)animated{
     NSString* titrerow=[(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
     NSString* contenurow=[(RootViewController *) [self presentingViewController] getCurrentNewsContent];
     titre.text=titrerow;
     contenu.text=contenurow;
 }
+
 
 - (void)didReceiveMemoryWarning
 {

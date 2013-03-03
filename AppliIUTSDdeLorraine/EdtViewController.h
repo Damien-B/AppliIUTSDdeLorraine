@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 
-@interface EdtViewController : UIViewController{
+@interface EdtViewController : UIViewController<UIScrollViewDelegate>{
     IBOutlet UIWebView *webEdt;
     IBOutlet UIBarButtonItem *next;
     IBOutlet UIBarButtonItem *before;
@@ -37,6 +37,6 @@
 
 - (IBAction)back:(id)sender;
 
-
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 
 @end

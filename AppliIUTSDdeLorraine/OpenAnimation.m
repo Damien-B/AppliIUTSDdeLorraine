@@ -28,7 +28,7 @@
                           delay:0.0
                         options:UIViewAnimationOptionTransitionFlipFromTop
                      animations:^{
-                         [src.viewAnimates setTransform:CGAffineTransformMakeTranslation(0, 300)];
+                         [src.viewAnimates setTransform:CGAffineTransformMakeTranslation(0, 200)];
                      }
                      completion:^(BOOL finished){
                          //[dest loadView];
