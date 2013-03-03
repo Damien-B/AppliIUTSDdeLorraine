@@ -100,6 +100,11 @@
 
 
 
+- (BOOL )shouldAutorotate{
+    return NO;
+    
+}
+
 
 
 
