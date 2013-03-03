@@ -23,6 +23,35 @@
 @synthesize  viewAnimates, topImage, viewSRC;
 
 
+- (void)viewDidLoad
+{
+    
+    [super viewDidLoad];
+    NSString *deviceToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppToken"];
+
+    if([Utils detectConnectivityFromHostName:@"iutsd.applorraine.fr"]){
+        
+        //envoi vers script pour test si présence dans la bdd
+        NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/ajoutbdd.php?uuid=%@&apptoken=%@", [Utils getDeviceID], deviceToken];
+        
+        
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
+        NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+        if(connection){
+            NSLog(@"connected, url=%@", url);
+        }else{
+            NSLog(@"not connected");
+        }
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Attention ..."
+                                                        message: @"pas de connection internet, l'authentification sera pas possible."
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+        
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {

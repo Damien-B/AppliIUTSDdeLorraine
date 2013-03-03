@@ -50,7 +50,6 @@
 		755754A516D4FFF40057492C /* icon_app-iutsd_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 755754A416D4FFF40057492C /* icon_app-iutsd_57.png */; };
 		755754A716D4FFFD0057492C /* icon_app-iutsd_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 755754A616D4FFFD0057492C /* icon_app-iutsd_114.png */; };
 		CD21423C16CF81CF0048D002 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9D730916BD414300934CBC /* Utils.m */; };
-		CD24320C16D2629500D8C039 /* SpecialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24320B16D2629500D8C039 /* SpecialAnimation.m */; };
 		CD24320F16D2684200D8C039 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24320E16D2684100D8C039 /* MapController.m */; };
 		CD46AAEC16E0D2D20049D815 /* bgBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = CD46AAEB16E0D2D20049D815 /* bgBottom.png */; };
 		CD46AAEE16E3469B0049D815 /* informatique_2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD46AAED16E3469B0049D815 /* informatique_2.png */; };
@@ -149,7 +148,6 @@
 		6D54725E167B3506003F58A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		6D547263167B3506003F58A5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6D547264167B3506003F58A5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6D54726C167B3506003F58A5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		6D547283167B3631003F58A5 /* StartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartController.h; sourceTree = "<group>"; };
 		6D547284167B3631003F58A5 /* StartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
 		6D54728C167B3CFE003F58A5 /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icone.png; path = ../icone.png; sourceTree = "<group>"; };
@@ -158,8 +156,6 @@
 		6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
 		755754A416D4FFF40057492C /* icon_app-iutsd_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_app-iutsd_57.png"; path = "../icon_app-iutsd_57.png"; sourceTree = "<group>"; };
 		755754A616D4FFFD0057492C /* icon_app-iutsd_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_app-iutsd_114.png"; path = "../icon_app-iutsd_114.png"; sourceTree = "<group>"; };
-		CD24320A16D2629500D8C039 /* SpecialAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialAnimation.h; sourceTree = "<group>"; };
-		CD24320B16D2629500D8C039 /* SpecialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialAnimation.m; sourceTree = "<group>"; };
 		CD24320D16D2684100D8C039 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
 		CD24320E16D2684100D8C039 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
 		CD46AAEB16E0D2D20049D815 /* bgBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgBottom.png; sourceTree = "<group>"; };
@@ -312,7 +308,6 @@
 				6D547245167B3506003F58A5 /* UIKit.framework */,
 				6D547247167B3506003F58A5 /* Foundation.framework */,
 				6D547249167B3506003F58A5 /* CoreGraphics.framework */,
-				6D54726C167B3506003F58A5 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -415,8 +410,6 @@
 				CD588D8916DACFB200363C78 /* SlidableView.h */,
 				CD588D8616DACF3400363C78 /* SlideFromBottomAnim.h */,
 				CD588D8716DACF3400363C78 /* SlideFromBottomAnim.m */,
-				CD24320A16D2629500D8C039 /* SpecialAnimation.h */,
-				CD24320B16D2629500D8C039 /* SpecialAnimation.m */,
 				CDF31D5516DBEE61003E3328 /* OpenAnimation.h */,
 				CDF31D5616DBEE61003E3328 /* OpenAnimation.m */,
 			);
@@ -631,7 +624,6 @@
 				22A2F1E116C1608D00220945 /* EdtViewController.m in Sources */,
 				CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */,
 				CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */,
-				CD24320C16D2629500D8C039 /* SpecialAnimation.m in Sources */,
 				CD24320F16D2684200D8C039 /* MapController.m in Sources */,
 				6D9D098616D3D24D003F4DD8 /* PreferencesViewController.m in Sources */,
 				CDA5245C16D4431A004A7C42 /* IUTLocation.m in Sources */,
