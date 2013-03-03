@@ -26,12 +26,10 @@
 @synthesize viewAnimates, topImage;
 
 - (id) init{
-    NSLog(@"init EDDDTT i,");
     return  self;
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    NSLog(@"init EDDDTT");
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -61,6 +59,8 @@
                             options:UIViewAnimationOptionTransitionFlipFromTop
                          animations:^{
                              [topImage setTransform:CGAffineTransformMakeTranslation(0, 0)];
+                             [navBar setTransform:CGAffineTransformMakeTranslation(0, 0)];
+
                          }
                          completion:^(BOOL finished){
                              //[dest loadView];
@@ -77,7 +77,9 @@
                               delay:0.0
                             options:UIViewAnimationOptionTransitionFlipFromTop
                          animations:^{
-                             [topImage setTransform:CGAffineTransformMakeTranslation(0, -50)];
+                             [topImage setTransform:CGAffineTransformMakeTranslation(0, -100)];
+                             [navBar setTransform:CGAffineTransformMakeTranslation(0, 100)];
+
                          }
                          completion:^(BOOL finished){
                              //[dest loadView];
@@ -104,7 +106,6 @@
    // self.webEdt = [[[UIWebView alloc]
     //                initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     SelectEDTController * prev =(SelectEDTController *) [self presentingViewController];
-    [navBar setTitle:  prev.myEDTName];
     edtID = prev.myEDTCode;
     NSError *error = nil;
     NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];

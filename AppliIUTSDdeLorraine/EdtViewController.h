@@ -13,7 +13,7 @@
     IBOutlet UIWebView *webEdt;
     IBOutlet UIBarButtonItem *next;
     IBOutlet UIBarButtonItem *before;
-    IBOutlet UINavigationItem *navBar;
+    IBOutlet UIToolbar *navBar;
     int numWeek;
     NSString *edtName;
     NSString *edtID;
@@ -30,7 +30,7 @@
 @property (nonatomic, retain) UIWebView *webEdt;
 @property (nonatomic, retain) UIBarButtonItem *next;
 @property (nonatomic, retain) UIBarButtonItem *before;
-@property (nonatomic, retain) UINavigationItem *navBar;
+@property (nonatomic, retain) UIToolbar *navBar;
 
 - (IBAction) next: (UIBarButtonItem *) sender;
 - (IBAction) before: (UIBarButtonItem *) sender;

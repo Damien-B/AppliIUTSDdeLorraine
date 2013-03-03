@@ -35,41 +35,37 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    // Loading user pref
-    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    BOOL isAutoLogin = [ prefs boolForKey:@"KeyUserAutoLogin" ];
-    if(isAutoLogin){
-        [log setText: [prefs stringForKey: @"KeyUserName"]];
-        [mdp setText: [prefs stringForKey: @"KeyUserPass"]];
-        NSLog(@" autolog");
-        
-    }else{
-        NSLog(@"non autolog");
-    }
-    NSLog(@"Device id (authorized): %@", [Utils getDeviceID]);
-    
-    // myBadgeMode = [prefs stringForKey: @"keyBadgeInfo"];
 
+    [super viewDidLoad];
+ 
 }
 
 
 -(void)viewWillAppear:(BOOL)animated{
     [[(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates] setUserInteractionEnabled:NO];
+    NSUserDefaults *prefs = [NSUserDefaults  standardUserDefaults];
+    BOOL isAutoLogin = [ prefs boolForKey:@"KeyUserAutoLogin" ];
+    if(isAutoLogin){
+        [log setText: [prefs stringForKey: @"KeyUserName"]];
+        [mdp setText: [prefs stringForKey: @"KeyUserPass"]];
+        
+    }
+    toto.textColor = [UIColor whiteColor];
+    toto.text = @"";
 
 }
 
-    
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    toto.textColor = [UIColor redColor];
+    toto.text = @"Connexion impossible.";
+}
 
 //Envoi de la requete après clic sur le bouton pour log de l'utilisateur
 - (IBAction) bconnection: (UIButton *) sender{
     
-    
-    // NSString *vallog = log.text;
-    //NSString *valmdp = [mdp text];
     
     
     NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/testconnexion.php?log=%@&mdp=%@", log.text, mdp.text];
@@ -79,10 +75,12 @@
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     if(connection){
         NSLog(@"connected");
+        toto.textColor = [UIColor whiteColor];
         toto.text = @"Connexion en cours";
     }else{
+        toto.textColor = [UIColor redColor];
         NSLog(@"not connected");
-        toto.text = @"Connexion nul";
+        toto.text = @"Connexion internet requise.";
     }
 }
 
@@ -115,14 +113,10 @@
         // }
     }
     else{
+        toto.textColor = [UIColor redColor];
         toto.text=@"Login faux, veuillez recommencer.";
     }
-    //}
-    //else{
-    //     NSLog(@"Loose");
-    //     toto.text = @"Mauvais Login";
-    // }
-    
+
     connection = nil;
     
 }
@@ -160,7 +154,7 @@
     if ([segue.identifier isEqualToString:@"etudiant"]) {
         EtudiantController *destViewController = segue.destinationViewController;
         [destViewController loadView];
-        
+        response=@"";
     }
 }
 
