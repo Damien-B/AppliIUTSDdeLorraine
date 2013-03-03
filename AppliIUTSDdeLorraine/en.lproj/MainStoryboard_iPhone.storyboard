@@ -1185,7 +1185,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="informatique_2.png" id="OGu-yY-fbc">
-                                        <rect key="frame" x="0.0" y="-17" width="320" height="184"/>
+                                        <rect key="frame" x="0.0" y="-23" width="320" height="184"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                     </imageView>
                                     <webView contentMode="scaleToFill" id="BVX-rZ-Rqo">
@@ -1597,6 +1597,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="dismissAction:"/>
                 <relationship kind="outlet" name="tabView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
