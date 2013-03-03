@@ -72,6 +72,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isf-r3-9Ai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -406,6 +407,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="myDocView" destination="ZDk-Ao-78D" id="6rs-8l-U77"/>
                         <outlet property="topImage" destination="iNW-hP-5cb" id="tok-wH-WaA"/>
@@ -470,6 +472,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="myDocView" destination="wNZ-mw-1zC" id="rWP-G8-xoB"/>
                     </connections>
@@ -553,6 +556,7 @@
                             <outletCollection property="gestureRecognizers" destination="5Oi-wl-H4e" appends="YES" id="sHK-MJ-vCk"/>
                         </connections>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="mapview" destination="bKb-Dj-NMd" id="24C-KZ-bQK"/>
                         <outlet property="topImage" destination="wxR-ZZ-ThQ" id="d1T-JW-5fD"/>
@@ -932,14 +936,14 @@
                             </imageView>
                             <view contentMode="scaleToFill" id="iYL-N3-Abb" userLabel="ViewAnimates">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <webView contentMode="scaleAspectFill" id="3G2-nG-6Nq">
                                         <rect key="frame" x="0.0" y="103" width="320" height="401"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <outlet property="delegate" destination="SKR-4U-ade" id="F8b-lt-dsU"/>
+                                            <outlet property="delegate" destination="SKR-4U-ade" id="Ddb-rZ-3J7"/>
                                         </connections>
                                     </webView>
                                     <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="unY-QD-Oti">
@@ -964,7 +968,7 @@
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="top.png" id="lZv-pb-52o">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sSx-8k-kGo">
                                 <rect key="frame" x="20" y="10" width="60" height="30"/>
@@ -1207,6 +1211,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="myDocView" destination="BVX-rZ-Rqo" id="FrZ-g1-Wxe"/>
                     </connections>
@@ -1269,6 +1274,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="myDocView" destination="i4J-4J-bj5" id="SA7-bP-s1p"/>
                     </connections>
@@ -1476,147 +1482,6 @@
         <image name="top.png" width="320" height="125"/>
         <image name="visite.png" width="170" height="140"/>
     </resources>
-    <classes>
-        <class className="AuthController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AuthController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="bconnection:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="bconnection" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="log" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="mdp" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="toto" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="outlet" name="contenu" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titre" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="EdtViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EdtViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="before:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="next:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="before" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationItem"/>
-                <relationship kind="outlet" name="next" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-                <relationship kind="outlet" name="webEdt" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="EtudiantController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EtudiantController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="outlet" name="myButtonBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="GEII_ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GEII_ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="INFO_ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/INFO_ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="IUT_ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IUT_ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="MapController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="getlocation"/>
-                <relationship kind="action" name="setMap:"/>
-                <relationship kind="outlet" name="mapview" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="PreferencesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PreferencesViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="prefsend:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="covoiturage" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="divertissement" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="edt" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="general" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="pedagogie" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="prefsend" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="RootViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="dismissAction:"/>
-                <relationship kind="outlet" name="tabView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="SRC_ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SRC_ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="myDocView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="SelectEDTController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SelectEDTController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="selectEDT:"/>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="StartController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StartController.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="topImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="viewAnimates" candidateClass="UIView"/>
-                <relationship kind="outlet" name="viewSRC" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="WebViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

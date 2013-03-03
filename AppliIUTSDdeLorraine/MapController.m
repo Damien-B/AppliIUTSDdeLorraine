@@ -29,6 +29,8 @@
 {
     [super viewDidLoad];
    // Do any additional setup after loading the view.
+    mapview.showsUserLocation = YES;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -103,11 +105,15 @@
 }
 
 - (IBAction)getlocation{
-    
-    mapview.showsUserLocation = YES;
-    
-    
-    
+    MKMapPoint points[2];
+    points[0]=MKMapPointForCoordinate(mapview.userLocation.location.coordinate);
+    CLLocationCoordinate2D loc;
+    loc.latitude=48.290021;
+    loc.longitude=6.942775;
+    points[1]=MKMapPointForCoordinate(loc);
+    MKPolygon *poly = [MKPolygon polygonWithPoints:points count:2];
+    MKCoordinateRegion region = MKCoordinateRegionForMapRect([poly boundingMapRect] );
+    [mapview setRegion:region  animated:YES ];
     
 }
 
@@ -138,6 +144,12 @@
                      }];
     
 }
+
+- (BOOL )shouldAutorotate{
+    return NO;
+    
+}
+
 
 
 

@@ -39,6 +39,62 @@
     return self;
 }
 
+
+
+-(void)viewWillAppear:(BOOL)animated{
+    [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(orientationChanged:)  name:UIDeviceOrientationDidChangeNotification  object:nil];
+    [webEdt.scrollView setDelegate:self];
+}
+
+- (void)orientationChanged:(NSNotification *)notification{
+    [self adjustViewsForOrientation:[[UIApplication sharedApplication] statusBarOrientation]];
+}
+
+- (void) adjustViewsForOrientation:(UIInterfaceOrientation) orientation {
+    
+    if (orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown)
+    {
+        //load the portrait view
+        //[topImage setHidden:NO];
+        [UIView animateWithDuration:0.8
+                              delay:0.0
+                            options:UIViewAnimationOptionTransitionFlipFromTop
+                         animations:^{
+                             [topImage setTransform:CGAffineTransformMakeTranslation(0, 0)];
+                         }
+                         completion:^(BOOL finished){
+                             //[dest loadView];
+                             //[dest.view  insertSubview:dest.viewAnimates belowSubview:dest.topImage];
+                             //[dest.view  insertSubview:src.viewSRC aboveSubview:dest.view];
+                             //[self.sourceViewController presentModalViewController:[self destinationViewController] animated:NO];;
+                             //[dest viewDidLoad];
+                             
+                         }];
+    }
+    else if (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight)
+    {
+        [UIView animateWithDuration:0.8
+                              delay:0.0
+                            options:UIViewAnimationOptionTransitionFlipFromTop
+                         animations:^{
+                             [topImage setTransform:CGAffineTransformMakeTranslation(0, -50)];
+                         }
+                         completion:^(BOOL finished){
+                             //[dest loadView];
+                             //[dest.view  insertSubview:dest.viewAnimates belowSubview:dest.topImage];
+                             //[dest.view  insertSubview:src.viewSRC aboveSubview:dest.view];
+                             //[self.sourceViewController presentModalViewController:[self destinationViewController] animated:NO];;
+                             //[dest viewDidLoad];
+                             
+                         }];
+
+        //        NSLog(@"landscape..");
+        //[topImage setHidden:YES];
+      //  [topImage removeFromSuperview];
+        //load the landscape view
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -161,6 +217,10 @@
                          [self dismissModalViewControllerAnimated:NO];
                          [webEdt dealloc];
                      }];
+
+}
+- (void) scrollViewDidScroll:(UIScrollView *)scrollView{
+    NSLog(@"dddd");
 
 }
 
