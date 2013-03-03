@@ -10,7 +10,7 @@
 #import "SlidableView.h"
 @interface DetailViewController : UIViewController<SlidableView>{
     IBOutlet UILabel *titre;
-    IBOutlet UILabel *contenu;
+    IBOutlet UITextView *contenu;
     IBOutlet UIView *viewAnimates;
     IBOutlet UIImageView *topImage;
 
@@ -20,7 +20,7 @@
 @property (nonatomic, retain) IBOutlet UIView *viewAnimates;
 @property (nonatomic, retain) IBOutlet UIImageView *topImage;
 @property (nonatomic, retain) IBOutlet UILabel *titre;
-@property (nonatomic, retain) IBOutlet UILabel *contenu;
+@property (nonatomic, retain) IBOutlet UITextView *contenu;
 
 - (IBAction)back:(id)sender;
 - (void) initData: (NSString *) aTitre : (NSString *) aContenu;
