@@ -61,6 +61,7 @@
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     toto.textColor = [UIColor yellowColor];
     toto.text = @"Connexion impossible.";
+    NSLog(@"%@", [error localizedDescription]);
 }
 
 //Envoi de la requete après clic sur le bouton pour log de l'utilisateur
@@ -71,8 +72,10 @@
     NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/testconnexion.php?log=%@&mdp=%@", log.text, mdp.text];
     
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:1.0];
-    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:5.0];
+    
+
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self ];
     if(connection){
         NSLog(@"connected");
         toto.textColor = [UIColor whiteColor];
