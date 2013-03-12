@@ -410,7 +410,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-461" y="-806"/>
+            <point key="canvasLocation" x="-611" y="-1052"/>
         </scene>
         <!--View Controller - IUT-->
         <scene sceneID="U2P-fh-BJX">
@@ -785,7 +785,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5" y="-884"/>
+            <point key="canvasLocation" x="189" y="-852"/>
         </scene>
         <!--SelectEDT Controller-->
         <scene sceneID="LzY-TV-uwR">
@@ -1505,7 +1505,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-98" y="-1534"/>
+            <point key="canvasLocation" x="200" y="-1662"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="qUe-KP-Zlu">

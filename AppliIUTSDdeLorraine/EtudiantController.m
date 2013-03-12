@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "AuthController.h"
 #import "EdtViewController.h"
+#import "PreferencesViewController.h"
 #import "Utils.h"
 
 @interface EtudiantController ()
@@ -94,11 +95,11 @@
         EdtViewController *destViewController = segue.destinationViewController;
         [destViewController loadView];
         
+    }else if ([segue.identifier isEqualToString:@"setting"]) {
+        PreferencesViewController *destViewController = segue.destinationViewController;
+        [destViewController loadView];
+        
     }
-    //        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    //        RecipeDetailViewController *destViewController = segue.destinationViewController;
-    //        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
-    //    }
 }
 
 
