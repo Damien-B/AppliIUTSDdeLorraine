@@ -84,6 +84,16 @@
 		CDF31D7016DC2A42003E3328 /* edt_tecamtv.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF31D6516DC2A42003E3328 /* edt_tecamtv.png */; };
 		CDF31D7216DC2E43003E3328 /* info_photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF31D7116DC2E43003E3328 /* info_photo2.png */; };
 		CDFAE36116F74783002A40ED /* topHR.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36016F74783002A40ED /* topHR.png */; };
+		CDFAE36E16F74FD3002A40ED /* ic_absences.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36416F74FD0002A40ED /* ic_absences.png */; };
+		CDFAE36F16F74FD3002A40ED /* ic_edt.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36516F74FD0002A40ED /* ic_edt.png */; };
+		CDFAE37016F74FD3002A40ED /* ic_geii.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36616F74FD0002A40ED /* ic_geii.png */; };
+		CDFAE37116F74FD3002A40ED /* ic_identification.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36716F74FD1002A40ED /* ic_identification.png */; };
+		CDFAE37216F74FD3002A40ED /* ic_info.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36816F74FD1002A40ED /* ic_info.png */; };
+		CDFAE37316F74FD3002A40ED /* ic_iut.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36916F74FD1002A40ED /* ic_iut.png */; };
+		CDFAE37416F74FD3002A40ED /* ic_news.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36A16F74FD1002A40ED /* ic_news.png */; };
+		CDFAE37516F74FD3002A40ED /* ic_plans.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36B16F74FD1002A40ED /* ic_plans.png */; };
+		CDFAE37616F74FD3002A40ED /* ic_prefs.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36C16F74FD2002A40ED /* ic_prefs.png */; };
+		CDFAE37716F74FD3002A40ED /* ic_src.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36D16F74FD2002A40ED /* ic_src.png */; };
 		CDFBB3EE16DA524B005A68CD /* sponsors_3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3ED16DA524B005A68CD /* sponsors_3_1.png */; };
 		CDFBB3F016DA525F005A68CD /* logoIut.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3EF16DA525F005A68CD /* logoIut.png */; };
 		CDFBB3F216DA5268005A68CD /* Universite_de_Lorraine_-_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F116DA5268005A68CD /* Universite_de_Lorraine_-_logo.png */; };
@@ -207,6 +217,16 @@
 		CDF31D6516DC2A42003E3328 /* edt_tecamtv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt_tecamtv.png; sourceTree = "<group>"; };
 		CDF31D7116DC2E43003E3328 /* info_photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_photo2.png; sourceTree = "<group>"; };
 		CDFAE36016F74783002A40ED /* topHR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topHR.png; sourceTree = "<group>"; };
+		CDFAE36416F74FD0002A40ED /* ic_absences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_absences.png; sourceTree = "<group>"; };
+		CDFAE36516F74FD0002A40ED /* ic_edt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_edt.png; sourceTree = "<group>"; };
+		CDFAE36616F74FD0002A40ED /* ic_geii.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_geii.png; sourceTree = "<group>"; };
+		CDFAE36716F74FD1002A40ED /* ic_identification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_identification.png; sourceTree = "<group>"; };
+		CDFAE36816F74FD1002A40ED /* ic_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_info.png; sourceTree = "<group>"; };
+		CDFAE36916F74FD1002A40ED /* ic_iut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_iut.png; sourceTree = "<group>"; };
+		CDFAE36A16F74FD1002A40ED /* ic_news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_news.png; sourceTree = "<group>"; };
+		CDFAE36B16F74FD1002A40ED /* ic_plans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_plans.png; sourceTree = "<group>"; };
+		CDFAE36C16F74FD2002A40ED /* ic_prefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_prefs.png; sourceTree = "<group>"; };
+		CDFAE36D16F74FD2002A40ED /* ic_src.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_src.png; sourceTree = "<group>"; };
 		CDFBB3D316DA5239005A68CD /* geii.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = geii.html; sourceTree = "<group>"; };
 		CDFBB3D416DA5239005A68CD /* IUT_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUT_ViewController.h; sourceTree = "<group>"; };
 		CDFBB3D516DA5239005A68CD /* IUT_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUT_ViewController.m; sourceTree = "<group>"; };
@@ -392,6 +412,16 @@
 		75A1B9ED16D5573200CD28E5 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				CDFAE36416F74FD0002A40ED /* ic_absences.png */,
+				CDFAE36516F74FD0002A40ED /* ic_edt.png */,
+				CDFAE36616F74FD0002A40ED /* ic_geii.png */,
+				CDFAE36716F74FD1002A40ED /* ic_identification.png */,
+				CDFAE36816F74FD1002A40ED /* ic_info.png */,
+				CDFAE36916F74FD1002A40ED /* ic_iut.png */,
+				CDFAE36A16F74FD1002A40ED /* ic_news.png */,
+				CDFAE36B16F74FD1002A40ED /* ic_plans.png */,
+				CDFAE36C16F74FD2002A40ED /* ic_prefs.png */,
+				CDFAE36D16F74FD2002A40ED /* ic_src.png */,
 				CD71622D16BC663D0077FDFD /* absences.png */,
 				CDFBB3F716DA52A6005A68CD /* geii_1.png */,
 				CDFBB3F816DA52A6005A68CD /* src_1.png */,
@@ -615,6 +645,16 @@
 				CD46AAFF16E3A7390049D815 /* mgel_emevia.png in Resources */,
 				CD56DBEB16EE89AA00CD3837 /* Settings.bundle in Resources */,
 				CDFAE36116F74783002A40ED /* topHR.png in Resources */,
+				CDFAE36E16F74FD3002A40ED /* ic_absences.png in Resources */,
+				CDFAE36F16F74FD3002A40ED /* ic_edt.png in Resources */,
+				CDFAE37016F74FD3002A40ED /* ic_geii.png in Resources */,
+				CDFAE37116F74FD3002A40ED /* ic_identification.png in Resources */,
+				CDFAE37216F74FD3002A40ED /* ic_info.png in Resources */,
+				CDFAE37316F74FD3002A40ED /* ic_iut.png in Resources */,
+				CDFAE37416F74FD3002A40ED /* ic_news.png in Resources */,
+				CDFAE37516F74FD3002A40ED /* ic_plans.png in Resources */,
+				CDFAE37616F74FD3002A40ED /* ic_prefs.png in Resources */,
+				CDFAE37716F74FD3002A40ED /* ic_src.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

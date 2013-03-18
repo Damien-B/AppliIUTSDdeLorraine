@@ -89,7 +89,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="rXi-Ng-hME">
-                                <rect key="frame" x="0.0" y="-0.5" width="320" height="105"/>
+                                <rect key="frame" x="0.0" y="-1" width="320" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wQC-zA-hN7">
@@ -144,7 +144,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rfd-iu-mr1">
                                                 <rect key="frame" x="15" y="91" width="85" height="71"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" image="id.png">
+                                                <state key="normal" image="ic_identification.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -158,7 +158,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eRG-sP-4Kz">
                                                 <rect key="frame" x="118" y="91" width="85" height="71"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" image="iut.png">
+                                                <state key="normal" image="ic_iut.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -172,7 +172,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JIy-RK-grK">
                                                 <rect key="frame" x="220" y="91" width="85" height="71"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" image="visite.png">
+                                                <state key="normal" image="ic_plans.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -186,7 +186,7 @@
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XaE-t6-hGY">
                                                 <rect key="frame" x="220" y="201" width="85" height="78"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" image="info_1.png">
+                                                <state key="normal" image="ic_info.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -200,7 +200,7 @@
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4hT-uO-f0U">
                                                 <rect key="frame" x="118" y="201" width="85" height="78"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" image="src_1.png">
+                                                <state key="normal" image="ic_src.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -214,7 +214,7 @@
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XU9-yK-HAD">
                                                 <rect key="frame" x="15" y="201" width="85" height="78"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" image="geii_1.png">
+                                                <state key="normal" image="ic_geii.png">
                                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -260,7 +260,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="cJZ-GP-1JP">
-                                <rect key="frame" x="0.0" y="-0.5" width="320" height="105"/>
+                                <rect key="frame" x="0.0" y="-1" width="320" height="105"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="r5i-ra-yjL">
@@ -443,7 +443,7 @@
                                 </connections>
                             </webView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="iNW-hP-5cb">
-                                <rect key="frame" x="0.0" y="-0.5" width="320" height="105"/>
+                                <rect key="frame" x="0.0" y="-1" width="320" height="105"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="52w-cs-pzk">
@@ -506,7 +506,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="DNs-kD-7LC">
-                                <rect key="frame" x="0.0" y="-0.5" width="320" height="105"/>
+                                <rect key="frame" x="0.0" y="-1" width="320" height="105"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qet-kZ-J5K">
@@ -560,7 +560,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="L7r-uY-U8C">
-                                <rect key="frame" x="0.0" y="-0.5" width="320" height="105"/>
+                                <rect key="frame" x="0.0" y="-1" width="320" height="105"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BBK-3v-ORF">
@@ -642,7 +642,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="wxR-ZZ-ThQ">
-                                <rect key="frame" x="0.0" y="-0.5" width="320" height="105"/>
+                                <rect key="frame" x="0.0" y="-1" width="320" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UwN-fM-bas">
@@ -746,7 +746,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="DLx-V8-aXQ">
-                                <rect key="frame" x="0.0" y="-0.5" width="320" height="105"/>
+                                <rect key="frame" x="0.0" y="-1" width="320" height="105"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9bT-yq-71I">
@@ -1327,7 +1327,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="iry-fL-OzL">
-                                <rect key="frame" x="0.0" y="-0.5" width="320" height="105"/>
+                                <rect key="frame" x="0.0" y="-1" width="320" height="105"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BKP-vh-LrX">
@@ -1388,7 +1388,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="MmT-BB-aZh">
-                                <rect key="frame" x="0.0" y="-0.5" width="320" height="105"/>
+                                <rect key="frame" x="0.0" y="-1" width="320" height="105"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5PK-EU-zLY">
@@ -1544,7 +1544,7 @@
                                 </connections>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="bk9-0u-kuY">
-                                <rect key="frame" x="0.0" y="-0.5" width="320" height="105"/>
+                                <rect key="frame" x="0.0" y="-1" width="320" height="105"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="b1M-1y-OzB">
@@ -1606,12 +1606,14 @@
         <image name="edt_src.png" width="56" height="25"/>
         <image name="edt_tecamtv.png" width="175" height="160"/>
         <image name="fb.png" width="135" height="19"/>
-        <image name="geii_1.png" width="175" height="160"/>
         <image name="geii_photo.png" width="640" height="298"/>
-        <image name="id.png" width="85" height="70"/>
-        <image name="info_1.png" width="175" height="160"/>
+        <image name="ic_geii.png" width="175" height="160"/>
+        <image name="ic_identification.png" width="175" height="160"/>
+        <image name="ic_info.png" width="175" height="160"/>
+        <image name="ic_iut.png" width="175" height="160"/>
+        <image name="ic_plans.png" width="175" height="160"/>
+        <image name="ic_src.png" width="175" height="160"/>
         <image name="informatique_2.png" width="640" height="298"/>
-        <image name="iut.png" width="85" height="70"/>
         <image name="iut_photo.png" width="640" height="298"/>
         <image name="lancement_2.png" width="609" height="391"/>
         <image name="logoIut.png" width="200" height="175"/>
@@ -1619,10 +1621,8 @@
         <image name="nouveautes.png" width="170" height="136"/>
         <image name="prefs.png" width="170" height="136"/>
         <image name="retour_2.png" width="120" height="59"/>
-        <image name="src_1.png" width="175" height="160"/>
         <image name="src_photo.png" width="640" height="298"/>
         <image name="topHR.png" width="1596" height="560"/>
-        <image name="visite.png" width="170" height="140"/>
     </resources>
     <classes>
         <class className="About_ViewController" superclassName="UIViewController">
