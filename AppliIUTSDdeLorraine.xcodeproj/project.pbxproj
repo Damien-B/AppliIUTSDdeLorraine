@@ -16,7 +16,6 @@
 		22089EB0169D9F2700298246 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EA5169D9F2700298246 /* info.png */; };
 		22089EB1169D9F2700298246 /* iut.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EA6169D9F2700298246 /* iut.png */; };
 		22089EB2169D9F2700298246 /* src.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EA7169D9F2700298246 /* src.png */; };
-		22089EB3169D9F2700298246 /* top.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EA8169D9F2700298246 /* top.png */; };
 		22089EB4169D9F2700298246 /* visite.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EA9169D9F2700298246 /* visite.png */; };
 		22089EB6169DA6CD00298246 /* photo_iut.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EB5169DA6CC00298246 /* photo_iut.png */; };
 		22089EB8169DB30400298246 /* iut_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22089EB7169DB30400298246 /* iut_photo.png */; };
@@ -84,6 +83,7 @@
 		CDF31D6E16DC2A42003E3328 /* edt_licences.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF31D6316DC2A42003E3328 /* edt_licences.png */; };
 		CDF31D7016DC2A42003E3328 /* edt_tecamtv.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF31D6516DC2A42003E3328 /* edt_tecamtv.png */; };
 		CDF31D7216DC2E43003E3328 /* info_photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF31D7116DC2E43003E3328 /* info_photo2.png */; };
+		CDFAE36116F74783002A40ED /* topHR.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFAE36016F74783002A40ED /* topHR.png */; };
 		CDFBB3EE16DA524B005A68CD /* sponsors_3_1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3ED16DA524B005A68CD /* sponsors_3_1.png */; };
 		CDFBB3F016DA525F005A68CD /* logoIut.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3EF16DA525F005A68CD /* logoIut.png */; };
 		CDFBB3F216DA5268005A68CD /* Universite_de_Lorraine_-_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFBB3F116DA5268005A68CD /* Universite_de_Lorraine_-_logo.png */; };
@@ -115,7 +115,6 @@
 		22089EA5169D9F2700298246 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info.png; path = source/info.png; sourceTree = "<group>"; };
 		22089EA6169D9F2700298246 /* iut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iut.png; path = source/iut.png; sourceTree = "<group>"; };
 		22089EA7169D9F2700298246 /* src.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = src.png; path = source/src.png; sourceTree = "<group>"; };
-		22089EA8169D9F2700298246 /* top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = top.png; path = source/top.png; sourceTree = "<group>"; };
 		22089EA9169D9F2700298246 /* visite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = visite.png; path = source/visite.png; sourceTree = "<group>"; };
 		22089EB5169DA6CC00298246 /* photo_iut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo_iut.png; path = source/photo_iut.png; sourceTree = "<group>"; };
 		22089EB7169DB30400298246 /* iut_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iut_photo.png; path = source/iut_photo.png; sourceTree = "<group>"; };
@@ -207,6 +206,7 @@
 		CDF31D6316DC2A42003E3328 /* edt_licences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt_licences.png; sourceTree = "<group>"; };
 		CDF31D6516DC2A42003E3328 /* edt_tecamtv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edt_tecamtv.png; sourceTree = "<group>"; };
 		CDF31D7116DC2E43003E3328 /* info_photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_photo2.png; sourceTree = "<group>"; };
+		CDFAE36016F74783002A40ED /* topHR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topHR.png; sourceTree = "<group>"; };
 		CDFBB3D316DA5239005A68CD /* geii.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = geii.html; sourceTree = "<group>"; };
 		CDFBB3D416DA5239005A68CD /* IUT_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUT_ViewController.h; sourceTree = "<group>"; };
 		CDFBB3D516DA5239005A68CD /* IUT_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUT_ViewController.m; sourceTree = "<group>"; };
@@ -275,7 +275,7 @@
 				CDFBB3F516DA528A005A68CD /* retour_2.png */,
 				22407D57169E1E3500AB16CE /* intro.png */,
 				22089EB7169DB30400298246 /* iut_photo.png */,
-				22089EA8169D9F2700298246 /* top.png */,
+				CDFAE36016F74783002A40ED /* topHR.png */,
 				75A1B9ED16D5573200CD28E5 /* icons */,
 			);
 			name = source;
@@ -573,7 +573,6 @@
 				22089EB0169D9F2700298246 /* info.png in Resources */,
 				22089EB1169D9F2700298246 /* iut.png in Resources */,
 				22089EB2169D9F2700298246 /* src.png in Resources */,
-				22089EB3169D9F2700298246 /* top.png in Resources */,
 				22089EB4169D9F2700298246 /* visite.png in Resources */,
 				22089EB6169DA6CD00298246 /* photo_iut.png in Resources */,
 				22089EB8169DB30400298246 /* iut_photo.png in Resources */,
@@ -615,6 +614,7 @@
 				CD46AAFA16E38F330049D815 /* about.html in Resources */,
 				CD46AAFF16E3A7390049D815 /* mgel_emevia.png in Resources */,
 				CD56DBEB16EE89AA00CD3837 /* Settings.bundle in Resources */,
+				CDFAE36116F74783002A40ED /* topHR.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
