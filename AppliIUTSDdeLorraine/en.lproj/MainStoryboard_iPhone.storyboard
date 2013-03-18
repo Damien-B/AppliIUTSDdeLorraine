@@ -785,7 +785,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="189" y="-852"/>
+            <point key="canvasLocation" x="189" y="-1320"/>
         </scene>
         <!--SelectEDT Controller-->
         <scene sceneID="LzY-TV-uwR">
@@ -1101,13 +1101,13 @@
                                             </barButtonItem>
                                         </items>
                                     </toolbar>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="lZv-pb-52o">
-                                        <rect key="frame" x="0.0" y="-1" width="320" height="105"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="topHR.png" id="lZv-pb-52o">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sSx-8k-kGo">
                                 <rect key="frame" x="20" y="10" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1294,7 +1294,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="364" y="-2350"/>
+            <point key="canvasLocation" x="1872" y="-1494"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VaU-kH-xE8">
@@ -1505,7 +1505,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="200" y="-1662"/>
+            <point key="canvasLocation" x="732" y="-2142"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="qUe-KP-Zlu">
@@ -1584,7 +1584,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="872" y="-1486"/>
+            <point key="canvasLocation" x="1408" y="-1970"/>
         </scene>
     </scenes>
     <resources>
