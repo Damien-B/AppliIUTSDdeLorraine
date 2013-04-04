@@ -45,15 +45,6 @@
 		6D547285167B3631003F58A5 /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D547284167B3631003F58A5 /* StartController.m */; };
 		6D54728D167B3CFE003F58A5 /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728C167B3CFE003F58A5 /* icone.png */; };
 		6D54728F167B3D45003F58A5 /* retinalol.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D54728E167B3D45003F58A5 /* retinalol.png */; };
-		6D5BCA23170E0658003D7326 /* appli-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D5BCA1D170E0658003D7326 /* appli-2.jpg */; };
-		6D5BCA24170E0658003D7326 /* icon_app-iutsd_114-2ul.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5BCA1E170E0658003D7326 /* icon_app-iutsd_114-2ul.png */; };
-		6D5BCA25170E0658003D7326 /* icon_app-iutsd_57-2ul.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5BCA1F170E0658003D7326 /* icon_app-iutsd_57-2ul.png */; };
-		6D5BCA26170E0658003D7326 /* icon_hd2ul.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5BCA20170E0658003D7326 /* icon_hd2ul.png */; };
-		6D5BCA27170E0658003D7326 /* lancement_2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5BCA21170E0658003D7326 /* lancement_2-2.png */; };
-		6D5BCA28170E0658003D7326 /* top-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5BCA22170E0658003D7326 /* top-2.png */; };
-		6D5BCA2A170E07C6003D7326 /* topHR-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5BCA29170E07C6003D7326 /* topHR-2.png */; };
-		6D5BCA2C170E090A003D7326 /* icon_app-iutsd_57-2ul.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5BCA2B170E090A003D7326 /* icon_app-iutsd_57-2ul.png */; };
-		6D5BCA2E170E0915003D7326 /* icon_app-iutsd_114-2ul.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D5BCA2D170E0915003D7326 /* icon_app-iutsd_114-2ul.png */; };
 		6D9D098616D3D24D003F4DD8 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D098516D3D24D003F4DD8 /* PreferencesViewController.m */; };
 		755754A516D4FFF40057492C /* icon_app-iutsd_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 755754A416D4FFF40057492C /* icon_app-iutsd_57.png */; };
 		755754A716D4FFFD0057492C /* icon_app-iutsd_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 755754A616D4FFFD0057492C /* icon_app-iutsd_114.png */; };
@@ -76,11 +67,16 @@
 		CD71623016BC66490077FDFD /* edt.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71622F16BC66490077FDFD /* edt.png */; };
 		CD71623216BC665B0077FDFD /* nouveautes.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623116BC665B0077FDFD /* nouveautes.png */; };
 		CD71623416BC66680077FDFD /* prefs.png in Resources */ = {isa = PBXBuildFile; fileRef = CD71623316BC66680077FDFD /* prefs.png */; };
+		CD8DA0C8170E1D3000DD9531 /* lancement_2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8DA0C7170E1D3000DD9531 /* lancement_2-2.png */; };
+		CD8DA0CA170E1D5E00DD9531 /* topHR-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8DA0C9170E1D5E00DD9531 /* topHR-2.png */; };
 		CD9D730C16BD438500934CBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D730B16BD438500934CBC /* SystemConfiguration.framework */; };
 		CDA5245C16D4431A004A7C42 /* IUTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA5245B16D4431A004A7C42 /* IUTLocation.m */; };
 		CDA5245E16D44E4E004A7C42 /* logoIUT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CDA5245D16D44E4E004A7C42 /* logoIUT.jpeg */; };
 		CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */; };
 		CDDFDEA216CFC5F3005FD7A0 /* EtudiantController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */; };
+		CDEC30E5170E1E52002AC279 /* icon_hd2ul-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDEC30E4170E1E52002AC279 /* icon_hd2ul-1.png */; };
+		CDEC30E8170E1EEA002AC279 /* icon_app-iutsd_57-2ul.png in Resources */ = {isa = PBXBuildFile; fileRef = CDEC30E6170E1EEA002AC279 /* icon_app-iutsd_57-2ul.png */; };
+		CDEC30E9170E1EEA002AC279 /* icon_app-iutsd_114-2ul.png in Resources */ = {isa = PBXBuildFile; fileRef = CDEC30E7170E1EEA002AC279 /* icon_app-iutsd_114-2ul.png */; };
 		CDF31D5416DBD5B1003E3328 /* AuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF31D5316DBD5B1003E3328 /* AuthController.m */; };
 		CDF31D5716DBEE61003E3328 /* OpenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF31D5616DBEE61003E3328 /* OpenAnimation.m */; };
 		CDF31D6616DC2A42003E3328 /* edt_1a.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF31D5B16DC2A42003E3328 /* edt_1a.png */; };
@@ -210,6 +206,8 @@
 		CD71623116BC665B0077FDFD /* nouveautes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nouveautes.png; sourceTree = "<group>"; };
 		CD71623316BC66680077FDFD /* prefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prefs.png; sourceTree = "<group>"; };
 		CD7BE61C16D03BC4006D09D1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CD8DA0C7170E1D3000DD9531 /* lancement_2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lancement_2-2.png"; sourceTree = "<group>"; };
+		CD8DA0C9170E1D5E00DD9531 /* topHR-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topHR-2.png"; sourceTree = "<group>"; };
 		CD9D730816BD414300934CBC /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		CD9D730916BD414300934CBC /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		CD9D730B16BD438500934CBC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -221,6 +219,9 @@
 		CDDFDEA016CFC5F3005FD7A0 /* EtudiantController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EtudiantController.h; sourceTree = "<group>"; };
 		CDDFDEA116CFC5F3005FD7A0 /* EtudiantController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EtudiantController.m; sourceTree = "<group>"; };
 		CDE472D516BB3C6A0071A51D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		CDEC30E4170E1E52002AC279 /* icon_hd2ul-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_hd2ul-1.png"; sourceTree = "<group>"; };
+		CDEC30E6170E1EEA002AC279 /* icon_app-iutsd_57-2ul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_app-iutsd_57-2ul.png"; sourceTree = "<group>"; };
+		CDEC30E7170E1EEA002AC279 /* icon_app-iutsd_114-2ul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_app-iutsd_114-2ul.png"; sourceTree = "<group>"; };
 		CDF31D5216DBD5B1003E3328 /* AuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthController.h; sourceTree = "<group>"; };
 		CDF31D5316DBD5B1003E3328 /* AuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthController.m; sourceTree = "<group>"; };
 		CDF31D5516DBEE61003E3328 /* OpenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenAnimation.h; sourceTree = "<group>"; };
@@ -302,6 +303,7 @@
 				22089E9F169D9F2700298246 /* appli.png */,
 				CD46AAEB16E0D2D20049D815 /* bgBottom.png */,
 				CDFBB3F316DA527A005A68CD /* lancement_2.png */,
+				CD8DA0C7170E1D3000DD9531 /* lancement_2-2.png */,
 				22089EA0169D9F2700298246 /* bg_black.png */,
 				22089EA1169D9F2700298246 /* bg.png */,
 				22089EB5169DA6CC00298246 /* photo_iut.png */,
@@ -314,6 +316,7 @@
 				CDFBB3F516DA528A005A68CD /* retour_2.png */,
 				22407D57169E1E3500AB16CE /* intro.png */,
 				22089EB7169DB30400298246 /* iut_photo.png */,
+				CD8DA0C9170E1D5E00DD9531 /* topHR-2.png */,
 				CDFAE36016F74783002A40ED /* topHR.png */,
 				75A1B9ED16D5573200CD28E5 /* icons */,
 			);
@@ -448,6 +451,8 @@
 		75A1B9ED16D5573200CD28E5 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				CDEC30E6170E1EEA002AC279 /* icon_app-iutsd_57-2ul.png */,
+				CDEC30E7170E1EEA002AC279 /* icon_app-iutsd_114-2ul.png */,
 				CDFAE36416F74FD0002A40ED /* ic_absences.png */,
 				CDFAE36516F74FD0002A40ED /* ic_edt.png */,
 				CDFAE36616F74FD0002A40ED /* ic_geii.png */,
@@ -465,6 +470,7 @@
 				CD71622F16BC66490077FDFD /* edt.png */,
 				CD71623316BC66680077FDFD /* prefs.png */,
 				22089EA3169D9F2700298246 /* geii.png */,
+				CDEC30E4170E1E52002AC279 /* icon_hd2ul-1.png */,
 				22089EA4169D9F2700298246 /* id.png */,
 				22089EA5169D9F2700298246 /* info.png */,
 				22089EA6169D9F2700298246 /* iut.png */,
@@ -591,7 +597,7 @@
 		6D547238167B3506003F58A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Damien Bannerot";
 			};
 			buildConfigurationList = 6D54723B167B3506003F58A5 /* Build configuration list for PBXProject "AppliIUTSDdeLorraine" */;
@@ -691,15 +697,11 @@
 				CDFAE37516F74FD3002A40ED /* ic_plans.png in Resources */,
 				CDFAE37616F74FD3002A40ED /* ic_prefs.png in Resources */,
 				CDFAE37716F74FD3002A40ED /* ic_src.png in Resources */,
-				6D5BCA23170E0658003D7326 /* appli-2.jpg in Resources */,
-				6D5BCA24170E0658003D7326 /* icon_app-iutsd_114-2ul.png in Resources */,
-				6D5BCA25170E0658003D7326 /* icon_app-iutsd_57-2ul.png in Resources */,
-				6D5BCA26170E0658003D7326 /* icon_hd2ul.png in Resources */,
-				6D5BCA27170E0658003D7326 /* lancement_2-2.png in Resources */,
-				6D5BCA28170E0658003D7326 /* top-2.png in Resources */,
-				6D5BCA2A170E07C6003D7326 /* topHR-2.png in Resources */,
-				6D5BCA2C170E090A003D7326 /* icon_app-iutsd_57-2ul.png in Resources */,
-				6D5BCA2E170E0915003D7326 /* icon_app-iutsd_114-2ul.png in Resources */,
+				CD8DA0C8170E1D3000DD9531 /* lancement_2-2.png in Resources */,
+				CD8DA0CA170E1D5E00DD9531 /* topHR-2.png in Resources */,
+				CDEC30E5170E1E52002AC279 /* icon_hd2ul-1.png in Resources */,
+				CDEC30E8170E1EEA002AC279 /* icon_app-iutsd_57-2ul.png in Resources */,
+				CDEC30E9170E1EEA002AC279 /* icon_app-iutsd_114-2ul.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
