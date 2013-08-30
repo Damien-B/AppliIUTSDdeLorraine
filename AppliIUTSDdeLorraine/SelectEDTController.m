@@ -50,39 +50,34 @@
 - (IBAction) selectEDT: (UIButton *) sender{
     //[myButtonBack setEnabled:NO];
     int codeEDT = sender.tag;
-    // SRC1 SRC2 LP
+    // SRC1 SRC2 LP%
     if(codeEDT ==0){
         [myEDTName setString:  @"SRC 1"];
-        [myEDTCode setString:@"5971%2C5973%2C5967%2C5968"];
+        [myEDTCode setString:@"5971,5973,5967,5968"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }else if (codeEDT==1){
         [myEDTName setString:  @"SRC 2"];
-        [myEDTCode setString:@"5928%2C5930%2C5925%2C5926"];
+        [myEDTCode setString:@"5928,5930,5925,5926"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }else if(codeEDT==2){
         [myEDTName setString:  @"LP CDG"];
-        [myEDTCode setString:@"5978"];
-        [self performSegueWithIdentifier:@"visuedt" sender:self];
-
-    }else if(codeEDT==3){
-        [myEDTName setString:  @"LP CMPM"];
-        [myEDTCode setString:@"5980"];
+        [myEDTCode setString:@"934,1208"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
 
     }else if(codeEDT==4){
         [myEDTName setString:  @"TECAM "];
-        [myEDTCode setString:@"5976"];
+        [myEDTCode setString:@"1237,1238"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
 
     }
      // Info1 Info2 LPs
     else if(codeEDT==5){
         [myEDTName setString:  @"Info 1"];
-        [myEDTCode setString:@"5921%2C5957%2C5958%2C5960"];
+        [myEDTCode setString:@"5921,5957,5958,5960"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }    else if(codeEDT==6){
         [myEDTName setString:  @"Info 2"];
-        [myEDTCode setString:@"5941%2C5942%2C5944%2C5945"];
+        [myEDTCode setString:@"5941,5942,5944,5945"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     } else if(codeEDT==7){
         [myEDTName setString:  @"LP IMM"];
@@ -96,16 +91,16 @@
     // GEII 1 2  LPs
     else if(codeEDT==9){
         [myEDTName setString:  @"LP GEII 1"];
-        [myEDTCode setString:@"5666%2C6441%2C5950%2C5953"];
+        [myEDTCode setString:@"5666,6441,5950,5953"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }
     else if(codeEDT==10){
         [myEDTName setString:  @"GEII 2"];
-        [myEDTCode setString:@"5969%2C5972%2C5977%2C5979"];
+        [myEDTCode setString:@"5969,5972,5977,5979"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }else if(codeEDT==11){
         [myEDTName setString:  @"LP A2I"];
-        [myEDTCode setString:@"5962%2C5963"];
+        [myEDTCode setString:@"5962,5963"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }
     
