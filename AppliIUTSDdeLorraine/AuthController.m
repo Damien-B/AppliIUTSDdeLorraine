@@ -80,6 +80,8 @@
         NSLog(@"connected");
         toto.textColor = [UIColor whiteColor];
         toto.text = @"Connexion en cours";
+        [self performSegueWithIdentifier:@"etudiant" sender:self];
+
     }else{
         toto.textColor = [UIColor yellowColor];
         NSLog(@"not connected");
