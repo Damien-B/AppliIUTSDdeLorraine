@@ -59,7 +59,7 @@
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    toto.textColor = [UIColor yellowColor];
+    toto.textColor = [UIColor blackColor];
     toto.text = @"Connexion impossible.";
     NSLog(@"%@", [error localizedDescription]);
 }
@@ -78,12 +78,12 @@
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self ];
     if(connection){
         NSLog(@"connected");
-        toto.textColor = [UIColor whiteColor];
+        toto.textColor = [UIColor blackColor];
         toto.text = @"Connexion en cours";
         [self performSegueWithIdentifier:@"etudiant" sender:self];
 
     }else{
-        toto.textColor = [UIColor yellowColor];
+        toto.textColor = [UIColor blackColor];
         NSLog(@"not connected");
         toto.text = @"Connexion internet requise.";
     }
@@ -118,7 +118,7 @@
         // }
     }
     else{
-        toto.textColor = [UIColor yellowColor];
+        toto.textColor = [UIColor blackColor];
         toto.text=@"Login ou mot de passe incorrect.";
     }
 
