@@ -27,7 +27,7 @@
 {
     
     [super viewDidLoad];
-    NSString *deviceToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppToken"];
+  //  NSString *deviceToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"AppToken"];
 
 //    if([Utils detectConnectivityFromHostName:@"iutsd.applorraine.fr"]){
 //        

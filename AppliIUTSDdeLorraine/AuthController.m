@@ -66,27 +66,35 @@
 
 //Envoi de la requete après clic sur le bouton pour log de l'utilisateur
 - (IBAction) bconnection: (UIButton *) sender{
-    
-    
-    
-    NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/testconnexion.php?log=%@&mdp=%@", log.text, mdp.text];
-    
-    
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:5.0];
-    
-
-    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self ];
-    if(connection){
-        NSLog(@"connected");
-        toto.textColor = [UIColor blackColor];
-        toto.text = @"Connexion en cours";
-        [self performSegueWithIdentifier:@"etudiant" sender:self];
-
+    if([log.text isEqualToString: @"iut"] && [mdp.text isEqualToString: @"stdie"]){
+          [self performSegueWithIdentifier:@"etudiant" sender:self];
     }else{
         toto.textColor = [UIColor blackColor];
         NSLog(@"not connected");
-        toto.text = @"Connexion internet requise.";
+        toto.text = @"Mot de passe ou login invalide.";
+        
     }
+
+    
+//    
+//    NSString *url = [NSString stringWithFormat:@"http://iutsd.applorraine.fr/testconnexion.php?log=%@&mdp=%@", log.text, mdp.text];
+//    
+//    
+//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:5.0];
+//    
+//
+//    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self ];
+//    if(connection){
+//        NSLog(@"connected");
+//        toto.textColor = [UIColor blackColor];
+//        toto.text = @"Connexion en cours";
+//        [self performSegueWithIdentifier:@"etudiant" sender:self];
+//
+//    }else{
+//        toto.textColor = [UIColor blackColor];
+//        NSLog(@"not connected");
+//        toto.text = @"Connexion internet requise.";
+//    }
 }
 
 //Envoi de la requete après clic sur le bouton envoi des preferences abonnements

@@ -82,6 +82,7 @@
 		CDEC30E5170E1E52002AC279 /* icon_hd2ul-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CDEC30E4170E1E52002AC279 /* icon_hd2ul-1.png */; };
 		CDEC30E8170E1EEA002AC279 /* icon_app-iutsd_57-2ul.png in Resources */ = {isa = PBXBuildFile; fileRef = CDEC30E6170E1EEA002AC279 /* icon_app-iutsd_57-2ul.png */; };
 		CDEC30E9170E1EEA002AC279 /* icon_app-iutsd_114-2ul.png in Resources */ = {isa = PBXBuildFile; fileRef = CDEC30E7170E1EEA002AC279 /* icon_app-iutsd_114-2ul.png */; };
+		CDF09083187DA7F10083D60B /* 120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF09082187DA7F10083D60B /* 120x120.png */; };
 		CDF31D5416DBD5B1003E3328 /* AuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF31D5316DBD5B1003E3328 /* AuthController.m */; };
 		CDF31D5716DBEE61003E3328 /* OpenAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF31D5616DBEE61003E3328 /* OpenAnimation.m */; };
 		CDF31D6616DC2A42003E3328 /* edt_1a.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF31D5B16DC2A42003E3328 /* edt_1a.png */; };
@@ -140,7 +141,6 @@
 		F9A35DB5184FACF400E37FEE /* 58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A35DAF184FACF400E37FEE /* 58x58.png */; };
 		F9A35DB6184FACF400E37FEE /* 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A35DB0184FACF400E37FEE /* 80x80.png */; };
 		F9A35DB7184FACF400E37FEE /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A35DB1184FACF400E37FEE /* 114x114.png */; };
-		F9A35DB8184FACF400E37FEE /* 120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = F9A35DB2184FACF400E37FEE /* 120x120.png */; };
 		F9AD98FC184F967200B983B5 /* bg_txt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9AD98ED184F967200B983B5 /* bg_txt.jpg */; };
 		F9AD98FD184F967200B983B5 /* champ_identifiant.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AD98EE184F967200B983B5 /* champ_identifiant.png */; };
 		F9AD98FE184F967200B983B5 /* edt 2.png in Resources */ = {isa = PBXBuildFile; fileRef = F9AD98EF184F967200B983B5 /* edt 2.png */; };
@@ -260,6 +260,8 @@
 		CDEC30E4170E1E52002AC279 /* icon_hd2ul-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_hd2ul-1.png"; sourceTree = "<group>"; };
 		CDEC30E6170E1EEA002AC279 /* icon_app-iutsd_57-2ul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_app-iutsd_57-2ul.png"; sourceTree = "<group>"; };
 		CDEC30E7170E1EEA002AC279 /* icon_app-iutsd_114-2ul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_app-iutsd_114-2ul.png"; sourceTree = "<group>"; };
+		CDF09082187DA7F10083D60B /* 120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120x120.png; sourceTree = "<group>"; };
+		CDF09084187DA8480083D60B /* AppliIUTSDdeLorraine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AppliIUTSDdeLorraine.entitlements; sourceTree = "<group>"; };
 		CDF31D5216DBD5B1003E3328 /* AuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthController.h; sourceTree = "<group>"; };
 		CDF31D5316DBD5B1003E3328 /* AuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthController.m; sourceTree = "<group>"; };
 		CDF31D5516DBEE61003E3328 /* OpenAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenAnimation.h; sourceTree = "<group>"; };
@@ -324,7 +326,6 @@
 		F9A35DAF184FACF400E37FEE /* 58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58x58.png; sourceTree = "<group>"; };
 		F9A35DB0184FACF400E37FEE /* 80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80x80.png; sourceTree = "<group>"; };
 		F9A35DB1184FACF400E37FEE /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
-		F9A35DB2184FACF400E37FEE /* 120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120x120.png; sourceTree = "<group>"; };
 		F9AD98ED184F967200B983B5 /* bg_txt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_txt.jpg; sourceTree = "<group>"; };
 		F9AD98EE184F967200B983B5 /* champ_identifiant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = champ_identifiant.png; sourceTree = "<group>"; };
 		F9AD98EF184F967200B983B5 /* edt 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edt 2.png"; sourceTree = "<group>"; };
@@ -427,7 +428,7 @@
 				F9A35DAF184FACF400E37FEE /* 58x58.png */,
 				F9A35DB0184FACF400E37FEE /* 80x80.png */,
 				F9A35DB1184FACF400E37FEE /* 114x114.png */,
-				F9A35DB2184FACF400E37FEE /* 120x120.png */,
+				CDF09082187DA7F10083D60B /* 120x120.png */,
 				6D5BCA2D170E0915003D7326 /* icon_app-iutsd_120-2ul.png */,
 				6D5BCA2B170E090A003D7326 /* icon_app-iutsd_57-2ul.png */,
 				CDE472D516BB3C6A0071A51D /* Settings.bundle */,
@@ -461,6 +462,7 @@
 		6D54724B167B3506003F58A5 /* AppliIUTSDdeLorraine */ = {
 			isa = PBXGroup;
 			children = (
+				CDF09084187DA8480083D60B /* AppliIUTSDdeLorraine.entitlements */,
 				CD588D8116DABE3300363C78 /* ExternLibs */,
 				CD588D8016DA8F7C00363C78 /* Controller */,
 				757CBD7C16D502EE006EFEE6 /* Presentations */,
@@ -711,6 +713,16 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Damien Bannerot";
+				TargetAttributes = {
+					6D547240167B3506003F58A5 = {
+						DevelopmentTeam = VTT9S468WV;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 6D54723B167B3506003F58A5 /* Build configuration list for PBXProject "AppliIUTSDdeLorraine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -794,7 +806,7 @@
 				CDF31D6616DC2A42003E3328 /* edt_1a.png in Resources */,
 				F9A35DA1184F9B1500E37FEE /* 1A.png in Resources */,
 				F9AD9900184F967200B983B5 /* icone_geii.png in Resources */,
-				F9A35DB8184FACF400E37FEE /* 120x120.png in Resources */,
+				CDF09083187DA7F10083D60B /* 120x120.png in Resources */,
 				CDF31D6716DC2A42003E3328 /* edt_2a.png in Resources */,
 				CDF31D6816DC2A42003E3328 /* edt_a2i.png in Resources */,
 				CDF31D6916DC2A42003E3328 /* edt_cdg.png in Resources */,
@@ -916,6 +928,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -937,10 +950,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "19102568-4362-4C98-BEE4-F3F1A605B233";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "19102568-4362-4C98-BEE4-F3F1A605B233";
+				PROVISIONING_PROFILE = "8529FC1A-D5BE-45E1-B914-9E843A4E332D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8529FC1A-D5BE-45E1-B914-9E843A4E332D";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -948,6 +961,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -963,10 +977,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "19102568-4362-4C98-BEE4-F3F1A605B233";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "19102568-4362-4C98-BEE4-F3F1A605B233";
+				PROVISIONING_PROFILE = "8529FC1A-D5BE-45E1-B914-9E843A4E332D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8529FC1A-D5BE-45E1-B914-9E843A4E332D";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -975,15 +989,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bertrand Kerautret (979E6MU7FY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bertrand Kerautret (979E6MU7FY)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppliIUTSDdeLorraine/AppliIUTSDdeLorraine-Prefix.pch";
 				INFOPLIST_FILE = "AppliIUTSDdeLorraine/AppliIUTSDdeLorraine-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8529FC1A-D5BE-45E1-B914-9E843A4E332D";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8529FC1A-D5BE-45E1-B914-9E843A4E332D";
+				STRIP_INSTALLED_PRODUCT = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -993,16 +1009,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bertrand Kerautret (979E6MU7FY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bertrand Kerautret (979E6MU7FY)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppliIUTSDdeLorraine/AppliIUTSDdeLorraine-Prefix.pch";
 				INFOPLIST_FILE = "AppliIUTSDdeLorraine/AppliIUTSDdeLorraine-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8529FC1A-D5BE-45E1-B914-9E843A4E332D";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8529FC1A-D5BE-45E1-B914-9E843A4E332D";
+				STRIP_INSTALLED_PRODUCT = NO;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
