@@ -41,10 +41,10 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.4</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard_iPhone</string>
 	<key>UIPrerenderedIcon</key>
@@ -66,9 +66,9 @@
 			<key>TintColor</key>
 			<dict>
 				<key>Blue</key>
-				<real>0.811946610104114</real>
+				<real>0.81194661010411395</real>
 				<key>Green</key>
-				<real>0.9773537474880297</real>
+				<real>0.97735374748802972</real>
 				<key>Red</key>
 				<real>1</real>
 			</dict>
