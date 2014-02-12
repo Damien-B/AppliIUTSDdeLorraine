@@ -90,7 +90,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wQC-zA-hN7">
-                                <rect key="frame" x="15" y="29" width="30" height="16"/>
+                                <rect key="frame" x="280" y="41" width="30" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="retour.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -439,23 +439,23 @@
                                         <rect key="frame" x="0.0" y="5" width="320" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <webView contentMode="scaleToFill" id="ZDk-Ao-78D">
+                                        <rect key="frame" x="0.0" y="133" width="320" height="387"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="mRO-lJ-ws9" id="TEz-1Y-nTa"/>
+                                        </connections>
+                                    </webView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <webView contentMode="scaleToFill" id="ZDk-Ao-78D">
-                                <rect key="frame" x="0.0" y="181" width="320" height="387"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="mRO-lJ-ws9" id="TEz-1Y-nTa"/>
-                                </connections>
-                            </webView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="header.png" id="iNW-hP-5cb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="52w-cs-pzk">
-                                <rect key="frame" x="15" y="29" width="30" height="16"/>
+                                <rect key="frame" x="280" y="41" width="30" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="retour.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -503,11 +503,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="src_photo.png" id="N9k-8s-iXH">
-                                        <rect key="frame" x="0.0" y="33" width="320" height="140"/>
+                                        <rect key="frame" x="0.0" y="5" width="320" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                     </imageView>
                                     <webView contentMode="scaleToFill" id="wNZ-mw-1zC">
-                                        <rect key="frame" x="0.0" y="110" width="320" height="393"/>
+                                        <rect key="frame" x="0.0" y="122" width="320" height="381"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -522,7 +522,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qet-kZ-J5K">
-                                <rect key="frame" x="15" y="29" width="30" height="16"/>
+                                <rect key="frame" x="277" y="41" width="30" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="retour.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1332,11 +1332,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="informatique_2.png" id="OGu-yY-fbc">
-                                        <rect key="frame" x="0.0" y="12" width="320" height="184"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                     </imageView>
                                     <webView contentMode="scaleToFill" id="BVX-rZ-Rqo">
-                                        <rect key="frame" x="0.0" y="106" width="320" height="392"/>
+                                        <rect key="frame" x="0.0" y="115" width="320" height="383"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -1351,7 +1351,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BKP-vh-LrX">
-                                <rect key="frame" x="15" y="29" width="30" height="16"/>
+                                <rect key="frame" x="278" y="41" width="30" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="retour.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1397,11 +1397,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="geii_photo.png" id="WJf-Pk-iZn">
-                                        <rect key="frame" x="0.0" y="8" width="320" height="150"/>
+                                        <rect key="frame" x="0.0" y="-6" width="320" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                     </imageView>
                                     <webView contentMode="scaleToFill" id="i4J-4J-bj5">
-                                        <rect key="frame" x="0.0" y="105" width="320" height="388"/>
+                                        <rect key="frame" x="0.0" y="106" width="320" height="387"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -1416,7 +1416,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5PK-EU-zLY">
-                                <rect key="frame" x="15" y="29" width="30" height="16"/>
+                                <rect key="frame" x="280" y="41" width="30" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="retour.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
