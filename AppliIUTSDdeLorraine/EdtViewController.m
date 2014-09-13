@@ -129,7 +129,7 @@
     
     
     
-    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/~edtIUTSD/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
+    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
     NSLog(@"in load %@", urlAddress);
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
@@ -149,7 +149,7 @@
     numWeek = numWeek + 1;
     
     NSString *week = [NSString stringWithFormat:@"%d",numWeek];
-    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/~edtIUTSD/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
+    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
     NSLog(@"in load %@", urlAddress);
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
@@ -162,29 +162,18 @@
 }
 
 -(IBAction)before :(UIBarButtonItem *) sender{
-    
-  //  self.webEdt = [[[UIWebView alloc]
-   //                 initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
-    
-    NSError *error = nil;
-    
+ 
     numWeek = numWeek - 1;
     
     NSString *week = [NSString stringWithFormat:@"%d",numWeek];
-    
-    NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
-    NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
-    
-    NSString *day = @"0%2C1%2C2%2C3%2C4%2C5";
-    
-    
-    NSString *urlAddress = [NSString stringWithFormat:@"http://adeweb.uhp-nancy.fr/jsp/imageEt?identifier=%@&projectId=5&idPianoWeek=%@&idPianoDay=%@&idTree=%@&width=2000&height=420&lunchName=REPAS&displayMode=1057855&showLoad=false&ttl=1253016797184&displayConfId=127", maj, week, day, edtID];
+    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
+    NSLog(@"in load %@", urlAddress);
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     
-    [self.webEdt loadRequest:requestObj];
     
-  //  [self.view addSubview:self.webEdt];
+    [self.webEdt loadRequest:requestObj];
+
     
 }
 
