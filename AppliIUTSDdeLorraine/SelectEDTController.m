@@ -33,11 +33,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-   myEDTName = [[NSMutableString alloc] init];
-   myEDTCode = [[NSMutableString alloc] init];
+    // Do any additional setup after loading the view.
+    myEDTName = [[NSMutableString alloc] init];
+    myEDTCode = [[NSMutableString alloc] init];
     
-
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,54 +53,54 @@
     // SRC1 SRC2 LP%
     if(codeEDT ==0){
         [myEDTName setString:  @"SRC 1"];
-        [myEDTCode setString:@"5971,5973,5967,5968"];
+        [myEDTCode setString:@"50764,50765,50766,50767"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }else if (codeEDT==1){
         [myEDTName setString:  @"SRC 2"];
-        [myEDTCode setString:@"5928,5930,5925,5926"];
+        [myEDTCode setString:@"63080,63081,63082,63083"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }else if(codeEDT==2){
         [myEDTName setString:  @"LP CDG"];
-        [myEDTCode setString:@"934,1208"];
+        [myEDTCode setString:@"109585,109586"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
-
+        
     }else if(codeEDT==4){
         [myEDTName setString:  @"TECAM "];
-        [myEDTCode setString:@"1237,1238"];
+        [myEDTCode setString:@"109587,124441"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
-
+        
     }
-     // Info1 Info2 LPs
+    // Info1 Info2 LPs
     else if(codeEDT==5){
         [myEDTName setString:  @"Info 1"];
-        [myEDTCode setString:@"5921,5957,5958,5960"];
+        [myEDTCode setString:@"48488,48489,48490,48491"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }    else if(codeEDT==6){
         [myEDTName setString:  @"Info 2"];
-        [myEDTCode setString:@"5941,5942,5944,5945"];
+        [myEDTCode setString:@"60448,60449,60450,60451"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     } else if(codeEDT==7){
         [myEDTName setString:  @"LP IMM"];
-        [myEDTCode setString:@"5933"];
+        [myEDTCode setString:@"59050,59051,59052,59054,59055,59056,59058,59059,59062,59063,59064,59066,59067,59068,59070,59487,59488,59490,59491,59492,59494,59495,59496,59498,59499,59500,59503,59504,59505,59507,59508,59509,59511,59512,59513,59515,59516,59517,59519,59520,59521,59523,59524,59525"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }else if(codeEDT==8){
         [myEDTName setString:  @"LP ISN"];
-        [myEDTCode setString:@"6547"];
+        [myEDTCode setString:@"47338,47339"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }
     // GEII 1 2  LPs
     else if(codeEDT==9){
         [myEDTName setString:  @"LP GEII 1"];
-        [myEDTCode setString:@"5666,6441,5950,5953"];
+        [myEDTCode setString:@"51584,51585,51586,51638"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }
     else if(codeEDT==10){
         [myEDTName setString:  @"GEII 2"];
-        [myEDTCode setString:@"5969,5972,5977,5979"];
+        [myEDTCode setString:@"59678,59679,59680,59681"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }else if(codeEDT==11){
         [myEDTName setString:  @"LP A2I"];
-        [myEDTCode setString:@"5962,5963"];
+        [myEDTCode setString:@"47958,47959"];
         [self performSegueWithIdentifier:@"visuedt" sender:self];
     }
     
@@ -109,7 +109,7 @@
 
 
 - (IBAction)back:(id)sender {
-   
+    
     UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
     [[self view] insertSubview: previousView belowSubview: viewAnimates ];
     [UIView animateWithDuration:0.4
@@ -124,7 +124,7 @@
                          [self dismissModalViewControllerAnimated:NO];
                          
                      }];
-
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

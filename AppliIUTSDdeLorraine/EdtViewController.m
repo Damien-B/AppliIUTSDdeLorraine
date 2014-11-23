@@ -60,7 +60,7 @@
                          animations:^{
                              [topImage setTransform:CGAffineTransformMakeTranslation(0, 0)];
                              [navBar setTransform:CGAffineTransformMakeTranslation(0, 0)];
-
+                             
                          }
                          completion:^(BOOL finished){
                              //[dest loadView];
@@ -79,7 +79,7 @@
                          animations:^{
                              [topImage setTransform:CGAffineTransformMakeTranslation(0, -100)];
                              [navBar setTransform:CGAffineTransformMakeTranslation(0, 100)];
-
+                             
                          }
                          completion:^(BOOL finished){
                              //[dest loadView];
@@ -89,10 +89,10 @@
                              //[dest viewDidLoad];
                              
                          }];
-
+        
         //        NSLog(@"landscape..");
         //[topImage setHidden:YES];
-      //  [topImage removeFromSuperview];
+        //  [topImage removeFromSuperview];
         //load the landscape view
     }
 }
@@ -101,14 +101,14 @@
 {
     [super viewDidLoad];
     [myButtonBack setEnabled:FALSE];
-
+    
     // Do any additional setup after loading the view.
-   // self.webEdt = [[[UIWebView alloc]
+    // self.webEdt = [[[UIWebView alloc]
     //                initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     SelectEDTController * prev =(SelectEDTController *) [self presentingViewController];
     edtID = prev.myEDTCode;
- //   NSError *error = nil;
-   // NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
+    //   NSError *error = nil;
+    // NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
     //NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
     
     NSDate *date = [NSDate date];
@@ -125,7 +125,7 @@
     // NSString *week = [NSString stringWithContentsOfURL:urlweek encoding:NSUTF8StringEncoding error:&error];
     
     
-  //  NSString *Tree = @"5962%2C5963";
+    //  NSString *Tree = @"5962%2C5963";
     
     
     
@@ -137,14 +137,14 @@
     [self.webEdt loadRequest:requestObj];
     [myButtonBack setEnabled:YES];
     [df dealloc];
-   //[self.view addSubview:self.webEdt];
+    //[self.view addSubview:self.webEdt];
 }
 
 - (IBAction) next: (UIBarButtonItem *) sender{
- //   self.webEdt = [[[UIWebView alloc]
-  //                  initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
+    //   self.webEdt = [[[UIWebView alloc]
+    //                  initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     
-  //  NSError *error = nil;
+    //  NSError *error = nil;
     
     numWeek = numWeek + 1;
     
@@ -162,7 +162,7 @@
 }
 
 -(IBAction)before :(UIBarButtonItem *) sender{
- 
+    
     numWeek = numWeek - 1;
     
     NSString *week = [NSString stringWithFormat:@"%d",numWeek];
@@ -173,7 +173,7 @@
     
     
     [self.webEdt loadRequest:requestObj];
-
+    
     
 }
 
@@ -200,12 +200,12 @@
                      completion:^(BOOL finished){
                          [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
                          [self dismissModalViewControllerAnimated:NO];
-                         [webEdt dealloc];
+                         //[webEdt dealloc];
                      }];
-
+    
 }
 - (void) scrollViewDidScroll:(UIScrollView *)scrollView{
-
+    
 }
 
 
