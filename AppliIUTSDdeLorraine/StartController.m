@@ -18,8 +18,6 @@
 {
     
     [super viewDidLoad];
-    //intro2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sponsors_3_1.png"]];
-    
   
 }
 
