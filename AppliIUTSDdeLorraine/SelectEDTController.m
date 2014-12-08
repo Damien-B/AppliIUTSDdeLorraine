@@ -49,7 +49,7 @@
 
 - (IBAction) selectEDT: (UIButton *) sender{
     //[myButtonBack setEnabled:NO];
-    int codeEDT = sender.tag;
+    int codeEDT = (int) sender.tag;
     // SRC1 SRC2 LP%
     if(codeEDT ==0){
         [myEDTName setString:  @"SRC 1"];
@@ -121,7 +121,7 @@
                      }
                      completion:^(BOOL finished){
                          [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
-                         [self dismissModalViewControllerAnimated:NO];
+                         [self dismissViewControllerAnimated:NO completion:nil];
                          
                      }];
     

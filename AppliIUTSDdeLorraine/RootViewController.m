@@ -37,7 +37,7 @@
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     self.tabNews = [[[NSMutableArray alloc] init] autorelease];
-    NSString *urlxml=[NSString stringWithFormat:@"http://courtil-antoine.fr/PT/news_iphone.plist", [Utils getDeviceID]];
+    NSString *urlxml=[NSString stringWithFormat:@"http://courtil-antoine.fr/PT/news_iphone.plist"];
     NSArray *contenuTableauPlist = [[[NSArray alloc] initWithContentsOfURL:[NSURL URLWithString:urlxml]] autorelease];
     for (NSDictionary *dict in contenuTableauPlist){
         News *ws = [[[News alloc]initWithDictionaryFromPlist:dict] autorelease];
@@ -193,7 +193,7 @@
 }
 
 - (IBAction)dismissAction:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
@@ -223,7 +223,7 @@
                      }
                      completion:^(BOOL finished){
                          [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
-                         [self dismissModalViewControllerAnimated:NO];
+                         [self dismissViewControllerAnimated:NO completion:nil];
                          
                      }];
     

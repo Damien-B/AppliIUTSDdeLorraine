@@ -78,7 +78,7 @@
                      }
                      completion:^(BOOL finished){
                          [[(ViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
-                         [self dismissModalViewControllerAnimated:NO];
+                         [self dismissViewControllerAnimated:NO completion:nil];
                          //[(AuthController<SlidableView> *)[self presentingViewController] back: self];
                      }];
     
