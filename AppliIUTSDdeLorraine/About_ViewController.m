@@ -31,6 +31,7 @@
 
 - (void)viewDidLoad
 {
+   [super viewDidLoad];
     NSURL * resourcePathURL = [[NSBundle mainBundle] resourceURL];
     if(resourcePathURL)
     {
@@ -42,6 +43,7 @@
             [myDocView loadRequest: req];
         }
     }
+    
 }
 
 //

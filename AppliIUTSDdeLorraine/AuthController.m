@@ -45,6 +45,7 @@
 
 
 -(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     [[(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates] setUserInteractionEnabled:NO];
     NSUserDefaults *prefs = [NSUserDefaults  standardUserDefaults];
     BOOL isAutoLogin = [ prefs boolForKey:@"KeyUserAutoLogin" ];

@@ -57,6 +57,7 @@
 
 
 -(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     NSString* titrerow=[(RootViewController *) [self presentingViewController] getCurrentNewsTitle];
     NSString* contenurow=[(RootViewController *) [self presentingViewController] getCurrentNewsContent];
     titre.text=titrerow;

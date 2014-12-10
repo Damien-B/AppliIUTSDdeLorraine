@@ -46,10 +46,10 @@
                         if(done){
                             self.view = intro2;
                             [self performSegueWithIdentifier:@"transition" sender:self];
-                            
                         }
                     }];
-    
+    [super viewDidAppear:animated];
+
 }
 
 - (BOOL )shouldAutorotate{
