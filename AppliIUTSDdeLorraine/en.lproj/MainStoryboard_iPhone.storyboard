@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isf-r3-9Ai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="970"/>
+            <point key="canvasLocation" x="-10" y="1208"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OfJ-UQ-h4U">
@@ -166,7 +166,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="ow5-XK-Qej" kind="custom" identifier="mapSegue" customClass="SlideFromBottomAnim" id="mLa-xw-MsT"/>
+                                                    <segue destination="ow5-XK-Qej" kind="modal" identifier="mapSegue" modalTransitionStyle="crossDissolve" id="mLa-xw-MsT"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XaE-t6-hGY">
@@ -241,7 +241,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="aLA-Ia-WOv" kind="custom" customClass="OpenAnimation" id="GoH-SA-B2u"/>
+                                                    <segue destination="aLA-Ia-WOv" kind="modal" modalTransitionStyle="crossDissolve" id="GoH-SA-B2u"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -299,7 +299,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUb-eD-omb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="down" id="O44-ZI-HV9">
                     <connections>
-                        <segue destination="aLA-Ia-WOv" kind="custom" customClass="OpenAnimation" id="e7v-IP-Hfs"/>
+                        <segue destination="aLA-Ia-WOv" kind="modal" modalTransitionStyle="crossDissolve" id="e7v-IP-Hfs"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -407,7 +407,7 @@
                         <outlet property="topImage" destination="dyc-IB-9ia" id="JH8-bl-clK"/>
                         <outlet property="toto" destination="i9z-7K-76Q" id="FVe-w4-Wbd"/>
                         <outlet property="viewAnimates" destination="iS7-CP-Vpm" id="Fgb-Hh-reT"/>
-                        <segue destination="eIZ-E1-YTe" kind="custom" identifier="etudiant" customClass="SlideFromBottomAnim" id="j03-PL-hNy"/>
+                        <segue destination="eIZ-E1-YTe" kind="modal" identifier="etudiant" modalTransitionStyle="crossDissolve" id="j03-PL-hNy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQI-at-vUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -734,7 +734,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ToW-jg-h5r" kind="custom" identifier="edt" customClass="SlideFromBottomAnim" id="wLu-4c-DYV"/>
+                                            <segue destination="ToW-jg-h5r" kind="modal" identifier="edt" modalTransitionStyle="crossDissolve" id="wLu-4c-DYV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fue-Kj-Zze" userLabel="ButtonNews">
@@ -748,7 +748,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="p3x-Ff-aYe" kind="custom" identifier="tabView" customClass="SlideFromBottomAnim" id="hsl-iV-YqL"/>
+                                            <segue destination="p3x-Ff-aYe" kind="modal" identifier="tabView" modalTransitionStyle="crossDissolve" id="hsl-iV-YqL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="arY-yt-6mN" userLabel="ButtonPrefs">
@@ -762,7 +762,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="onw-Kx-1jR" kind="custom" identifier="setting" customClass="SlideFromBottomAnim" id="dQ8-qE-mHI"/>
+                                            <segue destination="onw-Kx-1jR" kind="modal" identifier="setting" modalTransitionStyle="crossDissolve" id="dQ8-qE-mHI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1064,7 +1064,7 @@
                         <outlet property="myButtonBack" destination="m7J-Ra-aXB" id="lHv-PD-3C7"/>
                         <outlet property="topImage" destination="cfE-eb-Sh9" id="x70-dd-SNw"/>
                         <outlet property="viewAnimates" destination="sCs-2t-spr" id="umN-hJ-vvK"/>
-                        <segue destination="SKR-4U-ade" kind="custom" identifier="visuedt" customClass="SlideFromBottomAnim" id="vEG-OA-0Lo"/>
+                        <segue destination="SKR-4U-ade" kind="modal" identifier="visuedt" modalTransitionStyle="crossDissolve" id="vEG-OA-0Lo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMe-k6-feo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1479,7 +1479,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <segue destination="lU4-Z5-3hW" kind="custom" identifier="detailNews" trigger="accessoryAction" customClass="SlideFromBottomAnim" id="gpc-Nn-yg6"/>
+                                                    <segue destination="lU4-Z5-3hW" kind="modal" identifier="detailNews" trigger="accessoryAction" modalTransitionStyle="crossDissolve" id="gpc-Nn-yg6"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -1679,6 +1679,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="GoH-SA-B2u"/>
+        <segue reference="e7v-IP-Hfs"/>
     </inferredMetricsTieBreakers>
 </document>
