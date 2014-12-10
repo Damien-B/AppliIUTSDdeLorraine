@@ -190,19 +190,20 @@
 - (IBAction)back:(id)sender {
     [myButtonBack setEnabled:FALSE];
     UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
-    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
-    [UIView animateWithDuration:0.4
-                          delay:0.0
-                        options:UIViewAnimationOptionTransitionFlipFromTop
-                     animations:^{
-                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
-                         
-                     }
-                     completion:^(BOOL finished){
-                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
-                         [self dismissViewControllerAnimated:NO completion:nil];
-                         //[webEdt dealloc];
-                     }];
+    [self dismissViewControllerAnimated:NO completion:nil];
+    //    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+//    [UIView animateWithDuration:0.4
+//                          delay:0.0
+//                        options:UIViewAnimationOptionTransitionFlipFromTop
+//                     animations:^{
+//                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+//                         
+//                     }
+//                     completion:^(BOOL finished){
+//                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+//                         [self dismissViewControllerAnimated:NO completion:nil];
+//                         //[webEdt dealloc];
+//                     }];
     
 }
 - (void) scrollViewDidScroll:(UIScrollView *)scrollView{

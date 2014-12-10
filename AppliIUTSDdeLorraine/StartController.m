@@ -32,11 +32,9 @@
 
 
 
-
 -(void) viewDidAppear:(BOOL)animated
 {
-    [NSThread sleepForTimeInterval: 1];
-    
+    [NSThread sleepForTimeInterval: 1];    
     [UIView transitionFromView: self.view
                         toView: intro2
                       duration: 1.0f

@@ -144,23 +144,27 @@
 }
 
 - (IBAction)back:(id)sender {
-    UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
-   // [[self view] insertSubview: previousView belowSubview: viewAnimates ];
-    [UIView animateWithDuration:0.4
-                          delay:0.0
-                        options:UIViewAnimationOptionTransitionFlipFromTop
-                     animations:^{
-                         [viewCover setTransform:CGAffineTransformMakeTranslation(0, 0)];
-                         
-                     }
-                     completion:^(BOOL finished){
-                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
-                         [[(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates] setUserInteractionEnabled:YES];
-
-                         [self dismissViewControllerAnimated:NO completion:nil];
-                         
-                     }];
-    
+     [[(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates] setUserInteractionEnabled:YES];
+    [self dismissViewControllerAnimated:NO completion:nil];
+  
+  
+//UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+//   // [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+//    [UIView animateWithDuration:0.4
+//                          delay:0.0
+//                        options:UIViewAnimationOptionTransitionFlipFromTop
+//                     animations:^{
+//                         [viewCover setTransform:CGAffineTransformMakeTranslation(0, 0)];
+//                         
+//                     }
+//                     completion:^(BOOL finished){
+//                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+//                         [[(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates] setUserInteractionEnabled:YES];
+//
+//                         [self dismissViewControllerAnimated:NO completion:nil];
+//                         
+//                     }];
+//    
 }
 
 

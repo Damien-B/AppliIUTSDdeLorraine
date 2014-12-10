@@ -109,22 +109,23 @@
 
 
 - (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:NO completion:nil];
     
-    UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
-    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
-    [UIView animateWithDuration:0.4
-                          delay:0.0
-                        options:UIViewAnimationOptionTransitionFlipFromTop
-                     animations:^{
-                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
-                         
-                     }
-                     completion:^(BOOL finished){
-                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
-                         [self dismissViewControllerAnimated:NO completion:nil];
-                         
-                     }];
-    
+//    UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+//    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
+//    [UIView animateWithDuration:0.4
+//                          delay:0.0
+//                        options:UIViewAnimationOptionTransitionFlipFromTop
+//                     animations:^{
+//                         [viewAnimates setTransform:CGAffineTransformMakeTranslation(0, viewAnimates.frame.size.height)];
+//                         
+//                     }
+//                     completion:^(BOOL finished){
+//                         [[(UIViewController<SlidableView> *)[self presentingViewController] view] insertSubview: previousView belowSubview: [(UIViewController<SlidableView>*)[self presentingViewController] topImage] ];
+//                         [self dismissViewControllerAnimated:NO completion:nil];
+//                         
+//                     }];
+//    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
