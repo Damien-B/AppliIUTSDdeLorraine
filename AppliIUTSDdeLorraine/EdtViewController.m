@@ -102,12 +102,14 @@
 {
     [super viewDidLoad];
     [myButtonBack setEnabled:FALSE];
-    
+    [next setEnabled:NO];
+    [before setEnabled:NO];
+
     // Do any additional setup after loading the view.
     // self.webEdt = [[[UIWebView alloc]
     //                initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     SelectEDTController * prev =(SelectEDTController *) [self presentingViewController];
-    edtID = prev.myEDTCode;
+   // edtID = prev.myEDTCode;
     //   NSError *error = nil;
     // NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
     //NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
@@ -130,14 +132,17 @@
     
     
     
-    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
+    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week];
     NSLog(@"in load %@", urlAddress);
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     
     [self.webEdt loadRequest:requestObj];
+   // [df dealloc];
     [myButtonBack setEnabled:YES];
-    [df dealloc];
+    [next setEnabled:YES];
+    [before setEnabled:YES];
+
     //[self.view addSubview:self.webEdt];
 }
 
@@ -146,35 +151,53 @@
     //                  initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
     
     //  NSError *error = nil;
-    
+    [self.webEdt stopLoading];
+    [next setEnabled:NO];
+    [before setEnabled:NO];
+    [myButtonBack setEnabled:NO];
+
     numWeek = numWeek + 1;
     
     NSString *week = [NSString stringWithFormat:@"%d",numWeek];
-    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
+    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week];
     NSLog(@"in load %@", urlAddress);
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     
     
     [self.webEdt loadRequest:requestObj];
-    
+    [next setEnabled:YES];
+    [before setEnabled:YES];
+    [myButtonBack setEnabled:YES];
+
     //[self.view addSubview:self.webEdt];
     
 }
 
 -(IBAction)before :(UIBarButtonItem *) sender{
-    
+    [self.webEdt stopLoading];
+
+    [next setEnabled:NO];
+    [before setEnabled:NO];
+    [myButtonBack setEnabled:NO];
+
+
     numWeek = numWeek - 1;
     
     NSString *week = [NSString stringWithFormat:@"%d",numWeek];
-    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
+    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=&width=2000&height=420&displayMode=1057855&displayConfId=127", week];
     NSLog(@"in load %@", urlAddress);
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     
     
     [self.webEdt loadRequest:requestObj];
+    [next setEnabled:YES];
+    [before setEnabled:YES];
+    [myButtonBack setEnabled:YES];
+
     
+
     
 }
 
@@ -188,9 +211,12 @@
 
 
 - (IBAction)back:(id)sender {
-    [myButtonBack setEnabled:FALSE];
-    UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+    //[myButtonBack setEnabled:FALSE];
+    //UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
+   // [webEdt dealloc];
+    [webEdt stopLoading];
     [self dismissViewControllerAnimated:NO completion:nil];
+    
     //    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
 //    [UIView animateWithDuration:0.4
 //                          delay:0.0

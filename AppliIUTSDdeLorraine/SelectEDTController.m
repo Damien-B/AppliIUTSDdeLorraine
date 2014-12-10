@@ -127,14 +127,14 @@
 //                     }];
 //    
 }
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"visuedt"]) {
-        EdtViewController *destViewController = segue.destinationViewController;
-        [destViewController loadView];
-        
-    }
-}
+//
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    if ([segue.identifier isEqualToString:@"visuedt"]) {
+//        EdtViewController *destViewController = segue.destinationViewController;
+//        [destViewController loadView];
+//        
+//    }
+//}
 
 - (BOOL )shouldAutorotate{
     return NO;
