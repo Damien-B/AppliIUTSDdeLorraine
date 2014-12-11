@@ -21,7 +21,7 @@
 
 
 @synthesize webEdt;
-@synthesize next;
+@synthesize next, edtID;
 @synthesize before, navBar;
 @synthesize viewAnimates, topImage;
 
@@ -108,8 +108,14 @@
     // Do any additional setup after loading the view.
     // self.webEdt = [[[UIWebView alloc]
     //                initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
-    SelectEDTController * prev =(SelectEDTController *) [self presentingViewController];
-   // edtID = prev.myEDTCode;
+   
+    
+    
+   // SelectEDTController * prev =(SelectEDTController *) [self presentingViewController];
+//    edtID = prev.myEDTCode;
+    
+    
+    
     //   NSError *error = nil;
     // NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
     //NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
@@ -157,7 +163,7 @@
     [myButtonBack setEnabled:NO];
 
     numWeek = numWeek + 1;
-    
+    NSLog(@"id:=== %@", edtID);
     NSString *week = [NSString stringWithFormat:@"%d",numWeek];
     NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week];
     NSLog(@"in load %@", urlAddress);

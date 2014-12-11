@@ -31,6 +31,10 @@
 @property (nonatomic, retain) UIBarButtonItem *next;
 @property (nonatomic, retain) UIBarButtonItem *before;
 @property (nonatomic, retain) UIToolbar *navBar;
+@property (nonatomic, retain) NSString *edtID;
+
+
+
 
 - (IBAction) next: (UIBarButtonItem *) sender;
 - (IBAction) before: (UIBarButtonItem *) sender;

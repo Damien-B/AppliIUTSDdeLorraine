@@ -28,14 +28,23 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSLog(@"view will appear!");
+
+    myEDTName = [[NSMutableString alloc] init];
+    myEDTCode = [[NSMutableString alloc] init];
+    
+}
 
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    NSLog(@"view did load EDT!!!!!!");
+
     // Do any additional setup after loading the view.
-    myEDTName = [[NSMutableString alloc] init];
-    myEDTCode = [[NSMutableString alloc] init];
+ 
+    [super viewDidLoad];
     
     
 }
@@ -128,13 +137,19 @@
 //    
 }
 //
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if ([segue.identifier isEqualToString:@"visuedt"]) {
-//        EdtViewController *destViewController = segue.destinationViewController;
-//        [destViewController loadView];
-//        
-//    }
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"in prep!!!!!!");
+
+    if ([segue.identifier isEqualToString:@"visuedt"]) {
+        NSLog(@"in segee!!!!!!%@", myEDTCode);
+        EdtViewController *destViewController = segue.destinationViewController;
+        [destViewController loadView];
+        destViewController.edtID = myEDTCode;
+         
+        
+    }
+    
+}
 
 - (BOOL )shouldAutorotate{
     return NO;
