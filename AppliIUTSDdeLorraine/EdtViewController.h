@@ -15,7 +15,6 @@
     IBOutlet UIBarButtonItem *before;
     IBOutlet UIToolbar *navBar;
     int numWeek;
-    NSString *edtName;
     NSString *edtID;
 
     IBOutlet UIView *viewAnimates;

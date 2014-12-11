@@ -53,6 +53,8 @@
 		CD588D8416DAC05100363C78 /* ODRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CD588D8316DABE4500363C78 /* ODRefreshControl.m */; };
 		CD588D8516DAC07600363C78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7BE61C16D03BC4006D09D1 /* QuartzCore.framework */; };
 		CD588D8816DACF3400363C78 /* SlideFromBottomAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = CD588D8716DACF3400363C78 /* SlideFromBottomAnim.m */; };
+		CD77AF7C1A3A318000955EDE /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD77AF7B1A3A318000955EDE /* TestViewController.m */; };
+		CD77AF7E1A3A390C00955EDE /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CD77AF7D1A3A390C00955EDE /* bg.png */; };
 		CD9D730C16BD438500934CBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9D730B16BD438500934CBC /* SystemConfiguration.framework */; };
 		CDA5245C16D4431A004A7C42 /* IUTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA5245B16D4431A004A7C42 /* IUTLocation.m */; };
 		CDDFDE9F16CFB4AF005FD7A0 /* SelectEDTController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDFDE9E16CFB4AF005FD7A0 /* SelectEDTController.m */; };
@@ -188,6 +190,9 @@
 		CD588D8616DACF3400363C78 /* SlideFromBottomAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideFromBottomAnim.h; sourceTree = "<group>"; };
 		CD588D8716DACF3400363C78 /* SlideFromBottomAnim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideFromBottomAnim.m; sourceTree = "<group>"; };
 		CD588D8916DACFB200363C78 /* SlidableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidableView.h; sourceTree = "<group>"; };
+		CD77AF7A1A3A318000955EDE /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		CD77AF7B1A3A318000955EDE /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		CD77AF7D1A3A390C00955EDE /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		CD7BE61C16D03BC4006D09D1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CD9D730816BD414300934CBC /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		CD9D730916BD414300934CBC /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
@@ -355,6 +360,8 @@
 		6D547236167B3506003F58A5 = {
 			isa = PBXGroup;
 			children = (
+				CD77AF7A1A3A318000955EDE /* TestViewController.h */,
+				CD77AF7B1A3A318000955EDE /* TestViewController.m */,
 				F97E7EB918AA2A1400B2AB22 /* 29x29.png */,
 				F97E7EBA18AA2A1500B2AB22 /* 57x57.png */,
 				F97E7EBB18AA2A1500B2AB22 /* 58x58.png */,
@@ -419,6 +426,7 @@
 		6D54724C167B3506003F58A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CD77AF7D1A3A390C00955EDE /* bg.png */,
 				6D54728C167B3CFE003F58A5 /* icone.png */,
 				6D54728E167B3D45003F58A5 /* retinalol.png */,
 				6D54724D167B3506003F58A5 /* AppliIUTSDdeLorraine-Info.plist */,
@@ -713,6 +721,7 @@
 				CD52B76E17D1289000CC954A /* img2.png in Resources */,
 				F98F53DB18AAA369001FF872 /* titre_geii2.png in Resources */,
 				CD52B77017D1289B00CC954A /* img3.png in Resources */,
+				CD77AF7E1A3A390C00955EDE /* bg.png in Resources */,
 				F987D37318A9751800AE291D /* isn.png in Resources */,
 				CD52B77217D128AA00CC954A /* img4.png in Resources */,
 				CD52B77417D128B300CC954A /* img5.png in Resources */,
@@ -743,6 +752,7 @@
 				6D2A6381167B617B00BAC6A8 /* News.m in Sources */,
 				6D2A6384167B650700BAC6A8 /* RootViewController.m in Sources */,
 				22407D53169E168000AB16CE /* WebView.m in Sources */,
+				CD77AF7C1A3A318000955EDE /* TestViewController.m in Sources */,
 				22407D56169E16A900AB16CE /* WebViewController.m in Sources */,
 				6D04C43416A8460B000A228F /* DetailViewController.m in Sources */,
 				22A2F1E116C1608D00220945 /* EdtViewController.m in Sources */,

@@ -43,6 +43,35 @@
     [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(orientationChanged:)  name:UIDeviceOrientationDidChangeNotification  object:nil];
     [webEdt.scrollView setDelegate:self];
+    [myButtonBack setEnabled:FALSE];
+    [next setEnabled:NO];
+    [before setEnabled:NO];
+    
+   
+    
+    NSDate *date = [NSDate date];
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"ww"];
+    NSString *weeka = [df stringFromDate:date];
+    [df dealloc];
+    numWeek = ([weeka integerValue] + 17) % 51;
+    NSString *week = [NSString stringWithFormat:@"%d",numWeek];
+    
+    
+    
+    
+    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
+    NSLog(@"in load %@", urlAddress);
+    NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+    [self.webEdt loadRequest:requestObj];
+    [myButtonBack setEnabled:YES];
+    [next setEnabled:YES];
+    [before setEnabled:YES];
+    
+    //[self.view addSubview:self.webEdt];
+
 }
 
 - (void)orientationChanged:(NSNotification *)notification{
@@ -101,107 +130,44 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [myButtonBack setEnabled:FALSE];
-    [next setEnabled:NO];
-    [before setEnabled:NO];
-
-    // Do any additional setup after loading the view.
-    // self.webEdt = [[[UIWebView alloc]
-    //                initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
-   
-    
-    
-   // SelectEDTController * prev =(SelectEDTController *) [self presentingViewController];
-//    edtID = prev.myEDTCode;
-    
-    
-    
-    //   NSError *error = nil;
-    // NSURL *urlmaj = [NSURL URLWithString:@"http://kerrecherche.iutsd.uhp-nancy.fr/AppliIUTSDdeLorraine/idEDT.php"];
-    //NSString *maj = [NSString stringWithContentsOfURL:urlmaj encoding:NSUTF8StringEncoding error:&error];
-    
-    NSDate *date = [NSDate date];
-    NSDateFormatter *df = [NSDateFormatter new];
-    [df setDateFormat:@"ww"];
-    NSString *weeka = [df stringFromDate:date];
-    numWeek = ([weeka integerValue] + 17) % 51;
-    NSString *week = [NSString stringWithFormat:@"%d",numWeek];
-    
-    //NSLog(week);
-    
-    //  NSURL *urlweek = [NSURL URLWithString:@"http://iutsd.applorraine.fr/week.php"];
-    
-    // NSString *week = [NSString stringWithContentsOfURL:urlweek encoding:NSUTF8StringEncoding error:&error];
-    
-    
-    //  NSString *Tree = @"5962%2C5963";
-    
-    
-    
-    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
-    NSLog(@"in load %@", urlAddress);
-    NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
-    [self.webEdt loadRequest:requestObj];
-   // [df dealloc];
-    [myButtonBack setEnabled:YES];
-    [next setEnabled:YES];
-    [before setEnabled:YES];
-
-    //[self.view addSubview:self.webEdt];
-}
+    }
 
 - (IBAction) next: (UIBarButtonItem *) sender{
-    //   self.webEdt = [[[UIWebView alloc]
-    //                  initWithFrame:CGRectMake(0, 40, 320, 380)] autorelease];
-    
-    //  NSError *error = nil;
-    [self.webEdt stopLoading];
-    [next setEnabled:NO];
-    [before setEnabled:NO];
-    [myButtonBack setEnabled:NO];
-
-    numWeek = numWeek + 1;
-    NSLog(@"id:=== %@", edtID);
-    NSString *week = [NSString stringWithFormat:@"%d",numWeek];
-    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
-    NSLog(@"in load %@", urlAddress);
-    NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
-    
-    [self.webEdt loadRequest:requestObj];
-    [next setEnabled:YES];
-    [before setEnabled:YES];
-    [myButtonBack setEnabled:YES];
-
-    //[self.view addSubview:self.webEdt];
+     if (!webEdt.isLoading) {
+        [next setEnabled:NO];
+        [before setEnabled:NO];
+        [myButtonBack setEnabled:NO];
+        
+        numWeek = numWeek + 1;
+        NSString *week = [NSString stringWithFormat:@"%d",numWeek];
+        NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
+        NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
+        NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+        
+        
+        [self.webEdt loadRequest:requestObj];
+        [next setEnabled:YES];
+        [before setEnabled:YES];
+        [myButtonBack setEnabled:YES];
+    }
     
 }
 
 -(IBAction)before :(UIBarButtonItem *) sender{
-    [self.webEdt stopLoading];
-
-    [next setEnabled:NO];
-    [before setEnabled:NO];
-    [myButtonBack setEnabled:NO];
-
-
-    numWeek = numWeek - 1;
-    
-    NSString *week = [NSString stringWithFormat:@"%d",numWeek];
-    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
-    NSLog(@"in load %@", urlAddress);
-    NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
-    
-    [self.webEdt loadRequest:requestObj];
-    [next setEnabled:YES];
-    [before setEnabled:YES];
-    [myButtonBack setEnabled:YES];
-
+    if (!webEdt.isLoading) {
+        [next setEnabled:NO];
+        [before setEnabled:NO];
+        [myButtonBack setEnabled:NO];
+        numWeek = numWeek - 1;
+        NSString *week = [NSString stringWithFormat:@"%d",numWeek];
+        NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
+        NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
+        NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+        [self.webEdt loadRequest:requestObj ];
+        [next setEnabled:YES];
+        [before setEnabled:YES];
+        [myButtonBack setEnabled:YES];
+    }
     
 
     
@@ -217,11 +183,10 @@
 
 
 - (IBAction)back:(id)sender {
-    //[myButtonBack setEnabled:FALSE];
-    //UIView * previousView = [(UIViewController<SlidableView> *)[self presentingViewController] viewAnimates];
-   // [webEdt dealloc];
-    [webEdt stopLoading];
-    [self dismissViewControllerAnimated:NO completion:nil];
+    if (!webEdt.isLoading) {
+        [self dismissViewControllerAnimated:NO completion:nil];
+
+    }
     
     //    [[self view] insertSubview: previousView belowSubview: viewAnimates ];
 //    [UIView animateWithDuration:0.4

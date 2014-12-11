@@ -5,7 +5,7 @@
 //  Created by Kerautret on 16/02/13.
 //  Copyright (c) 2013 Damien Bannerot. All rights reserved.
 //
-
+#import "SelectEDTController.h"
 #import "EtudiantController.h"
 #import "RootViewController.h"
 #import "ViewController.h"
@@ -96,8 +96,11 @@
         [destViewController loadView];
         
     }if ([segue.identifier isEqualToString:@"edt"]) {
-        EdtViewController *destViewController = segue.destinationViewController;
+        SelectEDTController *destViewController = segue.destinationViewController;
+        [destViewController initData];
         [destViewController loadView];
+        destViewController.view.hidden = NO; //calls viewDidLoad
+              
         
     }else if ([segue.identifier isEqualToString:@"setting"]) {
         PreferencesViewController *destViewController = segue.destinationViewController;
