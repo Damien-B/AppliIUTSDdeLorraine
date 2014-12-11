@@ -138,7 +138,7 @@
     
     
     
-    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week];
+    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
     NSLog(@"in load %@", urlAddress);
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
@@ -165,7 +165,7 @@
     numWeek = numWeek + 1;
     NSLog(@"id:=== %@", edtID);
     NSString *week = [NSString stringWithFormat:@"%d",numWeek];
-    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week];
+    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
     NSLog(@"in load %@", urlAddress);
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
@@ -191,7 +191,7 @@
     numWeek = numWeek - 1;
     
     NSString *week = [NSString stringWithFormat:@"%d",numWeek];
-    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=&width=2000&height=420&displayMode=1057855&displayConfId=127", week];
+    NSString *urlAddress = [NSString stringWithFormat:@"http://kerrecherche.iutsd.uhp-nancy.fr/edt/edt.php?week=%@&idTree=%@&width=2000&height=420&displayMode=1057855&displayConfId=127", week, edtID];
     NSLog(@"in load %@", urlAddress);
     NSURL *url = [[[NSURL alloc] initWithString:urlAddress] autorelease];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
